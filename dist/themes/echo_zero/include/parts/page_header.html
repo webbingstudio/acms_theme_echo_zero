@@ -1,0 +1,16 @@
+<!-- BEGIN_MODULE Category_Field -->
+<!-- BEGIN_IF [{page_header_hide}/neq/true] -->
+<div class="page-header<!-- BEGIN_IF [{page_image@path}/em] --> page-header-light<!-- END_IF -->"<!-- BEGIN_IF [{page_image@path}/nem] --> style="background-image: url(%{ARCHIVES_DIR}{page_image@path});"<!-- END_IF -->>
+	<!-- BEGIN_IF [{page_header_title}/eq/current] -->
+	<h1 class="page-header-title">%{CATEGORY_NAME}</h1>
+	<!-- ELSE_IF [{page_header_title}/eq/parent] -->
+	<h1 class="page-header-title">%{PARENT_CATEGORY_NAME}</h1>
+	<!-- ELSE -->
+	<h1 class="page-header-title">%{ROOT_CATEGORY_NAME}</h1>
+	<!-- END_IF -->
+	<!-- BEGIN_IF [{page_description}/nem] -->
+	<p class="page-header-caption">{page_description}</p>
+	<!-- END_IF -->
+</div><!-- /.page-header -->
+<!-- END_IF -->
+<!-- END_MODULE Category_Field -->

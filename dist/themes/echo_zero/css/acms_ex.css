@@ -1,0 +1,128 @@
+@charset "UTF-8";
+#adminBox,
+#entryForm,
+.acms-admin-form,
+body .ui-widget {
+  color: #333333;
+  font-size: .875rem;
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 300;
+  line-height: 1.25; }
+  #adminBox a,
+  #entryForm a,
+  .acms-admin-form a,
+  body .ui-widget a {
+    font-weight: 300; }
+
+a.js-dialog-btn {
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 300;
+  line-height: 1.25; }
+
+a.acms-admin-accordion-title-link,
+a.detail-fade-head {
+  color: #333333;
+  text-decoration: none; }
+
+.titleWrapper h2 {
+  margin: 0 0 1rem;
+  padding: 0;
+  background: transparent none;
+  border: 0 none;
+  color: #333333;
+  font-size: 1.25rem;
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 700;
+  line-height: 1.25; }
+
+.acms-admin-modal-header h3 {
+  margin: 1rem 0;
+  padding: 0;
+  background: transparent none;
+  border: 0 none;
+  color: #333333;
+  font-size: 1.25rem;
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 700;
+  line-height: 1.25; }
+
+.entryFormColumn .entryFormColumnHead .label {
+  display: inline-block;
+  color: #fff;
+  background: transparent none !important;
+  padding: 0;
+  border: 0 none;
+  font-size: .875rem;
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: right;
+  border-radius: 0;
+  vertical-align: middle; }
+
+.acms-admin-clear {
+  clear: none !important; }
+
+.entryFormTable th {
+  width: 25%;
+  max-width: 200px; }
+
+div.column-file-auto,
+div.column-file-center {
+  width: auto !important; }
+
+.acms-admin-btn-action-group {
+  margin-left: 0;
+  margin-right: 0; }
+
+.entry-container {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem; }
+  div[class*="col-"] .entry-container {
+    padding-left: 0;
+    padding-right: 0; }
+
+.entry-container-full {
+  min-height: 1px;
+  margin-left: -5000px;
+  margin-right: -5000px;
+  padding-left: 5000px;
+  padding-right: 5000px; }
+  .entry-container-full .container {
+    padding-left: 0;
+    padding-right: 0; }
+
+#entryForm .acms-admin-icon-tooltip,
+body .ui-widget .acms-admin-icon-tooltip {
+  margin-left: .25em; }
+
+#entryForm .js-tag_insertion .emoji-trigger-btn,
+#entryForm .js-media_insert {
+  display: inline-block;
+  min-width: 5em;
+  padding: .25em .5em;
+  background-color: #fff;
+  color: #333333;
+  font-size: .75rem;
+  border: 1px solid #999999;
+  text-align: center;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  vertical-align: middle; }
+  #entryForm .js-tag_insertion .emoji-trigger-btn:hover,
+  #entryForm .js-media_insert:hover {
+    background-color: #eeeeee; }
+
+#entryForm .js-tag_insertion .emoji-trigger-btn-link {
+  color: #2288bb;
+  text-decoration: underline; }
+
+#entryForm .js-tag_insertion .emoji-trigger-btn-strong {
+  font-weight: 700; }
+
+@media (min-width: 34rem) {
+  .entry-column .container .container {
+    padding-left: 0;
+    padding-right: 0; } }

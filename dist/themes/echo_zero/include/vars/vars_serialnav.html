@@ -1,0 +1,30 @@
+<!-- BEGIN_MODULE Sample:veil -->
+# =======================
+#
+# 前後リンク
+# モジュール内で呼び出す
+#
+#　var_serialnav
+#
+# =======================
+<!-- END_MODULE Sample:veil -->
+
+<!-- BEGIN_SetRendered id="var_serialnav" --><!-- END_SetRendered -->
+<!-- BEGIN_SetRendered id="var_serialnav" -->
+<!-- BEGIN serialNavi:veil -->
+<div class="nav nav-horizontal serial-nav">
+	<nav>
+		<ul>
+			<!-- BEGIN prevNotFound --><!-- END prevNotFound -->
+			<!-- BEGIN prevLink -->
+			<li class="prev"><a href="{url}">{name}[trim(100, '...')|escape]</a></li>
+			<!-- END prevLink -->
+			<!-- BEGIN nextNotFound --><!-- END nextNotFound -->
+			<!-- BEGIN nextLink -->
+			<li class="next"><a href="{url}">{name}[trim(100, '...')|escape]</a></li>
+			<!-- END nextLink -->
+		</ul>
+	</nav>
+</div><!-- /.serial-nav -->
+<!-- END serialNavi:veil -->
+<!-- END_SetRendered -->

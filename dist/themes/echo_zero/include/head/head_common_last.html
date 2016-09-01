@@ -1,0 +1,53 @@
+<meta property="og:image" content="<!-- GET_Rendered id="var_meta_image" trim="1" -->">
+
+<!-- BEGIN_MODULE Sample:veil -->
+## 便宜上、updated_timeも公開日とする ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+<meta property="og:updated_time" content="<!-- GET_Rendered id="var_meta_pubdate" trim="1" -->">
+<meta property="article:published_time" content="<!-- GET_Rendered id="var_meta_pubdate" trim="1" -->">
+
+<!-- BEGIN_MODULE Blog_Field id="global" -->
+<!-- BEGIN_IF [{twitter_account}/nem] -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@{twitter_account}">
+<meta name="twitter:domain" content="%{ALIAS_DOMAIN}">
+<meta name="twitter:image" content="<!-- GET_Rendered id="var_meta_image" trim="1" -->">
+<!-- END_IF -->
+<!-- BEGIN_IF [{facebook_app_id}/nem] -->
+<meta property="fb:app_id" content="{facebook_app_id}">
+<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/slibs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <script src="/js/rem.min.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="/css/acms-admin.css">
+<link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/acms_ex.css">
+
+<script src="%{JS_LIB_JQUERY_DIR}jquery-1.11.1.min.js" charset="UTF-8"></script>
+<!-- BEGIN_MODULE Js -->
+<script src="/acms.js{arguments}" charset="UTF-8" id="acms-js"></script>
+<!-- END_MODULE Js -->
+
+<script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+<script src="/js/common.js"></script>
+
+<!-- BEGIN_MODULE Sample:veil -->
+## 追加スクリプトは別テンプレート ----------------------------------------
+## /include/body_last.html
+<!-- END_MODULE Sample:veil -->
+
+<!-- BEGIN_MODULE Blog_Field -->
+{blog_meta_ex}[buildTpl]
+<!-- END_MODULE Blog_Field -->
+
+<!-- BEGIN_MODULE Touch_Entry -->
+<!-- BEGIN_MODULE Entry_Field -->
+{entry_meta_ex}[raw]
+<!-- END_MODULE Entry_Field -->
+<!-- END_MODULE Touch_Entry -->
+

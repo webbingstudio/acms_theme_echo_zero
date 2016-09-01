@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+@import "_variables";
+@import "_mixin";
+
+// ----------------------------
+// acms.css overwrite
+// ----------------------------
+
+// 本文のスタイルの影響をUIも受けてしまう問題を回避
+// ----------------------------
+
+#adminBox,
+#entryForm,
+.acms-admin-form,
+body .ui-widget {
+  color: $gray-dark;
+  font-size: .875rem;
+  font-family: $font-family-base;
+  font-weight: $font-weight;
+  line-height: $line-height-sm;
+
+  a {
+    font-weight: $font-weight;
+  }
+
+}
+
+a.js-dialog-btn {
+  font-family: $font-family-base;
+  font-weight: $font-weight;
+  line-height: $line-height-sm;
+}
+
+a.acms-admin-accordion-title-link,
+a.detail-fade-head {
+  color: $gray-dark;
+  text-decoration: none;	
+}
+
+.titleWrapper h2 {
+  margin: 0 0 1rem;
+  padding: 0;
+  background: transparent none;
+  border: 0 none;
+  color: $gray-dark;
+  font-size: 1.25rem;
+  font-family: $font-family-base;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-sm;
+}
+
+.acms-admin-modal-header h3 {
+  margin: 1rem 0;
+  padding: 0;
+  background: transparent none;
+  border: 0 none;
+  color: $gray-dark;
+  font-size: 1.25rem;
+  font-family: $font-family-base;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-sm;
+}
+
+
+// ユニット内のラベルのクラス名がbootstapと重複している問題を回避
+// ----------------------------
+
+.entryFormColumn .entryFormColumnHead .label {
+  display: inline-block;
+  color: #fff;
+  background: transparent none !important;
+  padding: 0;
+  border: 0 none;
+  font-size: .875rem;
+  font-family: $font-family-base;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  text-align: right;
+  border-radius: 0;
+  vertical-align: middle;
+}
+
+
+// acms.css以外のフレームワークを使用すると予期しない箇所で段組が解除されてしまう問題を回避
+// ----------------------------
+
+.acms-admin-clear {
+  clear: none !important;
+}
+
+
+// エントリーカスタムフィールドのラベルを長いタイトルにも対応させる
+// ----------------------------
+
+.entryFormTable th {
+	width: 25%;
+	max-width: 200px;
+}
+
+// ファイルユニットになぜかインラインでwidthが入ってしまう問題を回避
+// ----------------------------
+
+div.column-file-auto,
+div.column-file-center {
+  width: auto !important;
+}
+
+
+// 編集ボックスの左右マージンを無効
+// ----------------------------
+
+.acms-admin-btn-action-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+// bootstrap対応のユニット包括ブロック
+// ----------------------------
+
+.entry-container {
+  position: relative;
+  min-height: 1px;
+  padding-left: $grid-gutter-width / 2;
+  padding-right: $grid-gutter-width / 2;
+
+  // 段組内では左右余白を無効
+  // ----------------------------
+  div[class*="col-"] & {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+
+// 包括コンテナの幅を無視して幅いっぱいに広げる
+// ----------------------------
+
+.entry-container-full {
+  min-height: 1px;
+  margin-left: -5000px;
+  margin-right: -5000px;
+  padding-left: 5000px;
+  padding-right: 5000px;
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+
+// ツールチップアイコン
+// ----------------------------
+
+.acms-admin-icon-tooltip {
+
+  #entryForm &,
+  body .ui-widget & {
+    margin-left: .25em;
+  }
+	
+}
+
+
+// 文字装飾ボタンを目立たせる
+// ----------------------------
+
+#entryForm {
+
+  .js-tag_insertion .emoji-trigger-btn,
+  .js-media_insert {
+  	display: inline-block;
+  	min-width: 5em;
+  	padding: .25em .5em;
+  	background-color: #fff;
+    color: $gray-dark;
+    font-size: .75rem;
+    border: 1px solid $gray-light;
+  	text-align: center;
+  	border-radius: $border-radius-sm;
+    text-decoration: none;
+    vertical-align: middle;
+
+    &:hover {
+      background-color: $gray-lightest;
+    }
+
+  }
+
+  .js-tag_insertion .emoji-trigger-btn-link {
+    color: $link-color;
+    text-decoration: underline;
+  }
+
+  .js-tag_insertion .emoji-trigger-btn-strong {
+    font-weight: $font-weight-bold;
+  }
+
+}
+
+@include media-breakpoint-up(sm) {
+
+.entry-column {
+
+  .container {
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  }
+
+}
+
+}

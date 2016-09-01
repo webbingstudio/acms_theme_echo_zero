@@ -1,0 +1,864 @@
+@charset "utf-8";
+
+@import "_variables";
+@import "_mixin";
+
+// ----------------------------
+// common
+// ----------------------------
+
+// - Structure
+// - Utility
+// - Color
+// - Grid
+// - Button
+// - Nav
+// - Label
+// - Badge
+
+
+// Structure
+// ----------------------------
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-base;
+
+  @include media-breakpoint-down(xs) {
+    font-size: ($font-size-base * .875);
+  }
+
+  @include media-breakpoint-down(xss) {
+    font-size: ($font-size-base * .75);
+  }
+
+}
+
+body {
+  margin: 0;
+  background-color: $body-bg;
+  color: $body-color;
+  font-family: $font-family-01;
+  font-weight: $font-weight-01;
+  font-size: 1rem;
+  line-height: $line-height;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+
+}
+
+b, dt, optgroup, strong {
+  font-weight: $font-weight-bold;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: $font-weight-bold;
+  line-height: $line-height-sm;
+}
+
+h1, .h1 {
+  margin: ($spacer * 4) 0 ($spacer * 2);
+  font-size: 1.75rem;
+}
+
+h2, .h2 {
+  margin: ($spacer * 4) 0 ($spacer * 2);
+  font-size: 1.5rem;
+  font-family: $font-family-02;
+  font-weight: $font-weight-bold-02;
+}
+
+h3, .h3 {
+  margin: ($spacer * 4) 0 ($spacer * 2);
+  font-size: 1.375rem;
+}
+
+h4, .h4 {
+  margin: ($spacer * 3) 0 ($spacer * 1.5);
+  font-size: 1.25rem;
+  font-family: $font-family-02;
+  font-weight: $font-weight-bold-02;
+}
+
+h5, .h5 {
+  margin: ($spacer * 3) 0 ($spacer * 1.5);
+  font-size: 1.125rem;
+}
+
+h6, .h6 {
+  margin: ($spacer * 3) 0 ($spacer * 1.5);
+  font-size: 1rem;
+  font-family: $font-family-02;
+  font-weight: $font-weight-bold-02;
+}
+
+
+// Utility
+// ----------------------------
+
+.clearfix {
+  &:after {
+    clear: both;
+    display: table;
+    content: " ";
+  }
+  &:before {
+    display: table;
+    content: " ";
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable {
+  &:active, &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+
+// Color
+// ----------------------------
+
+.text-muted {
+  color: $gray-light;
+}
+
+.text-primary {
+  color: $color-primary-text;
+}
+
+.text-secondary {
+  color: $color-secondary-text;
+}
+
+.text-important {
+  color: $color-important-text;
+}
+
+.text-danger {
+  color: $color-danger-text;
+}
+
+
+// Grid
+// ----------------------------
+
+.container {
+  @include make-container();
+
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      max-width: $container-max-width;
+    }
+  }
+}
+
+.container-fluid {
+  @include make-container();
+}
+
+.row {
+  @include make-row();
+}
+
+@include make-grid-columns();
+
+
+
+// Button
+// ----------------------------
+
+.btn {
+  font-family: $font-family-01;
+  font-weight: $font-weight-01;
+  border: $border-width solid transparent;
+  padding: $btn-padding-y $btn-padding-x;
+  font-size: $font-size-base;
+  line-height: $line-height-xs;
+  border-radius: $border-radius;
+
+  span#{&} {
+
+    &:hover,
+    &:focus {
+      cursor: default;
+    }
+
+  }
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+    }
+  }
+
+  &:hover,
+  &.hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    text-decoration: none;
+  }
+
+  &.disabled,
+  &:disabled,
+  fieldset[disabled] & {
+    cursor: default;
+    opacity: .65;
+  }
+}
+
+a.btn.disaabled,
+fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+
+.btn-primary {
+  @include button-variant(
+    $btn-primary-color,
+    $btn-primary-bg,
+    $btn-primary-border,
+    lighten($btn-primary-bg, 10%),
+    lighten($btn-primary-border, 10%),
+    lighten($btn-primary-bg, 10%),
+    lighten($btn-primary-border, 10%)
+  );
+
+  span#{&} {
+
+    &:hover,
+    &:focus {
+      background-color: $btn-primary-bg;
+    }
+
+  }
+
+}
+
+.btn-secondary {
+  @include button-variant(
+    $btn-secondary-color,
+    $btn-secondary-bg,
+    $btn-secondary-border,
+    lighten($btn-secondary-bg, 10%),
+    lighten($btn-secondary-border, 10%),
+    lighten($btn-secondary-bg, 10%),
+    lighten($btn-secondary-border, 10%)
+  );
+
+  span#{&} {
+
+    &:hover,
+    &:focus {
+      background-color: $btn-secondary-bg;
+    }
+
+  }
+
+}
+
+.btn-important {
+  @include button-variant(
+    $btn-important-color,
+    $btn-important-bg,
+    $btn-important-border,
+    lighten($btn-important-bg, 10%),
+    lighten($btn-important-border, 10%),
+    lighten($btn-important-bg, 10%),
+    lighten($btn-important-border, 10%)
+  );
+
+
+  span#{&} {
+
+    &:hover,
+    &:focus {
+      background-color: $btn-important-bg;
+    }
+
+  }
+
+}
+
+.btn-danger {
+  @include button-variant(
+    $btn-danger-color,
+    $btn-danger-bg,
+    $btn-danger-border,
+    lighten($btn-danger-bg, 10%),
+    lighten($btn-danger-border, 10%),
+    lighten($btn-danger-bg, 10%),
+    lighten($btn-danger-border, 10%)
+  );
+
+  span#{&} {
+
+    &:hover,
+    &:focus {
+      background-color: $btn-danger-bg;
+    }
+
+  }
+
+}
+
+.btn-sm {
+  padding: $btn-padding-y-sm $btn-padding-x-sm;
+  border-radius: border-radius-sm;
+}
+
+.btn-lg {
+  padding: $btn-padding-y-lg $btn-padding-x-lg;
+  border-radius: border-radius-lg;
+}
+
+.btn-xl {
+  padding: $btn-padding-y-xl $btn-padding-x-xl;
+  border-radius: border-radius-xl;
+}
+
+
+// Nav
+// ----------------------------
+
+.nav-vartical {
+
+  nav {
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0;
+        line-height: $line-height-sm;
+        letter-spacing: normal;
+        list-style-type: none;
+
+        a {
+          display: block;
+          padding: .5rem 1rem;
+          color: $gray-dark;
+          text-decoration: none;
+          
+          &:hover,
+          &.stay {
+            background-color: $faded-hover;
+            color: $gray-dark;
+            text-decoration: none;
+          }
+
+        }
+
+        ul {
+          padding-left: 1rem;
+        }
+
+      }
+
+    }
+
+  }
+  
+}
+
+.nav-horizontal {
+
+  nav {
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+    }
+
+    > ul {
+      letter-spacing: -.4rem;
+
+      > li {
+        position: relative;
+        display: inline-block;
+        line-height: $line-height-sm;
+        letter-spacing: normal;
+
+        a {
+          display: inline-block;
+          padding: .5rem 1rem;
+          color: $gray-dark;
+          text-decoration: none;
+          
+          &:hover,
+          &.stay {
+            background-color: $faded-hover;
+            color: $gray-dark;
+            text-decoration: none;
+          }
+
+        }
+
+        > ul {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          min-width: 100%;
+          max-width: 120%;
+
+          > li {
+            display: block;
+            border-style: solid;
+            border-width: 0 1px 1px;
+            border-color: transparent $gray-dark $gray-dark; 
+            
+            &:first-child {
+              border-top: 1px solid $gray-dark;
+            }
+
+            > a {
+              display: block;
+              width: 100%;
+              padding: .25rem 0;
+              text-align: center;
+            }
+
+          }
+          
+
+        }
+        
+        &:hover {
+
+          > ul {
+            display: block;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+  
+}
+
+
+// Label
+// ----------------------------
+
+.label {
+  display: inline-block;
+  margin-right: .5em;
+  padding: .25em .5rem;
+  background-color: rgba(255,255,255,.7);
+  font-size: $font-size-sm;
+  line-height: $line-height-xs;
+  color: $gray;
+  border: 1px solid $gray;
+}
+
+
+// Badge
+// ----------------------------
+
+.badge {
+  display: inline-block;
+  min-width: 2em;
+  margin-left: .5em;
+  padding: .25em;
+  font-size: $font-size-sm;
+  line-height: $line-height-xs;
+  color: #fff;
+  background-color: $gray-light;
+  text-align: center;
+  
+  .nav-horizontal ul li & {
+    float: right;
+  }
+
+}
+
+
+
+
+
+
+
+#header {
+  padding: 2rem;
+  border-style: solid;
+  border-width: 0 0 1px;
+  border-color: $gray-dark;
+
+  .header-logo {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+}
+
+.global-nav {
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: $gray-dark;
+  text-align: center;
+  
+  nav > ul > li > a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
+
+#main {
+  padding: 2rem;
+}
+
+#footer {
+  padding: 2rem 2rem 4rem;
+  border-style: solid;
+  border-width: 1px 0 0;
+  border-color: $gray-dark;
+  text-align: center;
+}
+
+
+.section {
+  margin: 0 0 4rem;
+
+  .section-header {
+    padding: 0 0 2rem;
+    @include clearfix();
+  }
+
+  .section-title {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .section-footer {
+    padding: 1rem 0 0;
+    @include clearfix();
+  }
+
+  .section-link {
+    margin: 0;
+    text-align: center;
+  }
+
+}
+
+
+.page-header {
+  margin: 0 0 2rem;
+  padding: 2rem $grid-gutter-width;
+  background: $gray-dark none no-repeat center center;
+  background-size: cover;
+  color: $gray-lightest;
+
+  .page-header-title {
+    margin: 0;
+    line-height: $line-height-sm;
+    color: $gray-lightest;
+    font-size: 1.375rem;
+    text-align: center;
+  }
+
+  .page-header-caption {
+    margin: 1rem 0 0;
+    line-height: $line-height-sm;
+    color: $gray-lighter;
+    font-size: 1rem;
+    text-align: center;
+  }
+	
+  &.page-header-light {
+    border-bottom: 1px solid $gray-dark;
+    background-color: transparent;
+    color: $gray-dark;
+
+    .page-header-title {
+      color: $gray-dark;
+    }
+
+    .page-header-caption {
+      color: $gray-light;
+    }
+
+  }
+
+}
+
+.archive-header {
+  margin: -2rem 0 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid $gray-dark;
+  text-align: center;
+
+  .archive-title {
+    margin: 0;
+  }
+
+}
+
+
+.post {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.summary {
+  display: block;
+  margin-bottom: $grid-gutter-width;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .35);
+  @include clearfix();
+  
+  .summary-img {
+    overflow: hidden;
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin: 0 2rem 0 0;
+    background-color: $gray-lightest;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+  .summary-cover {
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin: 0 2rem 0 0;
+    background: $gray-lightest none no-repeat center center;
+    background-size: cover;
+  }
+
+  .summary-body {
+    overflow: hidden;
+    line-height: $line-height;
+
+    time {
+      display: block;
+      margin: 0 0 .5rem;
+      font-size: .875rem;
+    }
+
+    p {
+      margin: 0 0 .5rem;
+      font-size: .875rem;
+    }
+
+  }
+
+  .summary-title {
+    font-size: 1.25rem;
+    margin: 0 0 .5rem;
+    line-height: $line-height;
+    word-break: break-all;
+  }
+
+  .summary-btn {
+    margin: 0;
+    text-align: right;
+    line-height: $line-height-xs;
+
+    .btn {
+      color: #fff;
+      background-color: $gray-light;
+      
+      a#{&}:hover {
+        color: #fff;
+        background-color: $gray-light;
+      }
+    }
+
+  }
+
+}
+
+
+.card {
+  position: relative;
+  margin-bottom: $grid-gutter-width;
+  background-color: $gray-dark;
+  color: $gray-lightest;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .35);
+
+  .card-cover {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: $gray-lightest none no-repeat center center;
+    background-size: cover;
+    z-index: 11;
+  }
+  
+  > a {
+    display: block;
+  }
+
+  a:not(.btn),
+  a:not(.label),
+  a:not(.badge) {
+    color: $gray-lightest;
+    
+    &:hover,
+    &:focus {
+      color: $gray-lightest;
+      text-decoration: none;
+    }
+
+  }
+
+  .card-contents {
+    position: relative;
+    padding: $spacer ($spacer * 2);
+    min-height: 150px;
+    line-height: $line-height;
+    z-index: 12;
+
+    time {
+      display: block;
+      margin: 0 0 .5rem;
+      font-size: .75rem;
+    }
+
+    p {
+      margin: 0 0 .5rem;
+      font-size: .75rem;
+    }
+
+  }
+
+  .card-new {
+    position: absolute;
+    margin: 0;
+    top: -3px;
+    right: $spacer;
+    line-height: $line-height-xs;
+    z-index: 13;
+
+    .badge {
+      background-color: $color-primary;
+      padding: $spacer;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
+    }
+
+  }
+
+  .card-title {
+    font-size: 1rem;
+    margin: 0 0 .5rem;
+    line-height: $line-height;
+    word-break: break-all;
+  }
+
+}
+
+.pager {
+  padding: ($spacer * 3) 0;
+  text-align: center;
+}
+
+.serial-nav {
+  padding: ($spacer * 3) 0;
+
+  nav {
+
+    ul {
+      width: 100%;
+      @include clearfix();
+
+      li.prev {
+        float: left;
+        width: 48%;
+      }
+
+      li.next {
+        float: left;
+        width: 48%;
+      }
+
+    }
+
+  }
+
+}
+
+.share {
+  margin: 0;
+  padding: ($spacer * 3) 0;
+  @include clearfix();
+
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: -.4rem;
+    line-height: $line-height-xs;
+
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 0 .5rem;
+      letter-spacing: normal;
+    }
+
+  }
+
+}
+
+

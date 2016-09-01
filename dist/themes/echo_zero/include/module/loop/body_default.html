@@ -1,0 +1,44 @@
+<!-- BEGIN notFound -->
+<p><em>このコンテンツは準備中です。</em></p>
+<!-- END notFound -->
+
+<!-- BEGIN entry:loop -->
+<article class="post<!-- BEGIN_IF [{entry:loop.class}/nem] --> {entry:loop.class}<!-- END_IF -->">
+
+	<!--#include file="/admin/entry/revision-info.html"-->
+
+	<!-- BEGIN_MODULE Touch_NotEdit -->
+	<div class="post-header">
+		<!-- BEGIN title:veil -->
+		<h2 class="post-header-title"><a href="{titleUrl}">{title}</a></h2>
+		<!-- END title:veil -->
+	</div><!-- /.post-header -->
+
+	<div class="post-contents entry-column">
+
+		<!-- BEGIN entryColumn:veil -->
+		<div class="row">
+			<!-- BEGIN unit:veil -->
+			<!--#include file="/include/unit.html"-->
+			<!-- END unit:veil -->
+		</div><!-- /.row -->
+		<!-- END entryColumn:veil -->
+
+	</div><!-- /.post-contents -->
+
+	<div class="post-footer">
+		<!--#include file="/include/parts/share.html"-->
+	</div><!-- /.post-footer -->
+
+	<!-- END_MODULE Touch_NotEdit -->
+
+	<!-- BEGIN adminEntryEdit -->
+	<!--#include file="/admin/entry/title.html"-->
+	<!--#include file="/admin/entry/edit.html"-->
+	<!--#include file="/admin/entry/add.html"-->
+	<!-- END adminEntryEdit -->
+
+	<!--#include file="/admin/entry/action.html"-->
+
+</article><!-- /.post -->
+<!-- END entry:loop -->

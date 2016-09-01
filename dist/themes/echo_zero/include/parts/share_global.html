@@ -1,0 +1,15 @@
+<!-- BEGIN_MODULE Touch_NotEdit -->
+<div class="share">
+	<ul>
+		<li class="share-twitter">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-size="large"<!-- BEGIN_MODULE Blog_Field id="global" --><!-- BEGIN_IF [{twitter_account}/nem] --> data-related="{twitter_account}"<!-- END_IF --><!-- END_MODULE Blog_Field -->>Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</li>
+		<li class="share-fblike">
+			<div class="fb-like" data-href="%{BLOG_URL}" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+		</li>
+		<li class="share-line">
+			<script type="text/javascript">new media_line_me.LineButton({"pc":true,"lang":"ja","type":"a","text":"<!-- BEGIN_MODULE Blog_Field id="global" -->{name}[urlencode]<!-- END_MODULE Blog_Field --> %{BLOG_URL}","withUrl":false});</script>
+		</li>
+	</ul>
+</div><!-- /.share -->
+<!-- END_MODULE Touch_NotEdit -->

@@ -1,0 +1,26 @@
+<!-- BEGIN_MODULE Sample:veil -->
+# =======================
+#
+# ページャー
+# モジュール内で呼び出す
+#
+#　var_pager
+#
+# =======================
+<!-- END_MODULE Sample:veil -->
+
+<!-- BEGIN_SetRendered id="var_pager" --><!-- END_SetRendered -->
+<!-- BEGIN_SetRendered id="var_pager" -->
+<!-- BEGIN pager:veil -->
+<div class="nav nav-horizontal pager">
+  <nav>
+      <ul>
+          <!-- BEGIN backLink --><li><a href="{url}" title="前の{backNum}件">&lsaquo;</a></li><!-- END backLink -->
+          <!-- BEGIN page:loop --><li{pageCurAttr}[raw]><a href="<!-- BEGIN link#front -->{url}<!-- END link#front -->" class="js-viewing-indelible">{page}<!-- BEGIN link#rear --></a><!-- END link#rear --></li><!-- END page:loop -->
+          <!-- BEGIN lastPage:veil --><li><span>...</span></li><li{pageCurAttr}[raw]><a href="{lastPageUrl}" class="js-viewing-indelible">{lastPage}</a></li><!-- END lastPage:veil -->
+          <!-- BEGIN forwardLink --><li><a href="{url}" title="次の{forwardNum}件">&rsaquo;</a></li><!-- END forwardLink -->
+      </ul>
+  </nav>
+</div><!-- /.nav -->
+<!-- END pager:veil -->
+<!-- END_SetRendered -->

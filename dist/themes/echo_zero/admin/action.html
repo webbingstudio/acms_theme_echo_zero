@@ -1,0 +1,170 @@
+<!-- BEGIN_MODULE Admin_ActionMenu -->
+<style>
+/* ウィンドウの上端に配置している場合 */
+#adminBox {
+	margin-bottom: 0;
+}
+
+#adminBox .acms-admin-btn {
+	min-width: 8em;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+	font-size: .875rem;
+}
+#adminBox .acms-admin-btn-admin {
+	font-size: .875rem;
+}
+#adminBox .acms-adminbox-inner {
+	background-color: #fff;
+	padding: 10px 10px 5px;
+	margin-bottom: 10px;
+}
+#adminBox .acms-adminbox-inner .acms-adminbox-inner-label {
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+</style>
+
+<div id="adminMinBox" class="clearfix js-dragAdminBox_disable minBox">
+	<span class="dragBoxHandle"><i class="acms-admin-icon-sort"></i></span>
+	<span class="dragBoxToggle"><i class="acms-admin-icon-arrow-down"></i></span>
+</div>
+
+<div id="adminBox" class="clearfix js-dragAdminBox_disable normalBox">
+	<div id="loginUserStatus">
+		<img src="%{ARCHIVES_DIR}{icon}" width="20" height="20" class="acms-admin-user-icon" />{name}
+		<span class="acms-admin-label"><a href="/bid/%{SBID}/uid/%{SUID}/admin/user_edit/">プロフィール</a></span><!-- BEGIN approval -->
+		<div class="acms-admin-label-approval-group"><a href="{url}">承認通知</a>&nbsp;<span class="acms-admin-badge acms-admin-badge-approval">{badge}</span></div><!-- END approval --><!-- BEGIN_MODULE Touch_Debug -->
+		&nbsp;<span class="acms-admin-label acms-admin-label-danger"><a href="/bid/%{SBID}/admin/checklist/">デバッグモード</a></span>&nbsp;現在表示中のテンプレート：%{ROOT_TPL}<!-- END_MODULE Touch_Debug --><!-- BEGIN status#trial -->
+		/ <strong>トライアル版 有効期限</strong> : {expire}<!-- END status#trial --><!-- BEGIN status#limited -->
+		/ <strong>期間限定ライセンス</strong> : {expire}<!-- END status#limited --><!-- BEGIN status#usersover -->
+		/ <strong>登録されているユーザー数が上限を超えているため、ライセンスが無効になっています。</strong><!-- END status#usersover --><!-- BEGIN status#illegal -->
+		/ <strong>データベースのタイムスタンプが不正であるため、ライセンスが無効になっています。</strong> : {expire}<!-- END status#illegal --><!-- BEGIN status#endtrial -->
+		/ トライアル期間が終了しました : 継続利用のご案内 => [ <a href="http://www.a-blogcms.jp/license/" title="ライセンス体系のページ">商用・法人向けのご利用</a> / <a href="http://www.a-blogcms.jp/license/lite.html" title="ライトライセンスお申し込みのページ">ライトライセンスのご利用</a> ]<!-- END status#endtrial -->
+
+		<span class="dragBoxHandle" style="display:none;"><i class="acms-admin-icon-sort"></i></span>
+		<span class="dragBoxToggle" style="display:none;"><i class="acms-admin-icon-arrow-up"></i></span>
+	</div>
+
+	<div class="acms-admin-grid-r">
+		<div class="acms-admin-col-md-6">
+
+			<!-- BEGIN insert -->
+			<div class="acms-adminbox-inner clearfix">
+				<div class="acms-adminbox-inner-label">エントリーの作成</div>
+
+				<form action="" method="post" class="acms-admin-inline-btn">
+					<input type="submit" name="ACMS_POST_2GET" value="カテゴリー名" class="acms-admin-btn" />
+					<input type="hidden" name="admin" value="entry-edit" />
+					<input type="hidden" name="bid" value="%{BID}" />
+					<input type="hidden" name="cid" value="9999" />
+				</form>
+
+				<form action="" method="post" class="acms-admin-inline-btn">
+					<input type="submit" name="ACMS_POST_2GET" value="子ブログ名" class="acms-admin-btn" />
+					<input type="hidden" name="admin" value="entry-edit" />
+					<input type="hidden" name="bid" value="9999" />
+					<input type="hidden" name="cid" value="" />
+				</form>
+
+				<form action="" method="post" class="acms-admin-inline-btn">
+					<input type="submit" name="ACMS_POST_2GET" value="その他" class="acms-admin-btn" />
+					<input type="hidden" name="admin" value="entry-edit" />
+					<input type="hidden" name="bid" value="%{BID}" />
+					<input type="hidden" name="cid" value="" />
+				</form>
+
+				<div class="acms-admin-text-success" style="clear:both; font-size: 90%;">既存エントリーの編集は、各ページへ移動してください。</div>
+
+			</div>
+			<!-- END insert -->
+
+		</div>
+
+		<div class="acms-admin-col-md-6">
+			<div class="acms-adminbox-inner clearfix">
+
+				<!-- BEGIN_MODULE Touch_Entry -->
+				<!-- BEGIN_MODULE Touch_SessionWithContribution -->
+
+				<!-- BEGIN_MODULE Touch_NotEditInplace -->
+				<!-- BEGIN_MODULE Touch_NotApprovalORsessionWithApprovalAdministrator -->
+				<form action="" method="post" class="acms-admin-inline-btn">
+					<input type="hidden" name="acms_config_entry_edit_inplace_enable" value="on" />
+					<input type="hidden" name="cookie[]" value="acms_config_entry_edit_inplace_enable" />
+					<input type="submit" name="ACMS_POST_Cookie" value="ダイレクト編集ON" class="acms-admin-btn-admin" />
+				</form>
+				<!-- END_MODULE Touch_NotApprovalORsessionWithApprovalAdministrator -->
+				<!-- END_MODULE Touch_NotEditInplace -->
+
+				<!-- BEGIN_MODULE Touch_EditInplace -->
+				<form action="" method="post" class="acms-admin-inline-btn">
+					<input type="hidden" name="acms_config_entry_edit_inplace_enable" value="off" />
+					<input type="hidden" name="cookie[]" value="acms_config_entry_edit_inplace_enable" />
+					<input type="submit" name="ACMS_POST_Cookie" value="ダイレクト編集OFF" class="acms-admin-btn-admin" />
+				</form>
+				<!-- END_MODULE Touch_EditInplace -->
+
+				<!-- END_MODULE Touch_SessionWithContribution -->
+				<!-- END_MODULE Touch_Entry -->
+
+				<!--
+				<div class="acms-admin-inline-btn">
+					<a href="%{HOME_URL}docs/" class="acms-admin-btn-admin">スタイルガイド</a>
+				</div>
+				-->
+
+				<!-- BEGIN_MODULE Touch_SessionWithAdministration -->
+
+				<div class="acms-admin-inline-btn">
+				<a href="%{SCRIPT_ROOT}/bid/%{BCD}/admin/blog_edit/#acms_custom" class="acms-admin-btn-admin">%{BLOG_NAME}の設定</a>
+				</div>
+
+				<!--
+				<div class="acms-admin-inline-btn">
+				<a href="%{SCRIPT_ROOT}/bid/1/admin/blog_edit/#acms_custom" class="acms-admin-btn-admin">サイト全体の設定</a>
+				</div>
+				-->
+
+				<!--
+				<div class="acms-admin-box-medium">
+					<form action="" method="post" class="acms-admin-inline-btn">
+						<input type="submit" name="ACMS_POST_2GET" value="フォームの管理" class="acms-admin-btn-admin" />
+						<input type="hidden" name="admin" value="form_index" />
+						<input type="hidden" name="bid" value="%{BID}" />
+					</form>
+				</div>
+				-->
+
+				<!-- END_MODULE Touch_SessionWithAdministration -->
+
+				<!-- BEGIN pingUpdate -->
+				<form action="" method="post" class="acms-admin-inline-btn"><!-- BEGIN ping_weblog_updates_endpoint:loop -->
+					<input type="hidden" name="ping_weblog_updates_endpoint[]" value="{ping_weblog_updates_endpoint}" /><!-- END ping_weblog_updates_endpoint:loop -->
+					<input type="hidden" name="pingUpdate[]" value="ping_weblog_updates_endpoint" /><!-- BEGIN ping_weblog_updates_extended_endpoint:loop -->
+					<input type="hidden" name="ping_weblog_updates_extended_endpoint[]" value="{ping_weblog_updates_extended_endpoint}" /><!-- END ping_weblog_updates_extended_endpoint:loop -->
+					<input type="hidden" name="pingUpdate[]" value="ping_weblog_updates_extended_endpoint" />
+					<input type="hidden" name="pingUpdateTpl" value="/rpc/weblog-updates-ping.xml" />
+					<input type="hidden" name="pingUpdate[]" value="pingUpdateTpl" />
+					<input type="submit" name="ACMS_POST_PingWeblogUpdate" value="Ping送信" class="acms-admin-btn-admin" />
+				</form><!-- END pingUpdate -->
+
+				<!-- BEGIN_MODULE Touch_SessionWithAdministration -->
+				<form action="" method="post" class="acms-admin-inline-btn">
+					<input type="submit" name="ACMS_POST_2GET" value="管理ページ" class="acms-admin-btn-admin" />
+					<input type="hidden" name="admin" value="top" />
+					<input type="hidden" name="bid" value="%{BID}" />
+				</form>
+				<!-- END_MODULE Touch_SessionWithAdministration -->
+
+				<form action="" method="post" class="acms-admin-inline-btnn">
+					<input type="submit" name="ACMS_POST_Logout" value="ログアウト" class="acms-admin-btn-admin acms-admin-btn-admin-primary" />
+				</form>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- END_MODULE Admin_ActionMenu -->

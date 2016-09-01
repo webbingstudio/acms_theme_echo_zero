@@ -1,0 +1,42 @@
+<!-- BEGIN_MODULE Sample:veil -->
+# =======================
+#
+# カテゴリー以外のインデックスに関する変数
+#
+# var_meta_robots
+# var_meta_pubdate
+# var_meta_title_text
+# var_meta_description
+# var_meta_image
+#
+# =======================
+<!-- END_MODULE Sample:veil -->
+
+<!-- BEGIN_SetRendered id="var_meta_pubdate" -->%{c}<!-- END_SetRendered -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+## title要素ここから ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_SetRendered id="var_meta_title_text" -->
+<!-- BEGIN_MODULE Touch_Tag -->タグ: <!-- BEGIN_MODULE Tag_Filter --><!-- BEGIN selected:loop -->{name}<!-- BEGIN glue -->・<!-- END glue --><!-- END selected:loop --><!-- END_MODULE Tag_Filter --> | <!-- END_MODULE Touch_Tag -->
+<!-- BEGIN_IF [%{KEYWORD}/nem/] -->検索結果: %{KEYWORD} | <!-- END_IF -->
+<!-- BEGIN_IF [%{DATE}/nem/] -->アーカイブ: %{DATE} | <!-- END_IF -->
+<!-- BEGIN_MODULE Touch_Category -->%{CATEGORY_NAME} | <!-- END_MODULE Touch_Category -->%{BLOG_NAME}
+<!-- BEGIN_IF [%{PAGE}/neq/1] --> (%{PAGE})<!-- END_IF -->
+<!-- END_SetRendered -->
+<!-- BEGIN_MODULE Sample:veil -->
+## title要素ここまで ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+## var_meta_image ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_SetRendered id="var_meta_image" -->
+<!-- BEGIN_MODULE Blog_Field id="global" -->
+<!-- BEGIN_IF [{ogp_image@path}/nem] -->
+%{HTTP_ARCHIVES_DIR}{ogp_image@path}
+<!-- ELSE -->
+http://capture.heartrails.com/400x300?%{BLOG_URL}
+<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->
+<!-- END_SetRendered -->

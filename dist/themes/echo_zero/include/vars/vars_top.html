@@ -1,0 +1,53 @@
+<!-- BEGIN_MODULE Sample:veil -->
+# =======================
+#
+# ブログトップページに関する変数
+#
+#　var_meta_pubdate
+#　var_meta_title_text
+#　var_meta_description
+#　var_meta_image
+#
+# =======================
+<!-- END_MODULE Sample:veil -->
+
+<!-- BEGIN_SetRendered id="var_meta_pubdate" -->%{c}<!-- END_SetRendered -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+## var_meta_title_text ここから ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_SetRendered id="var_meta_title_text" -->
+
+<!-- BEGIN_MODULE Blog_Field -->
+<!-- BEGIN_MODULE Sample:veil -->
+### title要素の指定がある場合はウェブサイト名の表示を無視する
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_IF [{blog_meta_title}/nem] -->{blog_meta_title}<!-- ELSE -->%{BLOG_NAME}<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->
+
+<!-- END_SetRendered -->
+<!-- BEGIN_MODULE Sample:veil -->
+## var_meta_title_text ここまで ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+## var_meta_description ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_SetRendered id="var_meta_description" -->
+<!-- BEGIN_MODULE Blog_Field -->
+<!-- BEGIN_IF [{blog_meta_description}/nem] -->{blog_meta_description}<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->
+<!-- END_SetRendered -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+## var_meta_image ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_SetRendered id="var_meta_image" -->
+<!-- BEGIN_MODULE Blog_Field id="global" -->
+<!-- BEGIN_IF [{ogp_image@path}/nem] -->
+%{HTTP_ARCHIVES_DIR}{ogp_image@path}
+<!-- ELSE -->
+http://capture.heartrails.com/400x300?%{BLOG_URL}
+<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->
+<!-- END_SetRendered -->

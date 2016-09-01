@@ -1,0 +1,157 @@
+<!-- BEGIN unit:loop --><!-- BEGIN unitGroup#rear -->
+<!-- /.acms-entry-unit-full --></div><!-- END unitGroup#rear --><!-- BEGIN unitGroup#front -->
+<div class="js-unit_group-align acms-entry-unit-full {class}"><!-- END unitGroup#front --><!-- BEGIN inplace#front --><!-- BEGIN_MODULE Touch_SessionWithCompilation -->
+<div class="js-edit_inplace align_{unit:loop.align}" data-align="{unit:loop.align}[align2label]" id="{unit:loop.unit_eid}-{unit:loop.utid}"><!-- END_MODULE Touch_SessionWithCompilation --><!-- END inplace#front -->
+<!-- BEGIN clear --><div class="clearfix"></div><!-- END clear -->
+
+<!-- BEGIN unit#text --><!-- テキスト -->
+<!-- BEGIN p -->
+<div class="entry-container"><p{class}>{text}[nl2br]</p></div><!-- END p --><!-- BEGIN h2 -->
+<div class="entry-container"><h2{class} <!-- BEGIN_IF [{extend_tag}/nem] -->id="{extend_tag}"<!-- END_IF -->>{text}[nl2br]</h2></div><!-- END h2 --><!-- BEGIN h3 -->
+<div class="entry-container"><h3{class} <!-- BEGIN_IF [{extend_tag}/nem] -->id="{extend_tag}"<!-- END_IF -->>{text}[nl2br]</h3></div><!-- END h3 --><!-- BEGIN h4 -->
+<div class="entry-container"><h4{class} <!-- BEGIN_IF [{extend_tag}/nem] -->id="{extend_tag}"<!-- END_IF -->>{text}[nl2br]</h4></div><!-- END h4 --><!-- BEGIN h5 -->
+<div class="entry-container"><h5{class} <!-- BEGIN_IF [{extend_tag}/nem] -->id="{extend_tag}"<!-- END_IF -->>{text}[nl2br]</h5></div><!-- END h5 --><!-- BEGIN h6 -->
+<div class="entry-container"><h6{class} <!-- BEGIN_IF [{extend_tag}/nem] -->id="{extend_tag}"<!-- END_IF -->>{text}[nl2br]</h6></div><!-- END h6 --><!-- BEGIN ul -->
+<div class="entry-container"><ul{class}>{text}[list]</ul></div><!-- END ul --><!-- BEGIN ol -->
+<div class="entry-container"><ol{class}>{text}[list]</ol></div><!-- END ol --><!-- BEGIN dl -->
+<div class="entry-container"><dl{class}>{text}[definition_list]</dl></div><!-- END dl --><!-- BEGIN blockquote -->
+<div class="entry-container"><blockquote{class}>{text}[nl2br]</blockquote></div><!-- END blockquote --><!-- BEGIN table -->
+<div class="entry-container"><table{class}>{text}[table]</table></div><!-- END table --><!-- BEGIN pre -->
+<div class="entry-container"><pre{class}>{text}</pre></div><!-- END pre --><!-- BEGIN none -->
+{text}[raw]<!-- END none --><!-- BEGIN markdown -->
+<div class="entry-container">{text}[markdown]</div><!-- END markdown --><!-- BEGIN wysiwyg -->
+<div class="entry-container">{text}[raw]</div><!-- END wysiwyg -->
+
+<!--#include file="/include/unit/tag-select.html"-->
+
+<!-- END unit#text -->
+<!-- BEGIN unit#image -->
+
+<!-- 画像 -->
+<div class="column-image-{align} pull-{align} {display_size_class}"{display_size}[raw]>
+	<div class="entry-container"><!-- BEGIN link#front -->
+		<a href="{url}"{viewer}[raw]><!-- END link#front -->
+			<img class="columnImage" src="%{ROOT_DIR}{path}" alt="{alt}" width="{x}" height="{y}"><!-- BEGIN link#rear -->
+		</a><!-- END link#rear --><!-- BEGIN caption:veil -->
+		<p class="caption">{caption}</p><!-- END caption:veil -->
+	</div>
+</div><!-- END unit#image --><!-- BEGIN unit#file -->
+
+<!-- ファイル -->
+<div class="column-file-{align} pull-{align}">
+	<div class="entry-container">
+		<a href="%{HTTP_ROOT}{path}"><img class="columnIcon" src="%{ROOT_DIR}{icon}" alt="ファイルイメージ" width="{x}" height="{y}"></a>
+		<!-- BEGIN caption:veil --><p class="caption">{caption}</p><!-- END caption:veil -->
+	</div>
+</div><!-- END unit#file --><!-- BEGIN unit#map -->
+
+<!-- 地図 -->
+<div class="column-map-{align} pull-{align}{display_size_class}"{display_size}[raw]>
+	<div class="entry-container">
+		<img class="js-s2d-ready" src="{proxy}http://maps.google.com/maps/api/staticmap?center={lat},{lng}&zoom={zoom}&size={x}x{y}&maptype=roadmap&markers={lat},{lng}&sensor=false" alt="{msg}" width="{x}" height="{y}">
+	</div>
+</div><!-- END unit#map --><!-- BEGIN unit#yolp -->
+
+<!-- yahoo地図 -->
+<div class="column-yolp-{align} pull-{align}{display_size_class}"{display_size}[raw]>
+	<div class="entry-container">
+		<img src="{proxy}http://map.olp.yahooapis.jp/OpenLocalPlatform/V1/static?appid=%{YAHOO_API_KEY}&lat={lat}&lon={lng}&z={zoom}&width={x}&height={y}&pin={lat},{lng},,red&mode={mode}&style={style}" alt="yahoo map" width="{x}" height="{y}" title="クリックで地図が動かせるようになります。">
+	</div>
+</div><!-- END unit#yolp --><!-- BEGIN unit#youtube -->
+
+<!-- YouTube -->
+<div class="column-youtube-{align} pull-{align}{display_size_class}"{display_size}[raw]>
+	<div class="entry-container">
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" width="{x}" height="{y}" src="https://www.youtube.com/embed/{youtubeId}?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div><!-- END unit#youtube --><!-- BEGIN unit#video -->
+
+<!-- Video -->
+<div class="column-video-{align} pull-{align}{display_size_class}"{display_size}[raw]>
+	<div class="entry-container">
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" width="{x}" height="{y}" src="https://www.youtube.com/embed/{videoId}?wmode=transparent" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
+<!-- END unit#video --><!-- BEGIN unit#eximage -->
+
+<!-- 画像URL -->
+<div class="column-eximage-{align} pull-{align}{display_size_class}"{display_size}[raw]>
+	<div class="entry-container">
+		<!-- BEGIN link#front --><a href="{url}"{viewer}[raw]><!-- END link#front -->
+			<img class="columnImage" src="{normal}" alt="{alt}" width="{x}" height="{y}">
+		<!-- BEGIN link#rear --></a><!-- END link#rear -->
+		<!-- BEGIN caption:veil --><p class="caption">{caption}</p><!-- END caption:veil -->
+	</div>
+</div>
+<!-- END unit#eximage --><!-- BEGIN unit#media -->
+
+<!-- media -->
+<div class="column-media-{align} pull-{align}{display_size_class}"{display_size}[raw]>
+	<div class="entry-container"><!-- BEGIN type#image -->
+		<!-- BEGIN link#front -->
+		<a href="{url}"{viewer}[raw]><!-- END link#front -->
+			<img class="columnImage" src="%{ROOT_DIR}{path}" alt="{alt}" width="{x}"><!-- BEGIN link#rear -->
+		</a><!-- END link#rear --><!-- BEGIN caption:veil -->
+		<p class="caption">{caption}</p><!-- END caption:veil --><!-- BEGIN text:veil -->
+		<p class="">{text}</p><!-- END text:veil -->
+
+		<!-- END type#image --><!-- BEGIN type#file -->
+
+		<a href="%{HTTP_ROOT}{path}"><!-- BEGIN_IF [{thumbnail}/nem/] -->
+		<img class="columnIcon" src="%{HTTP_ARCHIVES_DIR}{thumbnail}" alt="ファイルイメージ" width="{x}" height="{y}"><!-- ELSE -->
+		<img class="columnIcon" src="%{ROOT_DIR}{icon}" alt="ファイルイメージ" width="{x}" height="{y}"><!-- END_IF -->
+		</a><!-- BEGIN caption:veil -->
+		<p class="caption">{caption}</p><!-- END caption:veil --><!-- BEGIN text:veil -->
+		<p class="">{text}</p><!-- END text:veil -->
+		<!-- END type#file -->
+	</div>
+</div>
+<!-- END unit#media --><!-- BEGIN unit#quote -->
+
+<!-- 引用 -->
+<div class="entry-container">
+	<div class="column-quote-{align} pull-{align}"{display_size}[raw]>
+		<!-- BEGIN html:veil -->
+		{quote_html}[raw]<!-- END html:veil --><!-- BEGIN_IF [{quote_title}/nem/] -->
+		<blockquote class="js-biggerlink"><!-- BEGIN image:veil -->
+			<div class="quoteImageContainer">
+				<img src="{quote_image}" class="quoteImage" width="154" alt="">
+			</div><!-- END image:veil -->
+			<div>
+				<p class="quoteTitle"><a href="{quote_url}" class="quoteTitleLink">{quote_title}</a></p><!-- BEGIN description:veil --><!-- BEGIN site_name:veil -->
+				<p class="quoteSiteName">{quote_site_name}</p><!-- END site_name:veil -->
+				<p class="quoteDescription">{quote_description}[trim(180, '...')]</p><!-- END description:veil -->
+			</div>
+			<hr class="clearHidden">
+		</blockquote><!-- END_IF -->
+	</div>
+</div>
+<!-- END unit#quote --><!-- BEGIN unit#module -->
+
+<!-- モジュール -->
+<div class="entry-container">
+	<div class="column-module">
+	{view}[raw]
+	</div>
+</div>
+<!-- END unit#module --><!-- BEGIN unit#break -->
+
+<!-- 改ページ -->
+<!-- {label} -->
+
+<!-- END unit#break --><!-- BEGIN unit#custom -->
+
+<!-- カスタム -->
+<!--#include file="/include/unit/custom.html"-->
+<!-- END unit#custom -->
+
+<!--#include file="/include/unit/extend.html"-->
+
+<!-- BEGIN inplace#rear --><!-- BEGIN_MODULE Touch_SessionWithCompilation --></div><!-- END_MODULE Touch_SessionWithCompilation --><!-- END inplace#rear -->
+<!-- BEGIN unitGroup#last --><!-- /.acms-entry-unit-full .last --></div><!-- END unitGroup#last -->
+
+<!-- END unit:loop -->

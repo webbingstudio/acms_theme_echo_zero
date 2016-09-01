@@ -1,0 +1,36 @@
+<!-- BEGIN_MODULE Sample:veil -->
+# =======================
+#
+# 共通変数
+#
+# var_body_class
+# var_meta_title_suffix
+#
+# =======================
+<!-- END_MODULE Sample:veil -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+## var_meta_title_suffix ----------------------------------------
+## title要素の接尾辞
+## マルチサイトが有効になっていれば、子ブログに親ブログ名を付与する
+<!-- END_MODULE Sample:veil -->
+
+<!-- BEGIN_MODULE Blog_Field id="global" -->
+<!-- BEGIN_SetRendered id="var_meta_title_suffix" -->
+<!-- BEGIN_IF [{name}/neq/%{BLOG_NAME}] --> | {name}<!-- END_IF -->
+<!-- END_SetRendered -->
+<!-- END_MODULE Blog_Field -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+## var_body_class ----------------------------------------
+## body要素に付与するクラス名
+## 改行を入れて読みやすくするため変数としています
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_SetRendered id="var_body_class" -->
+view-%{VIEW}
+<!-- BEGIN_IF [%{BID}/neq/1] --> %{BCD}<!-- END_IF -->
+<!-- BEGIN_MODULE Touch_Category --> %{CCD}<!-- BEGIN_IF [%{CCD}/neq/%{RCCD}] --> %{RCCD}<!-- END_IF --><!-- END_MODULE Touch_Category -->
+<!-- BEGIN_MODULE Touch_Login --> view-login<!-- END_MODULE Touch_Login -->
+<!-- BEGIN_MODULE Touch_Edit --> view-edit<!-- END_MODULE Touch_Edit -->
+<!-- BEGIN_MODULE Touch_SessionWithContribution --> view-contribution<!-- END_MODULE Touch_SessionWithContribution -->
+<!-- END_SetRendered -->

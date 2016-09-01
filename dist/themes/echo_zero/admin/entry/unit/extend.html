@@ -1,0 +1,104 @@
+<style>
+.acms-admin-ex-notice {
+	margin: 5px 0;
+	padding: 5px;
+	background-color: #f9f9f9;
+	color: #390;
+	font-size: .75rem;
+	line-height: 1.25;
+}
+</style>
+<!-- BEGIN custom_spacer -->
+<table class="entryFormColumnSettingTable entryFormColumnTable">
+	<tr>
+		<td class="entryFormFileControl">
+			<table class="entryFormColumnSettingTable">
+
+				<tr>
+					<th>余白の大きさ</th>
+					<td>
+						<label class="acms-admin-form-radio"><input type="radio" name="spacer_size{id}" value="p-t"{spacer_size:checked#p-t} /><i class="acms-admin-ico-radio"></i>小（1行分）</label>
+						<label class="acms-admin-form-radio"><input type="radio" name="spacer_size{id}" value="p-t-md"{spacer_size:checked#p-t-md} /><i class="acms-admin-ico-radio"></i>中（2行分）</label>
+						<label class="acms-admin-form-radio"><input type="radio" name="spacer_size{id}" value="p-t-xl"{spacer_size:checked#p-t-xl} /><i class="acms-admin-ico-radio"></i>大（4行分）</label>
+						<input type="hidden" name="unit{id}[]" value="spacer_size{id}" />
+					</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END custom_spacer -->
+
+<!-- BEGIN custom_button -->
+<table class="entryFormColumnSettingTable entryFormColumnTable">
+	<tr>
+		<td class="entryFormFileControl">
+			<table class="entryFormColumnSettingTable">
+
+				<tr>
+					<th>リンク先URL</th>
+					<td>
+						<input type="text" name="button_url{id}" value="{button_url}" class="acms-admin-form-width-full">
+						<input type="hidden" name="unit{id}[]" value="button_url{id}" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>表示する文字</th>
+					<td>
+						<input type="text" name="button_label{id}" value="{button_label}" class="acms-admin-form-width-full">
+						<input type="hidden" name="unit{id}[]" value="button_label{id}" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>サイズ</th>
+					<td>
+						<label class="acms-admin-form-radio"><input type="radio" name="button_size{id}" value=""<!-- BEGIN_IF [{button_size}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>小</label>
+						<label class="acms-admin-form-radio"><input type="radio" name="button_size{id}" value="btn-lg"{button_size:checked#btn-lg} /><i class="acms-admin-ico-radio"></i>中</label>
+						<label class="acms-admin-form-radio"><input type="radio" name="button_size{id}" value="btn-xl"{button_size:checked#btn-xl} /><i class="acms-admin-ico-radio"></i>大</label>
+						<input type="hidden" name="unit{id}[]" value="button_size{id}" />
+
+						<label class="acms-admin-form-checkbox" for="input-button_block{id}">
+						<input type="checkbox" name="button_block{id}[]" value="1" id="input-button_block{id}"{button_block:checked#1} />
+						<i class="acms-admin-ico-checkbox"></i>幅を広げる
+						</label>
+						<input type="hidden" name="unit{id}[]" value="button_block{id}" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>カラー</th>
+					<td>
+						<select name="button_color{id}">
+							<option value="btn-primary"{button_color:selected#btn-primary}>primary</option>
+							<option value="btn-secondary"{button_color:selected#btn-secondary}>secondary</option>
+							<option value="btn-success"{button_color:selected#btn-success}>success</option>
+							<option value="btn-info"{button_color:selected#btn-info}>info</option>
+							<option value="btn-warning"{button_color:selected#btn-warning}>warning</option>
+							<option value="btn-danger"{button_color:selected#btn-danger}>danger</option>
+						</select>
+						<input type="hidden" name="unit{id}[]" value="button_color{id}" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>ターゲット</th>
+					<td>
+						<select name="button_target{id}">
+							<option value=""<!-- BEGIN_IF [{button_target}/em] --> selected="selected"<!-- END_IF -->>指定しない</option>
+							<option value="_self"{button_target:selected#_self}>_self</option>
+							<option value="_blank"{button_target:selected#_blank}>_blank</option>
+						</select>
+						<input type="hidden" name="unit{id}[]" value="button_target{id}" />
+
+						<p class="acms-admin-ex-notice">ドメインが異なるURLは、自動的に別ウィンドウでの移動となります。別ウィンドウにしたくないときは「_self」を指定してください。</p>
+					</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END custom_button -->

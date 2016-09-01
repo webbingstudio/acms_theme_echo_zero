@@ -1,0 +1,18 @@
+<meta property="og:type" content="article">
+
+<title><!-- GET_Rendered id="var_meta_title_text" trim="1" --><!-- GET_Rendered id="var_meta_title_suffix" trim="1" --></title>
+<meta property="og:title" content="<!-- GET_Rendered id="var_meta_title_text" trim="1" --><!-- GET_Rendered id="var_meta_title_suffix" trim="1" -->">
+
+<!-- BEGIN_MODULE Blog_Field id="global" -->
+<!-- BEGIN_IF [{twitter_account}/nem] -->
+<!-- BEGIN_MODULE Sample:veil -->
+## twitter:descriptionは空にできないため、便宜上タイトルを指定する -------------------
+<!-- END_MODULE Sample:veil -->
+<meta name="twitter:title" content="<!-- GET_Rendered id="var_meta_title_text" trim="1" --><!-- GET_Rendered id="var_meta_title_suffix" trim="1" -->">
+<meta name="twitter:description" content="<!-- GET_Rendered id="var_meta_title_text" trim="1" --><!-- GET_Rendered id="var_meta_title_suffix" trim="1" -->">
+<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->
+
+<!-- BEGIN_IF [%{CATEGORY_NAME}/nem] -->
+<meta property="article:section" content="%{CATEGORY_NAME}">
+<!-- END_IF -->

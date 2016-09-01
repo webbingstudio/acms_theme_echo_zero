@@ -1,0 +1,149 @@
+// Colors
+// -----------------------------------------
+
+$gray-dark:                 #333333 !default;
+$gray:                      #666666 !default;
+$gray-light:                #999999 !default;
+$gray-lighter:              #cccccc !default;
+$gray-lightest:             #eeeeee !default;
+
+$color-primary:             #4499ee !default;
+$color-primary-text:        #2288bb !default;
+$color-secondary:           $gray-dark !default;
+$color-secondary-text:      $gray-dark !default;
+$color-important:           #dd3944 !default;
+$color-important-text:      #dd2200 !default;
+
+$color-danger:              $color-important !default;
+$color-danger-text:         $color-important-text !default;
+
+$faded:                     $gray-lightest !default;
+$faded-primary:             #e3f3ff !default;
+$faded-important:           #ffe9ee !default;
+$faded-hover:               $gray-lightest !default;
+
+
+$body-bg:                   white !default;
+$body-color:                $gray-dark !default;
+
+
+// Buttons
+// -----------------------------------------
+
+$btn-primary-color:          white !default;
+$btn-primary-bg:             $color-primary !default;
+$btn-primary-border:         $color-primary !default;
+
+$btn-secondary-color:        $color-secondary !default;
+$btn-secondary-bg:           white !default;
+$btn-secondary-border:       $color-secondary !default;
+
+$btn-important-color:        white !default;
+$btn-important-bg:           $color-important !default;
+$btn-important-border:       $color-important !default;
+
+$btn-danger-color:           white !default;
+$btn-danger-bg:              $color-danger !default;
+$btn-danger-border:          $color-danger !default;
+
+$btn-padding-x-sm:           .5rem !default;
+$btn-padding-y-sm:           .25rem !default;
+
+$btn-padding-x:              1rem !default;
+$btn-padding-y:              .5rem !default;
+
+$btn-padding-x-lg:           1.5rem !default;
+$btn-padding-y-lg:           .75rem !default;
+
+$btn-padding-x-xl:           2rem !default;
+$btn-padding-y-xl:           1rem !default;
+
+
+// Typography
+// -----------------------------------------
+
+// Fonts
+$font-family-base:          'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif !default;
+$font-weight:               300 !default;
+$font-weight-bold:          700 !default;
+
+$font-family-sans:          'Avenir', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Verdana', 'Roboto', sans-serif !default;
+$font-family-mono:          'Consolas', 'Liberation Mono', 'Menlo', 'Courier', monospace !default;
+
+// Design fonts
+$font-family-01:            '游ゴシック', 'YuGothic', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-weight-01:            400 !default;
+$font-weight-bold-01:       $font-weight-bold !default;
+// $font-family-02:            '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', "HGS明朝E", 'ＭＳ Ｐ明朝', 'MS PMincho', serif !default;
+$font-family-02:            '游ゴシック', 'YuGothic', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-weight-02:            400 !default;
+$font-weight-bold-02:       $font-weight-bold !default;
+
+$font-size-base:            1rem !default;
+$font-size-xs:              .6875rem !default;
+$font-size-sm:              .75rem !default;
+$font-size-lg:              1.25rem !default;
+$font-size-xl:              1.5rem !default;
+
+$line-height:               1.5 !default;
+$line-height-sm:            1.25 !default;
+$line-height-xs:            1 !default;
+
+
+// Links
+// -----------------------------------------
+
+$link-color:                 $color-primary-text !default;
+$link-hover-color:           $color-primary !default;
+$link-hover-decoration:      underline !default;
+
+
+// Border
+// -----------------------------------------
+
+$border-width:               1px !default;
+$border-color:               $gray-lighter !default;
+
+
+// Radius
+// -----------------------------------------
+
+$border-radius-sm:       .25rem;
+$border-radius:          .375rem;
+$border-radius-lg:       .5rem;
+$border-radius-xl:       .75rem;
+
+
+// Grid
+// -----------------------------------------
+
+$grid-breakpoints: (
+  // More Extra small screen / iPhone 5s, iPhone 6SE
+  xss: 0,
+  // Extra Small screen / iPhone 6
+  xs: 22rem,
+  // Small screen / phone
+  sm: 34rem,
+  // Medium screen / tablet
+  md: 48rem,
+  // Large screen / desktop
+  lg: 62rem,
+  // Extra large screen / wide desktop
+  xl: 77rem
+) !default;
+
+$container-max-widths: (
+  sm: 30rem,   // 480px
+  md: 46rem,   // 736px
+  lg: 60rem,   // 960px
+  xl: 75rem    // 1200px
+) !default;
+
+$grid-columns:               12 !default;
+$grid-gutter-width:          1.25rem !default;
+
+
+// Spacing
+// -----------------------------------------
+
+$spacer:                     .625rem !default;

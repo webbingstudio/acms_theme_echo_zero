@@ -1,0 +1,89 @@
+<!-- BEGIN_MODULE Sample:veil -->
+# =======================
+#
+# 現在のエントリーに関する変数
+#
+# var_meta_pubdate
+# var_meta_title_text
+# var_meta_description
+# var_meta_image
+# var_meta_ex
+#
+# =======================
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_MODULE Entry_Summary id="ogp_summary" --><!-- BEGIN entry:loop -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+## セミナーは表示している日時をpubdateとする ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_SetRendered id="var_meta_pubdate" -->
+<!-- BEGIN_IF [%{CCD}/eq/seminar] -->%{c}<!-- ELSE -->{date#c}<!-- END_IF -->
+<!-- END_SetRendered -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+## title要素ここから ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_SetRendered id="var_meta_title_text" -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+### title要素の指定がある場合はページ情報の表示を無視する
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_IF [{entry_meta_title}/nem] -->
+{entry_meta_title}
+
+<!-- ELSE -->
+
+{title}<!-- BEGIN_IF [%{PAGE}/neq/1] --> (%{PAGE})<!-- END_IF -->
+
+<!-- BEGIN_MODULE Touch_Category -->
+<!-- BEGIN_MODULE Sample:veil -->
+### エントリータイトルが属するカテゴリー名と異なる場合はカテゴリー名を出す
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_IF [%{ENTRY_TITLE}/neq/%{CATEGORY_NAME}] --> | %{CATEGORY_NAME}<!-- END_IF -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+### 最上層のカテゴリーが属するカテゴリー名と異なる場合は最上層のカテゴリー名を出す
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_IF [%{ROOT_CATEGORY_NAME}/neq/%{CATEGORY_NAME}] --> | %{ROOT_CATEGORY_NAME}<!-- END_IF -->
+<!-- END_MODULE Touch_Category -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+### エントリータイトルが「トップページ」「ホーム」ではない場合はブログ名を出す
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_IF [{title}/nre/(トップページ|ホーム)] --> | %{BLOG_NAME}<!-- END_IF -->
+
+<!-- END_IF -->
+
+<!-- END_SetRendered -->
+<!-- BEGIN_MODULE Sample:veil -->
+## title要素ここまで ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+
+<!-- BEGIN_SetRendered id="var_meta_description" -->
+<!-- BEGIN_IF [{entry_meta_description}/nem] -->{entry_meta_description}
+<!-- ELSE -->{summary}
+<!-- END_IF -->
+<!-- END_SetRendered -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+## var_meta_image ----------------------------------------
+### OGP画像の指定がない場合はメイン画像を表示する
+### エントリーに画像がない場合はルートブログのOGP画像を表示する
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_SetRendered id="var_meta_image" -->
+<!-- BEGIN_IF [{path}/nem] -->%{HOME_URL}{path}
+	<!-- ELSE -->
+		<!-- BEGIN_IF [{entry_ogp_image@path}/nem] -->%{HTTP_ARCHIVES_DIR}{entry_ogp_image@path}
+	<!-- ELSE -->
+		<!-- BEGIN_MODULE Blog_Field id="global" -->
+		<!-- BEGIN_IF [{ogp_image@path}/nem] -->
+		%{HTTP_ARCHIVES_DIR}{ogp_image@path}
+		<!-- ELSE -->
+		http://capture.heartrails.com/400x300?%{BLOG_URL}
+		<!-- END_IF -->
+		<!-- END_MODULE Blog_Field -->
+	<!-- END_IF -->
+<!-- END_IF -->
+<!-- END_SetRendered -->
+
+<!-- END entry:loop --><!-- END_MODULE Entry_Summary -->

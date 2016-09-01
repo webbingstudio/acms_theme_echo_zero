@@ -1,0 +1,50 @@
+<h3 class="acms-admin-admin-title2">モジュールの設定</h3>
+<table class="adminTable acms-admin-table-admin-edit">
+	<tr>
+		<th>見出し <i data-acms-tooltip="このモジュールの見出しを指定できます。見出しを表示できるレイアウトの場合のみ反映されます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+		<td>
+			<input type="text" name="module_heading" value="{module_heading}" class="acms-admin-form-width-small" />
+			<input type="hidden" name="field[]" value="module_heading" />
+		</td>
+	</tr>
+
+	<tr>
+		<th>一覧ページへのリンク <i data-acms-tooltip="一覧ページへのリンクボタンを追加できます。一覧ボタンを表示できるレイアウトの場合のみ反映されます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+		<td>
+			<div class="acms-admin-grid-r">
+				<div class="acms-admin-col-lg-4">
+					文字列: <input type="text" name="module_index_label" value="{module_index_label}" class="acms-admin-form-width-small" />
+					<input type="hidden" name="field[]" value="module_index_label" />
+				</div>
+
+				<div class="acms-admin-col-lg-8">
+					URL: <input type="text" name="module_index_url" value="{module_index_url}" class="acms-admin-form-width-medium" />
+					<input type="hidden" name="field[]" value="module_index_url" />
+				</div>
+
+				<div class="acms-admin-col-lg-12">
+					<div class="acms-admin-text-danger">
+					文字列が未入力の場合は「一覧」となります。URLが未入力の場合は文字列の内容に関わらずボタンは表示されません。
+					</div>
+				</div>
+			</div>
+		</td>
+	</tr>
+
+	<tr>
+		<th>追加属性 <i data-acms-tooltip="このモジュール全体を囲む要素に、classとidを追加できます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+		<td>
+			<div class="acms-admin-grid-r">
+				<div class="acms-admin-col-lg-4">
+					id: <input type="text" name="module_exid" value="{module_exid}" class="acms-admin-form-width-small" />
+					<input type="hidden" name="field[]" value="module_exid" />
+				</div>
+
+				<div class="acms-admin-col-lg-8">
+					class: <input type="text" name="module_exclass" value="{module_exclass}" class="acms-admin-form-width-small" />
+					<input type="hidden" name="field[]" value="module_exclass" />
+				</div>
+			</div>
+		</td>
+	</tr>
+</table>

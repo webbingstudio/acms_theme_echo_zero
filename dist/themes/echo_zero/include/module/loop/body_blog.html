@@ -1,0 +1,76 @@
+<!-- BEGIN notFound -->
+<p><em>このコンテンツは準備中です。</em></p>
+<!-- END notFound -->
+
+<!-- BEGIN entry:loop -->
+<article class="post<!-- BEGIN_IF [{entry:loop.class}/nem] --> {entry:loop.class}<!-- END_IF -->">
+
+	<!--#include file="/admin/entry/revision-info.html"-->
+
+	<div class="post-header">
+		<!-- BEGIN title:veil -->
+		<h2 class="post-header-title"><a href="{titleUrl}">{title}</a></h2>
+		<!-- END title:veil -->
+
+		<div class="post-header-meta">
+			<!-- BEGIN new -->
+			<p class="post-new"><span class="badge">New</span></p>
+			<!-- END new -->
+			<!-- BEGIN date:veil -->
+			<time class="post-date" datetime="{date#Y}-{date#m}-{date#d}">{date#Y}.{date#m}.{date#d}</time>
+			<!-- END date:veil -->
+
+			<!-- BEGIN category:veil -->
+			<p class="post-category">
+				<!-- BEGIN category:loop -->
+				<span class="post-category-item">
+					<a href="{url}" class="label">{name}</a>
+					<!-- BEGIN glue --><span class="post-category-glue">&lt;</span><!-- END glue -->
+				</span>
+				<!-- END category:loop -->
+			</p>
+			<!-- END category:veil -->
+		</div><!-- /.post-header-meta -->
+
+	</div><!-- /.post-header -->
+
+	<div class="post-contents entry-column">
+
+		<!-- BEGIN entryColumn:veil -->
+		<div class="row">
+			<!-- BEGIN unit:veil -->
+			<!--#include file="/include/unit.html"-->
+			<!-- END unit:veil -->
+		</div><!-- /.row -->
+		<!-- END entryColumn:veil -->
+
+	</div><!-- /.post-contents -->
+
+	<div class="post-footer">
+		<!--#include file="/include/parts/share.html"-->
+
+		<div class="post-footer-meta">
+			<!-- BEGIN tag:veil -->
+			<div class="post-tag">
+				<!-- BEGIN tag:loop -->
+				<span class="post-tag-item">
+					<a href="{url}" class="label">{name}</a>
+					<!-- BEGIN tagGlue --><span class="post-tag-glue">, </span><!-- END tagGlue -->
+				</span>
+				<!-- END tag:loop -->
+			</div><!-- /.post-tag -->
+			<!-- END tag:veil -->
+		</div><!-- /.post-footer-meta -->
+
+	</div><!-- /.post-footer -->
+
+	<!-- BEGIN adminEntryEdit -->
+	<!--#include file="/admin/entry/title.html"-->
+	<!--#include file="/admin/entry/edit.html"-->
+	<!--#include file="/admin/entry/add.html"-->
+	<!-- END adminEntryEdit -->
+
+	<!--#include file="/admin/entry/action.html"-->
+
+</article><!-- /.post -->
+<!-- END entry:loop -->
