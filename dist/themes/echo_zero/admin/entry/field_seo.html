@@ -1,9 +1,9 @@
 <div class="acms-admin-accordion">
-	<p class="acms-admin-accordion-title"><a href="#fadeSeoInfo" class="js-fader acms-admin-accordion-title-link" style="font-size: inherit;">SEO設定<span class="acms-admin-icon-arrow-small-down"></span></a></p>
+	<p class="acms-admin-accordion-title"><a href="#fadeSeoInfo" class="js-fader acms-admin-accordion-title-link" style="font-size: inherit;">検索エンジンの設定<span class="acms-admin-icon-arrow-small-down"></span></a></p>
 	<div id="fadeSeoInfo" class="acms-admin-accordion-inner">
 		<table class="entryFormTable acms-admin-table-entry">
 			<tr>
-				<th>タイトル - <small>title</small><i data-acms-tooltip="エントリーの titleタグを設定します。" class="acms-admin-icon-tooltip acms-admin-inline-space-left js-acms-tooltip"></i>
+				<th>タイトル - <small>title</small><i data-acms-tooltip="エントリーのtitleタグを設定します。" class="acms-admin-icon-tooltip acms-admin-inline-space-left js-acms-tooltip"></i>
 					<div>
 						<span class="acms-admin-label"><span class="keyword_countup"></span> 文字</span>
 					</div>
@@ -14,10 +14,6 @@
 					<input type="hidden" name="entry_meta_title:search" value="0" />
 				</td>
 			</tr>
-
-			<input type="hidden" name="entry_meta_keywords" value="{entry_meta_keywords}" />
-			<input type="hidden" name="field[]" value="entry_meta_keywords" />
-			<input type="hidden" name="entry_meta_keywords:search" value="0" />
 
 			<tr>
 				<th>概要文 - <small>description</small><i data-acms-tooltip="エントリーの METAタグ（Description）を設定します。" class="acms-admin-icon-tooltip acms-admin-inline-space-left js-acms-tooltip"></i>
@@ -34,3 +30,16 @@
 		</table>
 	</div>
 </div>
+
+<input type="hidden" name="entry_meta_keywords" value="{entry_meta_keywords}" />
+<input type="hidden" name="field[]" value="entry_meta_keywords" />
+<input type="hidden" name="entry_meta_keywords:search" value="0" />
+
+<input type="hidden" name="entry_meta_robots" value="{entry_meta_robots}" />
+<input type="hidden" name="field[]" value="entry_meta_robots" />
+
+<input type="hidden" name="entry_meta_sitemap" value="{entry_meta_sitemap}" />
+<input type="hidden" name="field[]" value="entry_meta_sitemap" />
+
+<input type="hidden" name="entry_meta_rss" value="{entry_meta_rss}" />
+<input type="hidden" name="field[]" value="entry_meta_rss" />
