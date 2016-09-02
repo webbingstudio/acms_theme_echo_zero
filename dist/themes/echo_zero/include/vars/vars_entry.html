@@ -14,11 +14,9 @@
 <!-- BEGIN_MODULE Entry_Summary id="ogp_summary" --><!-- BEGIN entry:loop -->
 
 <!-- BEGIN_MODULE Sample:veil -->
-## セミナーは表示している日時をpubdateとする ----------------------------------------
+## 投稿日時をpubdateとする ----------------------------------------
 <!-- END_MODULE Sample:veil -->
-<!-- BEGIN_SetRendered id="var_meta_pubdate" -->
-<!-- BEGIN_IF [%{CCD}/eq/seminar] -->%{c}<!-- ELSE -->{date#c}<!-- END_IF -->
-<!-- END_SetRendered -->
+<!-- BEGIN_SetRendered id="var_meta_pubdate" -->{date#c}<!-- END_SetRendered -->
 
 <!-- BEGIN_MODULE Sample:veil -->
 ## title要素ここから ----------------------------------------
