@@ -1,22 +1,19 @@
 <h3 class="acms-admin-admin-title2">SNS関連の設定</h3>
 <table class="adminTable acms-admin-table-admin-edit">
 	<tr>
+		<th>Facebook</th>
+		<td>
+			<input type="text" name="facebook_account" value="{facebook_account}" placeholder="例）ablogcms" class="acms-admin-form-width-medium">
+			<input type="hidden" name="field[]" value="facebook_account">
+		</td>
+	</tr>
+	<tr>
 		<th>Twitter</th>
 		<td>
 			<input type="text" name="twitter_account" value="{twitter_account}" placeholder="例）ablogcms" class="acms-admin-form-width-medium">
 			<input type="hidden" name="field[]" value="twitter_account">
 		</td>
 	</tr>
-	<tr>
-		<th>Facebookページ</th>
-		<td>
-			<input type="text" name="fb_page" value="{fb_page}" placeholder="例）ablogcms" class="acms-admin-form-width-medium">
-			<input type="hidden" name="field[]" value="fb_page">
-		</td>
-	</tr>
-
-	<input type="hidden" name="fb_admins" value="{fb_admins}" />
-	<input type="hidden" name="field[]" value="fb_admins" />
 
 	<tr>
 		<th>Facebook アプリケーションID</th>
@@ -25,12 +22,6 @@
 			<input type="hidden" name="field[]" value="facebook_app_id">
 		</td>
 	</tr>
-
-	<input type="hidden" name="gplus_account" value="{gplus_account}" />
-	<input type="hidden" name="field[]" value="gplus_account" />
-
-	<input type="hidden" name="youtube_account" value="{youtube_account}" />
-	<input type="hidden" name="field[]" value="youtube_account" />
 
 	<tr>
 		<th>OGP画像<i data-acms-tooltip="幅1200ピクセル、高さ630ピクセルの画像をアップロードしてください。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
@@ -49,3 +40,12 @@
 		</td>
 	</tr>
 </table>
+
+<input type="hidden" name="fb_admins" value="{fb_admins}" />
+<input type="hidden" name="field[]" value="fb_admins" />
+
+<input type="hidden" name="gplus_account" value="{gplus_account}" />
+<input type="hidden" name="field[]" value="gplus_account" />
+
+<input type="hidden" name="youtube_account" value="{youtube_account}" />
+<input type="hidden" name="field[]" value="youtube_account" />

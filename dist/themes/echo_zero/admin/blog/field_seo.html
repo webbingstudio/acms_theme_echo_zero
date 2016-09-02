@@ -10,10 +10,6 @@
 		</td>
 	</tr>
 
-	<input type="hidden" name="blog_meta_keywords" value="{blog_meta_keywords}" />
-	<input type="hidden" name="field[]" value="blog_meta_keywords" />
-	<input type="hidden" name="blog_meta_keywords:search" value="0" />
-
 	<tr>
 		<th>トップページの概要文 - <small>description</small><i data-acms-tooltip="このブログのトップページのMETAタグ（description）を設定します。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
@@ -28,9 +24,19 @@
 		<td>
 			<label class="acms-admin-form-checkbox">
 				<input type="checkbox" name="blog_meta_robots[]" value="noindex"{blog_meta_robots:checked#noindex} />
-				<i class="acms-admin-ico-checkbox"></i>このコンテンツを検索エンジンに登録しない
+				<i class="acms-admin-ico-checkbox"></i>このブログを検索エンジンに登録しない
 			</label>
 			<input type="hidden" name="field[]" value="blog_meta_robots" />
 		</td>
 	</tr>
 </table>
+
+<input type="hidden" name="blog_meta_keywords" value="{blog_meta_keywords}" />
+<input type="hidden" name="field[]" value="blog_meta_keywords" />
+<input type="hidden" name="blog_meta_keywords:search" value="0" />
+
+<input type="hidden" name="blog_meta_sitemap" value="{blog_meta_sitemap}" />
+<input type="hidden" name="field[]" value="blog_meta_sitemap" />
+
+<input type="hidden" name="blog_meta_rss" value="{blog_meta_rss}" />
+<input type="hidden" name="field[]" value="blog_meta_rss" />
