@@ -5,41 +5,43 @@
 <!-- BEGIN unit:loop -->
 <div class="row">
 
-<!-- BEGIN entry:loop -->
-<div class="<!-- BEGIN_IF [{entry:loop.class}/nem] -->{entry:loop.class}<!-- ELSE -->col-sm-12 col-lg-6<!-- END_IF -->">
-	<article class="summary">
+  <!-- BEGIN entry:loop -->
+  <div class="<!-- BEGIN_IF [{entry:loop.class}/nem] -->{entry:loop.class}<!-- ELSE -->col-sm-12 col-lg-6<!-- END_IF -->">
+	  <article class="summary">
+		<div class="summary-inner">
 
-		<!-- BEGIN_IF [{entry_eyecatch@path}/nem] -->
-		<figure class="summary-img"><img src="%{ARCHIVES_DIR}{entry_eyecatch@path}" alt=""></figure>
-		<!-- ELSE -->
-			<!-- BEGIN image:veil -->
-			<figure class="summary-img"><img src="%{ROOT_DIR}{path}" alt=""></figure>
-			<!-- END image:veil -->
-			<!-- BEGIN noimage -->
-			<div class="summary-img"><img src="/images/common/noimg_1_1.jpg" alt=""></div>
-			<!-- END noimage -->
-		<!-- END_IF -->
-
-		<div class="summary-contents">
-			<!-- BEGIN new -->
-			<p class="summary-new"><span class="badge">New</span></p>
-			<!-- END new -->
-			<time class="summary-date" datetime="{date#Y}-{date#m}-{date#d}">{date#Y}.{date#m}.{date#d}</time>
-			<h3 class="summary-title"><a href="{url}">{title}</a></h3>
-			<!-- BEGIN category:veil -->
-			<p class="summary-category"><span class="label">{categoryName}</span></p>
-			<!-- END category:veil -->
-			<!-- BEGIN_IF [{summary}/nem] -->
-			<p class="summary-body">{summary}[trim(151, '...')]</p>
+			<!-- BEGIN_IF [{entry_eyecatch@path}/nem] -->
+			<figure class="summary-img"><img src="%{ARCHIVES_DIR}{entry_eyecatch@path}" alt=""></figure>
+			<!-- ELSE -->
+				<!-- BEGIN image:veil -->
+				<figure class="summary-img"><img src="%{ROOT_DIR}{path}" alt=""></figure>
+				<!-- END image:veil -->
+				<!-- BEGIN noimage -->
+				<div class="summary-img"><img src="/images/common/noimg_1_1.jpg" alt=""></div>
+				<!-- END noimage -->
 			<!-- END_IF -->
-			<div class="summary-tag">
-				<!-- BEGIN tag:loop --><span class="summary-tag-item"><a href="{url}">{name}</a><!-- BEGIN tagGlue --><span class="summary-tag-glue">, </span><!-- END tagGlue --></span><!-- END tag:loop -->
-			</div>
-			<p class="summary-btn"><a href="{url}" class="btn btn-secondary">More</a></p>
-		</div><!-- /.summary-contents -->
-	</article><!-- /.summary -->
-</div><!-- /.col -->
-<!-- END entry:loop -->
+
+			<div class="summary-contents">
+				<!-- BEGIN new -->
+				<p class="summary-new"><span class="badge">New</span></p>
+				<!-- END new -->
+				<time class="summary-date" datetime="{date#Y}-{date#m}-{date#d}">{date#Y}.{date#m}.{date#d}</time>
+				<h3 class="summary-title"><a href="{url}">{title}</a></h3>
+				<!-- BEGIN category:veil -->
+				<p class="summary-category"><span class="label">{categoryName}</span></p>
+				<!-- END category:veil -->
+				<!-- BEGIN_IF [{summary}/nem] -->
+				<p class="summary-body">{summary}[trim(151, '...')]</p>
+				<!-- END_IF -->
+				<div class="summary-tag">
+					<!-- BEGIN tag:loop --><span class="summary-tag-item"><a href="{url}">{name}</a><!-- BEGIN tagGlue --><span class="summary-tag-glue">, </span><!-- END tagGlue --></span><!-- END tag:loop -->
+				</div>
+				<p class="summary-btn"><a href="{url}" class="btn btn-secondary">More</a></p>
+			</div><!-- /.summary-contents -->
+		  </div><!-- /.summary-inner -->
+	  </article><!-- /.summary -->
+  </div><!-- /.col -->
+  <!-- END entry:loop -->
 
 </div><!-- /.row -->
 <!-- END unit:loop -->
