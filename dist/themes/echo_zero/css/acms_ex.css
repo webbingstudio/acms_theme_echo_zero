@@ -2,26 +2,50 @@
 #adminBox,
 #entryForm,
 .acms-admin-form,
-body .ui-widget {
-  color: #333333;
-  font-size: .875rem;
-  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+body .ui-widget,
+.acms-admin-revison-admin,
+.acms-admin-edit-info {
+  color: #333;
+  font-size: 14px;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: 300;
-  line-height: 1.25; }
+  line-height: 1.5; }
   #adminBox a,
   #entryForm a,
   .acms-admin-form a,
-  body .ui-widget a {
+  body .ui-widget a,
+  .acms-admin-revison-admin a,
+  .acms-admin-edit-info a {
     font-weight: 300; }
 
+.acms-admin-table {
+  font-size: 14px; }
+
+.acmsBenchmarkTable {
+  color: #333;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 300;
+  line-height: 1.25; }
+
+.acms-admin-module-edit {
+  line-height: 1.5; }
+
+.acms-admin-module-edit a {
+  font-size: 13px;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 300;
+  text-decoration: none; }
+  .acms-admin-module-edit a:hover {
+    text-decoration: underline; }
+
 a.js-dialog-btn {
-  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: 300;
   line-height: 1.25; }
 
 a.acms-admin-accordion-title-link,
 a.detail-fade-head {
-  color: #333333;
+  color: #333;
   text-decoration: none; }
 
 .titleWrapper h2 {
@@ -29,9 +53,9 @@ a.detail-fade-head {
   padding: 0;
   background: transparent none;
   border: 0 none;
-  color: #333333;
+  color: #333;
   font-size: 1.25rem;
-  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: 700;
   line-height: 1.25; }
 
@@ -40,11 +64,31 @@ a.detail-fade-head {
   padding: 0;
   background: transparent none;
   border: 0 none;
-  color: #333333;
+  color: #333;
   font-size: 1.25rem;
-  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: 700;
   line-height: 1.25; }
+
+#entryForm,
+.acms-admin-form,
+body .ui-widget,
+.acms-admin-revison-admin,
+.acms-admin-edit-info {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px; }
+
+.acms-admin-modal-dialog.large {
+  max-width: 95%; }
+
+@media (min-width: 77rem) {
+  .acms-admin-modal-dialog.large {
+    max-width: 1200px;
+    min-width: 800px; } }
+
+#adminBox [class*=acms-admin-btn] {
+  font-size: 13px; }
 
 .entryFormColumn .entryFormColumnHead .label {
   display: inline-block;
@@ -53,9 +97,9 @@ a.detail-fade-head {
   padding: 0;
   border: 0 none;
   font-size: .875rem;
-  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: 300;
-  line-height: 1.75;
+  line-height: 1.5;
   text-align: right;
   border-radius: 0;
   vertical-align: middle; }
@@ -80,7 +124,7 @@ body .ui-widget .acms-admin-icon-tooltip {
   margin-left: .25em; }
 
 div[class*="column-echo-button"] {
-  margin-bottom: 1.25rem;
+  margin-bottom: 2em;
   text-align: center; }
 
 #entryForm .js-tag_insertion .emoji-trigger-btn,
@@ -89,19 +133,18 @@ div[class*="column-echo-button"] {
   min-width: 5em;
   padding: .25em .5em;
   background-color: #fff;
-  color: #333333;
+  color: #333;
   font-size: .75rem;
-  border: 1px solid #999999;
+  border: 1px solid #999;
   text-align: center;
-  border-radius: 0.25rem;
+  border-radius: 3px;
   text-decoration: none;
   vertical-align: middle; }
   #entryForm .js-tag_insertion .emoji-trigger-btn:hover,
   #entryForm .js-media_insert:hover {
-    background-color: #eeeeee; }
+    background-color: #ccc; }
 
 #entryForm .js-tag_insertion .emoji-trigger-btn-link {
-  color: #2288bb;
   text-decoration: underline; }
 
 #entryForm .js-tag_insertion .emoji-trigger-btn-strong {

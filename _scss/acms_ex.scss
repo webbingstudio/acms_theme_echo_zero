@@ -13,28 +13,57 @@
 #adminBox,
 #entryForm,
 .acms-admin-form,
-body .ui-widget {
-  color: $gray-dark;
-  font-size: .875rem;
-  font-family: $font-family-base;
-  font-weight: $font-weight;
-  line-height: $line-height-sm;
+body .ui-widget,
+.acms-admin-revison-admin,
+.acms-admin-edit-info {
+  color: #333;
+  font-size: 14px;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
 
   a {
-    font-weight: $font-weight;
+    font-weight: 300;
+  }
+
+}
+
+.acms-admin-table {
+  font-size: 14px;
+}
+
+.acmsBenchmarkTable {
+  color: #333;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.acms-admin-module-edit {
+  line-height: 1.5;
+}
+
+.acms-admin-module-edit a {
+  font-size: 13px;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
   }
 
 }
 
 a.js-dialog-btn {
-  font-family: $font-family-base;
-  font-weight: $font-weight;
-  line-height: $line-height-sm;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 300;
+  line-height: 1.25;
 }
 
 a.acms-admin-accordion-title-link,
 a.detail-fade-head {
-  color: $gray-dark;
+  color: #333;
   text-decoration: none;	
 }
 
@@ -43,11 +72,11 @@ a.detail-fade-head {
   padding: 0;
   background: transparent none;
   border: 0 none;
-  color: $gray-dark;
+  color: #333;
   font-size: 1.25rem;
-  font-family: $font-family-base;
-  font-weight: $font-weight-bold;
-  line-height: $line-height-sm;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .acms-admin-modal-header h3 {
@@ -55,11 +84,46 @@ a.detail-fade-head {
   padding: 0;
   background: transparent none;
   border: 0 none;
-  color: $gray-dark;
+  color: #333;
   font-size: 1.25rem;
-  font-family: $font-family-base;
-  font-weight: $font-weight-bold;
-  line-height: $line-height-sm;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+
+// 全幅レイアウトのサイトに組み込んだときにUIが広がりすぎる問題を回避
+// ----------------------------
+
+#entryForm,
+.acms-admin-form,
+body .ui-widget,
+.acms-admin-revison-admin,
+.acms-admin-edit-info {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.acms-admin-modal-dialog.large {
+  max-width: 95%;
+}
+
+@include media-breakpoint-up(xl) {
+
+  .acms-admin-modal-dialog.large {
+    max-width: 1200px;
+    min-width: 800px;
+  }
+
+}
+
+
+// 管理ボックスのボタンサイズを固定
+// ----------------------------
+
+#adminBox [class*=acms-admin-btn] {
+  font-size: 13px;
 }
 
 
@@ -73,9 +137,9 @@ a.detail-fade-head {
   padding: 0;
   border: 0 none;
   font-size: .875rem;
-  font-family: $font-family-base;
-  font-weight: $font-weight;
-  line-height: $line-height;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
   text-align: right;
   border-radius: 0;
   vertical-align: middle;
@@ -142,7 +206,7 @@ div[class*="column-echo-spacer"] {
 // ボタン
 
 div[class*="column-echo-button"] {
-  margin-bottom: ($spacer * 2);
+  margin-bottom: 2em;
   text-align: center;
 }
 
@@ -158,27 +222,26 @@ div[class*="column-echo-button"] {
   	min-width: 5em;
   	padding: .25em .5em;
   	background-color: #fff;
-    color: $gray-dark;
+    color: #333;
     font-size: .75rem;
-    border: 1px solid $gray-light;
+    border: 1px solid #999;
   	text-align: center;
-  	border-radius: $border-radius-sm;
+  	border-radius: 3px;
     text-decoration: none;
     vertical-align: middle;
 
     &:hover {
-      background-color: $gray-lightest;
+      background-color: #ccc;
     }
 
   }
 
   .js-tag_insertion .emoji-trigger-btn-link {
-    color: $link-color;
     text-decoration: underline;
   }
 
   .js-tag_insertion .emoji-trigger-btn-strong {
-    font-weight: $font-weight-bold;
+    font-weight: 700;
   }
 
 }

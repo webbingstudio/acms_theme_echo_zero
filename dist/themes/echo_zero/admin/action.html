@@ -1,28 +1,37 @@
 <!-- BEGIN_MODULE Admin_ActionMenu -->
-<style>
-/* ウィンドウの上端に配置している場合 */
-#adminBox {
-	margin-bottom: 0;
-}
 
-#adminBox .acms-admin-btn {
-	min-width: 8em;
-	padding-left: 0;
-	padding-right: 0;
-	text-align: center;
-	font-size: .875rem;
+<!-- BEGIN_MODULE Sample:veil -->
+# =======================
+#
+# テーマ専用管理ボックス
+# 
+# 公式からの変更
+# - 下マージンを削除（画面最上部に接する場合）
+# - エントリー追加ボタンとその他のボタンをグループ分け
+# - エントリー追加ボタンをブログ別・カテゴリー別に変更
+# - 調整CSSを追加
+# - #loginUserStatus内の変更はありません
+#
+# =======================
+<!-- END_MODULE Sample:veil -->
+<style>
+#adminBox {
+  margin-bottom: 0;
 }
-#adminBox .acms-admin-btn-admin {
-	font-size: .875rem;
+#adminBox .acms-admin-btn {
+  min-width: 8em;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
 }
 #adminBox .acms-adminbox-inner {
-	background-color: #fff;
-	padding: 10px 10px 5px;
-	margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px 10px 5px;
+  margin-bottom: 10px;
 }
 #adminBox .acms-adminbox-inner .acms-adminbox-inner-label {
-	padding-bottom: 5px;
-	font-weight: bold;
+  padding-bottom: 5px;
+  font-weight: bold;
 }
 </style>
 
@@ -75,7 +84,7 @@
 					<input type="hidden" name="cid" value="" />
 				</form>
 
-				<div class="acms-admin-text-success" style="clear:both; font-size: 90%;">既存エントリーの編集は、各ページへ移動してください。</div>
+				<div class="acms-admin-text-success" style="clear:both; font-size: 12px;">既存エントリーの編集は、各ページへ移動してください。</div>
 
 			</div>
 			<!-- END insert -->
@@ -164,7 +173,6 @@
 
 			</div>
 		</div>
-
 	</div>
 </div>
 <!-- END_MODULE Admin_ActionMenu -->
