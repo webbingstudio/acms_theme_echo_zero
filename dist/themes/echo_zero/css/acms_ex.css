@@ -75,15 +75,6 @@ div.column-file-center {
   margin-left: 0;
   margin-right: 0; }
 
-.entry-container {
-  position: relative;
-  min-height: 1px;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem; }
-  div[class*="col-"] .entry-container {
-    padding-left: 0;
-    padding-right: 0; }
-
 .entry-container-full {
   min-height: 1px;
   margin-left: -5000px;
@@ -97,6 +88,10 @@ div.column-file-center {
 #entryForm .acms-admin-icon-tooltip,
 body .ui-widget .acms-admin-icon-tooltip {
   margin-left: .25em; }
+
+div[class*="column-echo-button"] {
+  margin-bottom: 1.25rem;
+  text-align: center; }
 
 #entryForm .js-tag_insertion .emoji-trigger-btn,
 #entryForm .js-media_insert {
@@ -123,6 +118,6 @@ body .ui-widget .acms-admin-icon-tooltip {
   font-weight: 700; }
 
 @media (min-width: 34rem) {
-  .entry-column .container .container {
+  .container .container {
     padding-left: 0;
     padding-right: 0; } }

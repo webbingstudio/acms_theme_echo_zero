@@ -116,25 +116,6 @@ div.column-file-center {
 }
 
 
-// bootstrap対応のユニット包括ブロック
-// ----------------------------
-
-.entry-container {
-  position: relative;
-  min-height: 1px;
-  padding-left: $grid-gutter-width / 2;
-  padding-right: $grid-gutter-width / 2;
-
-  // 段組内では左右余白を無効
-  // ----------------------------
-  div[class*="col-"] & {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-}
-
-
 // 包括コンテナの幅を無視して幅いっぱいに広げる
 // ----------------------------
 
@@ -163,6 +144,23 @@ div.column-file-center {
     margin-left: .25em;
   }
 	
+}
+
+
+// 追加ユニット
+// ----------------------------
+
+// 余白
+
+div[class*="column-echo-spacer"] {
+}
+
+
+// ボタン
+
+div[class*="column-echo-button"] {
+  margin-bottom: ($spacer * 2);
+  text-align: center;
 }
 
 
@@ -202,17 +200,17 @@ div.column-file-center {
 
 }
 
+
+// レイアウトモジュール、HTML直書きなどでbootstrapのcontainerが二重になった場合の対策
+// ----------------------------
+
 @include media-breakpoint-up(sm) {
 
-.entry-column {
+.container {
 
   .container {
-
-    .container {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
+    padding-left: 0;
+    padding-right: 0;
   }
 
 }
