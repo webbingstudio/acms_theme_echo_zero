@@ -94,6 +94,16 @@ h6, .h6 {
   overflow: visible;
   clip: auto; }
 
+.container-full {
+  min-height: 1px;
+  margin-left: -5000px;
+  margin-right: -5000px;
+  padding-left: 5000px;
+  padding-right: 5000px; }
+  .container-full .container {
+    padding-left: 0;
+    padding-right: 0; }
+
 .text-muted {
   color: #999999; }
 

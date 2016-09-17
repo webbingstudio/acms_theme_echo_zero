@@ -147,6 +147,22 @@ h6, .h6 {
   }
 }
 
+// 包括コンテナの幅を無視して幅いっぱいに広げる
+
+.container-full {
+  min-height: 1px;
+  margin-left: -5000px;
+  margin-right: -5000px;
+  padding-left: 5000px;
+  padding-right: 5000px;
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
 
 // Color
 // ----------------------------

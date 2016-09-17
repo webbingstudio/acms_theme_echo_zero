@@ -75,16 +75,6 @@ div.column-file-center {
   margin-left: 0;
   margin-right: 0; }
 
-.entry-container-full {
-  min-height: 1px;
-  margin-left: -5000px;
-  margin-right: -5000px;
-  padding-left: 5000px;
-  padding-right: 5000px; }
-  .entry-container-full .container {
-    padding-left: 0;
-    padding-right: 0; }
-
 #entryForm .acms-admin-icon-tooltip,
 body .ui-widget .acms-admin-icon-tooltip {
   margin-left: .25em; }

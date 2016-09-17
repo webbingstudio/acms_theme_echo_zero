@@ -98,6 +98,7 @@ a.detail-fade-head {
 	max-width: 200px;
 }
 
+
 // ファイルユニットになぜかインラインでwidthが入ってしまう問題を回避
 // ----------------------------
 
@@ -113,24 +114,6 @@ div.column-file-center {
 .acms-admin-btn-action-group {
   margin-left: 0;
   margin-right: 0;
-}
-
-
-// 包括コンテナの幅を無視して幅いっぱいに広げる
-// ----------------------------
-
-.entry-container-full {
-  min-height: 1px;
-  margin-left: -5000px;
-  margin-right: -5000px;
-  padding-left: 5000px;
-  padding-right: 5000px;
-
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
 }
 
 
