@@ -15,6 +15,7 @@
 // - Nav
 // - Label
 // - Badge
+// - Form
 
 
 // Structure
@@ -35,6 +36,10 @@ html {
     font-size: ($font-size-base * .75);
   }
 
+  @include media-breakpoint-up(xl) {
+    font-size: ($font-size-base * 1.125);
+  }
+
 }
 
 body {
@@ -43,7 +48,6 @@ body {
   color: $body-color;
   font-family: $font-family-01;
   font-weight: $font-weight-01;
-  font-size: 1rem;
   line-height: $line-height;
 }
 
@@ -197,13 +201,14 @@ h6, .h6 {
 // ----------------------------
 
 .btn {
+  font-size: $font-size-base;
   font-family: $font-family-01;
   font-weight: $font-weight-01;
   border: $border-width solid transparent;
   padding: $btn-padding-y $btn-padding-x;
-  font-size: $font-size-base;
   line-height: $line-height-xs;
   border-radius: $border-radius;
+  vertical-align: middle;
 
   span#{&} {
 
@@ -338,24 +343,27 @@ fieldset[disabled] a.btn {
 
 .btn-sm {
   padding: $btn-padding-y-sm $btn-padding-x-sm;
-  border-radius: border-radius-sm;
+  font-size: $font-size-sm;
+  border-radius: $border-radius-sm;
 }
 
 .btn-lg {
   padding: $btn-padding-y-lg $btn-padding-x-lg;
-  border-radius: border-radius-lg;
+  font-size: $font-size-lg;
+  border-radius: $border-radius-lg;
 }
 
 .btn-xl {
   padding: $btn-padding-y-xl $btn-padding-x-xl;
-  border-radius: border-radius-xl;
+  font-size: $font-size-lg;
+  border-radius: $border-radius-xl;
 }
 
 
 // Nav
 // ----------------------------
 
-.nav-vartical {
+.nav-vertical {
 
   nav {
 
@@ -375,7 +383,7 @@ fieldset[disabled] a.btn {
 
         a {
           display: block;
-          padding: .5rem 1rem;
+          padding: .5rem 0;
           color: $gray-dark;
           text-decoration: none;
           
@@ -523,6 +531,258 @@ fieldset[disabled] a.btn {
 }
 
 
+// Form
+// ----------------------------
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .25rem .1rem;
+  font-size: 1rem;
+  font-family: $font-family-base;
+  line-height: $line-height-xs;
+  color: $gray-dark;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid $gray-dark;
+
+  &[type="search"],
+  &[type="text"],
+  &[type="password"],
+  &[type="date"],
+  &[type="tel"] {
+    -webkit-appearance: textfield;
+  }
+
+  &::-ms-expand {
+    background-color: transparent;
+    border: 0;
+  }
+
+  &::placeholder {
+    color: $gray-light;
+    opacity: 1;
+  }
+
+  &:disabled,
+  &[readonly],
+  fieldset[disabled] & {
+    background-color: $gray-light;
+    opacity: 1;
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+  }
+}
+
+textarea.form-control {
+  font-family: $font-family-mono;
+  line-height: $line-height;
+}
+
+.form-control-file,
+.form-control-range {
+  display: block;
+}
+
+.form-control-label {
+  padding: .25rem;
+  margin-bottom: 0;
+}
+
+.form-control-static {
+  min-height: 2rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  margin-bottom: 0;
+
+  &.form-control-sm,
+  &.form-control-lg {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.form-control-sm {
+  padding: .1rem;
+  font-size: .875rem;
+}
+
+.form-control-lg {
+  padding: .375rem;
+  font-size: 1.25rem;
+  line-height: $line-height-sm;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-bottom: .5rem;
+
+  label {
+    padding-left: 1.25rem;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+
+    input:only-child {
+      position: static;
+    }
+
+  }
+
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-top: .25rem;
+  margin-left: -1.25rem;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -.25rem;
+}
+
+.radio-inline,
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+  font-weight: normal;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: .75rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+
+  &:disabled,
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: not-allowed;
+  }
+
+}
+
+.radio-inline,
+.checkbox-inline {
+
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: not-allowed;
+  }
+
+}
+
+.radio,
+.checkbox {
+
+  &.disabled,
+  fieldset[disabled] & {
+
+    label {
+      cursor: not-allowed;
+    }
+
+  }
+
+}
+
+.has-error {
+  
+  .form-control {
+    color: $color-important-text;
+    background-color: $faded-important;
+  }
+
+}
+
+.form-inline {
+
+  @include media-breakpoint-up(sm) {
+
+    .form-group {
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    .form-control {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle;
+    }
+
+    .form-control-static {
+      display: inline-block;
+    }
+
+    .input-group {
+      display: inline-table;
+      vertical-align: middle;
+
+      .input-group-addon,
+      .input-group-btn,
+      .form-control {
+        width: auto;
+      }
+    }
+
+    .input-group > .form-control {
+      width: 100%;
+    }
+
+    .control-label {
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    .radio,
+    .checkbox {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      vertical-align: middle;
+
+      label {
+        padding-left: 0;
+      }
+
+    }
+
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      position: relative;
+      margin-left: 0;
+    }
+
+    .has-feedback .form-control-feedback {
+      top: 0;
+    }
+
+  }
+
+}
+
+
 
 
 
@@ -556,9 +816,39 @@ fieldset[disabled] a.btn {
 
 }
 
+
 #main {
-  padding: 2rem;
+  padding: ($spacer * 1.5);
 }
+
+#sub {
+  padding: ($spacer * 1.5);
+}
+
+@include media-breakpoint-up(md) {
+
+.flex-col-2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  #main {
+    flex: 1;
+    width: auto;
+  }
+
+  #sub {
+    width: 300px;
+  }
+
+}
+
+}
+
+
 
 #footer {
   padding: 2rem 2rem 4rem;
@@ -570,10 +860,10 @@ fieldset[disabled] a.btn {
 
 
 .section {
-  margin: 0 0 4rem;
+  margin: 0 0 ($spacer * 6);
 
   .section-header {
-    padding: 0 0 2rem;
+    padding: 0 0 ($spacer * 3);
     @include clearfix();
   }
 
@@ -584,7 +874,7 @@ fieldset[disabled] a.btn {
   }
 
   .section-footer {
-    padding: 1rem 0 0;
+    padding: ($spacer * 1.5) 0 0;
     @include clearfix();
   }
 
@@ -655,18 +945,22 @@ fieldset[disabled] a.btn {
 }
 
 .summary {
-  display: block;
   margin-bottom: $grid-gutter-width;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .35);
-  @include clearfix();
-  
-  .summary-img {
+
+  .summary-inner {
     overflow: hidden;
-    float: left;
-    width: 120px;
-    height: 120px;
-    margin: 0 2rem 0 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .summary-img {
+    width: 33.33333333%;
     background-color: $gray-lightest;
 
     img {
@@ -678,17 +972,17 @@ fieldset[disabled] a.btn {
   }
 
   .summary-cover {
-    float: left;
-    width: 120px;
-    height: 120px;
-    margin: 0 2rem 0 0;
+    width: 33.33333333%;
     background: $gray-lightest none no-repeat center center;
     background-size: cover;
   }
 
-  .summary-body {
-    overflow: hidden;
+  .summary-contents {
+    position: relative;
+    flex: 1;
     line-height: $line-height;
+    padding: $spacer $spacer ($spacer * 2);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .25);
 
     time {
       display: block;
@@ -699,32 +993,27 @@ fieldset[disabled] a.btn {
     p {
       margin: 0 0 .5rem;
       font-size: .875rem;
+
+      &.summary-btn {
+        margin: 0;
+      }
+
     }
 
   }
 
   .summary-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 0 0 .5rem;
     line-height: $line-height;
     word-break: break-all;
   }
 
   .summary-btn {
-    margin: 0;
+    position: absolute;
+    bottom: $spacer;
+    right: $spacer;
     text-align: right;
-    line-height: $line-height-xs;
-
-    .btn {
-      color: #fff;
-      background-color: $gray-light;
-      
-      a#{&}:hover {
-        color: #fff;
-        background-color: $gray-light;
-      }
-    }
-
   }
 
 }
@@ -809,7 +1098,7 @@ fieldset[disabled] a.btn {
 }
 
 .pager {
-  padding: ($spacer * 3) 0;
+  padding: ($spacer * 3) 0 0;
   text-align: center;
 }
 
@@ -861,4 +1150,26 @@ fieldset[disabled] a.btn {
 
 }
 
+.widget {
+  margin: 0 0 ($spacer * 3);
 
+  .widget-header {
+    padding: 0 0 $spacer;
+    @include clearfix();
+  }
+
+  .widget-title {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .widget-footer {
+    padding: $spacer 0 0;
+    @include clearfix();
+  }
+
+  .widget-link {
+    margin: 0;
+  }
+
+}

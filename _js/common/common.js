@@ -17,7 +17,7 @@ ACMS.Config.autoHeightRArray = [
     mark: '.summary',
     config: {
       style: 'height',
-      element: '',
+      element: '.summary-inner',
       offset: 0,
       parent: '.row',
       list: 'div[class*="col"]'
@@ -27,7 +27,7 @@ ACMS.Config.autoHeightRArray = [
     mark: '.card',
     config: {
       style: 'height',
-      element: 'a',
+      element: '.card-inner',
       offset: 0,
       parent: '.row',
       list: 'div[class*="col"]'

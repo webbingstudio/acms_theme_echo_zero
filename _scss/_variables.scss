@@ -11,8 +11,8 @@ $color-primary:             #4499ee !default;
 $color-primary-text:        #2288bb !default;
 $color-secondary:           $gray-dark !default;
 $color-secondary-text:      $gray-dark !default;
-$color-important:           #dd3944 !default;
-$color-important-text:      #dd2200 !default;
+$color-important:           #dd4455 !default;
+$color-important-text:      #dd0022 !default;
 
 $color-danger:              $color-important !default;
 $color-danger-text:         $color-important-text !default;
@@ -47,7 +47,7 @@ $btn-danger-bg:              $color-danger !default;
 $btn-danger-border:          $color-danger !default;
 
 $btn-padding-x-sm:           .5rem !default;
-$btn-padding-y-sm:           .25rem !default;
+$btn-padding-y-sm:           .375rem !default;
 
 $btn-padding-x:              1rem !default;
 $btn-padding-y:              .5rem !default;
@@ -85,7 +85,8 @@ $font-size-sm:              .75rem !default;
 $font-size-lg:              1.25rem !default;
 $font-size-xl:              1.5rem !default;
 
-$line-height:               1.5 !default;
+$line-height:               1.75 !default;
+$line-height-md:            1.5 !default;
 $line-height-sm:            1.25 !default;
 $line-height-xs:            1 !default;
 
@@ -109,9 +110,9 @@ $border-color:               $gray-lighter !default;
 // -----------------------------------------
 
 $border-radius-sm:       .25rem;
-$border-radius:          .375rem;
-$border-radius-lg:       .5rem;
-$border-radius-xl:       .75rem;
+$border-radius:          .25rem;
+$border-radius-lg:       .375rem;
+$border-radius-xl:       .5rem;
 
 
 // Grid
