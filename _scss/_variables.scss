@@ -1,3 +1,10 @@
+// Spacing
+// -----------------------------------------
+
+// Rhythm : 10px
+$spacer:                     .625rem !default;
+
+
 // Colors
 // -----------------------------------------
 
@@ -142,9 +149,3 @@ $container-max-widths: (
 
 $grid-columns:               12 !default;
 $grid-gutter-width:          1.25rem !default;
-
-
-// Spacing
-// -----------------------------------------
-
-$spacer:                     .625rem !default;
