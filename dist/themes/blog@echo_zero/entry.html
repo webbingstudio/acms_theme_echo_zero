@@ -13,16 +13,22 @@
 
 <div class="container">
 
-	<main id="main">
-		<!--#include file="/include/module/template/Entry_Body/body_blog.html"-->
-	</main><!-- /#main -->
+	<div class="flex-col-2">
 
-	<aside id="sub">
-		<!--#include file="/include/module/template/Entry_ArchiveList/entry_archive_list_default.html"-->
-		<!--#include file="/include/module/template/Category_List/category_list_default.html"-->
-	</aside><!-- /#sub -->
+			<main id="main">
+				<!--#include file="/include/module/template/Entry_Body/body_blog.html"-->
+				<!--#include file="/include/check-seo.html"-->
+			</main><!-- /#main -->
 
-</div><!-- /.container -->
+			<aside id="sub">
+					<!--#include file="/include/parts/search_form.html"-->
+					<!--#include file="/include/module/template/Entry_ArchiveList/entry_archive_list_default.html"-->
+					<!--#include file="/include/module/template/Category_List/category_list_default.html"-->
+			</aside><!-- /#sub -->
+
+	</div><!-- /.flex-col-2 -->
+
+</div><!-- /.container-fluid -->
 
 <!--#include file="/include/footer.html"-->
 <!--#include file="/include/body_last.html"-->
