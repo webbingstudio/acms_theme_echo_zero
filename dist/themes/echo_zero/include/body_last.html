@@ -1,2 +1,19 @@
 <script src="/js/common.js"></script>
 <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+<script src="/js/slick.min.js"></script>
+
+<script>
+(function($){
+  $(function(){
+    $('.js-slick').slick({
+      infinite: true,
+      autoplay: true,
+      fade: true,
+      speed: 1500,
+      pauseOnHover: false,
+      arrows: false,
+      dots: true
+    });
+  });
+})(jQuery);
+</script>
