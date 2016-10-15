@@ -7,20 +7,49 @@ p.echo-alert {
 	color: #c5001d;
 	border-radius: 5px;
 }
-#echo-field-control .acms-admin-admin-title2 {
-	background-color: #cd7086;
-	margin-bottom: 10px;
+
+.echo-info {
+	margin: 5px 0 10px !important;
+	padding: 5px 10px;
+	background-color: #ccf3cc;
+	border: 1px solid #9c9;
+	color: #333;
+	border-radius: 5px;
 }
 
-#echo-field-control .acms-admin-admin-title2 a.js-fader {
+.acms-admin-admin-title2 {
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.acms-admin-admin-title2 a.js-fader {
 	display: block;
 	color: #fff !important;
+	padding: 4px 10px;
 	outline: none;
 }
 
-#echo-field-control a.js-fader:after {
-	content: "▼";
+.acms-admin-admin-title2 a.js-fader:hover {
+	background-color: rgba( 0,0,0,.3 );
+}
+
+a.js-fader:after {
+	content: "\e925";
+    font-family: acms-admin-fonts;
+    vertical-align: middle;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 	margin-left: .5em;
+}
+
+a.js-fader-active:after {
+	content: "\e90e";
 }
 </style>
 <!--#include file="/admin/blog/field_seo.html" -->

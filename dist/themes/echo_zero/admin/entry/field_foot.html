@@ -1,3 +1,4 @@
+<!-- BEGIN_MODULE Blog_Field -->
 <script>
 ACMS.Ready(function() {
 	var f = $('form#entryForm');
@@ -9,14 +10,35 @@ ACMS.Ready(function() {
 	// インデキシングの後に説明文を追加する
 	$('input[name="indexing"]', f).closest('tr').find('th').append('<i class="acms-admin-icon-tooltip js-acms-tooltip acms-admin-margin-left-mini" data-acms-tooltip="チェックを外すと、このエントリーは一覧ページに表示されない「隠しページ」となります。"></i>');
 
-	// 特定のカテゴリーのとき
-	if( current_rccd == 'xxx' ) {
+	<!-- BEGIN_IF [{blog_edit_category_hidden}/eq/disabled] -->
 
-		// カテゴリーを変更不可にする
-//		current_label = current_cname;
-//		$('select[name="category_id"]', f).parents('td')
-//			.wrapInner('<div style="display: none;"></div>')
-//			.append('<span class="acms-admin-text-danger">' + current_label + '</span>');
+	// カテゴリーを変更不可にする
+	current_label = current_cname;
+	$('select[name="category_id"]', f).parents('td')
+		.wrapInner('<div style="display: none;"></div>')
+		.append('<span class="acms-admin-text-danger">' + current_label + '</span>');
+
+	<!-- ELSE_IF [{blog_edit_category_hidden}/eq/hidden] -->
+
+	// カテゴリーを使用しない
+	$('select[name="category_id"]', f).closest('tr').css({
+		display: 'none'
+	});
+
+	<!-- END_IF -->
+
+	<!-- BEGIN_IF [{blog_edit_tag_hidden}/eq/hidden] -->
+
+	// タグを使用しない
+	$('input[name="tag"]', f).closest('tr').css({
+		display: 'none'
+	});
+
+	<!-- END_IF -->
+
+	// 特定のカテゴリーのとき
+	if( current_rccd == 'xxxxxxx' ) {
+	}
 
 		// タイトルのラベル変更
 //		$('input[name="title"]', f)
@@ -27,12 +49,6 @@ ACMS.Ready(function() {
 		// デフォルトのステータスを「公開」にする
 //		$('select[name="status"]', f).val('open');
 
-		// タグを使用しない
-//		$('input[name="tag"]', f).closest('tr').css({
-//			display: 'none'
-//		});
-
-	}
-
 });
 </script>
+<!-- END_MODULE Blog_Field -->

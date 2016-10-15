@@ -1,17 +1,98 @@
 <div id="echo-field-control">
-<h3 class="acms-admin-admin-title2"><a href="#fade-control" class="js-fader">入力項目の設定</a></h3>
+<h3 class="acms-admin-admin-title2"><a href="#fade-control" class="js-fader">エントリー入力項目の設定</a></h3>
 <div id="fade-control">
 
-	<p class="echo-alert">管理ページ・編集ボックスでの項目の表示状態のみ変更します。すでに入力された内容を無効にすることはできません。</p>
-
-
-	<h4 class="acms-admin-admin-title3">エントリー</h4>
 	<table class="adminTable acms-admin-table-admin-edit">
+
 		<tr>
-			<td colspan="2">
+			<th>カテゴリー</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_category_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_edit_category_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_category_hidden" value="disabled" class="acms-admin-btn-radio"{blog_edit_category_hidden:checked#disabled} /><i class="acms-admin-ico-radio"></i>変更を禁止</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_category_hidden" value="hidden" class="acms-admin-btn-radio"{blog_edit_category_hidden:checked#hidden} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_edit_category_hidden" />
 			</td>
 		</tr>
+
+		<tr>
+			<th>タグ</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_tag_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_edit_tag_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_tag_hidden" value="hidden" class="acms-admin-btn-radio"{blog_edit_tag_hidden:checked#hidden} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_edit_tag_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>METAのタイトル</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_meta_title_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_edit_meta_title_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_meta_title_hidden" value="hidden" class="acms-admin-btn-radio"{blog_edit_meta_title_hidden:checked#hidden} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_edit_meta_title_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>METAの概要文</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_meta_description_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_edit_meta_description_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_meta_description_hidden" value="hidden" class="acms-admin-btn-radio"{blog_edit_meta_description_hidden:checked#hidden} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_edit_meta_description_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>ピックアップ</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_pickup_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_edit_pickup_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_pickup_hidden" value="hidden" class="acms-admin-btn-radio"{blog_edit_pickup_hidden:checked#hidden} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_edit_pickup_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>アイキャッチ画像</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_eyecatch_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_edit_eyecatch_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_eyecatch_hidden" value="hidden" class="acms-admin-btn-radio"{blog_edit_eyecatch_hidden:checked#hidden} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_edit_eyecatch_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>OGP画像</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_ogp_image_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_edit_ogp_image_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_ogp_image_hidden" value="hidden" class="acms-admin-btn-radio"{blog_edit_ogp_image_hidden:checked#hidden} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_edit_ogp_image_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>追加のHTMLヘッダ</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_meta_ex_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_edit_meta_ex_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_meta_ex_hidden" value="hidden" class="acms-admin-btn-radio"{blog_edit_meta_ex_hidden:checked#hidden} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_edit_meta_ex_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th></th>
+			<td>
+				<p class="echo-alert">管理ページ・編集ボックスでの項目の表示状態のみ変更します。すでに入力された内容を無効にすることはできません。</p>
+			</td>
+		</tr>
+
 	</table>
+
+	<!-- BEGIN_MODULE Touch_Debug -->
+	<p class="echo-info">
+		<strong>デバッグモードのみ表示</strong>　「カテゴリー」「タグ」の表示切り替えは、JavaScriptで行っています。修正の際は、テーマ内「admin/entry/field_foot.html」を参照ください。
+	</p>
+	<!-- END_MODULE Touch_Debug -->
+
+
 
 </div>
 </div>	
