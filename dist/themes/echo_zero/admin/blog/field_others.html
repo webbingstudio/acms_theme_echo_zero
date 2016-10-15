@@ -4,7 +4,7 @@
 	<tr>
 		<th>Google Analytics<i data-acms-tooltip="Google Analytics の解析用のタグを設定します。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
-			<textarea name="google_analytics" cols="60" rows="5">{google_analytics}</textarea>
+			<textarea name="google_analytics" cols="60" rows="3" class="acms-admin-form-width-full">{google_analytics}</textarea>
 			<input type="hidden" name="field[]" value="google_analytics" />
 		</td>
 	</tr>
@@ -28,9 +28,9 @@
 	<tr>
 		<th>追加のHTMLヘッダ<i data-acms-tooltip="HTMLヘッダの末尾にアクセス解析などのコードを追加したい場合は、ここに入力してください。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
-			<textarea name="blog_meta_ex" rows="5" class="js-countup acms-admin-form-width-full">{blog_meta_ex}[raw]</textarea>
+			<textarea name="blog_meta_ex" cols="60" rows="5" class="acms-admin-form-width-full">{blog_meta_ex}[raw]</textarea>
 			<input type="hidden" name="field[]" value="blog_meta_ex" />
-			<div class="acms-admin-text-danger">この項目では、a-blog cmsのテンプレートタグも利用できます。取り扱いにご注意ください。</div>
+			<p class="echo-alert">この項目では、a-blog cmsのテンプレートタグも利用できます。取り扱いにご注意ください。</p>
 		</td>
 	</tr>
 </table>

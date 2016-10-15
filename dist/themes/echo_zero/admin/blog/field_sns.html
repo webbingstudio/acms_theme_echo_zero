@@ -1,5 +1,17 @@
+<!-- BEGIN_IF [{facebook_account_hidden}/neq/true/_or_/{twitter_account_hidden}/neq/true] -->
 <h3 class="acms-admin-admin-title2">SNS関連の設定</h3>
+<!-- ELSE -->
+<!-- BEGIN_IF [{facebook_app_id_hidden}/neq/true/_or_/{ogp_image_hidden}/neq/true] -->
+<h3 class="acms-admin-admin-title2">SNS関連の設定</h3>
+<!-- END_IF -->
+<!-- END_IF -->
+
 <table class="adminTable acms-admin-table-admin-edit">
+
+	<!-- BEGIN_IF [{facebook_account_hidden}/eq/true] -->
+	<input type="hidden" name="facebook_account" value="{facebook_account}" />
+	<input type="hidden" name="field[]" value="facebook_account" />
+	<!-- ELSE -->
 	<tr>
 		<th>Facebook</th>
 		<td>
@@ -7,6 +19,12 @@
 			<input type="hidden" name="field[]" value="facebook_account">
 		</td>
 	</tr>
+	<!-- END_IF -->
+
+	<!-- BEGIN_IF [{twitter_account_hidden}/eq/true] -->
+	<input type="hidden" name="twitter_account" value="{twitter_account}" />
+	<input type="hidden" name="field[]" value="twitter_account" />
+	<!-- ELSE -->
 	<tr>
 		<th>Twitter</th>
 		<td>
@@ -14,7 +32,12 @@
 			<input type="hidden" name="field[]" value="twitter_account">
 		</td>
 	</tr>
+	<!-- END_IF -->
 
+	<!-- BEGIN_IF [{facebook_app_id_hidden}/eq/true] -->
+	<input type="hidden" name="facebook_app_id" value="{facebook_app_id}" />
+	<input type="hidden" name="field[]" value="facebook_app_id" />
+	<!-- ELSE -->
 	<tr>
 		<th>Facebook アプリケーションID</th>
 		<td>
@@ -22,7 +45,14 @@
 			<input type="hidden" name="field[]" value="facebook_app_id">
 		</td>
 	</tr>
+	<!-- END_IF -->
 
+	<!-- BEGIN_IF [{ogp_image_hidden}/eq/true] -->
+	<input type="hidden" name="ogp_image@path" value="{ogp_image@path}" />
+	<input type="hidden" name="field[]" value="ogp_image" />
+	<input type="hidden" name="ogp_image:extension" value="image" />
+	<input type="hidden" name="ogp_image@width" value="1200" />
+	<!-- ELSE -->
 	<tr>
 		<th>OGP画像<i data-acms-tooltip="幅1200ピクセル、高さ630ピクセルの画像をアップロードしてください。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
@@ -39,6 +69,8 @@
 			<input type="hidden" name="ogp_image@width" value="1200" />
 		</td>
 	</tr>
+	<!-- END_IF -->
+
 </table>
 
 <input type="hidden" name="fb_admins" value="{fb_admins}" />

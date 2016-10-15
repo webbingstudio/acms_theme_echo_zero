@@ -1,5 +1,17 @@
+<!-- BEGIN_IF [{blog_meta_title_hidden}/neq/true/_or_/{blog_meta_description_hidden}/neq/true] -->
 <h3 class="acms-admin-admin-title2">検索エンジンの設定</h3>
+<!-- ELSE -->
+<!-- BEGIN_IF [{blog_meta_robots_hidden}/neq/true] -->
+<h3 class="acms-admin-admin-title2">検索エンジンの設定</h3>
+<!-- END_IF -->
+<!-- END_IF -->
 <table class="adminTable acms-admin-table-admin-edit">
+
+	<!-- BEGIN_IF [{blog_meta_title_hidden}/eq/true] -->
+	<input type="hidden" name="blog_meta_title" value="{blog_meta_title}" />
+	<input type="hidden" name="field[]" value="blog_meta_title" />
+	<input type="hidden" name="blog_meta_title:search" value="0" />
+	<!-- ELSE -->
 	<tr>
 		<th>トップページのタイトル - <small>title</small><i data-acms-tooltip="このブログのトップページのMETAタグ（title）を設定します。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
@@ -9,16 +21,28 @@
 			<span class="keyword_countup"></span> 文字
 		</td>
 	</tr>
+	<!-- END_IF -->
 
+	<!-- BEGIN_IF [{blog_meta_description_hidden}/eq/true] -->
+	<input type="hidden" name="blog_meta_description" value="{blog_meta_description}" />
+	<input type="hidden" name="field[]" value="blog_meta_description" />
+	<input type="hidden" name="blog_meta_description:search" value="0" />
+	<!-- ELSE -->
 	<tr>
 		<th>トップページの概要文 - <small>description</small><i data-acms-tooltip="このブログのトップページのMETAタグ（description）を設定します。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
-			<textarea name="blog_meta_description" rows="5" class="js-countup acms-admin-form-width-full" data-max="99999" data-label-target=".description_countup">{blog_meta_description}</textarea>
+			<textarea name="blog_meta_description" cols="60" rows="3" class="js-countup acms-admin-form-width-full" data-max="99999" data-label-target=".description_countup">{blog_meta_description}</textarea>
 			<input type="hidden" name="field[]" value="blog_meta_description" />
 			<input type="hidden" name="blog_meta_description:search" value="0" />
 			<p class="acms-admin-float-right"><span class="description_countup"></span> 文字</p>
 		</td>
 	</tr>
+	<!-- END_IF -->
+
+	<!-- BEGIN_IF [{blog_meta_robots_hidden}/eq/true] -->
+	<input type="hidden" name="blog_meta_robots" value="{blog_meta_robots}" />
+	<input type="hidden" name="field[]" value="blog_meta_robots" />
+	<!-- ELSE -->
 	<tr>
 		<th>検索エンジン - <small>noindex</small><i data-acms-tooltip="チェックするとこのブログをインデックスされないようにします。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
@@ -29,6 +53,7 @@
 			<input type="hidden" name="field[]" value="blog_meta_robots" />
 		</td>
 	</tr>
+	<!-- END_IF -->
 </table>
 
 <input type="hidden" name="blog_meta_keywords" value="{blog_meta_keywords}" />

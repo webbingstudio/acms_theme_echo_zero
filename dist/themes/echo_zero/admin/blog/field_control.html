@@ -1,0 +1,86 @@
+<div id="echo-field-control">
+<h3 class="acms-admin-admin-title2"><a href="#fade-control" class="js-fader">入力項目の設定</a></h3>
+<div id="fade-control">
+
+	<p class="echo-alert">管理ページ・編集ボックスでの項目の表示状態のみ変更します。すでに入力された内容を無効にすることはできません。</p>
+
+	<h4 class="acms-admin-admin-title3">ブログ</h4>
+	<table class="adminTable acms-admin-table-admin-edit">
+
+		<tr>
+			<th>トップページのタイトル</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_meta_title_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_meta_title_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_meta_title_hidden" value="true" class="acms-admin-btn-radio"{blog_meta_title_hidden:checked#true} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_meta_title_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>トップページの概要文</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_meta_description_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_meta_description_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_meta_description_hidden" value="true" class="acms-admin-btn-radio"{blog_meta_description_hidden:checked#true} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_meta_description_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>検索エンジン</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_meta_robots_hidden" value=""<!-- BEGIN_IF [{blog_meta_robots_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_meta_robots_hidden" value="true"{blog_meta_robots_hidden:checked#true} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_meta_robots_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>Facebook</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="facebook_account_hidden" value=""<!-- BEGIN_IF [{facebook_account_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="facebook_account_hidden" value="true"{facebook_account_hidden:checked#true} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="facebook_account_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>Twitter</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="twitter_account_hidden" value=""<!-- BEGIN_IF [{twitter_account_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="twitter_account_hidden" value="true"{twitter_account_hidden:checked#true} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="twitter_account_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>Facebook アプリケーションID</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="facebook_app_id_hidden" value=""<!-- BEGIN_IF [{facebook_app_id_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="facebook_app_id_hidden" value="true"{facebook_app_id_hidden:checked#true} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="facebook_app_id_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>OGP画像</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="ogp_image_hidden" value=""<!-- BEGIN_IF [{ogp_image_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="ogp_image_hidden" value="true"{ogp_image_hidden:checked#true} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="ogp_image_hidden" />
+			</td>
+		</tr>
+
+	</table>
+
+
+	<h4 class="acms-admin-admin-title3">エントリー</h4>
+	<table class="adminTable acms-admin-table-admin-edit">
+		<tr>
+			<td colspan="2">
+			</td>
+		</tr>
+	</table>
+
+</div>
+</div>	
+
