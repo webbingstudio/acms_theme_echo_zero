@@ -69,20 +69,42 @@ $btn-padding-y-xl:           1rem !default;
 // Typography
 // -----------------------------------------
 
+// Font Mapping
+
+@mixin font-face-mapping() {
+
+  /* thanks: https://speakerdeck.com/tacamy/modanri-ben-yu-huontozhi-ding */
+
+  @font-face {
+    font-family: 'PGYuGothic';
+    font-weight: normal;
+    src: local('YuGothic-Medium'),
+         local('Yu Gothic Medium'),
+         local('YuGothic-Regular');
+  }
+  @font-face {
+    font-family: 'PGYuGothic';
+    font-weight: bold;
+    src: local('YuGothic-Bold'),
+         local('Yu Gothic');
+  }
+
+}
+
 // Fonts
-$font-family-base:          'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif !default;
+$font-family-base:          '-apple-system', 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif !default;
 $font-weight:               300 !default;
 $font-weight-bold:          700 !default;
 
-$font-family-sans:          'Avenir', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Verdana', 'Roboto', sans-serif !default;
+$font-family-sans:          '-apple-system', 'Roboto', 'Open Sans', 'Arial', 'Helvetica', sans-serif !default;
 $font-family-mono:          'Consolas', 'Liberation Mono', 'Menlo', 'Courier', monospace !default;
 
 // Design fonts
-$font-family-01:            '游ゴシック', 'YuGothic', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-family-01:            'PGYuGothic', 'YuGothic', -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif !default;
 $font-weight-01:            400 !default;
 $font-weight-bold-01:       $font-weight-bold !default;
 // $font-family-02:            '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', "HGS明朝E", 'ＭＳ Ｐ明朝', 'MS PMincho', serif !default;
-$font-family-02:            '游ゴシック', 'YuGothic', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$font-family-02:            $font-family-01;
 $font-weight-02:            400 !default;
 $font-weight-bold-02:       $font-weight-bold !default;
 

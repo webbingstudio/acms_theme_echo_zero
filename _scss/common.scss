@@ -20,7 +20,7 @@
 
 // - Theme Styles
 
-
+@include font-face-mapping();
 
 // Structure
 // ----------------------------
@@ -30,6 +30,7 @@
 }
 
 html {
+  font-family: $font-family-01;
   font-size: $font-size-base;
 
   @include media-breakpoint-down(xs) {
@@ -50,7 +51,6 @@ body {
   margin: 0;
   background-color: $body-bg;
   color: $body-color;
-  font-family: $font-family-01;
   font-weight: $font-weight-01;
   line-height: $line-height;
 }
