@@ -14,6 +14,9 @@ ACMS.Ready(function() {
 
 	// カテゴリーを変更不可にする
 	current_label = current_cname;
+	if( !current_label ) {
+		current_label = '指定なし';
+	}
 	$('select[name="category_id"]', f).parents('td')
 		.wrapInner('<div style="display: none;"></div>')
 		.append('<span class="acms-admin-text-danger">' + current_label + '</span>');

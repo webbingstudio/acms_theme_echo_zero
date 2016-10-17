@@ -1,35 +1,63 @@
-<div class="acms-admin-accordion">
-	<p class="acms-admin-accordion-title"><a href="#fadeSeoInfo" class="js-fader acms-admin-accordion-title-link" style="font-size: inherit;">検索エンジンの設定<span class="acms-admin-icon-arrow-small-down"></span></a></p>
-	<div id="fadeSeoInfo" class="acms-admin-accordion-inner">
-		<table class="entryFormTable acms-admin-table-entry">
-			<tr>
-				<th>タイトル - <small>title</small><i data-acms-tooltip="エントリーのtitleタグを設定します。" class="acms-admin-icon-tooltip acms-admin-inline-space-left js-acms-tooltip"></i>
-					<div>
-						<span class="acms-admin-label"><span class="keyword_countup"></span> 文字</span>
-					</div>
-				</th>
-				<td>
-					<input type="text" name="entry_meta_title" value="{entry_meta_title}" class="js-countup acms-admin-form-width-medium" data-max="9999" data-label-target=".keyword_countup" />
-					<input type="hidden" name="field[]" value="entry_meta_title" />
-					<input type="hidden" name="entry_meta_title:search" value="0" />
-				</td>
-			</tr>
+<!-- BEGIN_MODULE Blog_Field -->
+<!-- BEGIN_IF [{blog_edit_meta_title_hidden}/neq/hidden/_or_/{blog_edit_meta_description_hidden}/neq/hidden] -->
+	<div class="acms-admin-accordion">
+		<p class="acms-admin-accordion-title"><a href="#fadeSeoInfo" class="js-fader acms-admin-accordion-title-link" style="font-size: inherit;">検索エンジンの設定<span class="acms-admin-icon-arrow-small-down"></span></a></p>
+		<div id="fadeSeoInfo" class="acms-admin-accordion-inner">
+			<table class="entryFormTable acms-admin-table-entry">
+<!-- END_IF -->
 
-			<tr>
-				<th>概要文 - <small>description</small><i data-acms-tooltip="エントリーの METAタグ（Description）を設定します。" class="acms-admin-icon-tooltip acms-admin-inline-space-left js-acms-tooltip"></i>
-					<div>
-						<span class="acms-admin-label"><span class="description_countup"></span> 文字</span>
-					</div>
-				</th>
-				<td>
-					<textarea name="entry_meta_description" rows="3" class="js-countup acms-admin-form-width-full" data-max="9999" data-label-target=".description_countup">{entry_meta_description}</textarea>
-					<input type="hidden" name="field[]" value="entry_meta_description" />
-					<input type="hidden" name="entry_meta_description:search" value="0" />
-				</td>
-			</tr>
-		</table>
+			<!-- BEGIN_IF [{blog_edit_meta_title_hidden}/eq/hidden] -->
+				<!-- BEGIN_MODULE Entry_Field -->
+				<input type="hidden" name="entry_meta_title" value="{entry_meta_title}" />
+				<input type="hidden" name="field[]" value="entry_meta_title" />
+				<input type="hidden" name="entry_meta_title:search" value="0" />
+				<!-- END_MODULE Entry_Field -->
+			<!-- ELSE -->
+				<!-- BEGIN_MODULE Entry_Field -->
+				<tr>
+					<th>タイトル - <small>title</small><i data-acms-tooltip="エントリーのtitleタグを設定します。" class="acms-admin-icon-tooltip acms-admin-inline-space-left js-acms-tooltip"></i>
+						<div>
+							<span class="acms-admin-label"><span class="keyword_countup"></span> 文字</span>
+						</div>
+					</th>
+					<td>
+						<input type="text" name="entry_meta_title" value="{entry_meta_title}" class="js-countup acms-admin-form-width-medium" data-max="9999" data-label-target=".keyword_countup" />
+						<input type="hidden" name="field[]" value="entry_meta_title" />
+						<input type="hidden" name="entry_meta_title:search" value="0" />
+					</td>
+				</tr>
+				<!-- END_MODULE Entry_Field -->
+			<!-- END_IF -->
+
+			<!-- BEGIN_IF [{blog_edit_meta_description_hidden}/eq/hidden] -->
+				<!-- BEGIN_MODULE Entry_Field -->
+				<input type="hidden" name="entry_meta_description" value="{entry_meta_description}" />
+				<input type="hidden" name="field[]" value="entry_meta_description" />
+				<input type="hidden" name="entry_meta_description:search" value="0" />
+				<!-- END_MODULE Entry_Field -->
+			<!-- ELSE -->
+				<!-- BEGIN_MODULE Entry_Field -->
+				<tr>
+					<th>概要文 - <small>description</small><i data-acms-tooltip="エントリーの METAタグ（Description）を設定します。" class="acms-admin-icon-tooltip acms-admin-inline-space-left js-acms-tooltip"></i>
+						<div>
+							<span class="acms-admin-label"><span class="description_countup"></span> 文字</span>
+						</div>
+					</th>
+					<td>
+						<textarea name="entry_meta_description" rows="3" class="js-countup acms-admin-form-width-full" data-max="9999" data-label-target=".description_countup">{entry_meta_description}</textarea>
+						<input type="hidden" name="field[]" value="entry_meta_description" />
+						<input type="hidden" name="entry_meta_description:search" value="0" />
+					</td>
+				</tr>
+				<!-- END_MODULE Entry_Field -->
+			<!-- END_IF -->
+
+<!-- BEGIN_IF [{blog_edit_meta_title_hidden}/neq/hidden/_or_/{blog_edit_meta_description_hidden}/neq/hidden] -->
+			</table>
+		</div>
 	</div>
-</div>
+<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->
 
 <input type="hidden" name="entry_meta_keywords" value="{entry_meta_keywords}" />
 <input type="hidden" name="field[]" value="entry_meta_keywords" />
