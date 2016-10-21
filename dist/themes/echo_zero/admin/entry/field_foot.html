@@ -23,7 +23,7 @@ ACMS.Ready(function() {
 
 	<!-- ELSE_IF [{blog_edit_category_hidden}/eq/hidden] -->
 
-	// カテゴリーを使用しない
+	// カテゴリーを表示しない
 	$('select[name="category_id"]', f).closest('tr').css({
 		display: 'none'
 	});
@@ -32,12 +32,32 @@ ACMS.Ready(function() {
 
 	<!-- BEGIN_IF [{blog_edit_tag_hidden}/eq/hidden] -->
 
-	// タグを使用しない
+	// タグを表示しない
 	$('input[name="tag"]', f).closest('tr').css({
 		display: 'none'
 	});
 
 	<!-- END_IF -->
+
+	<!-- BEGIN_IF [{blog_edit_eyecatch_hidden}/eq/hidden] -->
+
+	// アイキャッチ画像を表示しない
+	$('input[name="entry_eyecatch"]', f).closest('table').css({
+		display: 'none'
+	});
+
+	<!-- END_IF -->
+
+	<!-- BEGIN_IF [{blog_edit_ogp_image_hidden}/eq/hidden] -->
+
+	// OGP画像を表示しない
+	$('input[name="entry_ogp_image"]', f).closest('table').css({
+		display: 'none'
+	});
+
+	<!-- END_IF -->
+
+
 
 	// 特定のカテゴリーのとき
 	if( current_rccd == 'xxxxxxx' ) {

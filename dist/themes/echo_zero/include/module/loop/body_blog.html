@@ -7,6 +7,7 @@
 
 	<!--#include file="/admin/entry/revision-info.html"-->
 
+	<!-- BEGIN_MODULE Touch_NotEdit -->
 	<!-- BEGIN_IF [{entry_header_hidden}/neq/true] -->
 	<div class="post-header">
 		<!-- BEGIN title:veil -->
@@ -48,8 +49,11 @@
 
 	</div><!-- /.post-contents -->
 
+	<!-- BEGIN_IF [{entry_sns_hidden}/neq/true] -->
+	<!--#include file="/include/parts/share.html"-->
+	<!-- END_IF -->
+
 	<div class="post-footer">
-		<!--#include file="/include/parts/share.html"-->
 
 		<div class="post-footer-meta">
 			<!-- BEGIN tag:veil -->
@@ -65,6 +69,8 @@
 		</div><!-- /.post-footer-meta -->
 
 	</div><!-- /.post-footer -->
+
+	<!-- END_MODULE Touch_NotEdit -->
 
 	<!-- BEGIN adminEntryEdit -->
 	<!--#include file="/admin/entry/title.html"-->

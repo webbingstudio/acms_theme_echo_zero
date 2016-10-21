@@ -51,6 +51,24 @@
 		</tr>
 
 		<tr>
+			<th>エントリータイトルを隠す</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_header_hidden_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_edit_header_hidden_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_header_hidden_hidden" value="hidden" class="acms-admin-btn-radio"{blog_edit_header_hidden_hidden:checked#hidden} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_edit_header_hidden_hidden" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>SNSボタンを隠す</th>
+			<td>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_sns_hidden_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_edit_sns_hidden_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
+				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_sns_hidden_hidden" value="hidden" class="acms-admin-btn-radio"{blog_edit_sns_hidden_hidden:checked#hidden} /><i class="acms-admin-ico-radio"></i>表示しない</label>
+				<input type="hidden" name="field[]" value="blog_edit_sns_hidden_hidden" />
+			</td>
+		</tr>
+
+		<tr>
 			<th>アイキャッチ画像</th>
 			<td>
 				<label class="acms-admin-form-radio"><input type="radio" name="blog_edit_eyecatch_hidden" value="" class="acms-admin-btn-radio"<!-- BEGIN_IF [{blog_edit_eyecatch_hidden}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>表示する</label>
@@ -88,7 +106,7 @@
 
 	<!-- BEGIN_MODULE Touch_Debug -->
 	<p class="echo-info">
-		<strong>デバッグモードのみ表示</strong>　「カテゴリー」「タグ」の表示切り替えは、JavaScriptで行っています。修正の際は、テーマ内「admin/entry/field_foot.html」を参照ください。
+		<strong>デバッグモードのみ表示</strong>　「カテゴリー」「タグ」「アイキャッチ画像」「OGP画像」の表示切り替えは、JavaScriptで行っています。修正の際は、テーマ内「admin/entry/field_foot.html」を参照ください。
 	</p>
 	<!-- END_MODULE Touch_Debug -->
 

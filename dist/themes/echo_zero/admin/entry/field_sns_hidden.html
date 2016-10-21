@@ -1,0 +1,20 @@
+<!-- BEGIN_MODULE Blog_Field -->
+<!-- BEGIN_IF [{blog_edit_sns_hidden_hidden}/eq/hidden] -->
+	<!-- BEGIN_MODULE Entry_Field -->
+	<input type="hidden" name="entry_sns_hidden" value="{entry_sns_hidden}" />
+	<input type="hidden" name="field[]" value="entry_sns_hidden" />
+	<!-- END_MODULE Entry_Field -->
+<!-- ELSE -->
+	<!-- BEGIN_MODULE Entry_Field -->
+	<table class="entryFormTable acms-admin-table-entry">
+		<tr>
+			<th>SNSボタンを隠す<i data-acms-tooltip="ブックマークレットや、URLの直接入力によるシェアを禁止することはできません。" class="acms-admin-icon-tooltip acms-admin-inline-space-left js-acms-tooltip"></th>
+			<td>
+				<label class="acms-admin-form-checkbox"><input type="checkbox" name="entry_sns_hidden[]" value="true"{entry_sns_hidden:checked#true} /><i class="acms-admin-ico-checkbox"></i>このエントリーではSNSボタンを表示しない</label>
+				<input type="hidden" name="field[]" value="entry_sns_hidden" />
+			</td>
+		</tr>
+	</table>
+	<!-- END_MODULE Entry_Field -->
+<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->

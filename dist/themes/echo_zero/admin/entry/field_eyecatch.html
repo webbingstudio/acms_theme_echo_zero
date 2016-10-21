@@ -1,23 +1,23 @@
 <table class="entryFormTable acms-admin-table-entry">
-<tr>
-	<th>アイキャッチ画像 <i data-acms-tooltip="一覧ページに表示する画像をアップロードしてください。指定がない場合はエントリーのメイン画像が表示されます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
-	<td>
-		<div class="acms-admin-margin-bottom-mini">
-			<!-- BEGIN entry_eyecatch@path:veil -->
-			<img src="%{ARCHIVES_DIR}{entry_eyecatch@tinyPath}" class="acms-img-responsive" />
-			<input type="hidden" name="entry_eyecatch@old" value="{entry_eyecatch@path}" />
-			<input type="hidden" name="entry_eyecatch@secret" value="{entry_eyecatch@secret}" />
-			<label class="acms-admin-form-checkbox">
-				<input type="checkbox" name="entry_eyecatch@edit" value="delete" />
-				<i class="acms-admin-ico-checkbox"></i> 削除
-			</label>
-			<!-- END entry_eyecatch@path:veil -->
-			<input type="file" name="entry_eyecatch" size="20" />
-			<input type="hidden" name="field[]" value="entry_eyecatch" />
-			<input type="hidden" name="entry_eyecatch:extension" value="image" />
-			<input type="hidden" name="entry_eyecatch@width" value="480" />
-			<input type="hidden" name="entry_eyecatch@tinyWidth" value="200" />
-		</div>
-	</td>
-</tr>
+	<tr>
+		<th>アイキャッチ画像 <i data-acms-tooltip="一覧ページに表示する画像をアップロードしてください。指定がない場合はエントリーのメイン画像が表示されます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+		<td>
+			<div class="acms-admin-margin-bottom-mini">
+				<!-- BEGIN entry_eyecatch@path:veil -->
+				<img src="%{ARCHIVES_DIR}{entry_eyecatch@tinyPath}" class="acms-img-responsive" />
+				<input type="hidden" name="entry_eyecatch@old" value="{entry_eyecatch@path}" />
+				<input type="hidden" name="entry_eyecatch@secret" value="{entry_eyecatch@secret}" />
+				<label class="acms-admin-form-checkbox">
+					<input type="checkbox" name="entry_eyecatch@edit" value="delete" />
+					<i class="acms-admin-ico-checkbox"></i> 削除
+				</label>
+				<!-- END entry_eyecatch@path:veil -->
+				<input type="file" name="entry_eyecatch" size="20" />
+				<input type="hidden" name="field[]" value="entry_eyecatch" />
+				<input type="hidden" name="entry_eyecatch:extension" value="image" />
+				<input type="hidden" name="entry_eyecatch@width" value="480" />
+				<input type="hidden" name="entry_eyecatch@tinyWidth" value="200" />
+			</div>
+		</td>
+	</tr>
 </table>
