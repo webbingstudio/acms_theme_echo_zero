@@ -69,7 +69,7 @@
 ### エントリーに画像がない場合はルートブログのOGP画像を表示する
 <!-- END_MODULE Sample:veil -->
 <!-- BEGIN_SetRendered id="var_meta_image" -->
-<!-- BEGIN_IF [{path}/nem] -->%{HOME_URL}{path}
+<!-- BEGIN_IF [{path}/nem] -->%{PROTOCOL}://%{ALIAS_DOMAIN}{path}
 	<!-- ELSE -->
 		<!-- BEGIN_IF [{entry_ogp_image@path}/nem] -->%{HTTP_ARCHIVES_DIR}{entry_ogp_image@path}
 	<!-- ELSE -->
