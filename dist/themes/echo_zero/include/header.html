@@ -8,17 +8,17 @@
 	<div class="header-logo">
 <!-- END_MODULE Touch_NotTop -->
 
-<!-- BEGIN_MODULE Sample:veil -->
-## global判定 ----------------------------------------
-### グローバル変数の「BID」が「1」ではなく、かつブログフィールドの「id」が「1」の場合はglobalが有効とみなす
-### globalであればリンク先が異なる
-<!-- END_MODULE Sample:veil -->
+	<!-- BEGIN_MODULE Sample:veil -->
+	## global判定 ----------------------------------------
+	### グローバル変数の「BID」が「1」ではなく、かつブログフィールドの「id」が「1」の場合はglobalが有効とみなす
+	### globalであればリンク先が異なる
+	<!-- END_MODULE Sample:veil -->
 
-<!-- BEGIN_IF [%{BID}/neq/1/_and_/{id}/eq/1] -->
-		<a href="%{HOME_URL}" target="_self">{name}</a>
-<!-- ELSE -->
-		<a href="%{BLOG_URL}" target="_self">{name}</a>
-<!-- END_IF -->
+	<!-- BEGIN_IF [%{BID}/neq/1/_and_/{id}/eq/1] -->
+		<a href="%{HOME_URL}" target="_self"><img src="/images/common/logo.svg" width="192" height="60" alt="{name}"></a>
+	<!-- ELSE -->
+		<a href="%{BLOG_URL}" target="_self"><img src="/images/common/logo.svg" width="192" height="60" alt="{name}"></a>
+	<!-- END_IF -->
 
 <!-- BEGIN_MODULE Touch_Top --><!-- /.header-logo --></h1><!-- END_MODULE Touch_Top -->
 <!-- BEGIN_MODULE Touch_NotTop --><!-- /.header-logo --></div><!-- END_MODULE Touch_NotTop -->
