@@ -82,7 +82,7 @@ body .ui-widget,
 .acms-admin-modal-dialog.large {
   max-width: 95%; }
 
-@media (min-width: 77rem) {
+@media (min-width: 1280px) {
   .acms-admin-modal-dialog.large {
     max-width: 1200px;
     min-width: 800px; } }
@@ -150,7 +150,7 @@ div[class*="column-echo-button"] {
 #entryForm .js-tag_insertion .emoji-trigger-btn-strong {
   font-weight: 700; }
 
-@media (min-width: 34rem) {
+@media (min-width: 425px) {
   .container .container {
     padding-left: 0;
     padding-right: 0; } }
