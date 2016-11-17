@@ -7,8 +7,8 @@
 # 
 # 公式からの変更
 # - 下マージンを削除（画面最上部に接する場合）
-# - エントリー追加ボタンとその他のボタンをグループ分け
-# - エントリー追加ボタンをブログ別・カテゴリー別に変更
+# - エントリー作成ボタンとその他のボタンをグループ分け
+# - エントリー作成ボタンをプルダウンに変更
 # - 調整CSSを追加
 # - #loginUserStatus内の変更はありません
 #
@@ -17,6 +17,10 @@
 <style>
 #adminBox {
   margin-bottom: 0;
+}
+#adminBox #acms-custom-admin-insert {
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 #adminBox .acms-admin-btn {
   min-width: 8em;
@@ -58,37 +62,26 @@
 
 	<div class="acms-admin-grid-r">
 		<div class="acms-admin-col-md-6">
-
-			<!-- BEGIN insert -->
 			<div class="acms-adminbox-inner clearfix">
-				<div class="acms-adminbox-inner-label">エントリーの作成</div>
 
-				<form action="" method="post" class="acms-admin-inline-btn">
-					<input type="submit" name="ACMS_POST_2GET" value="カテゴリー名" class="acms-admin-btn" />
-					<input type="hidden" name="admin" value="entry-edit" />
-					<input type="hidden" name="bid" value="%{BID}" />
-					<input type="hidden" name="cid" value="9999" />
+				<!-- BEGIN insert -->
+				<form class="acms-admin-form">
+					<select name="acms_custom_admin_insert" id="acms-custom-admin-insert" class="js-select-href acms-admin-form-width-medium">
+						<option value="">エントリーの新規作成</option>
+						<!-- BEGIN_MODULE Category_List id="category_list_admin" -->
+						<!-- BEGIN category:loop --><!-- BEGIN category:veil -->
+						<option value="%{SCRIPT_ROOT}bid/%{BID}/cid/{cid}/admin/entry-edit/">{name}</option>
+						<!-- END category:veil --><!-- END category:loop -->
+						<!-- END_MODULE Category_List -->
+						<option value="%{SCRIPT_ROOT}bid/%{BID}/admin/entry-edit/">その他</option>
+						<!-- <option value="%{SCRIPT_ROOT}bid/9999/admin/entry-edit/">ブログ名</option> -->
+					</select>
 				</form>
 
-				<form action="" method="post" class="acms-admin-inline-btn">
-					<input type="submit" name="ACMS_POST_2GET" value="子ブログ名" class="acms-admin-btn" />
-					<input type="hidden" name="admin" value="entry-edit" />
-					<input type="hidden" name="bid" value="9999" />
-					<input type="hidden" name="cid" value="" />
-				</form>
-
-				<form action="" method="post" class="acms-admin-inline-btn">
-					<input type="submit" name="ACMS_POST_2GET" value="その他" class="acms-admin-btn" />
-					<input type="hidden" name="admin" value="entry-edit" />
-					<input type="hidden" name="bid" value="%{BID}" />
-					<input type="hidden" name="cid" value="" />
-				</form>
-
-				<div class="acms-admin-text-success" style="clear:both; font-size: 12px;">既存エントリーの編集は、各ページへ移動してください。</div>
+				<div class="acms-admin-text-success" style="margin-bottom: 10px; font-size: 12px;">既存エントリーの編集は、各ページへ移動してください。</div>
+				<!-- END insert -->
 
 			</div>
-			<!-- END insert -->
-
 		</div>
 
 		<div class="acms-admin-col-md-6">
