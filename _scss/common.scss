@@ -31,18 +31,18 @@
 
 html {
   font-family: $font-family-01;
-  font-size: $font-size-base;
+  font-size: $font-size-root;
 
   @include media-breakpoint-down(xs) {
-    font-size: ($font-size-base * .875);
+    font-size: ($font-size-root * .875);
   }
 
   @include media-breakpoint-down(xss) {
-    font-size: ($font-size-base * .75);
+    font-size: ($font-size-root * .75);
   }
 
   @include media-breakpoint-up(xl) {
-    font-size: ($font-size-base * 1.125);
+    font-size: ($font-size-root * 1.125);
   }
 
 }
@@ -175,20 +175,20 @@ h6, .h6 {
   color: $gray-light;
 }
 
-.text-primary {
-  color: $color-primary-text;
+.text-first {
+  color: $first-text;
 }
 
-.text-secondary {
-  color: $color-secondary-text;
+.text-second {
+  color: $second-text;
+}
+
+.text-third {
+  color: $third-text;
 }
 
 .text-important {
-  color: $color-important-text;
-}
-
-.text-danger {
-  color: $color-danger-text;
+  color: $important-text;
 }
 
 
@@ -221,7 +221,7 @@ h6, .h6 {
 // ----------------------------
 
 .btn {
-  font-size: $font-size-base;
+  font-size: $font-size-root;
   font-family: $font-family-01;
   font-weight: $font-weight-01;
   border: $border-width solid transparent;
@@ -272,44 +272,88 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 
-.btn-primary {
+.btn-first {
   @include button-variant(
-    $btn-primary-color,
-    $btn-primary-bg,
-    $btn-primary-border,
-    lighten($btn-primary-bg, 10%),
-    lighten($btn-primary-border, 10%),
-    lighten($btn-primary-bg, 10%),
-    lighten($btn-primary-border, 10%)
+    $btn-first-color,
+    $btn-first-bg,
+    $btn-first-border,
+    lighten($btn-first-bg, 10%),
+    lighten($btn-first-border, 10%),
+    lighten($btn-first-bg, 10%),
+    lighten($btn-first-border, 10%)
   );
 
   span#{&} {
 
     &:hover,
     &:focus {
-      background-color: $btn-primary-bg;
+      background-color: $btn-first-bg;
     }
 
   }
 
 }
 
-.btn-secondary {
+.btn-second {
   @include button-variant(
-    $btn-secondary-color,
-    $btn-secondary-bg,
-    $btn-secondary-border,
-    lighten($btn-secondary-bg, 10%),
-    lighten($btn-secondary-border, 10%),
-    lighten($btn-secondary-bg, 10%),
-    lighten($btn-secondary-border, 10%)
+    $btn-second-color,
+    $btn-second-bg,
+    $btn-second-border,
+    lighten($btn-second-bg, 10%),
+    lighten($btn-second-border, 10%),
+    lighten($btn-second-bg, 10%),
+    lighten($btn-second-border, 10%)
   );
 
   span#{&} {
 
     &:hover,
     &:focus {
-      background-color: $btn-secondary-bg;
+      background-color: $btn-second-bg;
+    }
+
+  }
+
+}
+
+.btn-second-outline {
+  @include button-variant(
+    $btn-second-outline-color,
+    $btn-second-outline-bg,
+    $btn-second-outline-border,
+    lighten($btn-second-outline-bg, 10%),
+    lighten($btn-second-outline-border, 10%),
+    lighten($btn-second-outline-bg, 10%),
+    lighten($btn-second-outline-border, 10%)
+  );
+
+  span#{&} {
+
+    &:hover,
+    &:focus {
+      background-color: $btn-second-bg;
+    }
+
+  }
+
+}
+
+.btn-third {
+  @include button-variant(
+    $btn-third-color,
+    $btn-third-bg,
+    $btn-third-border,
+    lighten($btn-third-bg, 10%),
+    lighten($btn-third-border, 10%),
+    lighten($btn-third-bg, 10%),
+    lighten($btn-third-border, 10%)
+  );
+
+  span#{&} {
+
+    &:hover,
+    &:focus {
+      background-color: $btn-third-bg;
     }
 
   }
@@ -339,37 +383,15 @@ fieldset[disabled] a.btn {
 
 }
 
-.btn-danger {
-  @include button-variant(
-    $btn-danger-color,
-    $btn-danger-bg,
-    $btn-danger-border,
-    lighten($btn-danger-bg, 10%),
-    lighten($btn-danger-border, 10%),
-    lighten($btn-danger-bg, 10%),
-    lighten($btn-danger-border, 10%)
-  );
-
-  span#{&} {
-
-    &:hover,
-    &:focus {
-      background-color: $btn-danger-bg;
-    }
-
-  }
-
-}
 
 .btn-sm {
   padding: $btn-padding-y-sm $btn-padding-x-sm;
-  font-size: $font-size-sm;
+  font-size: $font-size-xs;
   border-radius: $border-radius-sm;
 }
 
 .btn-lg {
   padding: $btn-padding-y-lg $btn-padding-x-lg;
-  font-size: $font-size-lg;
   border-radius: $border-radius-lg;
 }
 
@@ -409,7 +431,7 @@ fieldset[disabled] a.btn {
           
           &:hover,
           &.stay {
-            background-color: $faded-hover;
+            background-color: $faded-second;
             color: $gray-dark;
             text-decoration: none;
           }
@@ -461,7 +483,7 @@ fieldset[disabled] a.btn {
           
           &:hover,
           &.stay {
-            background-color: $faded-hover;
+            background-color: $faded-second;
             color: $gray-dark;
             text-decoration: none;
           }
@@ -729,7 +751,7 @@ input[type="checkbox"] {
 .has-error {
   
   .form-control {
-    color: $color-important-text;
+    color: $important-text;
     background-color: $faded-important;
   }
 
@@ -883,32 +905,144 @@ input[type="checkbox"] {
 // ----------------------------
 
 #header {
-  padding: 2rem;
-  border-style: solid;
-  border-width: 0 0 1px;
-  border-color: $gray-dark;
+  padding: $spacer 0;
 
   .header-logo {
+    float: left;
     margin: 0;
     text-align: center;
     font-size: 24px;
     line-height: 1;
+
+     img {
+      position: relative;
+      top: 3px;
+      vertical-align: middle;
+     }
+
   }
 
 }
 
 .global-nav {
-  border-style: solid;
-  border-width: 1px 0;
-  border-color: $gray-dark;
-  text-align: center;
+  float: right;
+  margin-right: -1rem;
   
-  nav > ul > li > a {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  nav > ul > li {
+    font-size: $font-size-sm;
+
+    a {
+      padding-left: 1rem;
+      padding-right: 1rem;
+        
+      &:hover,
+      &.stay {
+        background-color: rgba(255,255,255,.5);
+      }
+
+    }
+
   }
 
 }
+
+.mainvisual {
+
+  .mainvisual-contents {
+
+    .mainvisual-slide {
+      position: relative;
+      background-color: #000;
+      max-height: 760px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 0 0 200px rgba(0, 0, 0, .5);
+        z-index: 202;
+      }
+
+      img.mainvisual-img {
+        position: relative;
+        z-index: 201;
+      }
+
+      a {
+        display: block;
+        color: $gray-dark;
+        text-decoration: none;
+      }
+
+      .mainvisual-box {
+        display: table;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform:translate(-50%, -50%);
+        -ms-transform:translate(-50%, -50%);
+        transform:translate(-50%, -50%);
+        width: 70%;
+        max-width: 400px;
+        min-height: 360px;
+        padding: 30px;
+        background-color: rgba(255,255,255,.25);
+        z-index: 203;
+
+        .mainvisual-box-inner {
+          display: table-cell;
+          padding: 5px;
+          background-color: rgba(255,255,255,.75);
+          vertical-align: middle;
+        }
+
+      }
+
+      .mainvisual-title {
+        margin: 0;
+        padding: 0 0 2rem;
+        font-size: 1.5rem;
+        font-family: $font-family-02;
+        font-weight: $font-weight-02;
+        text-align: center;
+        letter-spacing: .1rem;
+      }
+
+      .mainvisual-body {
+        margin: 0;
+        font-size: .875rem;
+        text-align: center;
+        line-height: 2;
+      }
+
+    }
+
+  }
+
+}
+
+.header-wrap {
+  position: relative;
+
+  #header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,.7);
+    z-index: 100;
+  }
+
+  .mainvisual {
+    position: relative;
+    z-index: 99;
+  }
+
+}
+
 
 
 #main {
@@ -954,7 +1088,7 @@ input[type="checkbox"] {
 
 
 .section {
-  margin: 0 0 ($spacer * 6);
+  margin: 0 0 ($spacer * 9);
 
   .section-header {
     padding: 0 0 ($spacer * 3);
@@ -963,8 +1097,11 @@ input[type="checkbox"] {
 
   .section-title {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    font-family: $font-family-02;
+    font-weight: $font-weight-02;
     text-align: center;
+    letter-spacing: .1rem;
   }
 
   .section-footer {
@@ -1175,7 +1312,7 @@ input[type="checkbox"] {
     z-index: 13;
 
     .badge {
-      background-color: $color-primary;
+      background-color: $first;
       padding: $spacer;
       box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
     }

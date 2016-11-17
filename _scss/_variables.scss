@@ -14,21 +14,20 @@ $gray-light:                #999999 !default;
 $gray-lighter:              #cccccc !default;
 $gray-lightest:             #eeeeee !default;
 
-$color-primary:             #4499ee !default;
-$color-primary-text:        #2288bb !default;
-$color-secondary:           $gray-dark !default;
-$color-secondary-text:      $gray-dark !default;
-$color-important:           #dd4455 !default;
-$color-important-text:      #dd0022 !default;
+$first:                     #4499ee !default;
+$first-text:                #2288bb !default;
+$second:                    $gray-dark !default;
+$second-text:               $gray-dark !default;
+$third:                     #55B677 !default;
+$third-text:                #339655 !default;
 
-$color-danger:              $color-important !default;
-$color-danger-text:         $color-important-text !default;
+$important:                 #dd4455 !default;
+$important-text:            #dd0022 !default;
 
 $faded:                     $gray-lightest !default;
-$faded-primary:             #e3f3ff !default;
+$faded-first:               #e3f3ff !default;
+$faded-second:              $gray-lightest !default;
 $faded-important:           #ffe9ee !default;
-$faded-hover:               $gray-lightest !default;
-
 
 $body-bg:                   white !default;
 $body-color:                $gray-dark !default;
@@ -37,33 +36,37 @@ $body-color:                $gray-dark !default;
 // Buttons
 // -----------------------------------------
 
-$btn-primary-color:          white !default;
-$btn-primary-bg:             $color-primary !default;
-$btn-primary-border:         $color-primary !default;
+$btn-first-color:           white !default;
+$btn-first-bg:              $first !default;
+$btn-first-border:          $first !default;
 
-$btn-secondary-color:        $color-secondary !default;
-$btn-secondary-bg:           white !default;
-$btn-secondary-border:       $color-secondary !default;
+$btn-second-color:          white !default;
+$btn-second-bg:             $second !default;
+$btn-second-border:         $second !default;
 
-$btn-important-color:        white !default;
-$btn-important-bg:           $color-important !default;
-$btn-important-border:       $color-important !default;
+$btn-second-outline-color:  $second !default;
+$btn-second-outline-bg:     white !default;
+$btn-second-outline-border: $second !default;
 
-$btn-danger-color:           white !default;
-$btn-danger-bg:              $color-danger !default;
-$btn-danger-border:          $color-danger !default;
+$btn-third-color:           white !default;
+$btn-third-bg:              $third !default;
+$btn-third-border:          $third !default;
 
-$btn-padding-x-sm:           .5rem !default;
-$btn-padding-y-sm:           .375rem !default;
+$btn-important-color:       white !default;
+$btn-important-bg:          $important !default;
+$btn-important-border:      $important !default;
 
-$btn-padding-x:              1rem !default;
-$btn-padding-y:              .5rem !default;
+$btn-padding-x-sm:          .5rem !default;
+$btn-padding-y-sm:          .25rem !default;
 
-$btn-padding-x-lg:           1.5rem !default;
-$btn-padding-y-lg:           .75rem !default;
+$btn-padding-x:             .5rem !default;
+$btn-padding-y:             .375rem !default;
 
-$btn-padding-x-xl:           2rem !default;
-$btn-padding-y-xl:           1rem !default;
+$btn-padding-x-lg:          1rem !default;
+$btn-padding-y-lg:          .5rem !default;
+
+$btn-padding-x-xl:          2rem !default;
+$btn-padding-y-xl:          1rem !default;
 
 
 // Typography
@@ -108,11 +111,12 @@ $font-family-02:            $font-family-01;
 $font-weight-02:            400 !default;
 $font-weight-bold-02:       $font-weight-bold !default;
 
-$font-size-base:            1rem !default;
-$font-size-xs:              .6875rem !default;
-$font-size-sm:              .75rem !default;
-$font-size-lg:              1.25rem !default;
-$font-size-xl:              1.5rem !default;
+$font-size-root:            1rem !default;
+$font-size-xs:              .75rem !default;
+$font-size-sm:              .875rem !default;
+$font-size-lg:              1.1875rem !default;
+$font-size-xl:              1.25rem !default;
+$font-size-xxl:             1.5rem !default;
 
 $line-height:               1.75 !default;
 $line-height-md:            1.5 !default;
@@ -123,8 +127,8 @@ $line-height-xs:            1 !default;
 // Links
 // -----------------------------------------
 
-$link-color:                 $color-primary-text !default;
-$link-hover-color:           $color-primary !default;
+$link-color:                 $first-text !default;
+$link-hover-color:           $first !default;
 $link-hover-decoration:      underline !default;
 
 
@@ -138,35 +142,35 @@ $border-color:               $gray-lighter !default;
 // Radius
 // -----------------------------------------
 
-$border-radius-sm:       .25rem;
-$border-radius:          .25rem;
-$border-radius-lg:       .375rem;
-$border-radius-xl:       .5rem;
+$border-radius-sm:           .25rem;
+$border-radius:              .25rem;
+$border-radius-lg:           .375rem;
+$border-radius-xl:           .5rem;
 
 
 // Grid
 // -----------------------------------------
 
 $grid-breakpoints: (
-  // More Extra small screen / iPhone 5s, iPhone 6SE
+  // More Extra small screen / iPhone 6SE
   xss: 0,
-  // Extra Small screen / iPhone 6
-  xs: 22rem,
-  // Small screen / phone
-  sm: 34rem,
+  // Extra Small screen / iPhone 7
+  xs: 375px,
+  // Small screen / iPhone 7 Plus, Nexus 7
+  sm: 425px,
   // Medium screen / tablet
-  md: 48rem,
+  md: 768px,
   // Large screen / desktop
-  lg: 62rem,
+  lg: 1024px,
   // Extra large screen / wide desktop
-  xl: 77rem
+  xl: 1280px
 ) !default;
 
 $container-max-widths: (
-  sm: 30rem,   // 480px
-  md: 46rem,   // 736px
-  lg: 60rem,   // 960px
-  xl: 75rem    // 1200px
+  sm: 395px,
+  md: 680px,
+  lg: 1040px,
+  xl: 1200px
 ) !default;
 
 $grid-columns:               12 !default;
