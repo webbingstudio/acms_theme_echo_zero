@@ -1,32 +1,49 @@
 <h3 class="acms-admin-admin-title2">モジュールの設定</h3>
 <table class="adminTable acms-admin-table-admin-edit">
 	<tr>
-		<th>見出し <i data-acms-tooltip="このモジュールの見出しを指定できます。見出しを表示できるレイアウトの場合のみ反映されます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+		<th>見出し <i data-acms-tooltip="このモジュールの見出しを指定できます。対応しているテンプレートを使用した場合のみ反映されます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
-			<input type="text" name="module_heading" value="{module_heading}" class="acms-admin-form-width-small" />
-			<input type="hidden" name="field[]" value="module_heading" />
+			<div class="acms-admin-inline-block">文字列</div>
+			<div class="acms-admin-inline-block" style="margin-right: 30px">
+				<input type="text" name="module_heading" value="{module_heading}" class="acms-admin-form-width-small" placeholder="未入力: 表示しない" />
+				<input type="hidden" name="field[]" value="module_heading" />
+			</div>
+			<div class="acms-admin-inline-block">HTMLタグ</div>
+			<div class="acms-admin-inline-block">
+				<input type="text" name="module_heading_tag" value="{module_heading_tag}" class="acms-admin-form-width-mini" placeholder="未入力: p" />
+				<input type="hidden" name="field[]" value="module_heading_tag" />
+			</div>
 		</td>
 	</tr>
 
 	<tr>
-		<th>一覧ページへのリンク <i data-acms-tooltip="一覧ページへのリンクボタンを追加できます。一覧ボタンを表示できるレイアウトの場合のみ反映されます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+		<th>サブ見出し <i data-acms-tooltip="このモジュールのサブ見出しを指定できます。対応しているテンプレートを使用した場合のみ反映されます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
-			<div class="acms-admin-grid-r">
-				<div class="acms-admin-col-lg-4">
-					文字列: <input type="text" name="module_index_label" value="{module_index_label}" class="acms-admin-form-width-small" />
-					<input type="hidden" name="field[]" value="module_index_label" />
-				</div>
+			<input type="text" name="module_subtitle" value="{module_subtitle}" class="acms-admin-form-width-large" placeholder="未入力: 表示しない" />
+			<input type="hidden" name="field[]" value="module_subtitle" />
+		</td>
+	</tr>
 
-				<div class="acms-admin-col-lg-8">
-					URL: <input type="text" name="module_index_url" value="{module_index_url}" class="acms-admin-form-width-medium" />
-					<input type="hidden" name="field[]" value="module_index_url" />
-				</div>
+	<tr>
+		<th>キャプション <i data-acms-tooltip="このモジュールのキャプションを指定できます。対応しているテンプレートを使用した場合のみ反映されます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+		<td>
+			<input type="text" name="module_caption" value="{module_caption}" class="acms-admin-form-width-large" placeholder="未入力: 表示しない" />
+			<input type="hidden" name="field[]" value="module_caption" />
+		</td>
+	</tr>
 
-				<div class="acms-admin-col-lg-12">
-					<div class="acms-admin-text-danger">
-					文字列が未入力の場合は「一覧」となります。URLが未入力の場合は文字列の内容に関わらずボタンは表示されません。
-					</div>
-				</div>
+	<tr>
+		<th>一覧ページへのリンク <i data-acms-tooltip="一覧ページへのリンクを追加できます。対応しているテンプレートを使用した場合のみ反映されます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+		<td>
+			<div class="acms-admin-inline-block">文字列</div>
+			<div class="acms-admin-inline-block" style="margin-right: 30px">
+				<input type="text" name="module_index_label" value="{module_index_label}" class="acms-admin-form-width-small" placeholder="未入力: 一覧" />
+				<input type="hidden" name="field[]" value="module_index_label" />
+			</div>
+			<div class="acms-admin-inline-block">URL</div>
+			<div class="acms-admin-inline-block">
+				<input type="text" name="module_index_url" value="{module_index_url}" class="acms-admin-form-width-medium" placeholder="未入力: 表示しない" />
+				<input type="hidden" name="field[]" value="module_index_url" />
 			</div>
 		</td>
 	</tr>
@@ -34,17 +51,18 @@
 	<tr>
 		<th>追加属性 <i data-acms-tooltip="このモジュール全体を囲む要素に、classとidを追加できます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
-			<div class="acms-admin-grid-r">
-				<div class="acms-admin-col-lg-4">
-					id: <input type="text" name="module_exid" value="{module_exid}" class="acms-admin-form-width-small" />
-					<input type="hidden" name="field[]" value="module_exid" />
-				</div>
+			<div class="acms-admin-inline-block">id</div>
+			<div class="acms-admin-inline-block" style="margin-right: 30px">
+				<input type="text" name="module_exid" value="{module_exid}" class="acms-admin-form-width-small" />
+				<input type="hidden" name="field[]" value="module_exid" />
+			</div>
 
-				<div class="acms-admin-col-lg-8">
-					class: <input type="text" name="module_exclass" value="{module_exclass}" class="acms-admin-form-width-small" />
-					<input type="hidden" name="field[]" value="module_exclass" />
-				</div>
+			<div class="acms-admin-inline-block">class</div>
+			<div class="acms-admin-inline-block">
+				<input type="text" name="module_exclass" value="{module_exclass}" class="acms-admin-form-width-small" />
+				<input type="hidden" name="field[]" value="module_exclass" />
 			</div>
 		</td>
 	</tr>
+
 </table>

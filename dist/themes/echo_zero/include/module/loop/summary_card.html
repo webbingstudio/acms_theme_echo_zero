@@ -5,7 +5,7 @@
 <!-- BEGIN unit:loop -->
 <div class="row">
 
-<!-- BEGIN entry:loop -->
+<!-- BEGIN entry:loop --><!-- BEGIN_IF [{iNum}/nem] -->
 <div class="<!-- BEGIN_IF [{entry:loop.class}/nem] -->{entry:loop.class}<!-- ELSE -->col-sm-6 col-md-3 col-xl-4<!-- END_IF -->">
 	<article class="card">
 		<a href="{url}" class="card-inner">
@@ -35,7 +35,7 @@
 		</a><!-- /.card-inner -->
 	</article><!-- /.card -->
 </div><!-- /.col -->
-<!-- END entry:loop -->
+<!-- END_IF --><!-- END entry:loop -->
 
 </div><!-- /.row -->
 <!-- END unit:loop -->
