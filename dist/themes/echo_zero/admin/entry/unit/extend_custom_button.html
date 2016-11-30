@@ -1,0 +1,96 @@
+<!-- BEGIN custom_button -->
+<table class="entryFormColumnSettingTable entryFormColumnTable">
+	<tr>
+		<td class="entryFormFileControl">
+			<table class="entryFormColumnSettingTable">
+
+				<tr>
+					<th>リンク先URL</th>
+					<td>
+						<input type="text" name="button_url{id}" value="{button_url}" class="acms-admin-form-width-large">（必須）
+						<input type="hidden" name="unit{id}[]" value="button_url{id}" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>表示する文字</th>
+					<td style="padding-bottom: 15px !important;">
+						<input type="text" name="button_label{id}" value="{button_label}" class="acms-admin-form-width-small">（必須）
+						<input type="hidden" name="unit{id}[]" value="button_label{id}" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>サイズ</th>
+					<td style="padding-bottom: 15px !important;">
+						<label class="acms-admin-ex-boxlabel acms-admin-form-radio text-center">
+							<div class="m-b"><span class="btn btn-sm btn-first m-b">ボタン</span></div>
+
+							<input type="radio" name="button_size{id}" value="btn-sm"{button_size:checked#btn-sm} />
+							<i class="acms-admin-ico-radio"></i>小
+						</label>
+						<label class="acms-admin-ex-boxlabel acms-admin-form-radio text-center">
+							<div class="m-b"><span class="btn btn-first m-b">ボタン</span></div>
+
+							<input type="radio" name="button_size{id}" value=""<!-- BEGIN_IF [{button_size}/em] --> checked="checked"<!-- END_IF --> />
+							<i class="acms-admin-ico-radio"></i>中
+
+						</label>
+						<label class="acms-admin-ex-boxlabel acms-admin-form-radio text-center">
+							<div class="m-b"><span class="btn btn-lg btn-first m-b">ボタン</span></div>
+
+							<input type="radio" name="button_size{id}" value="btn-lg"{button_size:checked#btn-lg} />
+							<i class="acms-admin-ico-radio"></i>大
+						</label>
+
+						<input type="hidden" name="unit{id}[]" value="button_size{id}" />
+
+						<label class="acms-admin-form-checkbox" for="input-button_block{id}">
+						<input type="checkbox" name="button_block{id}[]" value="1" id="input-button_block{id}"{button_block:checked#1} />
+						<i class="acms-admin-ico-checkbox"></i>幅を画面いっぱいに広げる
+						</label>
+						<input type="hidden" name="unit{id}[]" value="button_block{id}" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>カラー</th>
+					<td>
+						<label class="acms-admin-ex-boxlabel acms-admin-form-radio text-center">
+							<div class="m-b"><span class="btn btn-first m-b">ボタン</span></div>
+							<input type="radio" name="button_color{id}" value="btn-first"{button_color:checked#btn-first} />
+							<i class="acms-admin-ico-radio"></i>メインカラー
+						</label>
+						<label class="acms-admin-ex-boxlabel acms-admin-form-radio text-center">
+							<div class="m-b"><span class="btn btn-second m-b">ボタン</span></div>
+							<input type="radio" name="button_color{id}" value="btn-second"{button_color:checked#btn-second} />
+							<i class="acms-admin-ico-radio"></i>サブカラー1
+						</label>
+						<label class="acms-admin-ex-boxlabel acms-admin-form-radio text-center">
+							<div class="m-b"><span class="btn btn-third m-b">ボタン</span></div>
+							<input type="radio" name="button_color{id}" value="btn-third"{button_color:checked#btn-third} />
+							<i class="acms-admin-ico-radio"></i>サブカラー2
+						</label>
+						<input type="hidden" name="unit{id}[]" value="button_color{id}" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>ターゲット</th>
+					<td>
+						<select name="button_target{id}">
+							<option value=""<!-- BEGIN_IF [{button_target}/em] --> selected="selected"<!-- END_IF -->>指定しない</option>
+							<option value="_self"{button_target:selected#_self}>_self</option>
+							<option value="_blank"{button_target:selected#_blank}>_blank</option>
+						</select>
+						<input type="hidden" name="unit{id}[]" value="button_target{id}" />
+
+						<p class="acms-admin-ex-notice">ドメインが異なるURLは、自動的に別ウィンドウでの移動となります。別ウィンドウにしたくないときは「_self」を指定してください。</p>
+					</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END custom_button -->

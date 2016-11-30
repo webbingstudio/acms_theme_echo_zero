@@ -1,0 +1,56 @@
+<!-- BEGIN custom_imgheader -->
+<table class="entryFormColumnSettingTable entryFormColumnTable">
+	<tr>
+		<td class="entryFormFileControl">
+			<table class="entryFormColumnSettingTable">
+
+				<tr>
+					<th>写真</th>
+					<td>
+						<!-- BEGIN_IF [{imgheader_img@path}/nem] -->
+						<img src="%{ARCHIVES_DIR}{imgheader_img@path}" width="200" />
+						<input type="hidden" name="imgheader_img{id}@old" value="{imgheader_img@path}" /><br />
+						<label class="acms-admin-form-checkbox">
+							<input type="checkbox" name="imgheader_img{id}@edit" value="delete" />
+							<i class="acms-admin-ico-checkbox"></i> 削除
+						</label>
+						<!-- END_IF -->
+						<input type="file" name="imgheader_img{id}" size="20" /><br />
+						<input type="hidden" name="unit{id}[]" value="imgheader_img{id}" />
+						<input type="hidden" name="imgheader_img{id}:extension" value="image" />
+						<input type="hidden" name="imgheader_img{id}@width" value="1280" />
+						<input type="hidden" name="imgheader_img{id}@filename" value="" />
+
+						<p class="acms-admin-ex-notice">２：１以上の、横長画像をお勧めします。</p>
+					</td>
+				</tr>
+
+				<tr>
+					<th>見出し</th>
+					<td>
+						<div class="acms-admin-inline-block">文字列</div>
+						<div class="acms-admin-inline-block">
+							<input type="text" name="imgheader_heading{id}" value="{imgheader_heading}" class="acms-admin-form-width-small" />
+							<input type="hidden" name="unit{id}[]" value="imgheader_heading{id}" />
+						</div><div class="acms-admin-inline-block" style="margin-right: 30px">（必須）</div>
+						<div class="acms-admin-inline-block">HTMLタグ</div>
+						<div class="acms-admin-inline-block">
+							<input type="text" name="imgheader_heading_tag{id}" value="{imgheader_heading_tag}" class="acms-admin-form-width-mini" placeholder="未入力: p" />
+							<input type="hidden" name="unit{id}[]" value="imgheader_heading_tag{id}" />
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<th>リンク先URL</th>
+					<td>
+						<input type="text" name="imgheader_url{id}" value="{imgheader_url}" class="acms-admin-form-width-large">
+						<input type="hidden" name="unit{id}[]" value="imgheader_url{id}" placeholder="未入力: リンクしない" />
+					</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END custom_imgheader -->
