@@ -3,23 +3,23 @@
 <table class="adminTable acms-admin-table-admin-edit">
 
 	<tr>
-		<th>Facebook</th>
+		<th>FacebookページのURL</th>
 		<td>
-			<input type="text" name="facebook_account" value="{facebook_account}" placeholder="例）ablogcms" class="acms-admin-form-width-medium">
-			<input type="hidden" name="field[]" value="facebook_account">
+			<input type="text" name="facebook_page" value="{facebook_page}" class="acms-admin-form-width-full">
+			<input type="hidden" name="field[]" value="facebook_page">
 		</td>
 	</tr>
 
 	<tr>
-		<th>Twitter</th>
+		<th>Twitter ID<i data-acms-tooltip="TwitterのアカウントIDを入力してください。Twitterでシェアされたときにタイムラインにページの概要が表示されます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
-			<input type="text" name="twitter_account" value="{twitter_account}" placeholder="例）ablogcms" class="acms-admin-form-width-medium">
+			&#64; <input type="text" name="twitter_account" value="{twitter_account}" class="acms-admin-form-width-medium">
 			<input type="hidden" name="field[]" value="twitter_account">
 		</td>
 	</tr>
 
 	<tr>
-		<th>Facebook アプリケーションID</th>
+		<th>Facebook アプリケーションID<i data-acms-tooltip="Facebookインサイトなどの機能を使用する場合は、アプリケーションIDを入力してください。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
 			<input type="text" name="facebook_app_id" value="{facebook_app_id}" class="acms-admin-form-width-medium">
 			<input type="hidden" name="field[]" value="facebook_app_id">
@@ -27,7 +27,7 @@
 	</tr>
 
 	<tr>
-		<th>OGP画像<i data-acms-tooltip="幅1200ピクセル、高さ630ピクセルの画像をアップロードしてください。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+		<th>OGP画像<i data-acms-tooltip="エントリー以外のページ、画像がないエントリーに使用されるイメージ画像です。幅1200ピクセル、高さ630ピクセルの画像をアップロードしてください。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
 			<!-- BEGIN ogp_image@path:veil -->
             <img src="%{ARCHIVES_DIR}{ogp_image@path}" style="width: 300px; height: auto;" />
@@ -44,6 +44,9 @@
 	</tr>
 
 </table>
+
+<input type="hidden" name="facebook_account" value="{facebook_account}" />
+<input type="hidden" name="field[]" value="facebook_account" />
 
 <input type="hidden" name="fb_admins" value="{fb_admins}" />
 <input type="hidden" name="field[]" value="fb_admins" />

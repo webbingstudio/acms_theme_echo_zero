@@ -10,11 +10,14 @@
 <!-- BEGIN_IF [{twitter_account}/nem] -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@{twitter_account}">
-<meta name="twitter:domain" content="%{ALIAS_DOMAIN}">
+<meta name="twitter:creator" content="@{twitter_account}">
 <meta name="twitter:image" content="<!-- GET_Rendered id="var_meta_image" trim="1" -->">
 <!-- END_IF -->
 <!-- BEGIN_IF [{facebook_app_id}/nem] -->
 <meta property="fb:app_id" content="{facebook_app_id}">
+<!-- END_IF -->
+<!-- BEGIN_IF [{facebook_page}/nem] -->
+<meta property="article:publisher" content="{facebook_page}">
 <!-- END_IF -->
 <!-- END_MODULE Blog_Field -->
 
