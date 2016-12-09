@@ -1,0 +1,17 @@
+<!-- BEGIN notFound -->
+<p><em>このコンテンツは準備中です。</em></p>
+<!-- END notFound -->
+
+<!-- BEGIN unit:loop -->
+<nav>
+	<ul>
+		<!-- BEGIN entry:loop --><!-- BEGIN_IF [{iNum}/nem] -->
+		<li<!-- BEGIN_IF [{entry:loop.class}/nem] --> class="{entry:loop.class}"<!-- END_IF -->><a href="{url}">
+			<!-- BEGIN date --><time class="nav-date" datetime="{date#Y}-{date#m}-{date#d}">{date#Y}.{date#m}.{date#d}</time><br><!-- END date -->
+			<!-- BEGIN category:veil --><span class="nav-category"><span class="label">{categoryName}</span></span><br><!-- END category:veil -->
+			<span class="nav-title">{title}<!-- BEGIN new --><span class="badge">New</span><!-- END new --></span>
+		</a></li>
+		<!-- END_IF --><!-- END entry:loop -->
+	</ul>
+</nav>
+<!-- END unit:loop -->
