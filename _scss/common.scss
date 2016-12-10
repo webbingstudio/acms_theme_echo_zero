@@ -863,6 +863,14 @@ input[type="checkbox"] {
 .m-x-lg { margin-right:  ($spacer * 3) !important; margin-left:   ($spacer * 3) !important; }
 .m-y-lg { margin-top:    ($spacer * 3) !important; margin-bottom: ($spacer * 3) !important; }
 
+.m-a-xl { margin:        ($spacer * 4.5) !important; }
+.m-t-xl { margin-top:    ($spacer * 4.5) !important; }
+.m-r-xl { margin-right:  ($spacer * 4.5) !important; }
+.m-b-xl { margin-bottom: ($spacer * 4.5) !important; }
+.m-l-xl { margin-left:   ($spacer * 4.5) !important; }
+.m-x-xl { margin-right:  ($spacer * 4.5) !important; margin-left:   ($spacer * 4.5) !important; }
+.m-y-xl { margin-top:    ($spacer * 4.5) !important; margin-bottom: ($spacer * 4.5) !important; }
+
 // Padding
 
 .p-a-0 { padding:        0 !important; }
@@ -896,6 +904,14 @@ input[type="checkbox"] {
 .p-l-lg { padding-left:   ($spacer * 3) !important; }
 .p-x-lg { padding-right:  ($spacer * 3) !important; padding-left:   ($spacer * 3) !important; }
 .p-y-lg { padding-top:    ($spacer * 3) !important; padding-bottom: ($spacer * 3) !important; }
+
+.p-a-xl { padding:        ($spacer * 4.5) !important; }
+.p-t-xl { padding-top:    ($spacer * 4.5) !important; }
+.p-r-xl { padding-right:  ($spacer * 4.5) !important; }
+.p-b-xl { padding-bottom: ($spacer * 4.5) !important; }
+.p-l-xl { padding-left:   ($spacer * 4.5) !important; }
+.p-x-xl { padding-right:  ($spacer * 4.5) !important; padding-left:   ($spacer * 4.5) !important; }
+.p-y-xl { padding-top:    ($spacer * 4.5) !important; padding-bottom: ($spacer * 4.5) !important; }
 
 
 
@@ -1112,6 +1128,31 @@ input[type="checkbox"] {
   .section-link {
     margin: 0;
     text-align: center;
+  }
+
+  #sub & {
+
+    margin: 0 0 ($spacer * 3);
+
+    .section-header {
+      padding: 0 0 $spacer;
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: 1.25rem;
+      text-align: left;
+      letter-spacing: 0;
+    }
+
+    .section-footer {
+      padding: $spacer 0 0;
+    }
+
+    .section-link {
+      margin: 0;
+    }
+
   }
 
 }
@@ -1381,26 +1422,87 @@ input[type="checkbox"] {
 
 }
 
-.widget {
-  margin: 0 0 ($spacer * 3);
 
-  .widget-header {
-    padding: 0 0 $spacer;
-    @include clearfix();
+.imgtext {
+  position: relative;
+  width: 100%;
+  background: #000;
+  color: $gray-lightest;
+
+  > a {
+    display: block;
+
+    &:link,
+    &:visited {
+      color: $gray-lightest;
+
+      .imgtext-title {
+        text-decoration: underline;
+      }
+
+    }
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      text-decoration: none;
+
+      .imgtext-img > img {
+        opacity: .8;
+      }
+
+      .imgtext-title {
+        text-decoration: none;
+      }
+
+    }
+
   }
 
-  .widget-title {
+  .imgtext-img {
+    position: relative;
+    width: 100%;
+
+    > img {
+      width: 100%;
+      height: auto;
+    }
+    z-index: 11;
+  }
+
+  .imgtext-contents {
+    position: relative;
+    margin-top: -100px;
+    font-size: .875rem;
+    line-height: 1.5;
+    z-index: 12;
+  }
+
+  .imgtext-title {
     margin: 0;
+    padding: 50px ($spacer * 2) ($spacer * 2);
     font-size: 1.25rem;
+    font-family: $font-family-01;
+    font-weight: $font-weight;
+    line-height: $line-height-sm;
+    letter-spacing: .1em;
+    text-align: center;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.37) 50%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.37) 50%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 30%, gba(0,0,0,0.37) 50%,rgba(0,0,0,1) 100%);
   }
 
-  .widget-footer {
-    padding: $spacer 0 0;
-    @include clearfix();
-  }
-
-  .widget-link {
+  .imgtext-body {
     margin: 0;
+    padding: 1px ($spacer * 2) ($spacer * 2);
+    font-size: .75rem;
+    line-height: $line-height-md;
+    text-align: center;
+    background: #000;
   }
 
 }
+
+
+
+

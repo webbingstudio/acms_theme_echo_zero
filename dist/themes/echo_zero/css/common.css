@@ -1390,6 +1390,29 @@ fieldset[disabled]
   margin-top: 1.875rem !important;
   margin-bottom: 1.875rem !important; }
 
+.m-a-xl {
+  margin: 2.8125rem !important; }
+
+.m-t-xl {
+  margin-top: 2.8125rem !important; }
+
+.m-r-xl {
+  margin-right: 2.8125rem !important; }
+
+.m-b-xl {
+  margin-bottom: 2.8125rem !important; }
+
+.m-l-xl {
+  margin-left: 2.8125rem !important; }
+
+.m-x-xl {
+  margin-right: 2.8125rem !important;
+  margin-left: 2.8125rem !important; }
+
+.m-y-xl {
+  margin-top: 2.8125rem !important;
+  margin-bottom: 2.8125rem !important; }
+
 .p-a-0 {
   padding: 0 !important; }
 
@@ -1481,6 +1504,29 @@ fieldset[disabled]
 .p-y-lg {
   padding-top: 1.875rem !important;
   padding-bottom: 1.875rem !important; }
+
+.p-a-xl {
+  padding: 2.8125rem !important; }
+
+.p-t-xl {
+  padding-top: 2.8125rem !important; }
+
+.p-r-xl {
+  padding-right: 2.8125rem !important; }
+
+.p-b-xl {
+  padding-bottom: 2.8125rem !important; }
+
+.p-l-xl {
+  padding-left: 2.8125rem !important; }
+
+.p-x-xl {
+  padding-right: 2.8125rem !important;
+  padding-left: 2.8125rem !important; }
+
+.p-y-xl {
+  padding-top: 2.8125rem !important;
+  padding-bottom: 2.8125rem !important; }
 
 #header {
   padding: 0.625rem 0; }
@@ -1625,6 +1671,19 @@ fieldset[disabled]
   .section .section-link {
     margin: 0;
     text-align: center; }
+  #sub .section {
+    margin: 0 0 1.875rem; }
+    #sub .section .section-header {
+      padding: 0 0 0.625rem; }
+    #sub .section .section-title {
+      margin: 0;
+      font-size: 1.25rem;
+      text-align: left;
+      letter-spacing: 0; }
+    #sub .section .section-footer {
+      padding: 0.625rem 0 0; }
+    #sub .section .section-link {
+      margin: 0; }
 
 .page-header {
   margin: 0 0 2rem;
@@ -1810,24 +1869,53 @@ fieldset[disabled]
       padding: 0 .5rem;
       letter-spacing: normal; }
 
-.widget {
-  margin: 0 0 1.875rem; }
-  .widget .widget-header {
-    padding: 0 0 0.625rem; }
-    .widget .widget-header:before, .widget .widget-header:after {
-      content: "";
-      display: table; }
-    .widget .widget-header:after {
-      clear: both; }
-  .widget .widget-title {
+.imgtext {
+  position: relative;
+  width: 100%;
+  background: #000;
+  color: #eeeeee; }
+  .imgtext > a {
+    display: block; }
+    .imgtext > a:link, .imgtext > a:visited {
+      color: #eeeeee; }
+      .imgtext > a:link .imgtext-title, .imgtext > a:visited .imgtext-title {
+        text-decoration: underline; }
+    .imgtext > a:hover, .imgtext > a:focus {
+      color: #fff;
+      text-decoration: none; }
+      .imgtext > a:hover .imgtext-img > img, .imgtext > a:focus .imgtext-img > img {
+        opacity: .8; }
+      .imgtext > a:hover .imgtext-title, .imgtext > a:focus .imgtext-title {
+        text-decoration: none; }
+  .imgtext .imgtext-img {
+    position: relative;
+    width: 100%;
+    z-index: 11; }
+    .imgtext .imgtext-img > img {
+      width: 100%;
+      height: auto; }
+  .imgtext .imgtext-contents {
+    position: relative;
+    margin-top: -100px;
+    font-size: .875rem;
+    line-height: 1.5;
+    z-index: 12; }
+  .imgtext .imgtext-title {
     margin: 0;
-    font-size: 1.25rem; }
-  .widget .widget-footer {
-    padding: 0.625rem 0 0; }
-    .widget .widget-footer:before, .widget .widget-footer:after {
-      content: "";
-      display: table; }
-    .widget .widget-footer:after {
-      clear: both; }
-  .widget .widget-link {
-    margin: 0; }
+    padding: 50px 1.25rem 1.25rem;
+    font-size: 1.25rem;
+    font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-weight: 300;
+    line-height: 1.25;
+    letter-spacing: .1em;
+    text-align: center;
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.37) 50%, black 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.37) 50%, black 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 30%, gba(0, 0, 0, 0.37) 50%, black 100%); }
+  .imgtext .imgtext-body {
+    margin: 0;
+    padding: 1px 1.25rem 1.25rem;
+    font-size: .75rem;
+    line-height: 1.5;
+    text-align: center;
+    background: #000; }
