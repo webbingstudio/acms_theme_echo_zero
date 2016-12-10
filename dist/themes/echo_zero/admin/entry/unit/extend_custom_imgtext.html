@@ -1,0 +1,74 @@
+<!-- BEGIN custom_imgtext -->
+<table class="entryFormColumnSettingTable entryFormColumnTable">
+	<tr>
+		<td class="entryFormFileControl">
+			<table class="entryFormColumnSettingTable">
+
+				<tr>
+					<th>レイアウト</th>
+					<td>
+						<label class="acms-admin-form-radio"><input type="radio" name="imgtext_type{id}" value="imgtext-01"{imgtext_type:checked#imgtext-01}<!-- BEGIN_IF [{imgtext_type}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>写真上・テキスト下</label>
+						<label class="acms-admin-form-radio"><input type="radio" name="imgtext_type{id}" value="imgtext-02"{imgtext_type:checked#imgtext-02} /><i class="acms-admin-ico-radio"></i>写真左・テキスト右</label>
+						<label class="acms-admin-form-radio"><input type="radio" name="imgtext_type{id}" value="imgtext-03"{imgtext_type:checked#imgtext-03} /><i class="acms-admin-ico-radio"></i>写真右・テキスト左</label>
+						<input type="hidden" name="unit{id}[]" value="imgtext_type{id}">
+					</td>
+				</tr>
+
+				<tr>
+					<th>写真</th>
+					<td>
+						<!-- BEGIN_IF [{imgtext_img@path}/nem] -->
+						<img src="%{ARCHIVES_DIR}{imgtext_img@path}" width="200" />
+						<input type="hidden" name="imgtext_img{id}@old" value="{imgtext_img@path}" /><br />
+						<label class="acms-admin-form-checkbox">
+							<input type="checkbox" name="imgtext_img{id}@edit" value="delete" />
+							<i class="acms-admin-ico-checkbox"></i> 削除
+						</label>
+						<!-- END_IF -->
+						<input type="file" name="imgtext_img{id}" size="20" /><br />
+						<input type="hidden" name="unit{id}[]" value="imgtext_img{id}" />
+						<input type="hidden" name="imgtext_img{id}:extension" value="image" />
+						<input type="hidden" name="imgtext_img{id}@width" value="1280" />
+						<input type="hidden" name="imgtext_img{id}@filename" value="" />
+					</td>
+				</tr>
+
+				<tr>
+					<th>リンク先URL</th>
+					<td>
+						<input type="text" name="imgtext_url{id}" value="{imgtext_url}" class="acms-admin-form-width-large" placeholder="未入力: リンクしない">
+						<input type="hidden" name="unit{id}[]" value="imgtext_url{id}" />
+
+						<p class="acms-admin-ex-notice">ユニット全体がリンク範囲となります。</p>
+					</td>
+				</tr>
+
+				<tr>
+					<th>見出し</th>
+					<td>
+						<div class="acms-admin-inline-block">文字列</div>
+						<div class="acms-admin-inline-block">
+							<input type="text" name="imgtext_heading{id}" value="{imgtext_heading}" class="acms-admin-form-width-small" />
+							<input type="hidden" name="unit{id}[]" value="imgtext_heading{id}" />
+						</div><div class="acms-admin-inline-block" style="margin-right: 30px">（必須）</div>
+						<div class="acms-admin-inline-block">HTMLタグ</div>
+						<div class="acms-admin-inline-block">
+							<input type="text" name="imgtext_heading_tag{id}" value="{imgtext_heading_tag}" class="acms-admin-form-width-mini" placeholder="未入力: p" />
+							<input type="hidden" name="unit{id}[]" value="imgtext_heading_tag{id}" />
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<th>テキスト</th>
+					<td>
+						<textarea name="imgtext_body{id}" rows="3" class="acms-admin-form-width-full">{imgtext_body}[raw]</textarea>
+						<input type="hidden" name="unit{id}[]" value="imgtext_body{id}" />
+					</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+</table>
+<!-- END custom_imgtext -->
