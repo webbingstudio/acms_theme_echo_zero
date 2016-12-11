@@ -104,6 +104,7 @@ $btn-padding-y-xl:          1rem !default;
          local('Yu Gothic');
   }
 
+  @import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
 }
 
 // Fonts
@@ -115,13 +116,27 @@ $font-family-sans:          '-apple-system', 'Roboto', 'Open Sans', 'Arial', 'He
 $font-family-mono:          'Consolas', 'Liberation Mono', 'Menlo', 'Courier', monospace !default;
 
 // Design fonts
+
+// 01.body
 $font-family-01:            'PGYuGothic', 'YuGothic', -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif !default;
 $font-weight-01:            400 !default;
 $font-weight-bold-01:       $font-weight-bold !default;
+
+// 02.heading
 // $font-family-02:            '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', "HGS明朝E", 'ＭＳ Ｐ明朝', 'MS PMincho', serif !default;
-$font-family-02:            $font-family-01;
-$font-weight-02:            400 !default;
+$font-family-02:            'Oxygen', '-apple-system', 'Roboto', 'Open Sans', 'Arial', 'Helvetica', sans-serif !default;
+$font-weight-02:            300 !default;
 $font-weight-bold-02:       $font-weight-bold !default;
+
+// 03.date, number, new-icon
+$font-family-03:            'Oxygen', '-apple-system', 'Roboto', 'Open Sans', 'Arial', 'Helvetica', sans-serif !default;
+$font-weight-03:            400 !default;
+$font-weight-bold-03:       $font-weight-bold !default;
+
+// 04.mainvisual
+$font-family-04:            'Oxygen', '-apple-system', 'Roboto', 'Open Sans', 'Arial', 'Helvetica', sans-serif !default;
+$font-weight-04:            400 !default;
+$font-weight-bold-04:       $font-weight-bold !default;
 
 $font-size-root:            1rem !default;
 $font-size-xs:              .75rem !default;

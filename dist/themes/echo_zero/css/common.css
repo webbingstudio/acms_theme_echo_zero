@@ -1,4 +1,5 @@
 /* thanks: https://speakerdeck.com/tacamy/modanri-ben-yu-huontozhi-ding */
+@import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700");
 @font-face {
   font-family: 'PGYuGothic';
   font-weight: normal;
@@ -53,9 +54,7 @@ h1, .h1 {
 
 h2, .h2 {
   margin: 2.5rem 0 1.25rem;
-  font-size: 1.5rem;
-  font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-  font-weight: 700; }
+  font-size: 1.5rem; }
 
 h3, .h3 {
   margin: 2.5rem 0 1.25rem;
@@ -63,9 +62,7 @@ h3, .h3 {
 
 h4, .h4 {
   margin: 1.875rem 0 0.9375rem;
-  font-size: 1.25rem;
-  font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-  font-weight: 700; }
+  font-size: 1.25rem; }
 
 h5, .h5 {
   margin: 1.875rem 0 0.9375rem;
@@ -73,9 +70,7 @@ h5, .h5 {
 
 h6, .h6 {
   margin: 1.875rem 0 0.9375rem;
-  font-size: 1rem;
-  font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-  font-weight: 700; }
+  font-size: 1rem; }
 
 .clearfix:after {
   clear: both;
@@ -1704,7 +1699,7 @@ fieldset[disabled]
     width: 100%;
     margin: 0;
     font-size: 2rem;
-    font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
     font-weight: 400;
     text-align: center;
     letter-spacing: .1rem; }
@@ -1773,10 +1768,10 @@ fieldset[disabled]
   .section .section-title {
     margin: 0;
     font-size: 2rem;
-    font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
-    font-weight: 400;
+    font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
+    font-weight: 300;
     text-align: center;
-    letter-spacing: .1rem; }
+    letter-spacing: .1em; }
   .section .section-subtitle {
     margin: .5rem 0 0;
     font-size: .75rem;
@@ -1905,7 +1900,9 @@ fieldset[disabled]
     padding: 0.625rem 0.625rem 1.25rem; }
     .summary .summary-contents time {
       display: block;
-      margin: 0 0 .5rem; }
+      margin: 0 0 .5rem;
+      font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
+      font-weight: 400; }
     .summary .summary-contents p {
       margin: 0 0 .5rem; }
       .summary .summary-contents p.summary-btn {
@@ -1915,6 +1912,8 @@ fieldset[disabled]
     margin: 0;
     top: 8px;
     left: -2px;
+    font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
+    font-weight: 700;
     line-height: 1;
     z-index: 13; }
     .summary .summary-new .badge {
@@ -1923,6 +1922,7 @@ fieldset[disabled]
       background-color: #4499ee;
       font-size: .625rem;
       text-transform: uppercase;
+      letter-spacing: .1em;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35); }
   .summary .summary-title {
     margin: 0 0 .5rem;
@@ -1970,7 +1970,9 @@ fieldset[disabled]
     .card .card-contents time {
       display: block;
       margin: 0 0 .5rem;
-      font-size: .75rem; }
+      font-size: .75rem;
+      font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
+      font-weight: 400; }
     .card .card-contents p {
       margin: 0 0 .5rem;
       font-size: .75rem; }
@@ -1979,11 +1981,17 @@ fieldset[disabled]
     margin: 0;
     top: -3px;
     right: 0.625rem;
+    font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
+    font-weight: 700;
     line-height: 1;
     z-index: 13; }
     .card .card-new .badge {
+      margin: 0;
+      padding: 0.3125rem 0.625rem;
       background-color: #4499ee;
-      padding: 0.625rem;
+      font-size: .625rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35); }
   .card .card-title {
     font-size: 1rem;
@@ -2033,51 +2041,110 @@ fieldset[disabled]
 
 .imgtext {
   position: relative;
-  width: 100%;
-  background: #000;
-  color: #f3f3f3; }
+  width: 100%; }
   .imgtext > a {
     display: block; }
+    .imgtext > a:before, .imgtext > a:after {
+      content: "";
+      display: table; }
+    .imgtext > a:after {
+      clear: both; }
     .imgtext > a:link, .imgtext > a:visited {
-      color: #f3f3f3; }
-      .imgtext > a:link .imgtext-title, .imgtext > a:visited .imgtext-title {
-        text-decoration: underline; }
+      color: #333333; }
     .imgtext > a:hover, .imgtext > a:focus {
-      color: #fff;
+      color: #333333;
       text-decoration: none; }
       .imgtext > a:hover .imgtext-img > img, .imgtext > a:focus .imgtext-img > img {
         opacity: .8; }
       .imgtext > a:hover .imgtext-title, .imgtext > a:focus .imgtext-title {
-        text-decoration: none; }
+        text-decoration: underline; }
   .imgtext .imgtext-img {
     position: relative;
-    width: 100%;
     z-index: 11; }
     .imgtext .imgtext-img > img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      vertical-align: middle; }
   .imgtext .imgtext-contents {
     position: relative;
-    margin-top: -100px;
     font-size: .875rem;
     line-height: 1.5;
     z-index: 12; }
   .imgtext .imgtext-title {
-    margin: 0;
-    padding: 50px 1.25rem 1.25rem;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     font-weight: 300;
-    line-height: 1.25;
-    letter-spacing: .1em;
-    text-align: center;
-    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.37) 50%, black 100%);
-    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.37) 50%, black 100%);
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 30%, gba(0, 0, 0, 0.37) 50%, black 100%); }
+    letter-spacing: .1em; }
+    .imgtext .imgtext-title:before, .imgtext .imgtext-title:after {
+      content: "";
+      display: table; }
+    .imgtext .imgtext-title:after {
+      clear: both; }
   .imgtext .imgtext-body {
     margin: 0;
-    padding: 1px 1.25rem 1.25rem;
-    font-size: .75rem;
-    line-height: 1.5;
-    text-align: center;
-    background: #000; }
+    font-size: 1rem;
+    line-height: 1.5; }
+  .imgtext.imgtext-sm .imgtext-title {
+    font-size: 1.125rem; }
+  .imgtext.imgtext-sm .imgtext-body {
+    margin: 0;
+    font-size: .75rem; }
+  .imgtext.imgtext-01 .imgtext-img {
+    width: 100%; }
+  .imgtext.imgtext-01 > a:link .imgtext-title:after, .imgtext.imgtext-01 > a:visited .imgtext-title:after {
+    display: inline-block;
+    content: ">";
+    float: right;
+    height: 2.25em;
+    line-height: 2.25em;
+    font-family: "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
+    vertical-align: middle; }
+  .imgtext.imgtext-01 .imgtext-title {
+    margin: -2.25em 0 0;
+    padding: 0 1.25rem;
+    height: 2.25em;
+    line-height: 2.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    vertical-align: middle; }
+  .imgtext.imgtext-01 .imgtext-body {
+    padding: 0.625rem 1.25rem 1.25rem; }
+  .imgtext.imgtext-01.imgtext-sm .imgtext-title {
+    padding: 0 0.625rem; }
+  .imgtext.imgtext-01.imgtext-sm .imgtext-body {
+    padding: 0.3125rem 0.625rem 0.625rem; }
+  .imgtext.imgtext-02 > a:link .imgtext-title:before, .imgtext.imgtext-02 > a:visited .imgtext-title:before {
+    display: inline-block;
+    position: relative;
+    top: -.1em;
+    content: ">";
+    font-family: "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
+    margin-right: .25em; }
+  .imgtext.imgtext-02 .imgtext-img {
+    float: left;
+    max-width: 50%; }
+  .imgtext.imgtext-02 .imgtext-contents {
+    overflow: hidden; }
+  .imgtext.imgtext-02 .imgtext-title {
+    margin: 0;
+    padding: 0.625rem 0 0.25em 1.25rem;
+    line-height: 1.5; }
+  .imgtext.imgtext-02 .imgtext-body {
+    padding: 0 0 0 1.25rem; }
+  .imgtext.imgtext-03 > a:link .imgtext-title:before, .imgtext.imgtext-03 > a:visited .imgtext-title:before {
+    display: inline-block;
+    position: relative;
+    top: -.1em;
+    content: ">";
+    font-family: "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
+    margin-right: .25em; }
+  .imgtext.imgtext-03 .imgtext-img {
+    float: right;
+    max-width: 50%; }
+  .imgtext.imgtext-03 .imgtext-contents {
+    overflow: hidden; }
+  .imgtext.imgtext-03 .imgtext-title {
+    margin: 0;
+    padding: 0.625rem 1.25rem 0.25em 0;
+    line-height: 1.5; }
+  .imgtext.imgtext-03 .imgtext-body {
+    padding: 0 1.25rem 0 0; }

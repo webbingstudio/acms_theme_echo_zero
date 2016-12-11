@@ -85,8 +85,6 @@ h1, .h1 {
 h2, .h2 {
   margin: ($spacer * 4) 0 ($spacer * 2);
   font-size: 1.5rem;
-  font-family: $font-family-02;
-  font-weight: $font-weight-bold-02;
 }
 
 h3, .h3 {
@@ -97,8 +95,6 @@ h3, .h3 {
 h4, .h4 {
   margin: ($spacer * 3) 0 ($spacer * 1.5);
   font-size: 1.25rem;
-  font-family: $font-family-02;
-  font-weight: $font-weight-bold-02;
 }
 
 h5, .h5 {
@@ -109,8 +105,6 @@ h5, .h5 {
 h6, .h6 {
   margin: ($spacer * 3) 0 ($spacer * 1.5);
   font-size: 1rem;
-  font-family: $font-family-02;
-  font-weight: $font-weight-bold-02;
 }
 
 
@@ -1115,8 +1109,8 @@ input[type="checkbox"] {
         width: 100%;
         margin: 0;
         font-size: 2rem;
-        font-family: $font-family-02;
-        font-weight: $font-weight-02;
+        font-family: $font-family-04;
+        font-weight: $font-weight-04;
         text-align: center;
         letter-spacing: .1rem;
       }
@@ -1221,7 +1215,7 @@ input[type="checkbox"] {
     font-family: $font-family-02;
     font-weight: $font-weight-02;
     text-align: center;
-    letter-spacing: .1rem;
+    letter-spacing: .1em;
   }
 
   .section-subtitle {
@@ -1416,6 +1410,8 @@ input[type="checkbox"] {
     time {
       display: block;
       margin: 0 0 .5rem;
+      font-family: $font-family-03;
+      font-weight: $font-weight-03;
     }
 
     p {
@@ -1434,6 +1430,8 @@ input[type="checkbox"] {
     margin: 0;
     top: 8px;
     left: -2px;
+    font-family: $font-family-03;
+    font-weight: $font-weight-bold-03;
     line-height: $line-height-xs;
     z-index: 13;
 
@@ -1443,6 +1441,7 @@ input[type="checkbox"] {
       background-color: $first;
       font-size: .625rem;
       text-transform: uppercase;
+      letter-spacing: .1em;
       box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
     }
 
@@ -1510,6 +1509,8 @@ input[type="checkbox"] {
       display: block;
       margin: 0 0 .5rem;
       font-size: .75rem;
+      font-family: $font-family-03;
+      font-weight: $font-weight-03;
     }
 
     p {
@@ -1524,12 +1525,18 @@ input[type="checkbox"] {
     margin: 0;
     top: -3px;
     right: $spacer;
+    font-family: $font-family-03;
+    font-weight: $font-weight-bold-03;
     line-height: $line-height-xs;
     z-index: 13;
 
     .badge {
+      margin: 0;
+      padding: ($spacer / 2) $spacer;
       background-color: $first;
-      padding: $spacer;
+      font-size: .625rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
       box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
     }
 
@@ -1601,25 +1608,19 @@ input[type="checkbox"] {
 .imgtext {
   position: relative;
   width: 100%;
-  background: #000;
-  color: $gray-lightest;
 
   > a {
     display: block;
+    @include clearfix();
 
     &:link,
     &:visited {
-      color: $gray-lightest;
-
-      .imgtext-title {
-        text-decoration: underline;
-      }
-
+      color: $gray-dark;
     }
 
     &:hover,
     &:focus {
-      color: #fff;
+      color: $gray-dark;
       text-decoration: none;
 
       .imgtext-img > img {
@@ -1627,7 +1628,7 @@ input[type="checkbox"] {
       }
 
       .imgtext-title {
-        text-decoration: none;
+        text-decoration: underline;
       }
 
     }
@@ -1636,48 +1637,196 @@ input[type="checkbox"] {
 
   .imgtext-img {
     position: relative;
-    width: 100%;
+    z-index: 11;
 
     > img {
       width: 100%;
       height: auto;
+      vertical-align: middle;
     }
-    z-index: 11;
+
   }
 
   .imgtext-contents {
     position: relative;
-    margin-top: -100px;
     font-size: .875rem;
     line-height: 1.5;
     z-index: 12;
   }
 
   .imgtext-title {
-    margin: 0;
-    padding: 50px ($spacer * 2) ($spacer * 2);
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-family: $font-family-01;
     font-weight: $font-weight;
-    line-height: $line-height-sm;
     letter-spacing: .1em;
-    text-align: center;
-    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.37) 50%, rgba(0,0,0,1) 100%);
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.37) 50%,rgba(0,0,0,1) 100%);
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 30%, gba(0,0,0,0.37) 50%,rgba(0,0,0,1) 100%);
+    @include clearfix();
   }
 
   .imgtext-body {
     margin: 0;
-    padding: 1px ($spacer * 2) ($spacer * 2);
-    font-size: .75rem;
+    font-size: 1rem;
     line-height: $line-height-md;
-    text-align: center;
-    background: #000;
+  }
+
+  &.imgtext-sm {
+
+    .imgtext-title {
+      font-size: 1.125rem;
+    }
+
+    .imgtext-body {
+      margin: 0;
+      font-size: .75rem;
+    }
+
+  }
+
+  &.imgtext-01 {
+
+    .imgtext-img {
+      width: 100%;
+    }
+
+    > a {
+
+      &:link,
+      &:visited {
+
+        .imgtext-title {
+
+          &:after {
+            display: inline-block;
+            content: ">";
+            float: right;
+            height: 2.25em;
+            line-height: 2.25em;
+            font-family: $font-family-sans;
+            vertical-align: middle;
+          }
+
+        }
+
+      }
+
+    }
+
+    .imgtext-title {
+      margin: -2.25em 0 0;
+      padding: 0 ($spacer * 2);
+      height: 2.25em;
+      line-height: 2.5em;
+      background-color: rgba(255,255,255,.5);
+      vertical-align: middle;
+    }
+
+    .imgtext-body {
+      padding: $spacer ($spacer * 2) ($spacer * 2);
+    }
+
+  }
+
+  &.imgtext-01.imgtext-sm {
+
+    .imgtext-title {
+      padding: 0 $spacer;
+    }
+
+    .imgtext-body {
+      padding: ($spacer / 2) $spacer $spacer;
+    }
+
+  }
+
+  &.imgtext-02 {
+
+    > a {
+
+      &:link,
+      &:visited {
+
+        .imgtext-title {
+
+          &:before {
+            display: inline-block;
+            position: relative;
+            top: -.1em;
+            content: ">";
+            font-family: $font-family-sans;
+            margin-right: .25em;
+          }
+
+        }
+
+      }
+
+    }
+
+    .imgtext-img {
+      float: left;
+      max-width: 50%;
+    }
+
+    .imgtext-contents {
+      overflow: hidden;
+    }
+
+    .imgtext-title {
+      margin: 0;
+      padding: $spacer 0 .25em ($spacer * 2);
+      line-height: $line-height-md;
+    }
+
+    .imgtext-body {
+      padding: 0 0 0 ($spacer * 2);
+    }
+
+  }
+
+  &.imgtext-03 {
+    > a {
+
+      &:link,
+      &:visited {
+
+        .imgtext-title {
+
+          &:before {
+            display: inline-block;
+            position: relative;
+            top: -.1em;
+            content: ">";
+            font-family: $font-family-sans;
+            margin-right: .25em;
+          }
+
+        }
+
+      }
+
+    }
+
+    .imgtext-img {
+      float: right;
+      max-width: 50%;
+    }
+
+    .imgtext-contents {
+      overflow: hidden;
+    }
+
+    .imgtext-title {
+      margin: 0;
+      padding: $spacer ($spacer * 2) .25em 0;
+      line-height: $line-height-md;
+    }
+
+    .imgtext-body {
+      padding: 0 ($spacer * 2) 0 0;
+    }
+
   }
 
 }
-
 
 
 
