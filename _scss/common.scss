@@ -963,6 +963,9 @@ input[type="checkbox"] {
 }
 
 .mainvisual {
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
 
   .mainvisual-contents {
 
@@ -970,17 +973,6 @@ input[type="checkbox"] {
       position: relative;
       background-color: #000;
       max-height: 760px;
-
-      &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        box-shadow: inset 0 0 200px rgba(0, 0, 0, .5);
-        z-index: 202;
-      }
 
       img.mainvisual-img {
         position: relative;
@@ -1002,8 +994,8 @@ input[type="checkbox"] {
         -ms-transform:translate(-50%, -50%);
         transform:translate(-50%, -50%);
         width: 70%;
-        max-width: 400px;
-        min-height: 360px;
+        max-width: 270px;
+        min-height: 250px;
         padding: 30px;
         background-color: rgba(255,255,255,.25);
         z-index: 203;
@@ -1019,7 +1011,7 @@ input[type="checkbox"] {
 
       .mainvisual-title {
         margin: 0;
-        padding: 0 0 2rem;
+        padding: 0 0 1.5rem;
         font-size: 1.5rem;
         font-family: $font-family-02;
         font-weight: $font-weight-02;
@@ -1062,11 +1054,16 @@ input[type="checkbox"] {
 
 
 #main {
-  padding: ($spacer * 1.5);
+  padding: 0 0 ($spacer * 4.5);
+
+  .view-top & {
+    padding: 0;
+  }
+
 }
 
 #sub {
-  padding: ($spacer * 1.5);
+  padding: 0 0 ($spacer * 4.5);
 }
 
 @include media-breakpoint-up(md) {
@@ -1104,7 +1101,7 @@ input[type="checkbox"] {
 
 
 .section {
-  margin: 0 0 ($spacer * 9);
+  padding: ($spacer * 4.5) 0;
 
   .section-header {
     padding: 0 0 ($spacer * 3);
@@ -1113,11 +1110,23 @@ input[type="checkbox"] {
 
   .section-title {
     margin: 0;
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-family: $font-family-02;
     font-weight: $font-weight-02;
     text-align: center;
     letter-spacing: .1rem;
+  }
+
+  .section-subtitle {
+    margin: .5rem 0 0;
+    font-size: .75rem;
+    text-align: center;
+    letter-spacing: .1rem;
+  }
+
+  .section-caption {
+    margin: 1.5rem 0 0;
+    text-align: center;
   }
 
   .section-footer {

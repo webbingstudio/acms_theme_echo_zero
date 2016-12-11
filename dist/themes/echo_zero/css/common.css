@@ -1552,19 +1552,13 @@ fieldset[disabled]
       .global-nav nav > ul > li a:hover, .global-nav nav > ul > li a.stay {
         background-color: rgba(255, 255, 255, 0.5); }
 
+.mainvisual .slick-dotted.slick-slider {
+  margin-bottom: 0; }
+
 .mainvisual .mainvisual-contents .mainvisual-slide {
   position: relative;
   background-color: #000;
   max-height: 760px; }
-  .mainvisual .mainvisual-contents .mainvisual-slide:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.5);
-    z-index: 202; }
   .mainvisual .mainvisual-contents .mainvisual-slide img.mainvisual-img {
     position: relative;
     z-index: 201; }
@@ -1581,8 +1575,8 @@ fieldset[disabled]
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 70%;
-    max-width: 400px;
-    min-height: 360px;
+    max-width: 270px;
+    min-height: 250px;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.25);
     z-index: 203; }
@@ -1593,7 +1587,7 @@ fieldset[disabled]
       vertical-align: middle; }
   .mainvisual .mainvisual-contents .mainvisual-slide .mainvisual-title {
     margin: 0;
-    padding: 0 0 2rem;
+    padding: 0 0 1.5rem;
     font-size: 1.5rem;
     font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     font-weight: 400;
@@ -1619,10 +1613,12 @@ fieldset[disabled]
     z-index: 99; }
 
 #main {
-  padding: 0.9375rem; }
+  padding: 0 0 2.8125rem; }
+  .view-top #main {
+    padding: 0; }
 
 #sub {
-  padding: 0.9375rem; }
+  padding: 0 0 2.8125rem; }
 
 @media (min-width: 768px) {
   .flex-col-2 {
@@ -1646,7 +1642,7 @@ fieldset[disabled]
   text-align: center; }
 
 .section {
-  margin: 0 0 5.625rem; }
+  padding: 2.8125rem 0; }
   .section .section-header {
     padding: 0 0 1.875rem; }
     .section .section-header:before, .section .section-header:after {
@@ -1656,11 +1652,19 @@ fieldset[disabled]
       clear: both; }
   .section .section-title {
     margin: 0;
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     font-weight: 400;
     text-align: center;
     letter-spacing: .1rem; }
+  .section .section-subtitle {
+    margin: .5rem 0 0;
+    font-size: .75rem;
+    text-align: center;
+    letter-spacing: .1rem; }
+  .section .section-caption {
+    margin: 1.5rem 0 0;
+    text-align: center; }
   .section .section-footer {
     padding: 0.9375rem 0 0; }
     .section .section-footer:before, .section .section-footer:after {
