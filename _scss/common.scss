@@ -294,6 +294,28 @@ fieldset[disabled] a.btn {
 
 }
 
+.btn-first-outline {
+  @include button-variant(
+    $btn-first-outline-color,
+    $btn-first-outline-bg,
+    $btn-first-outline-border,
+    $faded-first,
+    $btn-first-outline-border,
+    $faded-first,
+    $btn-first-outline-border
+  );
+
+  span#{&} {
+
+    &:hover,
+    &:focus {
+      background-color: $btn-first-outline-bg;
+    }
+
+  }
+
+}
+
 .btn-second {
   @include button-variant(
     $btn-second-color,
@@ -321,17 +343,17 @@ fieldset[disabled] a.btn {
     $btn-second-outline-color,
     $btn-second-outline-bg,
     $btn-second-outline-border,
-    lighten($btn-second-outline-bg, 10%),
-    lighten($btn-second-outline-border, 10%),
-    lighten($btn-second-outline-bg, 10%),
-    lighten($btn-second-outline-border, 10%)
+    $faded,
+    $btn-second-outline-border,
+    $faded,
+    $btn-second-outline-border
   );
 
   span#{&} {
 
     &:hover,
     &:focus {
-      background-color: $btn-second-bg;
+      background-color: $btn-second-outline-bg;
     }
 
   }
@@ -360,6 +382,28 @@ fieldset[disabled] a.btn {
 
 }
 
+.btn-third-outline {
+  @include button-variant(
+    $btn-third-outline-color,
+    $btn-third-outline-bg,
+    $btn-third-outline-border,
+    lighten($btn-third-outline-color, 40%),
+    $btn-third-outline-border,
+    lighten($btn-third-outline-color, 40%),
+    $btn-third-outline-border
+  );
+
+  span#{&} {
+
+    &:hover,
+    &:focus {
+      background-color: $btn-third-outline-bg;
+    }
+
+  }
+
+}
+
 .btn-important {
   @include button-variant(
     $btn-important-color,
@@ -371,7 +415,6 @@ fieldset[disabled] a.btn {
     lighten($btn-important-border, 10%)
   );
 
-
   span#{&} {
 
     &:hover,
@@ -381,6 +424,62 @@ fieldset[disabled] a.btn {
 
   }
 
+}
+
+.btn-important-outline {
+  @include button-variant(
+    $btn-important-outline-color,
+    $btn-important-outline-bg,
+    $btn-important-outline-border,
+    $faded-important,
+    $btn-important-outline-border,
+    $faded-important,
+    $btn-important-outline-border
+  );
+
+  span#{&} {
+
+    &:hover,
+    &:focus {
+      background-color: $btn-important-outline-bg;
+    }
+
+  }
+
+}
+
+
+.btn-inverse {
+  @include button-variant(
+    #fff,
+    transparent,
+    #fff,
+    rgba(255,255,255,.5),
+    #fff,
+    rgba(255,255,255,.5),
+    #fff
+  );
+
+
+  span#{&} {
+
+    &:hover,
+    &:focus {
+      background-color: rgba(255,255,255,.5);
+    }
+
+  }
+
+}
+
+
+.btn-block {
+  display: block;
+  width: 100%;
+  max-width: 480px; 
+  margin: 0 auto;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 
@@ -545,7 +644,7 @@ fieldset[disabled] a.btn {
   margin-right: .5em;
   padding: .25em .5rem;
   background-color: rgba(255,255,255,.7);
-  font-size: $font-size-sm;
+  font-size: .75em;
   line-height: $line-height-xs;
   color: $gray;
   border: 1px solid $gray;
@@ -994,25 +1093,28 @@ input[type="checkbox"] {
         -ms-transform:translate(-50%, -50%);
         transform:translate(-50%, -50%);
         width: 70%;
-        max-width: 270px;
-        min-height: 250px;
+        max-width: 300px;
+        min-height: 280px;
         padding: 30px;
         background-color: rgba(255,255,255,.25);
         z-index: 203;
 
         .mainvisual-box-inner {
           display: table-cell;
-          padding: 5px;
+          position: relative;
           background-color: rgba(255,255,255,.75);
-          vertical-align: middle;
+          vertical-align: top;
         }
 
       }
 
       .mainvisual-title {
+        position: absolute;
+        left: 0;
+        bottom: 50%;
+        width: 100%;
         margin: 0;
-        padding: 0 0 1.5rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: $font-family-02;
         font-weight: $font-weight-02;
         text-align: center;
@@ -1020,10 +1122,15 @@ input[type="checkbox"] {
       }
 
       .mainvisual-body {
+        position: absolute;
+        left: 0;
+        top: 60%;
+        width: 100%;
         margin: 0;
+        padding: 0 15px;
         font-size: .875rem;
         text-align: center;
-        line-height: 2;
+        line-height: 1.75;
       }
 
     }
@@ -1222,13 +1329,53 @@ input[type="checkbox"] {
 
 .post {
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: ($spacer * 3);
 }
 
 .summary {
-  margin-bottom: $grid-gutter-width;
+  position: relative;
+  margin-bottom: ($spacer * 3);
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .35);
+
+  > a {
+    display: block;
+    position: relative;
+    color: $gray-dark;
+
+    .summary-title {
+      color: $first-text;
+      text-decoration: underline;
+    }
+
+    .btn,
+    .badge {
+      color: #fff;
+    }
+
+    &:hover,
+    &:focus {
+      color: $gray-dark;
+      background-color: $faded;
+      text-decoration: none;
+
+      .summary-img,
+      .summary-cover {
+        opacity: .7;
+      }
+
+      .summary-title {
+        color: $first-text;
+        text-decoration: none;
+      }
+
+      .btn,
+      .badge {
+        color: #fff;
+      }
+
+    }
+
+  }
 
   .summary-inner {
     overflow: hidden;
@@ -1256,24 +1403,23 @@ input[type="checkbox"] {
     width: 33.33333333%;
     background: $gray-lightest none no-repeat center center;
     background-size: cover;
+    border: 1px solid $gray-lightest;
   }
 
   .summary-contents {
     position: relative;
     flex: 1;
-    line-height: $line-height;
+    font-size: .75rem;
+    line-height: $line-height-sm;
     padding: $spacer $spacer ($spacer * 2);
-    box-shadow: 0 0 2px rgba(0, 0, 0, .25);
 
     time {
       display: block;
       margin: 0 0 .5rem;
-      font-size: .875rem;
     }
 
     p {
       margin: 0 0 .5rem;
-      font-size: .875rem;
 
       &.summary-btn {
         margin: 0;
@@ -1283,17 +1429,36 @@ input[type="checkbox"] {
 
   }
 
+  .summary-new {
+    position: absolute;
+    margin: 0;
+    top: 8px;
+    left: -2px;
+    line-height: $line-height-xs;
+    z-index: 13;
+
+    .badge {
+      margin: 0;
+      padding: ($spacer / 2) $spacer;
+      background-color: $first;
+      font-size: .625rem;
+      text-transform: uppercase;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
+    }
+
+  }
+
   .summary-title {
-    font-size: 1rem;
     margin: 0 0 .5rem;
-    line-height: $line-height;
+    font-size: .875rem;
+    line-height: $line-height-md;
     word-break: break-all;
   }
 
   .summary-btn {
     position: absolute;
-    bottom: $spacer;
-    right: $spacer;
+    bottom: 0;
+    right: 0;
     text-align: right;
   }
 
@@ -1303,31 +1468,32 @@ input[type="checkbox"] {
 .card {
   position: relative;
   margin-bottom: $grid-gutter-width;
-  background-color: $gray-dark;
-  color: $gray-lightest;
+  background-color: #fff;
+  color: $gray-dark;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .35);
 
   .card-cover {
     position: relative;
     width: 100%;
     height: 200px;
-    background: $gray-lightest none no-repeat center center;
+    background: $gray-dark none no-repeat center center;
     background-size: cover;
     z-index: 11;
   }
-  
+
   > a {
+    position: relative;
     display: block;
   }
 
   a:not(.btn),
   a:not(.label),
   a:not(.badge) {
-    color: $gray-lightest;
+    color: $gray-dark;
     
     &:hover,
     &:focus {
-      color: $gray-lightest;
+      color: $gray-dark;
       text-decoration: none;
     }
 
@@ -1336,7 +1502,7 @@ input[type="checkbox"] {
   .card-contents {
     position: relative;
     padding: $spacer ($spacer * 2);
-    min-height: 150px;
+//    min-height: 150px;
     line-height: $line-height;
     z-index: 12;
 
