@@ -36,11 +36,15 @@ a-blog cmsの「レイアウト」「モジュールユニット」機能を利�
 ループ用テンプレートの使い方
 ---------------------------
 
-トップページ新着用テンプレート「summary_top_recent_01.html」では、エントリーの繰り返し部分の体裁がカード式になります。これは、下記のループ用テンプレートを呼び出しているためです。
+トップページ新着用テンプレート「summary_top_recent_02.html」では、エントリーの繰り返し部分の体裁がサマリー式になります。これは、下記のループ用テンプレートを呼び出しているためです。
 
-<!--#include file="/include/module_loop/summary_card.html"-->
+<!--#include file="/include/module_loop/summary_blog.html"-->
 
-体裁を通常のサマリー式にしたい場合は、このテンプレートを以下のとおり差し替えるだけで変更できます。
+体裁をカード式にしたい場合は、このテンプレートを以下のとおり差し替えるだけで変更できます。
+
+<!--#include file="/include/module_loop/summary_blog_card.html"-->
+
+また、公開日を表示したくない場合は、このテンプレートを以下のとおり差し替えるとタイトルのみにすることもできます。
 
 <!--#include file="/include/module_loop/summary.html"-->
 
