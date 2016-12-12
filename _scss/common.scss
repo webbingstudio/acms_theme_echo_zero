@@ -223,6 +223,7 @@ h6, .h6 {
   line-height: $line-height-xs;
   border-radius: $border-radius;
   vertical-align: middle;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .35);
 
   span#{&} {
 
@@ -635,13 +636,16 @@ fieldset[disabled] a.btn {
 
 .label {
   display: inline-block;
+  min-width: 3em;
   margin-right: .5em;
   padding: .25em .5rem;
-  background-color: rgba(255,255,255,.7);
+  background-color: $gray;
   font-size: .75em;
   line-height: $line-height-xs;
-  color: $gray;
-  border: 1px solid $gray;
+  color: #fff;
+  border-radius: 1em;
+  vertical-align: middle;
+  text-align: center;
 }
 
 
@@ -658,6 +662,7 @@ fieldset[disabled] a.btn {
   color: #fff;
   background-color: $gray-light;
   text-align: center;
+  vertical-align: middle;
   
   .nav-horizontal ul li & {
     float: right;
@@ -1335,10 +1340,10 @@ input[type="checkbox"] {
     display: block;
     position: relative;
     color: $gray-dark;
+    text-decoration: none;
 
     .summary-title {
       color: $first-text;
-      text-decoration: underline;
     }
 
     .btn,
@@ -1352,14 +1357,9 @@ input[type="checkbox"] {
       background-color: $faded;
       text-decoration: none;
 
-      .summary-img,
-      .summary-cover {
-        opacity: .7;
-      }
-
       .summary-title {
         color: $first-text;
-        text-decoration: none;
+        text-decoration: underline;
       }
 
       .btn,
@@ -1408,10 +1408,12 @@ input[type="checkbox"] {
     padding: $spacer $spacer ($spacer * 2);
 
     time {
-      display: block;
-      margin: 0 0 .5rem;
+      display: inline-block;
+      margin: 0 .0 .5rem 0;
       font-family: $font-family-03;
       font-weight: $font-weight-03;
+      line-height: $line-height-xs;
+      vertical-align: middle;
     }
 
     p {
@@ -1447,10 +1449,31 @@ input[type="checkbox"] {
 
   }
 
+  .summary-category {
+    display: inline-block;
+    position: relative;
+    top: -.1em;
+    line-height: $line-height-xs;
+    vertical-align: middle;
+
+    .label {
+      margin-left: 1em;
+      font-size: .9em;
+    }
+
+  }
+
   .summary-title {
     margin: 0 0 .5rem;
     font-size: .875rem;
     line-height: $line-height-md;
+    word-break: break-all;
+  }
+
+  .summary-body {
+    margin: 0 0 .5rem;
+    color: $gray-light;
+    line-height: $line-height-sm;
     word-break: break-all;
   }
 
@@ -1461,6 +1484,28 @@ input[type="checkbox"] {
     text-align: right;
   }
 
+  .summary-tag {
+    margin: 0;
+    line-height: $line-height;
+
+    .summary-tag-item {
+      position: relative;
+      display: inline-block;
+      min-width: 3em;
+      margin-right: .5em;
+      padding: 0 .5em;
+      color: #fff;
+      font-size: .625rem;
+      background-color: $gray-light;
+      text-align: center;
+    }
+
+    .summary-tag-glue {
+      display: none;
+    }
+
+  }
+
 }
 
 
@@ -1469,7 +1514,7 @@ input[type="checkbox"] {
   margin-bottom: $grid-gutter-width;
   background-color: #fff;
   color: $gray-dark;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .35);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .35);
 
   .card-cover {
     position: relative;
@@ -1477,23 +1522,40 @@ input[type="checkbox"] {
     height: 200px;
     background: $gray-dark none no-repeat center center;
     background-size: cover;
+    border-bottom: 1px solid $gray-lightest;
     z-index: 11;
   }
 
   > a {
-    position: relative;
     display: block;
-  }
-
-  a:not(.btn),
-  a:not(.label),
-  a:not(.badge) {
+    position: relative;
     color: $gray-dark;
-    
+    text-decoration: none;
+
+    .card-title {
+      color: $first-text;
+    }
+
+    .btn,
+    .badge {
+      color: #fff;
+    }
+
     &:hover,
     &:focus {
       color: $gray-dark;
       text-decoration: none;
+
+      .card-title {
+        color: $first-text;
+        text-decoration: underline;
+      }
+
+      .btn,
+      .badge {
+        color: #fff;
+      }
+
     }
 
   }
@@ -1501,21 +1563,21 @@ input[type="checkbox"] {
   .card-contents {
     position: relative;
     padding: $spacer ($spacer * 2);
-//    min-height: 150px;
+    font-size: .75rem;
     line-height: $line-height;
     z-index: 12;
 
     time {
-      display: block;
-      margin: 0 0 .5rem;
-      font-size: .75rem;
+      display: inline-block;
+      margin: 0 0 .5rem 0;
       font-family: $font-family-03;
       font-weight: $font-weight-03;
+      line-height: $line-height-xs;
+      vertical-align: middle;
     }
 
     p {
       margin: 0 0 .5rem;
-      font-size: .75rem;
     }
 
   }
@@ -1542,18 +1604,84 @@ input[type="checkbox"] {
 
   }
 
+  .card-category {
+    display: inline-block;
+    position: relative;
+    top: -.1em;
+    line-height: $line-height-xs;
+    vertical-align: middle;
+
+    .label {
+      margin-left: 1em;
+      font-size: .9em;
+    }
+
+  }
+
   .card-title {
     font-size: 1rem;
     margin: 0 0 .5rem;
-    line-height: $line-height;
+    line-height: $line-height-md;
     word-break: break-all;
+  }
+
+  .card-body {
+    margin: 0 0 .5rem;
+    color: $gray-light;
+    line-height: $line-height-md;
+    word-break: break-all;
+  }
+
+  .card-tag {
+    margin: 0;
+    line-height: $line-height;
+
+    .card-tag-item {
+      position: relative;
+      display: inline-block;
+      min-width: 3em;
+      margin-right: .5em;
+      padding: 0 .5em;
+      color: #fff;
+      font-size: .625rem;
+      background-color: $gray-light;
+      text-align: center;
+    }
+
+    .card-tag-glue {
+      display: none;
+    }
+
   }
 
 }
 
 .pager {
   padding: ($spacer * 3) 0 0;
+  font-size: .875rem;
   text-align: center;
+
+  span {
+    display: inline-block;
+    padding: .5rem 1rem;
+    color: $gray-light;
+  }
+
+  a {
+    font-family: $font-family-03;
+    font-weight: $font-weight-03;
+  }
+
+  .cur {
+
+    a {
+      background-color: $gray-lighter;
+      color: #fff;
+      font-weight: $font-weight-bold-03;
+    }
+
+  }
+
 }
 
 .serial-nav {
@@ -1598,6 +1726,12 @@ input[type="checkbox"] {
       margin: 0;
       padding: 0 .5rem;
       letter-spacing: normal;
+      vertical-align: middle;
+
+      iframe {
+        vertical-align: middle;
+      }
+
     }
 
   }

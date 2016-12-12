@@ -867,7 +867,8 @@ h6, .h6 {
   padding: 0.375rem 0.5rem;
   line-height: 1;
   border-radius: 0.25rem;
-  vertical-align: middle; }
+  vertical-align: middle;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35); }
   .btn span.btn:hover, .btn span.btn:focus {
     cursor: default; }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
@@ -966,26 +967,26 @@ fieldset[disabled] a.btn {
 .btn-second-outline {
   color: #333333;
   background-color: white;
-  border-color: #999999; }
+  border-color: #f3f3f3; }
   .btn-second-outline:focus, .btn-second-outline.focus, .btn-second-outline:active, .btn-second-outline.active,
   .open > .btn-second-outline.dropdown-toggle {
     color: #333333;
     background-color: #f3f3f3;
-    border-color: #999999; }
+    border-color: #f3f3f3; }
   .btn-second-outline:hover, .btn-second-outline.hover {
     color: #333333;
     background-color: #f3f3f3;
-    border-color: #999999; }
+    border-color: #f3f3f3; }
   .btn-second-outline.disabled:focus, .btn-second-outline.disabled.focus, .btn-second-outline:disabled:focus, .btn-second-outline:disabled.focus,
   fieldset[disabled] .btn-second-outline:focus,
   fieldset[disabled] .btn-second-outline.focus {
     background-color: white;
-    border-color: #999999; }
+    border-color: #f3f3f3; }
   .btn-second-outline.disabled:hover, .btn-second-outline.disabled.hover, .btn-second-outline:disabled:hover, .btn-second-outline:disabled.hover,
   fieldset[disabled] .btn-second-outline:hover,
   fieldset[disabled] .btn-second-outline.hover {
     background-color: white;
-    border-color: #999999; }
+    border-color: #f3f3f3; }
   .btn-second-outline span.btn-second-outline:hover, .btn-second-outline span.btn-second-outline:focus {
     background-color: white; }
 
@@ -1213,13 +1214,16 @@ fieldset[disabled] a.btn {
 
 .label {
   display: inline-block;
+  min-width: 3em;
   margin-right: .5em;
   padding: .25em .5rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #666666;
   font-size: .75em;
   line-height: 1;
-  color: #666666;
-  border: 1px solid #666666; }
+  color: #fff;
+  border-radius: 1em;
+  vertical-align: middle;
+  text-align: center; }
 
 .badge {
   display: inline-block;
@@ -1230,7 +1234,8 @@ fieldset[disabled] a.btn {
   line-height: 1;
   color: #fff;
   background-color: #999999;
-  text-align: center; }
+  text-align: center;
+  vertical-align: middle; }
   .nav-horizontal ul li .badge {
     float: right; }
 
@@ -1850,10 +1855,10 @@ fieldset[disabled]
   .summary > a {
     display: block;
     position: relative;
-    color: #333333; }
+    color: #333333;
+    text-decoration: none; }
     .summary > a .summary-title {
-      color: #2288bb;
-      text-decoration: underline; }
+      color: #2288bb; }
     .summary > a .btn,
     .summary > a .badge {
       color: #fff; }
@@ -1861,13 +1866,9 @@ fieldset[disabled]
       color: #333333;
       background-color: #f3f3f3;
       text-decoration: none; }
-      .summary > a:hover .summary-img,
-      .summary > a:hover .summary-cover, .summary > a:focus .summary-img,
-      .summary > a:focus .summary-cover {
-        opacity: .7; }
       .summary > a:hover .summary-title, .summary > a:focus .summary-title {
         color: #2288bb;
-        text-decoration: none; }
+        text-decoration: underline; }
       .summary > a:hover .btn,
       .summary > a:hover .badge, .summary > a:focus .btn,
       .summary > a:focus .badge {
@@ -1899,10 +1900,12 @@ fieldset[disabled]
     line-height: 1.25;
     padding: 0.625rem 0.625rem 1.25rem; }
     .summary .summary-contents time {
-      display: block;
-      margin: 0 0 .5rem;
+      display: inline-block;
+      margin: 0 .0 .5rem 0;
       font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
-      font-weight: 400; }
+      font-weight: 300;
+      line-height: 1;
+      vertical-align: middle; }
     .summary .summary-contents p {
       margin: 0 0 .5rem; }
       .summary .summary-contents p.summary-btn {
@@ -1924,58 +1927,95 @@ fieldset[disabled]
       text-transform: uppercase;
       letter-spacing: .1em;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35); }
+  .summary .summary-category {
+    display: inline-block;
+    position: relative;
+    top: -.1em;
+    line-height: 1;
+    vertical-align: middle; }
+    .summary .summary-category .label {
+      margin-left: 1em;
+      font-size: .9em; }
   .summary .summary-title {
     margin: 0 0 .5rem;
     font-size: .875rem;
     line-height: 1.5;
+    word-break: break-all; }
+  .summary .summary-body {
+    margin: 0 0 .5rem;
+    color: #999999;
+    line-height: 1.25;
     word-break: break-all; }
   .summary .summary-btn {
     position: absolute;
     bottom: 0;
     right: 0;
     text-align: right; }
+  .summary .summary-tag {
+    margin: 0;
+    line-height: 1.75; }
+    .summary .summary-tag .summary-tag-item {
+      position: relative;
+      display: inline-block;
+      min-width: 3em;
+      margin-right: .5em;
+      padding: 0 .5em;
+      color: #fff;
+      font-size: .625rem;
+      background-color: #999999;
+      text-align: center; }
+    .summary .summary-tag .summary-tag-glue {
+      display: none; }
 
 .card {
   position: relative;
   margin-bottom: 1.25rem;
   background-color: #fff;
   color: #333333;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35); }
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35); }
   .card .card-cover {
     position: relative;
     width: 100%;
     height: 200px;
     background: #333333 none no-repeat center center;
     background-size: cover;
+    border-bottom: 1px solid #f3f3f3;
     z-index: 11; }
   .card > a {
+    display: block;
     position: relative;
-    display: block; }
-  .card a:not(.btn),
-  .card a:not(.label),
-  .card a:not(.badge) {
-    color: #333333; }
-    .card a:not(.btn):hover, .card a:not(.btn):focus,
-    .card a:not(.label):hover,
-    .card a:not(.label):focus,
-    .card a:not(.badge):hover,
-    .card a:not(.badge):focus {
+    color: #333333;
+    text-decoration: none; }
+    .card > a .card-title {
+      color: #2288bb; }
+    .card > a .btn,
+    .card > a .badge {
+      color: #fff; }
+    .card > a:hover, .card > a:focus {
       color: #333333;
       text-decoration: none; }
+      .card > a:hover .card-title, .card > a:focus .card-title {
+        color: #2288bb;
+        text-decoration: underline; }
+      .card > a:hover .btn,
+      .card > a:hover .badge, .card > a:focus .btn,
+      .card > a:focus .badge {
+        color: #fff; }
   .card .card-contents {
     position: relative;
     padding: 0.625rem 1.25rem;
+    font-size: .75rem;
     line-height: 1.75;
     z-index: 12; }
     .card .card-contents time {
-      display: block;
-      margin: 0 0 .5rem;
-      font-size: .75rem;
+      display: inline-block;
+      margin: 0 0 .5rem 0;
       font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
-      font-weight: 400; }
+      font-weight: 300;
+      line-height: 1;
+      vertical-align: middle; }
     .card .card-contents p {
-      margin: 0 0 .5rem;
-      font-size: .75rem; }
+      margin: 0 0 .5rem; }
   .card .card-new {
     position: absolute;
     margin: 0;
@@ -1993,15 +2033,56 @@ fieldset[disabled]
       text-transform: uppercase;
       letter-spacing: .1em;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35); }
+  .card .card-category {
+    display: inline-block;
+    position: relative;
+    top: -.1em;
+    line-height: 1;
+    vertical-align: middle; }
+    .card .card-category .label {
+      margin-left: 1em;
+      font-size: .9em; }
   .card .card-title {
     font-size: 1rem;
     margin: 0 0 .5rem;
-    line-height: 1.75;
+    line-height: 1.5;
     word-break: break-all; }
+  .card .card-body {
+    margin: 0 0 .5rem;
+    color: #999999;
+    line-height: 1.5;
+    word-break: break-all; }
+  .card .card-tag {
+    margin: 0;
+    line-height: 1.75; }
+    .card .card-tag .card-tag-item {
+      position: relative;
+      display: inline-block;
+      min-width: 3em;
+      margin-right: .5em;
+      padding: 0 .5em;
+      color: #fff;
+      font-size: .625rem;
+      background-color: #999999;
+      text-align: center; }
+    .card .card-tag .card-tag-glue {
+      display: none; }
 
 .pager {
   padding: 1.875rem 0 0;
+  font-size: .875rem;
   text-align: center; }
+  .pager span {
+    display: inline-block;
+    padding: .5rem 1rem;
+    color: #999999; }
+  .pager a {
+    font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
+    font-weight: 300; }
+  .pager .cur a {
+    background-color: #cccccc;
+    color: #fff;
+    font-weight: 700; }
 
 .serial-nav {
   padding: 1.875rem 0; }
@@ -2037,7 +2118,10 @@ fieldset[disabled]
       display: inline-block;
       margin: 0;
       padding: 0 .5rem;
-      letter-spacing: normal; }
+      letter-spacing: normal;
+      vertical-align: middle; }
+      .share ul li iframe {
+        vertical-align: middle; }
 
 .imgtext {
   position: relative;
