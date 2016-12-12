@@ -9,7 +9,6 @@
 <div class="<!-- BEGIN_IF [{entry:loop.class}/nem] -->{entry:loop.class}<!-- ELSE -->col-sm-12 col-lg-6<!-- END_IF -->">
 	<article class="summary">
 		<a href="{url}">
-			<p class="summary-new"><span class="badge">New</span></p>
 			<!-- BEGIN new -->
 			<p class="summary-new"><span class="badge">New</span></p>
 			<!-- END new -->
@@ -30,16 +29,16 @@
 				<div class="summary-contents">
 
 					<time class="summary-date" datetime="{date#Y}-{date#m}-{date#d}">{date#Y}.{date#m}.{date#d}</time>
-					<h3 class="summary-title">{title}</h3>
 					<!-- BEGIN category:veil -->
 					<p class="summary-category"><span class="label">{categoryName}</span></p>
 					<!-- END category:veil -->
+					<h3 class="summary-title">{title}</h3>
 					<!-- BEGIN_IF [{summary}/nem] -->
 					<p class="summary-body">{summary}[trim(151, '...')]</p>
 					<!-- END_IF -->
-					<div class="summary-tag">
+					<p class="summary-tag">
 						<!-- BEGIN tag:loop --><span class="summary-tag-item">{name}<!-- BEGIN tagGlue --><span class="summary-tag-glue">, </span><!-- END tagGlue --></span><!-- END tag:loop -->
-					</div>
+					</p>
 				</div><!-- /.summary-contents -->
 
 			</div><!-- /.summary-inner -->

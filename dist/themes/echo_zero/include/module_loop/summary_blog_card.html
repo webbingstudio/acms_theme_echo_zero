@@ -9,6 +9,9 @@
 <div class="<!-- BEGIN_IF [{entry:loop.class}/nem] -->{entry:loop.class}<!-- ELSE -->col-sm-6 col-md-3 col-xl-4<!-- END_IF -->">
 	<article class="card">
 		<a href="{url}" class="card-inner">
+			<!-- BEGIN new -->
+			<p class="card-new"><span class="badge">New</span></p>
+			<!-- END new -->
 
 			<!-- BEGIN_IF [{entry_eyecatch@path}/nem] -->
 			<div class="card-cover" style="background-image: url(%{ARCHIVES_DIR}{entry_eyecatch@path})"></div>
@@ -22,13 +25,17 @@
 			<!-- END_IF -->
 
 			<div class="card-contents">
-				<h3 class="card-title">{title}</h3>
+				<time class="card-date" datetime="{date#Y}-{date#m}-{date#d}">{date#Y}.{date#m}.{date#d}</time>
 				<!-- BEGIN category:veil -->
 				<p class="card-category"><span class="label">{categoryName}</span></p>
 				<!-- END category:veil -->
+				<h3 class="card-title">{title}</h3>
 				<!-- BEGIN_IF [{summary}/nem] -->
 				<p class="card-body">{summary}[trim(151, '...')]</p>
 				<!-- END_IF -->
+				<p class="card-tag">
+					<!-- BEGIN tag:loop --><span class="card-tag-item">{name}<!-- BEGIN tagGlue --><span class="card-tag-glue">, </span><!-- END tagGlue --></span><!-- END tag:loop -->
+				</p>
 			</div><!-- /.card-contents -->
 
 		</a><!-- /.card-inner -->
