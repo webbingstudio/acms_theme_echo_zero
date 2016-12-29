@@ -240,7 +240,7 @@ h6, .h6 {
     &:focus,
     &.focus {
       outline: thin dotted;
-      outline: 5px auto -webkit-focus-ring-color;
+      outline: 5px auto $link-hover-color;
       outline-offset: -2px;
     }
   }
@@ -1226,6 +1226,7 @@ input[type="checkbox"] {
   .section-subtitle {
     margin: .5rem 0 0;
     font-size: .75rem;
+    color: $third-text;
     text-align: center;
     letter-spacing: .1rem;
   }
@@ -1358,7 +1359,7 @@ input[type="checkbox"] {
       text-decoration: none;
 
       .summary-title {
-        color: $first-text;
+        color: $link-hover-color;
         text-decoration: underline;
       }
 
@@ -1547,7 +1548,7 @@ input[type="checkbox"] {
       text-decoration: none;
 
       .card-title {
-        color: $first-text;
+        color: $link-hover-color;
         text-decoration: underline;
       }
 
@@ -1757,10 +1758,6 @@ input[type="checkbox"] {
       color: $gray-dark;
       text-decoration: none;
 
-      .imgtext-img > img {
-        opacity: .8;
-      }
-
       .imgtext-title {
         text-decoration: underline;
       }
@@ -1842,6 +1839,11 @@ input[type="checkbox"] {
 
       }
 
+      &:hover,
+      &:focus {
+        color: $link-hover-color;
+      }
+
     }
 
     .imgtext-title {
@@ -1893,6 +1895,11 @@ input[type="checkbox"] {
 
       }
 
+      &:hover,
+      &:focus {
+        color: $link-hover-color;
+      }
+
     }
 
     .imgtext-img {
@@ -1935,6 +1942,11 @@ input[type="checkbox"] {
 
         }
 
+      }
+
+      &:hover,
+      &:focus {
+        color: $link-hover-color;
       }
 
     }
