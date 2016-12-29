@@ -1,5 +1,15 @@
+<!-- BEGIN_MODULE Sample:veil -->
+# =======================
+#
+# トップページ専用テンプレート
+#
+# モジュールの中にコンテナタグがある
+# モジュールを編集可能な場合はdiv要素を追加する（a-blog cmsの仕様）
+#
+# =======================
+<!-- END_MODULE Sample:veil -->
 <!-- BEGIN_MODULE Entry_Summary id="summary_top_recent_01" -->
-<section class="section<!-- BEGIN moduleField --><!-- BEGIN module_exclass:veil --> {module_exclass}<!-- END module_exclass:veil --><!-- END moduleField -->"<!-- BEGIN moduleField --><!-- BEGIN module_exid:veil --> id="{module_exid}"<!-- END module_exid:veil --><!-- END moduleField -->>
+<!--#include file="/include/module/section_first.html"-->
 	<div class="container">
 	<!-- BEGIN module_setting --><div><!-- END module_setting -->
 		<!--#include file="/admin/module/setting.html"-->
@@ -8,5 +18,5 @@
 		<!--#include file="/include/module/section_footer.html"-->
 	<!-- BEGIN module_setting --></div><!-- END module_setting -->
 	</div><!-- /.container -->
-</section><!-- /.section -->
+<!--#include file="/include/module/section_last.html"-->
 <!-- END_MODULE Entry_Summary -->
