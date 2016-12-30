@@ -7,22 +7,37 @@
 				<input type="checkbox" name="page_header_hidden[]" value="true"{page_header_hidden:checked#true} />
 				<i class="acms-admin-ico-checkbox"></i>このカテゴリーではページタイトルを表示しない
 			</label>
+			<p class="echo-alert">この項目にチェックが入っていると、以降の設定はすべて無視されます。</p>
 			<input type="hidden" name="field[]" value="page_header_hidden" />
+		</td>
+	</tr>
+	<tr>
+		<th>タイトルの色</th>
+		<td>
+			<label class="acms-admin-form-radio"><input type="radio" name="page_header_color" value=""<!-- BEGIN_IF [{page_header_color}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>背景透明＋文字色黒</label>
+			<label class="acms-admin-form-radio"><input type="radio" name="page_header_color" value="inverse"{page_header_color:checked#inverse} /><i class="acms-admin-ico-radio"></i>背景黒＋文字色白</label>
+			<input type="hidden" name="field[]" value="page_header_color" />
 		</td>
 	</tr>
 	<tr>
 		<th>タイトル見出しの内容</th>
 		<td>
+
 			<label class="acms-admin-form-radio"><input type="radio" name="page_header_title" value=""<!-- BEGIN_IF [{page_header_title}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>最上層のカテゴリー名</label>
 			<label class="acms-admin-form-radio"><input type="radio" name="page_header_title" value="current"{page_header_title:checked#current} /><i class="acms-admin-ico-radio"></i>現在のカテゴリー名</label>
 			<label class="acms-admin-form-radio"><input type="radio" name="page_header_title" value="parent"{page_header_title:checked#parent} /><i class="acms-admin-ico-radio"></i>ひとつ上のカテゴリー名</label>
+			<br>
+			<label class="acms-admin-form-radio"><input type="radio" name="page_header_title" value="root_code"{page_header_title:checked#root_code} /><i class="acms-admin-ico-radio"></i>最上層のカテゴリーコード</label>
+			<label class="acms-admin-form-radio"><input type="radio" name="page_header_title" value="current_code"{page_header_title:checked#current_code} /><i class="acms-admin-ico-radio"></i>現在のカテゴリーコード</label>
+			<label class="acms-admin-form-radio"><input type="radio" name="page_header_title" value="parent_code"{page_header_title:checked#parent_code} /><i class="acms-admin-ico-radio"></i>ひとつ上のカテゴリーコード</label>
+
 			<input type="hidden" name="field[]" value="page_header_title" />
 		</td>
 	</tr>
 	<tr>
 		<th>タイトルの説明文</th>
 		<td>
-			<input type="text" name="page_description" value="{page_description}" class="acms-admin-form-width-medium">
+			<input type="text" name="page_description" value="{page_description}" class="acms-admin-form-width-medium" placeholder="未入力: 表示しない">
 			<input type="hidden" name="field[]" value="page_description">
 		</td>
 	</tr>

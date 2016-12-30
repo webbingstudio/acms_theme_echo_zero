@@ -1276,38 +1276,82 @@ input[type="checkbox"] {
 
 .page-header {
   margin: 0 0 2rem;
-  padding: 2rem $grid-gutter-width;
-  background: $gray-dark none no-repeat center center;
+  padding: ($spacer * 4) 0 $spacer;
+  background: transparent none no-repeat center center;
   background-size: cover;
-  color: $gray-lightest;
+  border-top: 1px solid $gray-dark;
+  color: $gray-dark;
+
+  .page-header-contents {
+    padding: ($spacer * 1.5) $grid-gutter-width;
+  }
 
   .page-header-title {
     margin: 0;
     line-height: $line-height-sm;
-    color: $gray-lightest;
-    font-size: 1.375rem;
+    color: $gray-dark;
+    font-size: 2rem;
+    font-weight: normal;
     text-align: center;
+    letter-spacing: .1em;
+//    text-shadow:
+//      1px 1px 15px rgba(255,255,255,5),
+//      -1px 1px 15px rgba(255,255,255,5),
+//      1px -1px 15px rgba(255,255,255,5),
+//      -1px -1px 15px rgba(255,255,255,5);
+
+    &.page-header-title-en {
+      font-family: $font-family-02;
+      font-weight: $font-weight-02;
+      text-transform: capitalize;
+    }
+
   }
 
   .page-header-caption {
-    margin: 1rem 0 0;
+    margin: $spacer 0 0;
     line-height: $line-height-sm;
-    color: $gray-lighter;
-    font-size: 1rem;
-    text-align: center;
-  }
-	
-  &.page-header-light {
-    border-bottom: 1px solid $gray-dark;
-    background-color: transparent;
     color: $gray-dark;
+    font-size: .875rem;
+    text-align: center;
+//    text-shadow:
+//      1px 1px 15px rgba(255,255,255,5),
+//      -1px 1px 15px rgba(255,255,255,5),
+//      1px -1px 15px rgba(255,255,255,5),
+//      -1px -1px 15px rgba(255,255,255,5);
+
+  }
+
+  &.page-header-inverse {
+    border-top: 0 none;
+    background-color: $gray;
+    color: #fff;
 
     .page-header-title {
-      color: $gray-dark;
+      color: #fff;
     }
 
     .page-header-caption {
-      color: $gray-light;
+      color: #fff;
+    }
+
+  }
+
+  &.page-header-large {
+    padding-top: ($spacer * 15);
+    padding-bottom: 0;
+    border-top: 0 none;
+
+    .page-header-contents {
+      background-color: rgba(255,255,255,.5);
+    }
+
+    &.page-header-inverse {
+
+      .page-header-contents {
+        background-color: rgba(0,0,0,.5);
+      }
+
     }
 
   }
