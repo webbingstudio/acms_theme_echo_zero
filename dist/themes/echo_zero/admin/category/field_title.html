@@ -20,17 +20,16 @@
 		</td>
 	</tr>
 	<tr>
-		<th>タイトル見出しの内容</th>
+		<th>タイトルの見出し</th>
 		<td>
-
-			<label class="acms-admin-form-radio"><input type="radio" name="page_header_title" value=""<!-- BEGIN_IF [{page_header_title}/em] --> checked="checked"<!-- END_IF --> /><i class="acms-admin-ico-radio"></i>最上層のカテゴリー名</label>
-			<label class="acms-admin-form-radio"><input type="radio" name="page_header_title" value="current"{page_header_title:checked#current} /><i class="acms-admin-ico-radio"></i>現在のカテゴリー名</label>
-			<label class="acms-admin-form-radio"><input type="radio" name="page_header_title" value="parent"{page_header_title:checked#parent} /><i class="acms-admin-ico-radio"></i>ひとつ上のカテゴリー名</label>
-			<br>
-			<label class="acms-admin-form-radio"><input type="radio" name="page_header_title" value="root_code"{page_header_title:checked#root_code} /><i class="acms-admin-ico-radio"></i>最上層のカテゴリーコード</label>
-			<label class="acms-admin-form-radio"><input type="radio" name="page_header_title" value="current_code"{page_header_title:checked#current_code} /><i class="acms-admin-ico-radio"></i>現在のカテゴリーコード</label>
-			<label class="acms-admin-form-radio"><input type="radio" name="page_header_title" value="parent_code"{page_header_title:checked#parent_code} /><i class="acms-admin-ico-radio"></i>ひとつ上のカテゴリーコード</label>
-
+			<select name="page_header_title">
+				<option value=""<!-- BEGIN_IF [{page_header_title}/em] --> selected="selected"<!-- END_IF -->>最上層のカテゴリー名</option>
+				<option value="root_code"{page_header_title:selected#root_code}>最上層のカテゴリーコード</option>
+				<option value="current_code"{page_header_title:selected#current_code}>現在のカテゴリー名</option>
+				<option value="current_code"{page_header_title:selected#current_code}>現在のカテゴリーコード</option>
+				<option value="parent_code"{page_header_title:selected#parent_code}>ひとつ上のカテゴリー名</option>
+				<option value="parent_code"{page_header_title:selected#parent_code}>ひとつ上のカテゴリーコード</option>
+			</select>
 			<input type="hidden" name="field[]" value="page_header_title" />
 		</td>
 	</tr>
