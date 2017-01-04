@@ -1,4 +1,3 @@
-<!-- BEGIN_MODULE Blog_Field -->
 <script>
 ACMS.Ready(function() {
 	var f = $('form#entryForm');
@@ -8,9 +7,11 @@ ACMS.Ready(function() {
 	var current_eid = '%{EID}';
 
 	// インデキシングの後に説明文を追加する
-	$('input[name="indexing"]', f).closest('tr').find('th').append('<i class="acms-admin-icon-tooltip js-acms-tooltip acms-admin-margin-left-mini" data-acms-tooltip="チェックを外すと、このエントリーは一覧ページに表示されない「隠しページ」となります。"></i>');
+	var indexing_tooltip ='<i class="acms-admin-icon-tooltip js-acms-tooltip acms-admin-margin-left-mini" data-acms-tooltip="チェックを外すと、このエントリーは一覧ページに表示されない「隠しページ」となります。"></i>';
+	$('input[name="indexing"]', f).closest('tr').find('th').append(indexing_tooltip);
 
-	<!-- BEGIN_IF [{blog_edit_category_hidden}/eq/disabled] -->
+<!-- BEGIN_MODULE Blog_Field -->
+<!-- BEGIN_IF [{blog_edit_category_hidden}/eq/disabled] -->
 
 	// カテゴリーを変更不可にする
 	current_label = current_cname;
@@ -21,46 +22,103 @@ ACMS.Ready(function() {
 		.wrapInner('<div style="display: none;"></div>')
 		.append('<span class="acms-admin-text-danger">' + current_label + '</span>');
 
-	<!-- ELSE_IF [{blog_edit_category_hidden}/eq/hidden] -->
+<!-- ELSE_IF [{blog_edit_category_hidden}/eq/hidden] -->
 
 	// カテゴリーを表示しない
 	$('select[name="category_id"]', f).closest('tr').css({
 		display: 'none'
 	});
 
-	<!-- END_IF -->
+<!-- END_IF -->
 
-	<!-- BEGIN_IF [{blog_edit_tag_hidden}/eq/hidden] -->
+<!-- BEGIN_IF [{blog_edit_tag_hidden}/eq/hidden] -->
 
 	// タグを表示しない
 	$('input[name="tag"]', f).closest('tr').css({
 		display: 'none'
 	});
 
-	<!-- END_IF -->
+<!-- END_IF -->
 
-	<!-- BEGIN_IF [{blog_edit_eyecatch_hidden}/eq/hidden] -->
+<!-- BEGIN_IF [{blog_edit_meta_title_hidden}/eq/hidden/_and_/{blog_edit_meta_description_hidden}/eq/hidden] -->
+
+	// 「SEOの設定」全体を表示しない
+	$('#fadeSeoInfo', f).closest('.acms-admin-accordion').css({
+		display: 'none'
+	});
+
+<!-- ELSE_IF [{blog_edit_meta_title_hidden}/eq/hidden] -->
+
+	// 「SEOの設定」のタイトルを表示しない
+	$('input[name="entry_meta_title"]', f).closest('tr').css({
+		display: 'none'
+	});
+
+<!-- ELSE_IF [{blog_edit_meta_description_hidden}/eq/hidden] -->
+
+	// 「SEOの設定」の概要を表示しない
+	$('input[name="entry_meta_description"]', f).closest('tr').css({
+		display: 'none'
+	});
+
+<!-- END_IF -->
+
+<!-- BEGIN_IF [{blog_edit_pickup_hidden}/eq/hidden] -->
+
+	// ピックアップを表示しない
+	$('input[name="pickup[]"]', f).closest('table').css({
+		display: 'none'
+	});
+
+<!-- END_IF -->
+
+<!-- BEGIN_IF [{blog_edit_header_hidden_hidden}/eq/hidden] -->
+
+	// 「エントリータイトルを隠す」を表示しない
+	$('input[name="entry_header_hidden[]"]', f).closest('table').css({
+		display: 'none'
+	});
+
+<!-- END_IF -->
+
+<!-- BEGIN_IF [{blog_edit_sns_hidden_hidden}/eq/hidden] -->
+
+	// 「SNSボタンを隠す」を表示しない
+	$('input[name="entry_sns_hidden[]"]', f).closest('table').css({
+		display: 'none'
+	});
+
+<!-- END_IF -->
+
+<!-- BEGIN_IF [{blog_edit_eyecatch_hidden}/eq/hidden] -->
 
 	// アイキャッチ画像を表示しない
 	$('input[name="entry_eyecatch"]', f).closest('table').css({
 		display: 'none'
 	});
 
-	<!-- END_IF -->
+<!-- END_IF -->
 
-	<!-- BEGIN_IF [{blog_edit_ogp_image_hidden}/eq/hidden] -->
+<!-- BEGIN_IF [{blog_edit_ogp_image_hidden}/eq/hidden] -->
 
 	// OGP画像を表示しない
 	$('input[name="entry_ogp_image"]', f).closest('table').css({
 		display: 'none'
 	});
 
-	<!-- END_IF -->
+<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->
 
 
+
+
+
+
+
+	if( current_rccd == 'xxxxxxx' ) {
 
 	// 特定のカテゴリーのとき
-	if( current_rccd == 'xxxxxxx' ) {
+
 	}
 
 		// タイトルのラベル変更
@@ -74,4 +132,3 @@ ACMS.Ready(function() {
 
 });
 </script>
-<!-- END_MODULE Blog_Field -->
