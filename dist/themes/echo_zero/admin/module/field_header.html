@@ -1,11 +1,11 @@
-<h3 class="acms-admin-admin-title2">見出しの設定</h3>
+<h3 class="acms-admin-admin-title2">ヘッダの設定</h3>
 <table class="adminTable acms-admin-table-admin-edit">
 
 	<tr>
-		<th>自動表示</th>
+		<th>見出しの自動表示</th>
 		<td>
 			<select name="module_header_title">
-				<option value="">使用しない</option>
+				<option value="">使用しない（テキスト優先）</option>
 				<option value="blog"{module_header_title:selected#blog}>現在のブログ名</option>
 				<option value="blog_code"{module_header_title:selected#blog_code}>現在のブログコード</option>
 				<option value="root"{module_header_title:selected#root}>最上層のカテゴリー名</option>
@@ -15,26 +15,19 @@
 				<option value="parent_code"{module_header_title:selected#parent_code}>ひとつ上のカテゴリー名</option>
 				<option value="parent_code"{module_header_title:selected#parent_code}>ひとつ上のカテゴリーコード</option>
 			</select>
-			<p class="echo-alert">「使用しない」以外を選択していると、次の「見出し」の設定は無視されます。</p>
 			<input type="hidden" name="field[]" value="module_header_title" />
+
+			<p class="echo-alert">トップページ、カテゴリーを指定していないエントリーなどでは、カテゴリー情報を自動表示することはできません。</p>
 		</td>
 	</tr>
 
 	<tr>
-		<th>見出し</th>
+		<th>見出しのテキスト</th>
 		<td>
 			<input type="text" name="module_heading" value="{module_heading}" class="acms-admin-form-width-small" />
-
-			<p class="echo-alert">自動表示で「使用しない」を選択し、かつ、この項目も未入力になっていると、見出し全体が非表示となります。</p>
 			<input type="hidden" name="field[]" value="module_heading" />
-		</td>
-	</tr>
 
-	<tr>
-		<th>見出しのタグ <i data-acms-tooltip="このモジュールの見出しをマークアップするタグを指定できます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
-		<td>
-			<input type="text" name="module_header_tag" value="{module_header_tag}" class="acms-admin-form-width-mini" placeholder="未入力: h2" />
-			<input type="hidden" name="field[]" value="module_header_tag" />
+			<p class="echo-alert">自動表示・テキストとも未指定になっていると、ヘッダ全体が非表示となります。</p>
 		</td>
 	</tr>
 
@@ -43,6 +36,14 @@
 		<td>
 			<input type="text" name="module_subtitle" value="{module_subtitle}" class="acms-admin-form-width-large" placeholder="未入力: 表示しない" />
 			<input type="hidden" name="field[]" value="module_subtitle" />
+		</td>
+	</tr>
+
+	<tr>
+		<th>キャプション <i data-acms-tooltip="このモジュールのキャプションを指定できます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+		<td>
+			<input type="text" name="module_caption" value="{module_caption}" class="acms-admin-form-width-large" placeholder="未入力: 表示しない" />
+			<input type="hidden" name="field[]" value="module_caption" />
 		</td>
 	</tr>
 
