@@ -1,24 +1,23 @@
+<!-- BEGIN_MODULE Touch_NotEdit -->
 <!-- BEGIN_MODULE Category_Field -->
 <!-- BEGIN_IF [{page_header_hidden}/neq/true] -->
 <div class="page-header<!-- BEGIN_IF [{page_image@path}/nem] --> page-header-large<!-- END_IF --><!-- BEGIN_IF [{page_header_color}/eq/inverse] --> page-header-inverse<!-- END_IF -->"<!-- BEGIN_IF [{page_image@path}/nem] --> style="background-image: url(%{ARCHIVES_DIR}{page_image@path});"<!-- END_IF -->>
 	<div class="page-header-contents">
-		<!-- BEGIN_IF [{page_header_title}/eq/current] -->
-		<h1 class="page-header-title">%{CATEGORY_NAME}</h1>
-		<!-- ELSE_IF [{page_header_title}/eq/parent] -->
-		<h1 class="page-header-title">%{PARENT_CATEGORY_NAME}</h1>
-		<!-- ELSE_IF [{page_header_title}/eq/root_code] -->
-		<h1 class="page-header-title page-header-title-en">%{RCCD}</h1>
-		<!-- ELSE_IF [{page_header_title}/eq/current_code] -->
-		<h1 class="page-header-title page-header-title-en">%{CCD}</h1>
-		<!-- ELSE_IF [{page_header_title}/eq/parent_code] -->
-		<h1 class="page-header-title page-header-title-en">%{PCCD}</h1>
-		<!-- ELSE -->
-		<h1 class="page-header-title">%{ROOT_CATEGORY_NAME}</h1>
-		<!-- END_IF -->
+		<h1 class="page-title<!-- BEGIN_IF [{page_header_title}/lk/_code] --> page-title-en<!-- END_IF -->">
+			<!-- BEGIN_IF [{page_header_title}/eq/current] -->%{CATEGORY_NAME}
+			<!-- ELSE_IF [{page_header_title}/eq/parent] -->%{PARENT_CATEGORY_NAME}
+			<!-- ELSE_IF [{page_header_title}/eq/root_code] -->%{RCCD}
+			<!-- ELSE_IF [{page_header_title}/eq/current_code] -->%{CCD}
+			<!-- ELSE_IF [{page_header_title}/eq/parent_code] -->%{PCCD}
+			<!-- ELSE -->%{ROOT_CATEGORY_NAME}
+			<!-- END_IF -->
+		</h1>
+
 		<!-- BEGIN_IF [{page_description}/nem] -->
-		<p class="page-header-caption">{page_description}</p>
+		<p class="page-caption">{page_description}</p>
 		<!-- END_IF -->
 	</div><!-- /.page-header-contents -->
 </div><!-- /.page-header -->
 <!-- END_IF -->
 <!-- END_MODULE Category_Field -->
+<!-- END_MODULE Touch_NotEdit -->
