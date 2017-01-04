@@ -12,13 +12,33 @@
 // - Color
 // - Grid
 // - Button
-// - Nav
+// - Nav Vertical
+// - Nav Horizontal
 // - Label
 // - Badge
 // - Form
+// - Section
 // - Spacing
+// - Pager
+// - Serial Nav
+// - Topicpath
+// - Share
 
 // - Theme Styles
+// -- Header
+// -- Global Nav
+// -- Mainvisual
+// -- Header Wrap
+// -- Main, Sub
+// -- Footer
+// -- Page Header
+// -- Archive Header
+// -- Post
+// -- Summary
+// -- Card
+// -- Image and Text
+// -- Banner
+
 
 @include font-face-mapping();
 
@@ -34,15 +54,15 @@ html {
   font-size: $font-size-root;
 
   @include media-breakpoint-down(xs) {
-    font-size: ($font-size-root * .875);
+    font-size: $font-size-sm;
   }
 
   @include media-breakpoint-down(xss) {
-    font-size: ($font-size-root * .75);
+    font-size: $font-size-xs;
   }
 
   @include media-breakpoint-up(xl) {
-    font-size: ($font-size-root * 1.125);
+    font-size: $font-size-lg;
   }
 
 }
@@ -84,7 +104,7 @@ h1, .h1 {
 
 h2, .h2 {
   margin: ($spacer * 4) 0 ($spacer * 2);
-  font-size: 1.5rem;
+  font-size: $font-size-xxl;
 }
 
 h3, .h3 {
@@ -94,17 +114,17 @@ h3, .h3 {
 
 h4, .h4 {
   margin: ($spacer * 3) 0 ($spacer * 1.5);
-  font-size: 1.25rem;
+  font-size: $font-size-xl;
 }
 
 h5, .h5 {
   margin: ($spacer * 3) 0 ($spacer * 1.5);
-  font-size: 1.125rem;
+  font-size: $font-size-lg;
 }
 
 h6, .h6 {
   margin: ($spacer * 3) 0 ($spacer * 1.5);
-  font-size: 1rem;
+  font-size: $font-size-root;
 }
 
 
@@ -496,7 +516,7 @@ fieldset[disabled] a.btn {
 }
 
 
-// Nav
+// Nav Vertical
 // ----------------------------
 
 .nav-vertical {
@@ -517,17 +537,29 @@ fieldset[disabled] a.btn {
         letter-spacing: normal;
         list-style-type: none;
 
+        @at-root {
+
+          #sub & {
+            font-size: $font-size-sm;
+          }
+
+        }
+
         a {
           display: block;
-          padding: .5rem 0;
+          padding: .75rem 0;
           color: $gray-dark;
           text-decoration: none;
-          
+
           &:hover,
-          &.stay {
+          &:focus {
             background-color: $faded-second;
             color: $gray-dark;
             text-decoration: none;
+          }
+
+          &.stay {
+            font-weight: $font-weight-bold-01;
           }
 
         }
@@ -543,6 +575,10 @@ fieldset[disabled] a.btn {
   }
   
 }
+
+
+// Nav Horizontal
+// ----------------------------
 
 .nav-horizontal {
 
@@ -569,6 +605,16 @@ fieldset[disabled] a.btn {
         line-height: $line-height-sm;
         letter-spacing: normal;
 
+        &.stay {
+
+          a {
+            background-color: $faded-second;
+            color: $gray-dark;
+            text-decoration: none;
+          }
+
+        }
+
         a {
           display: inline-block;
           padding: .5rem 1rem;
@@ -576,7 +622,7 @@ fieldset[disabled] a.btn {
           text-decoration: none;
           
           &:hover,
-          &.stay {
+          &:focus {
             background-color: $faded-second;
             color: $gray-dark;
             text-decoration: none;
@@ -640,7 +686,7 @@ fieldset[disabled] a.btn {
   margin-right: .5em;
   padding: .25em .5rem;
   background-color: $gray;
-  font-size: .75em;
+  font-size: $font-size-xs;
   line-height: $line-height-xs;
   color: #fff;
   border-radius: 1em;
@@ -678,7 +724,7 @@ fieldset[disabled] a.btn {
   display: block;
   width: 100%;
   padding: .25rem .1rem;
-  font-size: 1rem;
+  font-size: $font-size-root;
   font-family: $font-family-base;
   line-height: $line-height-xs;
   color: $gray-dark;
@@ -747,12 +793,12 @@ textarea.form-control {
 
 .form-control-sm {
   padding: .1rem;
-  font-size: .875rem;
+  font-size: $font-size-sm;
 }
 
 .form-control-lg {
   padding: .375rem;
-  font-size: 1.25rem;
+  font-size: $font-size-xl;
   line-height: $line-height-sm;
 }
 
@@ -923,6 +969,114 @@ input[type="checkbox"] {
 }
 
 
+// Section
+// ----------------------------
+
+.section {
+  padding: ($spacer * 4.5) 0;
+
+  body:not(.view-top) &:first-child {
+    padding-top: 0;
+  }
+
+  .section-header {
+    padding: 0 0 ($spacer * 3);
+    @include clearfix();
+  }
+
+  .section-title {
+    margin: 0;
+    font-size: 2rem;
+    font-family: $font-family-02;
+    font-weight: $font-weight-02;
+    text-align: center;
+    letter-spacing: .1em;
+
+    &.section-title-en {
+      font-family: $font-family-02;
+      font-weight: $font-weight-02;
+      text-transform: capitalize;
+    }
+
+  }
+
+  .section-subtitle {
+    margin: .5rem 0 0;
+    font-size: $font-size-xs;
+    color: $third-text;
+    text-align: center;
+    letter-spacing: .1rem;
+  }
+
+  .section-caption {
+    margin: 1.5rem 0 0;
+    text-align: center;
+  }
+
+  .section-footer {
+    padding: ($spacer * 1.5) 0 0;
+    @include clearfix();
+  }
+
+  .section-link {
+    margin: 0;
+    text-align: center;
+  }
+
+  #sub & {
+    padding: 0 0 ($spacer * 3);
+
+    .section-header {
+      margin-bottom: ($spacer * 1.5);
+      padding-bottom: $spacer;
+      border-bottom: 1px solid $gray-dark;
+    }
+
+    .section-title {
+      display: inline-block;
+      margin: 0;
+      font-size: $font-size-lg;
+      text-align: left;
+    }
+
+    .section-subtitle {
+      display: inline-block;
+      margin-left: 1em;
+      text-align: left;
+      letter-spacing: 0;
+    }
+
+    .section-caption {
+      margin-top: .5rem;
+      text-align: left;
+      font-size: $font-size-xxs;
+      line-height: $line-height-sm;
+    }
+
+    .section-footer {
+    }
+
+    .section-link {
+      margin: 0;
+
+      .btn {
+        padding-top: $btn-padding-y-sm;
+        padding-bottom: $btn-padding-y-sm;
+        font-size: $font-size-xs;
+      }
+
+      .btn-block {
+        width: auto;
+        display: inline-block;
+      }
+
+    }
+
+  }
+
+}
+
+
 // Spacing
 // ----------------------------
 
@@ -1012,12 +1166,343 @@ input[type="checkbox"] {
 .p-y-xl { padding-top:    ($spacer * 4.5) !important; padding-bottom: ($spacer * 4.5) !important; }
 
 
+// Pager
+// ----------------------------
+
+.pager {
+  padding: ($spacer * 3) 0 0;
+  font-size: $font-size-sm;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    padding: .5rem 1rem;
+    color: $gray-light;
+  }
+
+  a {
+    font-family: $font-family-03;
+    font-weight: $font-weight-03;
+  }
+
+  .cur {
+
+    a {
+      font-weight: $font-weight-bold-03;
+    }
+
+  }
+
+}
+
+
+// Serial Nav
+// ----------------------------
+
+.serial-nav {
+  padding: $spacer 0;
+
+  nav {
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+    }
+
+  }
+
+  &.serial-nav-01 {
+
+    nav {
+
+      ul {
+
+        li {
+          font-size: .875rem;
+          line-height: $line-height-sm;
+          vertical-align: middle;
+
+          a {
+            display: block;
+            position: relative;
+            width: 100%;
+            padding: .5rem 1rem;
+            color: $gray-dark;
+            text-decoration: none;
+            
+            &:hover,
+            &.stay {
+              background-color: $faded-second;
+              color: $gray-dark;
+              text-decoration: none;
+            }
+
+          }
+
+          &.prev {
+
+            a {
+              padding-left: 1.5rem;
+
+              &:before {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                -webkit-transform:translate(0, -50%);
+                -ms-transform:translate(0, -50%);
+                transform:translate(0, -50%);
+                content: "<";
+                font-family: $font-family-sans;
+              }
+
+            }
+
+          }
+
+          &.next {
+
+            a {
+              padding-right: 1.5rem;
+
+              &:after {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                -webkit-transform:translate(0, -50%);
+                -ms-transform:translate(0, -50%);
+                transform:translate(0, -50%);
+                content: ">";
+                font-family: $font-family-sans;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    @include media-breakpoint-down(md) {
+
+      nav {
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+
+        ul {
+
+          li {
+
+            + li {
+              margin-top: $spacer;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    @include media-breakpoint-up(lg) {
+
+      nav {
+        display: table;
+        width: 100%;
+
+        ul {
+          display: table-row;
+
+          li {
+            display: table-cell;
+            width: 50%;
+
+            &.prev {
+              padding-right: $grid-gutter-width;
+            }
+
+            &.next {
+              padding-left: $grid-gutter-width;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &.serial-nav-02 {
+
+    nav {
+
+      ul {
+
+        li {
+          text-align: center;
+
+          + li {
+            margin-top: ($spacer * 2);
+          }
+
+          &.next {
+
+            a {
+
+              &:after {
+                float: right;
+                content: ">";
+                font-size: .875rem;
+                font-family: $font-family-sans;
+              }
+
+            }
+
+          }
+
+          &.prev {
+            font-size: .875rem;
+
+            a {
+              color: $gray-dark;
+              text-decoration: underline;
+
+              &:hover,
+              &.stay {
+                color: $gray-dark;
+                text-decoration: none;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+// Topicpath
+// ----------------------------
+
+.topicpath {
+  padding: $spacer 0;
+
+  nav {
+
+    ol {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      letter-spacing: -.4em;
+
+      li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        font-size: .875rem;
+
+        a {
+          letter-spacing: normal;
+          color: $gray-light;
+          text-decoration: none;
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+
+          &:after {
+            display: inline-block;
+            content: ">";
+            padding: 0 1em;
+            font-family: $font-family-sans;
+          }
+
+        }
+
+        &:last-child {
+
+          a {
+            color: $gray-dark;
+
+            &:after {
+              display: none;
+              content: "";
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+// Share
+// ----------------------------
+
+.share {
+  margin: 0;
+  padding: ($spacer * 3) 0;
+  @include clearfix();
+
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: -.4rem;
+    line-height: $line-height-xs;
+
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 0 .5rem;
+      letter-spacing: normal;
+      vertical-align: middle;
+
+      iframe {
+        vertical-align: middle;
+      }
+
+    }
+
+  }
+
+}
+
 
 
 
 // Theme Styles
 // ----------------------------
 
+// Header
 #header {
   padding: $spacer 0;
 
@@ -1038,6 +1523,7 @@ input[type="checkbox"] {
 
 }
 
+// Global Nav
 .global-nav {
   float: right;
   margin-right: -1rem;
@@ -1049,9 +1535,35 @@ input[type="checkbox"] {
       padding-left: 1rem;
       padding-right: 1rem;
         
-      &:hover,
-      &.stay {
-        background-color: rgba(255,255,255,.5);
+      &:hover {
+        background-color: $faded;
+
+        @at-root {
+
+          .view-top & {
+            background-color: rgba(255,255,255,.5);
+          }
+
+        }
+
+      }
+
+    }
+
+    &.stay {
+
+      a,
+      &:visited {
+        background-color: $faded-second;
+
+        @at-root {
+
+          .view-top & {
+            background-color: rgba(255,255,255,.5);
+          }
+
+        }
+
       }
 
     }
@@ -1060,7 +1572,9 @@ input[type="checkbox"] {
 
 }
 
+// Mainvisual
 .mainvisual {
+
   .slick-dotted.slick-slider {
     margin-bottom: 0;
   }
@@ -1127,7 +1641,7 @@ input[type="checkbox"] {
         width: 100%;
         margin: 0;
         padding: 0 15px;
-        font-size: .875rem;
+        font-size: $font-size-sm;
         text-align: center;
         line-height: 1.75;
       }
@@ -1138,6 +1652,7 @@ input[type="checkbox"] {
 
 }
 
+// Header Wrap
 .header-wrap {
   position: relative;
 
@@ -1157,22 +1672,8 @@ input[type="checkbox"] {
 
 }
 
-
-
-#main {
-  padding: 0 0 ($spacer * 4.5);
-
-  .view-top & {
-    padding: 0;
-  }
-
-}
-
-#sub {
-  padding: 0 0 ($spacer * 4.5);
-}
-
-@include media-breakpoint-up(md) {
+// Main, Sub
+@include media-breakpoint-up(lg) {
 
 .flex-col-2 {
   width: 100%;
@@ -1185,18 +1686,19 @@ input[type="checkbox"] {
   #main {
     flex: 1;
     width: auto;
+    padding: 0 ($grid-gutter-width * 2) ($spacer * 4.5) 0;
   }
 
   #sub {
     width: 300px;
+    padding-top: ($spacer * 4.5);
   }
 
 }
 
 }
 
-
-
+// Footer
 #footer {
   padding: 2rem 2rem 4rem;
   border-style: solid;
@@ -1205,77 +1707,8 @@ input[type="checkbox"] {
   text-align: center;
 }
 
-
-.section {
-  padding: ($spacer * 4.5) 0;
-
-  .section-header {
-    padding: 0 0 ($spacer * 3);
-    @include clearfix();
-  }
-
-  .section-title {
-    margin: 0;
-    font-size: 2rem;
-    font-family: $font-family-02;
-    font-weight: $font-weight-02;
-    text-align: center;
-    letter-spacing: .1em;
-  }
-
-  .section-subtitle {
-    margin: .5rem 0 0;
-    font-size: .75rem;
-    color: $third-text;
-    text-align: center;
-    letter-spacing: .1rem;
-  }
-
-  .section-caption {
-    margin: 1.5rem 0 0;
-    text-align: center;
-  }
-
-  .section-footer {
-    padding: ($spacer * 1.5) 0 0;
-    @include clearfix();
-  }
-
-  .section-link {
-    margin: 0;
-    text-align: center;
-  }
-
-  #sub & {
-
-    margin: 0 0 ($spacer * 3);
-
-    .section-header {
-      padding: 0 0 $spacer;
-    }
-
-    .section-title {
-      margin: 0;
-      font-size: 1.25rem;
-      text-align: left;
-      letter-spacing: 0;
-    }
-
-    .section-footer {
-      padding: $spacer 0 0;
-    }
-
-    .section-link {
-      margin: 0;
-    }
-
-  }
-
-}
-
-
+// Page Header
 .page-header {
-  margin: 0 0 2rem;
   padding: ($spacer * 4) 0 $spacer;
   background: transparent none no-repeat center center;
   background-size: cover;
@@ -1286,7 +1719,7 @@ input[type="checkbox"] {
     padding: ($spacer * 1.5) $grid-gutter-width;
   }
 
-  .page-header-title {
+  .page-title {
     margin: 0;
     line-height: $line-height-sm;
     color: $gray-dark;
@@ -1294,13 +1727,8 @@ input[type="checkbox"] {
     font-weight: normal;
     text-align: center;
     letter-spacing: .1em;
-//    text-shadow:
-//      1px 1px 15px rgba(255,255,255,5),
-//      -1px 1px 15px rgba(255,255,255,5),
-//      1px -1px 15px rgba(255,255,255,5),
-//      -1px -1px 15px rgba(255,255,255,5);
 
-    &.page-header-title-en {
+    &.page-title-en {
       font-family: $font-family-02;
       font-weight: $font-weight-02;
       text-transform: capitalize;
@@ -1308,18 +1736,12 @@ input[type="checkbox"] {
 
   }
 
-  .page-header-caption {
+  .page-caption {
     margin: $spacer 0 0;
     line-height: $line-height-sm;
     color: $gray-dark;
-    font-size: .875rem;
+    font-size: $font-size-sm;
     text-align: center;
-//    text-shadow:
-//      1px 1px 15px rgba(255,255,255,5),
-//      -1px 1px 15px rgba(255,255,255,5),
-//      1px -1px 15px rgba(255,255,255,5),
-//      -1px -1px 15px rgba(255,255,255,5);
-
   }
 
   &.page-header-inverse {
@@ -1327,11 +1749,11 @@ input[type="checkbox"] {
     background-color: $gray;
     color: #fff;
 
-    .page-header-title {
+    .page-title {
       color: #fff;
     }
 
-    .page-header-caption {
+    .page-caption {
       color: #fff;
     }
 
@@ -1358,6 +1780,7 @@ input[type="checkbox"] {
 
 }
 
+// Archive Header
 .archive-header {
   margin: -2rem 0 2rem;
   padding: 1rem;
@@ -1370,12 +1793,13 @@ input[type="checkbox"] {
 
 }
 
-
+// Post
 .post {
   display: block;
   margin-bottom: ($spacer * 3);
 }
 
+// Summary
 .summary {
   position: relative;
   margin-bottom: ($spacer * 3);
@@ -1448,7 +1872,7 @@ input[type="checkbox"] {
   .summary-contents {
     position: relative;
     flex: 1;
-    font-size: .75rem;
+    font-size: $font-size-xs;
     line-height: $line-height-sm;
     padding: $spacer $spacer ($spacer * 2);
 
@@ -1486,7 +1910,7 @@ input[type="checkbox"] {
       margin: 0;
       padding: ($spacer / 2) $spacer;
       background-color: $first;
-      font-size: .625rem;
+      font-size: $font-size-xxs;
       text-transform: uppercase;
       letter-spacing: .1em;
       box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
@@ -1510,7 +1934,7 @@ input[type="checkbox"] {
 
   .summary-title {
     margin: 0 0 .5rem;
-    font-size: .875rem;
+    font-size: $font-size-sm;
     line-height: $line-height-md;
     word-break: break-all;
   }
@@ -1540,7 +1964,7 @@ input[type="checkbox"] {
       margin-right: .5em;
       padding: 0 .5em;
       color: #fff;
-      font-size: .625rem;
+      font-size: $font-size-xxs;
       background-color: $gray-light;
       text-align: center;
     }
@@ -1553,7 +1977,7 @@ input[type="checkbox"] {
 
 }
 
-
+// Card
 .card {
   position: relative;
   margin-bottom: $grid-gutter-width;
@@ -1608,7 +2032,7 @@ input[type="checkbox"] {
   .card-contents {
     position: relative;
     padding: $spacer ($spacer * 2);
-    font-size: .75rem;
+    font-size: $font-size-xs;
     line-height: $line-height;
     z-index: 12;
 
@@ -1641,7 +2065,7 @@ input[type="checkbox"] {
       margin: 0;
       padding: ($spacer / 2) $spacer;
       background-color: $first;
-      font-size: .625rem;
+      font-size: $font-size-xxs;
       text-transform: uppercase;
       letter-spacing: .1em;
       box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
@@ -1664,7 +2088,7 @@ input[type="checkbox"] {
   }
 
   .card-title {
-    font-size: 1rem;
+    font-size: $font-size-root;
     margin: 0 0 .5rem;
     line-height: $line-height-md;
     word-break: break-all;
@@ -1688,7 +2112,7 @@ input[type="checkbox"] {
       margin-right: .5em;
       padding: 0 .5em;
       color: #fff;
-      font-size: .625rem;
+      font-size: $font-size-xxs;
       background-color: $gray-light;
       text-align: center;
     }
@@ -1701,89 +2125,7 @@ input[type="checkbox"] {
 
 }
 
-.pager {
-  padding: ($spacer * 3) 0 0;
-  font-size: .875rem;
-  text-align: center;
-
-  span {
-    display: inline-block;
-    padding: .5rem 1rem;
-    color: $gray-light;
-  }
-
-  a {
-    font-family: $font-family-03;
-    font-weight: $font-weight-03;
-  }
-
-  .cur {
-
-    a {
-      background-color: $gray-lighter;
-      color: #fff;
-      font-weight: $font-weight-bold-03;
-    }
-
-  }
-
-}
-
-.serial-nav {
-  padding: ($spacer * 3) 0;
-
-  nav {
-
-    ul {
-      width: 100%;
-      @include clearfix();
-
-      li.prev {
-        float: left;
-        width: 48%;
-      }
-
-      li.next {
-        float: left;
-        width: 48%;
-      }
-
-    }
-
-  }
-
-}
-
-.share {
-  margin: 0;
-  padding: ($spacer * 3) 0;
-  @include clearfix();
-
-  ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    letter-spacing: -.4rem;
-    line-height: $line-height-xs;
-
-    li {
-      display: inline-block;
-      margin: 0;
-      padding: 0 .5rem;
-      letter-spacing: normal;
-      vertical-align: middle;
-
-      iframe {
-        vertical-align: middle;
-      }
-
-    }
-
-  }
-
-}
-
-
+// Image and Text
 .imgtext {
   position: relative;
   width: 100%;
@@ -1824,7 +2166,7 @@ input[type="checkbox"] {
 
   .imgtext-contents {
     position: relative;
-    font-size: .875rem;
+    font-size: $font-size-sm;
     line-height: 1.5;
     z-index: 12;
   }
@@ -1839,19 +2181,19 @@ input[type="checkbox"] {
 
   .imgtext-body {
     margin: 0;
-    font-size: 1rem;
+    font-size: $font-size-root;
     line-height: $line-height-md;
   }
 
   &.imgtext-sm {
 
     .imgtext-title {
-      font-size: 1.125rem;
+      font-size: $font-size-lg;
     }
 
     .imgtext-body {
       margin: 0;
-      font-size: .75rem;
+      font-size: $font-size-xs;
     }
 
   }
@@ -2018,5 +2360,54 @@ input[type="checkbox"] {
 
 }
 
+// Banner
+.banner {
 
+  ul {
+    overflow: hidden;
+    margin: 0 ($grid-gutter-width * -.5);
+    padding: 0;
+    list-style-type: none;
+    @include clearfix();
 
+    li {
+      float: left;
+      width: 50%;
+      margin: 0 0 $spacer;
+      padding: 0 ($grid-gutter-width / 2);
+
+      @include media-breakpoint-only(md) {
+        width: 33.33333333%;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 100%;
+      }
+
+      a {
+        display: block;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      @at-root {
+
+        #main & {
+
+          @include media-breakpoint-up(sm) {
+            width: 33.33333333%;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
