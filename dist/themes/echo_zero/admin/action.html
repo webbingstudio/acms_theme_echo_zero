@@ -17,6 +17,7 @@
 <style>
 #adminBox {
   margin-bottom: 0;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
 }
 #adminBox #acms-custom-admin-insert {
   margin-bottom: 5px;
@@ -61,7 +62,7 @@
 	</div>
 
 	<div class="acms-admin-grid-r">
-		<div class="acms-admin-col-md-6">
+		<div class="acms-admin-col-md-5">
 			<div class="acms-adminbox-inner clearfix">
 
 				<!-- BEGIN insert -->
@@ -70,10 +71,10 @@
 						<option value="">エントリーの新規作成</option>
 						<!-- BEGIN_MODULE Category_List id="category_list_admin" -->
 						<!-- BEGIN category:loop --><!-- BEGIN category:veil -->
-						<option value="%{SCRIPT_ROOT}bid/%{BID}/cid/{cid}/admin/entry-edit/">{name}</option>
+						<option value="%{SCRIPT_ROOT}bid/%{BID}/cid/{cid}/admin/entry-edit/">{name} (ID:{cid})</option>
 						<!-- END category:veil --><!-- END category:loop -->
 						<!-- END_MODULE Category_List -->
-						<option value="%{SCRIPT_ROOT}bid/%{BID}/admin/entry-edit/">その他</option>
+						<option value="%{SCRIPT_ROOT}bid/%{BID}/admin/entry-edit/">カテゴリーを指定しない</option>
 						<!-- <option value="%{SCRIPT_ROOT}bid/9999/admin/entry-edit/">ブログ名</option> -->
 					</select>
 				</form>
@@ -84,7 +85,7 @@
 			</div>
 		</div>
 
-		<div class="acms-admin-col-md-6">
+		<div class="acms-admin-col-md-7">
 			<div class="acms-adminbox-inner clearfix">
 
 				<!-- BEGIN_MODULE Touch_Entry -->
@@ -113,8 +114,14 @@
 
 				<!-- BEGIN_MODULE Touch_SessionWithAdministration -->
 
+				<!-- BEGIN_MODULE Touch_Category -->
 				<div class="acms-admin-inline-btn">
-				<a href="%{ADMIN_PATH}/bid/%{BID}/admin/blog_edit/#acms_custom" class="acms-admin-btn-admin">%{BLOG_NAME}の設定</a>
+				<a href="%{ADMIN_PATH}/bid/%{BID}/cid/%{CID}/admin/category_edit/?edit=update#acms_custom" class="acms-admin-btn-admin">カテゴリーの設定</a>
+				</div>
+				<!-- END_MODULE Touch_Category -->
+
+				<div class="acms-admin-inline-btn">
+				<a href="%{ADMIN_PATH}/bid/%{BID}/admin/blog_edit/#acms_custom" class="acms-admin-btn-admin">ブログの設定</a>
 				</div>
 
 				<!--
