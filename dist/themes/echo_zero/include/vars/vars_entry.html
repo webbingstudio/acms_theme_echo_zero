@@ -69,18 +69,18 @@
 ### エントリーに画像がない場合はルートブログのOGP画像を表示する
 <!-- END_MODULE Sample:veil -->
 <!-- BEGIN_SetRendered id="var_meta_image" -->
-<!-- BEGIN_IF [{path}/nem] -->%{PROTOCOL}://%{ALIAS_DOMAIN}{path}
-	<!-- ELSE -->
-		<!-- BEGIN_IF [{entry_ogp_image@path}/nem] -->%{HTTP_ARCHIVES_DIR}{entry_ogp_image@path}
-	<!-- ELSE -->
-		<!-- BEGIN_MODULE Blog_Field id="global" -->
-		<!-- BEGIN_IF [{ogp_image@path}/nem] -->
-		%{HTTP_ARCHIVES_DIR}{ogp_image@path}
-		<!-- ELSE -->
-		%{PROTOCOL}://%{ALIAS_DOMAIN}%{CURRENT_THEMES_DIR}images/common/ogp.jpg
-		<!-- END_IF -->
-		<!-- END_MODULE Blog_Field -->
-	<!-- END_IF -->
+<!-- BEGIN_IF [{path}/nem] -->%{PROTOCOL}://%{ALIAS_DOMAIN}/{path}
+<!-- ELSE -->
+<!-- BEGIN_IF [{entry_ogp_image@path}/nem] -->%{HTTP_ARCHIVES_DIR}{entry_ogp_image@path}
+<!-- ELSE -->
+<!-- BEGIN_MODULE Blog_Field id="global" -->
+<!-- BEGIN_IF [{ogp_image@path}/nem] -->
+%{HTTP_ARCHIVES_DIR}{ogp_image@path}
+<!-- ELSE -->
+%{PROTOCOL}://%{ALIAS_DOMAIN}%{CURRENT_THEMES_DIR}images/common/ogp.jpg
+<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->
+<!-- END_IF -->
 <!-- END_IF -->
 <!-- END_SetRendered -->
 
