@@ -2,7 +2,13 @@
 <!--#include file="/include/module/section_first.html"-->
 	<!--#include file="/admin/module/setting.html"-->
     <!--#include file="/include/module/section_header.html"-->
-    <!--#include file="/include/module_loop/entry_archivelist.html"-->
+	<form method="get" class="form-archives-dropdown">
+		<select name="archives" class="js-dropdown-select">
+			<!-- BEGIN archive:loop -->
+			<option value="{url}">{date#Y}年{date#n}月 ({amount})</option>
+			<!-- END archive:loop -->
+		</ul>
+	</form>
     <!--#include file="/include/module/section_footer.html"-->
 <!--#include file="/include/module/section_last.html"-->
 <!-- END_MODULE Entry_ArchiveList -->
