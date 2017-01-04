@@ -1,0 +1,28 @@
+<!-- BEGIN_MODULE Topicpath -->
+<div class="topicpath">
+	<div class="container">
+		<nav>
+			<ol itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+				<!-- BEGIN blog:loop -->
+				<li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem">
+					<a href="{url}" class="js-viewing-indelible" itemprop="item"><span itemprop="name">{name}</span></a>
+					<meta itemprop="position" content="{sNum}">
+				</li>
+				<!-- END blog:loop -->
+				<!-- BEGIN category:loop -->
+				<li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem">
+					<a href="{url}" class="js-viewing-indelible" itemprop="item"><span itemprop="name">{name}</span></a>
+					<meta itemprop="position" content="{sNum}">
+				</li>
+				<!-- END category:loop -->
+				<!-- BEGIN entry -->
+				<li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem">
+					<a href="{url}" class="js-viewing-indelible" itemprop="item"><span itemprop="name">{title}</span></a>
+					<meta itemprop="position" content="{sNum}">
+				</li>
+				<!-- END entry -->
+			</ol>
+		</nav>
+	</div><!-- /.container -->
+</div><!-- /.topicpath -->
+<!-- END_MODULE Topicpath -->
