@@ -26,7 +26,7 @@ $important-text:            #dd0022 !default;
 
 $faded:                     #eef1f2 !default;
 $faded-first:               #e9f9ff !default;
-$faded-second:              $gray-lightest !default;
+$faded-second:              $faded !default;
 $faded-important:           #ffe9ee !default;
 
 $body-bg:                   white !default;
@@ -78,7 +78,7 @@ $btn-padding-x-lg:          1rem !default;
 $btn-padding-y-lg:          .5rem !default;
 
 $btn-padding-x-xl:          2rem !default;
-$btn-padding-y-xl:          1rem !default;
+$btn-padding-y-xl:          .75rem !default;
 
 
 // Typography
@@ -139,9 +139,10 @@ $font-weight-04:            400 !default;
 $font-weight-bold-04:       $font-weight-bold !default;
 
 $font-size-root:            1rem !default;
+$font-size-xxs:             .625rem !default;
 $font-size-xs:              .75rem !default;
 $font-size-sm:              .875rem !default;
-$font-size-lg:              1.1875rem !default;
+$font-size-lg:              1.125rem !default;
 $font-size-xl:              1.25rem !default;
 $font-size-xxl:             1.5rem !default;
 
@@ -156,7 +157,6 @@ $line-height-xs:            1 !default;
 
 $link-color:                 $first-text !default;
 $link-hover-color:           $first !default;
-$link-hover-decoration:      underline !default;
 
 
 // Border
@@ -169,10 +169,10 @@ $border-color:               $gray-lighter !default;
 // Radius
 // -----------------------------------------
 
-$border-radius-sm:           .25rem;
-$border-radius:              .25rem;
-$border-radius-lg:           .375rem;
-$border-radius-xl:           .5rem;
+$border-radius-sm:           .125rem;
+$border-radius:              .125rem;
+$border-radius-lg:           .25rem;
+$border-radius-xl:           .375rem;
 
 
 // Grid
@@ -194,7 +194,6 @@ $grid-breakpoints: (
 ) !default;
 
 $container-max-widths: (
-  sm: 395px,
   md: 680px,
   lg: 1040px,
   xl: 1200px
