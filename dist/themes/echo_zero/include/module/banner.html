@@ -1,0 +1,18 @@
+<!-- BEGIN_MODULE Banner id="banner" -->
+<div class="section banner<!-- BEGIN moduleField --><!-- BEGIN module_exclass:veil --> {module_exclass}<!-- END module_exclass:veil --><!-- END moduleField -->"<!-- BEGIN moduleField --><!-- BEGIN module_exid:veil --> id="{module_exid}"<!-- END module_exid:veil --><!-- END moduleField -->>
+	<ul>
+		<!-- BEGIN banner:loop -->
+		<li>
+			<!-- BEGIN banner#src -->
+			{src}[raw]
+			<!-- END banner#src -->
+			<!-- BEGIN banner#img -->
+			<!-- BEGIN_IF [{url}/nem] --><a href="{url}" target="{target}"{attr1}[raw]><!-- END_IF -->
+			<img src="%{ARCHIVES_DIR}{img}" width="{x}" height="{y}" alt="{alt}"{attr2}[raw]>
+			<!-- BEGIN_IF [{url}/nem] --></a><!-- END_IF -->
+			<!-- END banner#img -->
+		</li>
+		<!-- END banner:loop -->
+	</ul>
+</div><!-- /.section -->
+<!-- END_MODULE Banner -->
