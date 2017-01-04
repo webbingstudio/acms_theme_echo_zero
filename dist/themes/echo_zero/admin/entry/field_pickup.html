@@ -1,20 +1,9 @@
-<!-- BEGIN_MODULE Blog_Field -->
-<!-- BEGIN_IF [{blog_edit_pickup_hidden}/eq/hidden] -->
-	<!-- BEGIN_MODULE Entry_Field -->
-	<input type="hidden" name="pickup" value="{pickup}" />
-	<input type="hidden" name="field[]" value="pickup" />
-	<!-- END_MODULE Entry_Field -->
-<!-- ELSE -->
-	<!-- BEGIN_MODULE Entry_Field -->
-	<table class="entryFormTable acms-admin-table-entry">
-		<tr>
-			<th>ピックアップ</th>
-			<td>
-				<label class="acms-admin-form-checkbox"><input type="checkbox" name="pickup[]" value="true"{pickup:checked#true} /><i class="acms-admin-ico-checkbox"></i>このエントリーをピックアップする</label>
-				<input type="hidden" name="field[]" value="pickup" />
-			</td>
-		</tr>
-	</table>
-	<!-- END_MODULE Entry_Field -->
-<!-- END_IF -->
-<!-- END_MODULE Blog_Field -->
+<table class="entryFormTable acms-admin-table-entry">
+	<tr>
+		<th>ピックアップ</th>
+		<td>
+			<label class="acms-admin-form-checkbox"><input type="checkbox" name="pickup[]" value="true"{pickup:checked#true} /><i class="acms-admin-ico-checkbox"></i>このエントリーをピックアップする</label>
+			<input type="hidden" name="field[]" value="pickup" />
+		</td>
+	</tr>
+</table>

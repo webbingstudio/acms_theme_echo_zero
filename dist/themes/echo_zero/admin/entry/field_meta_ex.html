@@ -1,20 +1,16 @@
 <!-- BEGIN_MODULE Blog_Field -->
 <!-- BEGIN_IF [{blog_edit_meta_ex_hidden}/eq/hidden] -->
-	<!-- BEGIN_MODULE Entry_Field -->
-	<input type="hidden" name="entry_meta_ex" value="{entry_meta_ex}[raw]" />
+	<input type="hidden" name="entry_meta_ex" value="<!-- BEGIN_MODULE Entry_Field -->{entry_meta_ex}[raw]<!-- END_MODULE Entry_Field -->" />
 	<input type="hidden" name="field[]" value="entry_meta_ex" />
-	<!-- END_MODULE Entry_Field -->
 <!-- ELSE -->
-	<!-- BEGIN_MODULE Entry_Field -->
 	<table class="entryFormTable acms-admin-table-entry">
 		<tr>
 			<th>追加のHTMLヘッダ <i data-acms-tooltip="HTMLヘッダの末尾にCSS・JavaScriptなどのコードを追加したい場合は、ここに入力してください。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 			<td>
-				<textarea name="entry_meta_ex" rows="5" class="js-countup acms-admin-form-width-full">{entry_meta_ex}[raw]</textarea>
+				<textarea name="entry_meta_ex" rows="5" class="js-countup acms-admin-form-width-full"><!-- BEGIN_MODULE Entry_Field -->{entry_meta_ex}[raw]<!-- END_MODULE Entry_Field --></textarea>
 				<input type="hidden" name="field[]" value="entry_meta_ex" />
 			</td>
 		</tr>
 	</table>
-	<!-- END_MODULE Entry_Field -->
 <!-- END_IF -->
 <!-- END_MODULE Blog_Field -->

@@ -1,20 +1,9 @@
-<!-- BEGIN_MODULE Blog_Field -->
-<!-- BEGIN_IF [{blog_edit_header_hidden_hidden}/eq/hidden] -->
-	<!-- BEGIN_MODULE Entry_Field -->
-	<input type="hidden" name="entry_header_hidden" value="{entry_header_hidden}" />
-	<input type="hidden" name="field[]" value="entry_header_hidden" />
-	<!-- END_MODULE Entry_Field -->
-<!-- ELSE -->
-	<!-- BEGIN_MODULE Entry_Field -->
-	<table class="entryFormTable acms-admin-table-entry">
-		<tr>
-			<th>エントリータイトルを隠す</th>
-			<td>
-				<label class="acms-admin-form-checkbox"><input type="checkbox" name="entry_header_hidden[]" value="true"{entry_header_hidden:checked#true} /><i class="acms-admin-ico-checkbox"></i>このエントリーではタイトルを表示しない</label>
-				<input type="hidden" name="field[]" value="entry_header_hidden" />
-			</td>
-		</tr>
-	</table>
-	<!-- END_MODULE Entry_Field -->
-<!-- END_IF -->
-<!-- END_MODULE Blog_Field -->
+<table class="entryFormTable acms-admin-table-entry">
+	<tr>
+		<th>エントリータイトルを隠す</th>
+		<td>
+			<label class="acms-admin-form-checkbox"><input type="checkbox" name="entry_header_hidden[]" value="true"{entry_header_hidden:checked#true} /><i class="acms-admin-ico-checkbox"></i>このエントリーではタイトルを表示しない</label>
+			<input type="hidden" name="field[]" value="entry_header_hidden" />
+		</td>
+	</tr>
+</table>
