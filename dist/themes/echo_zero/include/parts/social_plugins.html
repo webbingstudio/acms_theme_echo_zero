@@ -1,0 +1,23 @@
+<!-- BEGIN_MODULE Touch_NotEdit -->
+<!-- BEGIN_MODULE Blog_Field id="global" -->
+<div class="section social-plugins">
+
+	<div class="row">
+
+		<!-- BEGIN_IF [{twitter_account}/nem] -->
+		<div class="col-xs-12<!-- BEGIN_IF [{facebook_page}/nem] --> col-lg-7<!-- END_IF -->">
+			<a class="twitter-timeline" data-lang="ja" data-theme="light" data-height="500" href="https://twitter.com/{twitter_account}">Tweets by {twitter_account}</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div><!-- /.col -->
+		<!-- END_IF -->
+
+		<!-- BEGIN_IF [{facebook_page}/nem] -->
+		<div class="col-xs-12<!-- BEGIN_IF [{twitter_account}/nem] --> col-lg-5<!-- END_IF -->">
+			<div class="fb-page" data-href="{facebook_page}" data-tabs="timeline" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="{facebook_page}" class="fb-xfbml-parse-ignore"><a href="{facebook_page}">%{BLOG_NAME} Facebookページはこちら</a></blockquote></div>
+		</div><!-- /.col -->
+		<!-- END_IF -->
+
+	<!-- /.row --></div>
+
+</div><!-- /.section social-plugins -->
+<!-- END_MODULE Blog_Field -->
+<!-- END_MODULE Touch_NotEdit -->
