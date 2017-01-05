@@ -74,3 +74,4 @@ summary.html は、レスポンシブウェブデザインに対応しやすい�
 <!-- GET_Rendered id="var_pager" -->
 
 なお「vars」ディレクトリにはhead要素のMETAタグなど、テーマ内で変数化しているテンプレートが含まれています。
+
