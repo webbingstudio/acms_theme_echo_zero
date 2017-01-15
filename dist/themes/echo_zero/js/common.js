@@ -24,7 +24,7 @@ $(function(){
 
   $('.offcanvas-right').hiraku({
       btn: '#offcanvas-btn-right',
-      fixedHeader: '#header',
+      fixedHeader: '.header-menu-btn',
       direction: 'right'
   });
 
