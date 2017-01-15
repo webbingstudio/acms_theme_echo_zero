@@ -1,0 +1,41 @@
+.hiraku-open-btn {
+	background: transparent;
+	border: 1px solid #ccc;
+	padding: 6px;
+	width: 35px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.hiraku-open-btn-line {
+	border-top: 2px solid #fff;
+	padding-top: 4px;
+	height: 14px;
+	border-radius: 1px;
+	display: block;
+	transition: .2s all;
+}
+
+.hiraku-open-btn-line:before,
+.hiraku-open-btn-line:after {
+	content: "";
+	background-color: #fff;
+	height: 2px;
+	display: block;
+	width: 18px;
+	border-radius: 1px;
+	margin-bottom: 4px;
+	transition: .2s all;
+}
+
+[aria-expanded="true"] .hiraku-open-btn-line {
+	border-color: transparent;
+}
+
+[aria-expanded="true"] .hiraku-open-btn-line:before {
+	transform: translateY(0) rotate(-45deg);
+}
+
+[aria-expanded="true"] .hiraku-open-btn-line:after {
+	transform: translateY(-6px) rotate(-135deg);
+}
