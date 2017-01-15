@@ -1508,6 +1508,7 @@ input[type="checkbox"] {
 // Header
 #header {
   padding: $spacer 0;
+  background-color: rgba(255,255,255,.75);
 
   .header-logo {
     float: left;
@@ -1524,13 +1525,46 @@ input[type="checkbox"] {
 
   }
 
+  .header-menu-btn {
+    width: auto;
+    padding: 10px;
+    left: auto;
+    right: 0;
+    z-index: 2001;
+
+    .hiraku-open-btn {
+      float: right;
+      outline: none;
+    }
+
+    @at-root {
+
+      .js-hiraku-offcanvas-body-right & {
+        width: 100%;
+        left: 0;
+        right: auto;
+      }
+
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+
+  }
+
 }
 
 // Global Nav
 .global-nav {
+  display: none;
   float: right;
   margin-right: -1rem;
   
+  @include media-breakpoint-up(lg) {
+    display: block;
+  }
+
   nav > ul > li {
     font-size: $font-size-sm;
 
@@ -1664,7 +1698,6 @@ input[type="checkbox"] {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255,255,255,.7);
     z-index: 100;
   }
 

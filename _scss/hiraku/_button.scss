@@ -1,16 +1,12 @@
 .hiraku-open-btn {
-	position: absolute;
-	right: 15px;
-	top: 15px;
 	display: inline-block;
 	background: #fff;
-	border: 1px solid #fff;
-	padding: .375rem;
+	border: 1px solid $gray-lighter;
+	padding: .5rem;
 	font-size: .875rem;
 	border-radius: $border-radius;
 	line-height: 1;
 	cursor: pointer;
-	z-index: 2001;
 }
 
 .hiraku-open-btn-line {
@@ -18,11 +14,12 @@
 	display: inline-block;
 	width: 1rem;
 	height: .125rem;
+	top: -.1em;
 	margin: 0 auto;
 	background-color: $gray-dark;
 	border-radius: .0625rem;
 	transition: .1s all;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 .hiraku-open-btn-line:before,
@@ -38,11 +35,11 @@
 }
 
 .hiraku-open-btn-line:before {
-	top: .4rem;
+	top: -.375rem;
 }
 
 .hiraku-open-btn-line:after {
-	top: .8rem;
+	bottom: -.375rem;
 }
 
 .hiraku-open-btn-label {
@@ -58,10 +55,11 @@
 }
 
 .hiraku-open-btn[aria-expanded="true"] .hiraku-open-btn-line:before {
-	transform: rotate(45deg);
+	top: 0;
+	transform: rotate(-45deg);
 }
 
 .hiraku-open-btn[aria-expanded="true"] .hiraku-open-btn-line:after {
-	top: .4rem;
-	transform: rotate(-45deg);
+	bottom: 0;
+	transform: rotate(45deg);
 }

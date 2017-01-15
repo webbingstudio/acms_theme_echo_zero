@@ -1872,7 +1872,8 @@ fieldset[disabled]
         vertical-align: middle; }
 
 #header {
-  padding: 0.625rem 0; }
+  padding: 0.625rem 0;
+  background-color: rgba(255, 255, 255, 0.75); }
   #header .header-logo {
     float: left;
     margin: 0;
@@ -1883,10 +1884,30 @@ fieldset[disabled]
       position: relative;
       top: 3px;
       vertical-align: middle; }
+  #header .header-menu-btn {
+    width: auto;
+    padding: 10px;
+    left: auto;
+    right: 0;
+    z-index: 2001; }
+    #header .header-menu-btn .hiraku-open-btn {
+      float: right;
+      outline: none; }
+    .js-hiraku-offcanvas-body-right #header .header-menu-btn {
+      width: 100%;
+      left: 0;
+      right: auto; }
+    @media (min-width: 1024px) {
+      #header .header-menu-btn {
+        display: none; } }
 
 .global-nav {
+  display: none;
   float: right;
   margin-right: -1rem; }
+  @media (min-width: 1024px) {
+    .global-nav {
+      display: block; } }
   .global-nav nav > ul > li {
     font-size: 0.875rem; }
     .global-nav nav > ul > li a {
@@ -1963,7 +1984,6 @@ fieldset[disabled]
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
     z-index: 100; }
   .header-wrap .mainvisual {
     position: relative;
