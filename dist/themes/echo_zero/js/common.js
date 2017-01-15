@@ -21,6 +21,26 @@ $(function(){
     arrows: false,
     dots: true
   });
+  // プルダウンでページ移動
+  // a-blog cmsのエントリー作成・アーカイブリスト
+  $('select.js-select-href').on('change', function(e) {
+    var href = $(this).val();
+    if( href != "" ){
+      window.location.href = href;
+    }
+  });
+
+  // メインビジュアル
+  $('.mainvisual .js-slick').slick({
+    infinite: true,
+    autoplay: true,
+    fade: true,
+    speed: 1500,
+    pauseOnHover: false,
+    arrows: false,
+    dots: true
+  });
+
 
 }); // end document.ready
 
