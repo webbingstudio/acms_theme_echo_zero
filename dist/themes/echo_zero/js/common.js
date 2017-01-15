@@ -11,6 +11,17 @@ $(function(){
     }
   });
 
+  // メインビジュアル
+  $('.mainvisual .js-slick').slick({
+    infinite: true,
+    autoplay: true,
+    fade: true,
+    speed: 1500,
+    pauseOnHover: false,
+    arrows: false,
+    dots: true
+  });
+
 }); // end document.ready
 
 })(jQuery); // end jquery
