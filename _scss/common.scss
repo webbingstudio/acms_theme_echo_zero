@@ -540,6 +540,14 @@ fieldset[disabled] a.btn {
         letter-spacing: normal;
         list-style-type: none;
 
+        &.stay {
+
+          a {
+            font-weight: $font-weight-bold-01;
+          }
+
+        }
+
         @at-root {
 
           #sub & {
@@ -553,6 +561,16 @@ fieldset[disabled] a.btn {
           padding: .75rem 0;
           color: $gray-dark;
           text-decoration: none;
+
+          @at-root {
+
+            .sp-nav#{&} {
+              padding-left: 1em;
+              padding-right: 1em;
+              border-bottom: 1px solid $gray-lighter;
+            }
+
+          }
 
           &:hover,
           &:focus {
@@ -568,7 +586,48 @@ fieldset[disabled] a.btn {
         }
 
         ul {
-          padding-left: 1rem;
+
+          li {
+            font-size: .875rem;
+
+            a {
+              padding-top: .5rem;
+              padding-bottom: .5rem;
+              padding-left: 1em;
+
+              @at-root {
+
+                .sp-nav#{&} {
+                  padding-left: 2em;
+                }
+
+              }
+
+            }
+
+            ul {
+
+              li {
+
+                a {
+                  padding-left: 2em;
+
+                  @at-root {
+
+                    .sp-nav#{&} {
+                      padding-left: 3em;
+                    }
+
+                  }
+
+                }
+
+              }
+
+            }
+
+          }
+
         }
 
       }
