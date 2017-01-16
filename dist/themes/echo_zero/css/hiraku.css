@@ -102,22 +102,23 @@
   clip: rect(0 0 0 0); }
 
 .hiraku-open-btn {
-  display: inline-block;
+  background: transparent;
   background: #fff;
-  border: 1px solid #cccccc;
+  border: 1px solid #fff;
   padding: .5rem;
   font-size: .875rem;
+  cursor: pointer;
   border-radius: 0.125rem;
-  line-height: 1;
-  cursor: pointer; }
+  line-height: 1; }
+  .hiraku-open-btn:hover, .hiraku-open-btn:focus {
+    border-color: #999999; }
 
 .hiraku-open-btn-line {
-  position: relative;
   display: inline-block;
+  position: relative;
   width: 1rem;
   height: .125rem;
   top: -.1em;
-  margin: 0 auto;
   background-color: #333333;
   border-radius: .0625rem;
   transition: .1s all;
@@ -145,7 +146,8 @@
   margin-left: .125rem;
   font-size: .75rem;
   font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  vertical-align: middle; }
 
 .hiraku-open-btn[aria-expanded="true"] .hiraku-open-btn-line {
   background-color: transparent; }
