@@ -1940,6 +1940,20 @@ fieldset[disabled]
 
 .mainvisual .slick-dotted.slick-slider {
   margin-bottom: 0; }
+  .mainvisual .slick-dotted.slick-slider .slick-dots {
+    bottom: 0.625rem; }
+    .mainvisual .slick-dotted.slick-slider .slick-dots li button:before {
+      font-size: 10px;
+      color: #fff;
+      opacity: .5; }
+    .mainvisual .slick-dotted.slick-slider .slick-dots li.slick-active button:before {
+      color: #fff;
+      opacity: 1; }
+    .mainvisual .slick-dotted.slick-slider .slick-dots li button:hover:before,
+    .mainvisual .slick-dotted.slick-slider .slick-dots li button:focus:before {
+      font-size: 20px;
+      color: #fff;
+      opacity: 1; }
 
 .mainvisual .mainvisual-contents .mainvisual-slide {
   position: relative;
@@ -1952,46 +1966,51 @@ fieldset[disabled]
     display: block;
     color: #333333;
     text-decoration: none; }
-  .mainvisual .mainvisual-contents .mainvisual-slide .mainvisual-box {
-    display: table;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 70%;
-    max-width: 300px;
-    min-height: 280px;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.25);
-    z-index: 203; }
-    .mainvisual .mainvisual-contents .mainvisual-slide .mainvisual-box .mainvisual-box-inner {
-      display: table-cell;
-      position: relative;
-      background-color: rgba(255, 255, 255, 0.75);
-      vertical-align: top; }
-  .mainvisual .mainvisual-contents .mainvisual-slide .mainvisual-title {
+
+.mainvisual-box {
+  position: absolute;
+  left: 0;
+  top: 66.66666666%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 100%;
+  z-index: 211; }
+  .mainvisual-box:before {
+    content: "";
+    display: block;
     position: absolute;
     left: 0;
-    bottom: 50%;
-    width: 100%;
-    margin: 0;
-    font-size: 2rem;
-    font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
-    font-weight: 400;
-    text-align: center;
-    letter-spacing: .1rem; }
-  .mainvisual .mainvisual-contents .mainvisual-slide .mainvisual-body {
-    position: absolute;
-    left: 0;
-    top: 60%;
-    width: 100%;
-    margin: 0;
-    padding: 0 15px;
-    font-size: 0.875rem;
-    text-align: center;
-    line-height: 1.75; }
+    top: 0;
+    width: 45%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 212; }
+  .mainvisual-box .mainvisual-box-inner {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+    color: #fff;
+    vertical-align: top;
+    z-index: 214; }
+
+.mainvisual-title {
+  margin: 0;
+  padding: 0 60% 0 1.25rem;
+  font-size: 2rem;
+  font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  text-shadow: 0 0 5px #000, 0 0 10px #000; }
+
+.mainvisual-body {
+  margin: 0;
+  padding: 1.25rem 60% 0 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-shadow: 0 0 5px #000, 0 0 10px #000; }
 
 .header-wrap {
   position: relative; }
