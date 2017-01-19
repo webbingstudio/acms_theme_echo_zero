@@ -4,12 +4,12 @@
 <div class="page-header<!-- BEGIN_IF [{page_image@path}/nem] --> page-header-large<!-- END_IF --><!-- BEGIN_IF [{page_header_color}/eq/inverse] --> page-header-inverse<!-- END_IF -->"<!-- BEGIN_IF [{page_image@path}/nem] --> style="background-image: url(%{ARCHIVES_DIR}{page_image@path});"<!-- END_IF -->>
 	<div class="page-header-contents">
 		<h1 class="page-title<!-- BEGIN_IF [{page_header_title}/lk/_code] --> page-title-en<!-- END_IF -->">
-			<!-- BEGIN_IF [{page_header_title}/eq/current] -->%{CATEGORY_NAME}
+			<!-- BEGIN_IF [{page_header_title}/eq/root] -->%{ROOT_CATEGORY_NAME}
 			<!-- ELSE_IF [{page_header_title}/eq/parent] -->%{PARENT_CATEGORY_NAME}
 			<!-- ELSE_IF [{page_header_title}/eq/root_code] -->%{RCCD}
 			<!-- ELSE_IF [{page_header_title}/eq/current_code] -->%{CCD}
 			<!-- ELSE_IF [{page_header_title}/eq/parent_code] -->%{PCCD}
-			<!-- ELSE -->%{ROOT_CATEGORY_NAME}
+			<!-- ELSE -->%{CATEGORY_NAME}
 			<!-- END_IF -->
 		</h1>
 

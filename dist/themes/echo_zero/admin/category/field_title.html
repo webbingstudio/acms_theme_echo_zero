@@ -23,11 +23,11 @@
 		<th>タイトルの見出し</th>
 		<td>
 			<select name="page_header_title">
-				<option value=""<!-- BEGIN_IF [{page_header_title}/em] --> selected="selected"<!-- END_IF -->>最上層のカテゴリー名</option>
-				<option value="root_code"{page_header_title:selected#root_code}>最上層のカテゴリーコード</option>
-				<option value="current_code"{page_header_title:selected#current_code}>現在のカテゴリー名</option>
+				<option value="current"<!-- BEGIN_IF [{page_header_title}/em] --> selected="selected"<!-- END_IF -->>現在のカテゴリー名</option>
 				<option value="current_code"{page_header_title:selected#current_code}>現在のカテゴリーコード</option>
-				<option value="parent_code"{page_header_title:selected#parent_code}>ひとつ上のカテゴリー名</option>
+				<option value="root"{page_header_title:selected#root}>最上層のカテゴリー名</option>
+				<option value="root_code"{page_header_title:selected#root_code}>最上層のカテゴリーコード</option>
+				<option value="parent"{page_header_title:selected#parent}>ひとつ上のカテゴリー名</option>
 				<option value="parent_code"{page_header_title:selected#parent_code}>ひとつ上のカテゴリーコード</option>
 			</select>
 			<input type="hidden" name="field[]" value="page_header_title" />
