@@ -58,25 +58,45 @@
 
 }
 
+@mixin translate($x, $y) {
+  -moz-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
 
-@mixin animation($delay, $duration, $animation-name) {
-  -webkit-animation-delay: $delay;
-  -webkit-animation-duration: $duration;
-  -webkit-animation-name: $animation-name;
-  -webkit-animation-fill-mode: forwards;
+@mixin rotate($deg, $origin:center center) {
+  -moz-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  transform: rotate($deg);
+  transform-origin: $origin;
+}
 
+@mixin scale($x, $y, $origin:center center) {
+  -moz-transform: scale($x, $y);
+  -o-transform: scale($x, $y);
+  -ms-transform: scale($x, $y);
+  transform: scale($x, $y);
+  transform-origin: $origin;
+}
+
+@mixin animation($delay, $duration, $function, $animation-name) {
   -moz-animation-delay: $delay;
   -moz-animation-duration: $duration;
+  -moz-animation-timing-function: $function;
   -moz-animation-name: $animation-name;
   -moz-animation-fill-mode: forwards;
 
   -o-animation-delay: $delay;
   -o-animation-duration: $duration;
+  -o-animation-timing-function: $function;
   -o-animation-name: $animation-name;
   -o-animation-fill-mode: forwards;
 
   animation-delay: $delay;
   animation-duration: $duration;
+  animation-timing-function: $function;
   animation-name: $animation-name;
   animation-fill-mode: forwards;
 }
