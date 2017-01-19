@@ -1,7 +1,12 @@
 @charset "UTF-8";
 /*
- * echo_zero : acms extend css
+ * a-blog cms extend css
+ * version: 2.6 lator
  *
+ */
+/*
+ * 本文のスタイルの影響をUIも受けてしまう問題を回避
+ * ----------------------------
  */
 #adminBox,
 #entryForm,
@@ -53,26 +58,40 @@ a.detail-fade-head {
   text-decoration: none; }
 
 .titleWrapper h2 {
-  margin: 0 0 1rem;
+  margin: 1em 0;
   padding: 0;
   background: transparent none;
   border: 0 none;
   color: #333;
-  font-size: 1.25rem;
+  font-size: 18px;
   font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: 700;
+  text-align: left;
   line-height: 1.25; }
+  .titleWrapper h2:before, .titleWrapper h2:after {
+    display: none; }
+
+.titleWrapper p {
+  margin: 1em 0;
+  color: #333;
+  font-size: 14px;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  text-align: left;
+  line-height: 1.5; }
 
 .acms-admin-modal-header h3 {
-  margin: 1rem 0;
+  margin: 1em 0;
   padding: 0;
   background: transparent none;
   border: 0 none;
   color: #333;
-  font-size: 1.25rem;
+  font-size: 18px;
   font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: 700;
+  text-align: left;
   line-height: 1.25; }
+  .acms-admin-modal-header h3:before, .acms-admin-modal-header h3:after {
+    display: none; }
 
 #entryForm,
 .acms-admin-form,
@@ -100,7 +119,7 @@ body .ui-widget,
   background: transparent none !important;
   padding: 0;
   border: 0 none;
-  font-size: .875rem;
+  font-size: 13px;
   font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: 300;
   line-height: 1.5;
@@ -127,34 +146,34 @@ div.column-file-center {
 body .ui-widget .acms-admin-icon-tooltip {
   margin-left: .25em; }
 
-div[class*="column-echo-button"] {
-  margin-bottom: 2em;
-  text-align: center; }
-
-#entryForm .js-tag_insertion .emoji-trigger-btn,
-#entryForm .js-media_insert {
+.js-tag_insertion .emoji-trigger-btn,
+.js-tag_insertion .emoji-trigger-tag,
+.js-media_insert {
   display: inline-block;
   min-width: 5em;
   padding: .25em .5em;
   background-color: #fff;
   color: #333;
-  font-size: .75rem;
+  font-size: 12px;
   border: 1px solid #999;
   text-align: center;
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle; }
-  #entryForm .js-tag_insertion .emoji-trigger-btn:hover,
-  #entryForm .js-media_insert:hover {
-    background-color: #ccc; }
+  .js-tag_insertion .emoji-trigger-btn:hover,
+  .js-tag_insertion .emoji-trigger-tag:hover,
+  .js-media_insert:hover {
+    background-color: #ddd; }
 
-#entryForm .js-tag_insertion .emoji-trigger-btn-link {
+.js-tag_insertion .emoji-trigger-tag[rel="a"] {
   text-decoration: underline; }
 
-#entryForm .js-tag_insertion .emoji-trigger-btn-strong {
-  font-weight: 700; }
+.js-tag_insertion .emoji-trigger-tag[rel="em"] {
+  font-style: italic; }
 
-@media (min-width: 425px) {
-  .container .container {
-    padding-left: 0;
-    padding-right: 0; } }
+.js-tag_insertion .emoji-trigger-tag[rel="strong"] {
+  font-weight: bold; }
+
+div[class*="column-echo-button"] {
+  margin-bottom: 2em;
+  text-align: center; }

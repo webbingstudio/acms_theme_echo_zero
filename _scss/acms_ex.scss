@@ -1,17 +1,14 @@
+@charset "UTF-8";
 /*
- * echo_zero : acms extend css
+ * a-blog cms extend css
+ * version: 2.6 lator
  *
  */
 
-@import "_variables";
-@import "_mixin";
-
-// ----------------------------
-// acms.css overwrite
-// ----------------------------
-
-// 本文のスタイルの影響をUIも受けてしまう問題を回避
-// ----------------------------
+/*
+ * 本文のスタイルの影響をUIも受けてしまう問題を回避
+ * ----------------------------
+ */
 
 #adminBox,
 #entryForm,
@@ -70,28 +67,59 @@ a.detail-fade-head {
   text-decoration: none;	
 }
 
+
+// 投稿画面の見出しスタイルを上書き
+// ----------------------------
+
 .titleWrapper h2 {
-  margin: 0 0 1rem;
+  margin: 1em 0;
   padding: 0;
   background: transparent none;
   border: 0 none;
   color: #333;
-  font-size: 1.25rem;
+  font-size: 18px;
   font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: 700;
+  text-align: left;
   line-height: 1.25;
+
+  &:before,
+  &:after {
+    display: none;
+  }
+
 }
 
+.titleWrapper p {
+  margin: 1em 0;
+  color: #333;
+  font-size: 14px;
+  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  text-align: left;
+  line-height: 1.5;
+}
+
+
+// モーダルウィンドウ内のモジュール設定の見出しスタイルを上書き
+// ----------------------------
+
 .acms-admin-modal-header h3 {
-  margin: 1rem 0;
+  margin: 1em 0;
   padding: 0;
   background: transparent none;
   border: 0 none;
   color: #333;
-  font-size: 1.25rem;
+  font-size: 18px;
   font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: 700;
+  text-align: left;
   line-height: 1.25;
+
+  &:before,
+  &:after {
+    display: none;
+  }
+
 }
 
 
@@ -112,7 +140,7 @@ body .ui-widget,
   max-width: 95%;
 }
 
-@include media-breakpoint-up(xl) {
+@media (min-width: 1280px) {
 
   .acms-admin-modal-dialog.large {
     max-width: 1200px;
@@ -139,7 +167,7 @@ body .ui-widget,
   background: transparent none !important;
   padding: 0;
   border: 0 none;
-  font-size: .875rem;
+  font-size: 13px;
   font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   font-weight: 300;
   line-height: 1.5;
@@ -184,7 +212,7 @@ div.column-file-center {
 }
 
 
-// ツールチップアイコン
+// ツールチップアイコンをエントリー・モジュールのカスタムフィールドでも使用できるようにする
 // ----------------------------
 
 .acms-admin-icon-tooltip {
@@ -197,71 +225,58 @@ div.column-file-center {
 }
 
 
-// 追加ユニット
+// 文字装飾ボタンを目立たせる
 // ----------------------------
 
-// 余白
+.js-tag_insertion .emoji-trigger-btn,
+.js-tag_insertion .emoji-trigger-tag,
+.js-media_insert {
+	display: inline-block;
+	min-width: 5em;
+	padding: .25em .5em;
+	background-color: #fff;
+  color: #333;
+  font-size: 12px;
+  border: 1px solid #999;
+	text-align: center;
+	border-radius: 3px;
+  text-decoration: none;
+  vertical-align: middle;
+
+  &:hover {
+    background-color: #ddd;
+  }
+
+}
+
+.js-tag_insertion .emoji-trigger-tag[rel="a"] {
+  text-decoration: underline;
+}
+
+.js-tag_insertion .emoji-trigger-tag[rel="em"] {
+  font-style: italic;
+}
+
+.js-tag_insertion .emoji-trigger-tag[rel="strong"] {
+  font-weight: bold;
+}
+
+
+
+
+// ----------------------------
+// echo zero
+// ----------------------------
+
+// 追加ユニット: 余白
 
 div[class*="column-echo-spacer"] {
 }
 
 
-// ボタン
+// 追加ユニット: ボタン
 
 div[class*="column-echo-button"] {
   margin-bottom: 2em;
   text-align: center;
-}
-
-
-// 文字装飾ボタンを目立たせる
-// ----------------------------
-
-#entryForm {
-
-  .js-tag_insertion .emoji-trigger-btn,
-  .js-media_insert {
-  	display: inline-block;
-  	min-width: 5em;
-  	padding: .25em .5em;
-  	background-color: #fff;
-    color: #333;
-    font-size: .75rem;
-    border: 1px solid #999;
-  	text-align: center;
-  	border-radius: 3px;
-    text-decoration: none;
-    vertical-align: middle;
-
-    &:hover {
-      background-color: #ccc;
-    }
-
-  }
-
-  .js-tag_insertion .emoji-trigger-btn-link {
-    text-decoration: underline;
-  }
-
-  .js-tag_insertion .emoji-trigger-btn-strong {
-    font-weight: 700;
-  }
-
-}
-
-
-// レイアウトモジュール、HTML直書きなどでbootstrapのcontainerが二重になった場合の対策
-// ----------------------------
-
-@include media-breakpoint-up(sm) {
-
-.container {
-
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-}
-
 }
