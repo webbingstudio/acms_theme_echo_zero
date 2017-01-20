@@ -110,8 +110,6 @@
   cursor: pointer;
   border-radius: 0.125rem;
   line-height: 1; }
-  .hiraku-open-btn:hover, .hiraku-open-btn:focus {
-    border-color: #999999; }
 
 .hiraku-open-btn-line {
   display: inline-block;
