@@ -9,7 +9,7 @@
 // ====================================
 // Index
 
-// - Structure
+// - Reboot
 // - Utility
 // - Color
 // - Grid
@@ -21,6 +21,7 @@
 // - Form
 // - Section
 // - Spacing
+// - Box
 // - Pager
 // - Serial Nav
 // - Topicpath
@@ -53,7 +54,7 @@
 
 @include font-face-mapping();
 
-// Structure
+// Reboot
 // ----------------------------
 
 * {
@@ -64,12 +65,12 @@ html {
   font-family: $font-family-01;
   font-size: $font-size-root;
 
-  @include media-breakpoint-down(xs) {
-    font-size: $font-size-sm;
-  }
-
   @include media-breakpoint-down(xss) {
     font-size: $font-size-xs;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-sm;
   }
 
   @include media-breakpoint-up(xl) {
@@ -102,41 +103,100 @@ b, dt, optgroup, strong {
   font-weight: $font-weight-bold;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: $font-weight-bold;
-  line-height: $line-height-sm;
+.headings-reset {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: transparent none;
+  border: 0 none;
+  color: $gray-dark;
+  font-size: 1rem;
+  font-weight: $font-weight-bold-01;
+  text-align: left;
+  line-height: $line-height-md;
+  border-radius: 0;
+
+  &:before,
+  &:after {
+    display: none;
+  }
+
 }
 
-h1, .h1 {
-  margin: ($spacer * 4) 0 ($spacer * 2);
+.title-01,
+h1:not([class*="title"]) {
+  @extend .headings-reset;
+  margin-bottom: 1em;
   font-size: 1.75rem;
+  text-align: center;
 }
 
-h2, .h2 {
-  margin: ($spacer * 4) 0 ($spacer * 2);
-  font-size: $font-size-xxl;
+.title-02,
+h2:not([class*="title"]) {
+  @extend .headings-reset;
+  margin-top: ($spacer * 6);
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-h3, .h3 {
-  margin: ($spacer * 4) 0 ($spacer * 2);
-  font-size: 1.375rem;
+.title-03,
+h3:not([class*="title"]) {
+  @extend .headings-reset;
+  margin-top: ($spacer * 6);
+  margin-bottom: 1em;
+  font-size: 1.25rem;
+  text-align: center;
 }
 
-h4, .h4 {
-  margin: ($spacer * 3) 0 ($spacer * 1.5);
-  font-size: $font-size-xl;
+.title-04,
+h4:not([class*="title"]) {
+  @extend .headings-reset;
+  margin-top: ($spacer * 4);
+  margin-bottom: 1em;
+  font-size: 1.125rem;
 }
 
-h5, .h5 {
-  margin: ($spacer * 3) 0 ($spacer * 1.5);
-  font-size: $font-size-lg;
+.title-05,
+h5:not([class*="title"]) {
+  @extend .headings-reset;
+  margin-top: ($spacer * 2);
+  margin-bottom: .5em;
+  font-size: 1rem;
 }
 
-h6, .h6 {
-  margin: ($spacer * 3) 0 ($spacer * 1.5);
-  font-size: $font-size-root;
+.title-06,
+h6:not([class*="title"]) {
+  @extend .headings-reset;
+  margin-top: ($spacer * 2);
+  margin-bottom: .5em;
+  font-size: .875rem;
 }
+
+p:not([class]) {
+  margin: 0 0 1em;
+}
+
+hr:not([class]) {
+  overflow: hidden;
+  margin: ($spacer * 4) 0;
+  height: 1px;
+  border-width: 1px 0 0;
+  border-style: solid none none;
+  border-color: $gray-dark transparent transparent;
+}
+
+blockquote:not([class]) {
+  overflow: hidden;
+  margin: ($spacer * 4) 0;
+  padding: $spacer ($spacer * 2);
+  border-width: 0 0 0 .5rem;
+  border-style: none none none solid;
+  border-color: transparent transparent transparent $gray-lighter;
+  font-style: italic;
+}
+
+
 
 
 // Utility
@@ -800,7 +860,7 @@ fieldset[disabled] a.btn {
   display: inline-block;
   min-width: 3em;
   margin-right: .5em;
-  padding: .25em .5rem;
+  padding: .375em .75em;
   background-color: $gray;
   font-size: $font-size-xs;
   line-height: $line-height-xs;
@@ -1280,6 +1340,36 @@ input[type="checkbox"] {
 .p-l-xl { padding-left:   ($spacer * 4.5) !important; }
 .p-x-xl { padding-right:  ($spacer * 4.5) !important; padding-left:   ($spacer * 4.5) !important; }
 .p-y-xl { padding-top:    ($spacer * 4.5) !important; padding-bottom: ($spacer * 4.5) !important; }
+
+
+// Box
+// ----------------------------
+
+.box {
+  padding: $spacer ($spacer * 2);
+  background-color: $faded;
+
+  @include media-breakpoint-up(lg) {
+    padding: ($spacer * 2) ($spacer * 4);
+  }
+
+  &.box-first {
+    background-color: $faded-first;
+  }
+
+  &.box-second {
+    background-color: $faded-second;
+  }
+
+  &.box-third {
+    background-color: $faded-third;
+  }
+
+  &.box-important {
+    background-color: $faded-important;
+  }
+
+}
 
 
 // Pager
@@ -2265,15 +2355,9 @@ input[type="checkbox"] {
   }
 
   .card-category {
-    display: inline-block;
-    position: relative;
-    top: -.1em;
-    line-height: $line-height-xs;
-    vertical-align: middle;
 
     .label {
-      margin-left: 1em;
-      font-size: .9em;
+      font-size: .625rem;
     }
 
   }
@@ -2612,8 +2696,155 @@ input[type="checkbox"] {
 // Entry Column
 
 .entry-column {
-  
+
+  // ユニットグループによる段組がないよきは左右余白を確保する
+  h1:not([class]),
+  h2:not([class]),
+  h3:not([class]),
+  h4:not([class]),
+  h5:not([class]),
+  h6:not([class]),
+  p:not([class]){
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+  }
+
+  // paddingが使用できない要素では透明ボーダーかmarginで確保する
+  ul:not([class]),
+  ol:not([class]),
+  dl:not([class]),
+  .box {
+    border-left: $grid-gutter-width solid transparent;
+    border-right: $grid-gutter-width solid transparent;
+  }
+
+  hr:not([class]) {
+    margin-left: $grid-gutter-width;
+    margin-right: $grid-gutter-width;
+  }
+
+  // ユニットグループの中では余白をリセットする
+  [class*="col-"] {
+
+    h1:not([class]),
+    h2:not([class]),
+    h3:not([class]),
+    h4:not([class]),
+    h5:not([class]),
+    h6:not([class]),
+    p:not([class]){
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .box,
+    ul:not([class]),
+    ol:not([class]),
+    dl:not([class]) {
+      border-left-width: 0;
+      border-right-width: 0;
+    }
+
+    hr:not([class]) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+  }
+
+  ul:not([class]) {
+    margin: 0 0 1.5rem;
+    padding: 0;
+
+    > li {
+      position: relative;
+      margin: .5rem 0;
+      padding: 0 0 0 1.5rem;
+      font-size: 1rem;
+      font-weight: $font-weight;
+      line-height: $line-height-md;
+      list-style-type: none;
+
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+        width: .25rem;
+        height: .25rem;
+        background-color: $gray-dark;
+      }
+
+      > ul,
+      > ol {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        border-left-width: 0;
+        border-right-width: 0;
+      }
+
+    }
+
+  }
+
+  ol:not([class]) {
+    counter-reset: ol_number;
+    margin: 0 0 1.5rem;
+    padding: 0;
+
+    > li {
+      position: relative;
+      margin: .5rem 0;
+      padding: 0 0 0 1.5rem;
+      font-size: 1rem;
+      font-weight: $font-weight;
+      line-height: $line-height-md;
+      list-style-type: none;
+
+      &:before {
+        display: block;
+        counter-increment: ol_number;
+        content: counter(ol_number)".";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.5rem;
+        text-align: center;
+      }
+
+      > ul,
+      > ol {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        border-left-width: 0;
+        border-right-width: 0;
+      }
+
+    }
+
+  }
+
+  dl:not([class]) {
+    margin: 0;
+    padding: 0;
+    line-height: $line-height-md;
+
+    > dt {
+      margin: 0 0 .5rem;
+      padding: 0;
+      font-weight: $font-weight-bold-01;
+    }
+
+    > dd {
+      margin: 0 0 .5rem;
+      padding: 0 0 0 1.5rem;
+    }
+
+  }
+
 }
+
 
 // Column Image
 
