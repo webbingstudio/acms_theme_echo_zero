@@ -10,9 +10,12 @@
 // Index
 
 // - Reboot
-// - Utility
-// - Color
+// - Utilities
 // - Grid
+// - Color
+// - Headings
+// - Lists
+// - Tables
 // - Button
 // - Nav Vertical
 // - Nav Horizontal
@@ -20,6 +23,7 @@
 // - Badge
 // - Form
 // - Section
+// - Font Size
 // - Spacing
 // - Box
 // - Pager
@@ -103,8 +107,161 @@ b, dt, optgroup, strong {
   font-weight: $font-weight-bold;
 }
 
-.headings-reset {
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+p:not([class]) {
+  margin: 0 0 1em;
+}
+
+hr:not([class]) {
   overflow: hidden;
+  margin: ($spacer * 4) 0;
+  height: 1px;
+  border-width: 1px 0 0;
+  border-style: solid none none;
+  border-color: $gray-dark transparent transparent;
+}
+
+blockquote:not([class]) {
+  overflow: hidden;
+  margin: ($spacer * 4) 0;
+  padding: $spacer ($spacer * 2);
+  border-width: 0 0 0 .5rem;
+  border-style: none none none solid;
+  border-color: transparent transparent transparent $gray-lighter;
+  font-style: italic;
+}
+
+
+// Utilities
+// ----------------------------
+
+.clearfix {
+  &:after {
+    clear: both;
+    display: table;
+    content: " ";
+  }
+  &:before {
+    display: table;
+    content: " ";
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable {
+  &:active, &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+// 包括コンテナの幅を無視して幅いっぱいに広げる
+
+.container-full {
+  min-height: 1px;
+  margin-left: -5000px;
+  margin-right: -5000px;
+  padding-left: 5000px;
+  padding-right: 5000px;
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+
+// Grid
+// ----------------------------
+
+.container {
+  @include make-container();
+
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      max-width: $container-max-width;
+    }
+  }
+}
+
+.container-fluid {
+  @include make-container();
+}
+
+.row {
+  @include make-row();
+}
+
+@include make-grid-columns();
+
+
+// レイアウトモジュール、HTML直書きなどでbootstrapのcontainerが二重になった場合の対策
+@include media-breakpoint-up(sm) {
+
+.container {
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+}
+
+
+// Color
+// ----------------------------
+
+.text-muted {
+  color: $gray-light;
+}
+
+.text-first {
+  color: $first-text;
+}
+
+.text-second {
+  color: $second-text;
+}
+
+.text-third {
+  color: $third-text;
+}
+
+.text-important {
+  color: $important-text;
+}
+
+
+// Headings
+// ----------------------------
+
+.headings-reset {
   margin: 0;
   padding: 0;
   background: transparent none;
@@ -173,147 +330,103 @@ h6:not([class*="title"]) {
   font-size: .875rem;
 }
 
-p:not([class]) {
-  margin: 0 0 1em;
-}
 
-hr:not([class]) {
-  overflow: hidden;
-  margin: ($spacer * 4) 0;
-  height: 1px;
-  border-width: 1px 0 0;
-  border-style: solid none none;
-  border-color: $gray-dark transparent transparent;
-}
-
-blockquote:not([class]) {
-  overflow: hidden;
-  margin: ($spacer * 4) 0;
-  padding: $spacer ($spacer * 2);
-  border-width: 0 0 0 .5rem;
-  border-style: none none none solid;
-  border-color: transparent transparent transparent $gray-lighter;
-  font-style: italic;
-}
-
-
-
-
-// Utility
+// Tables
 // ----------------------------
 
-.clearfix {
-  &:after {
-    clear: both;
+.tables-reset {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: ($spacer * 2);
+  background-color: #fff;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+  border-color: $gray-lighter;
+
+  @include media-breakpoint-up(md) {
     display: table;
-    content: " ";
-  }
-  &:before {
-    display: table;
-    content: " ";
-  }
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-.sr-only-focusable {
-  &:active, &:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    clip: auto;
-  }
-}
-
-// 包括コンテナの幅を無視して幅いっぱいに広げる
-
-.container-full {
-  min-height: 1px;
-  margin-left: -5000px;
-  margin-right: -5000px;
-  padding-left: 5000px;
-  padding-right: 5000px;
-
-  .container {
-    padding-left: 0;
-    padding-right: 0;
   }
 
-}
+  @include media-breakpoint-up(lg) {
+    margin-bottom: ($spacer * 4);
+  }
 
+  tr {
+    border-bottom: 1px solid $gray-lighter;
 
-// Color
-// ----------------------------
-
-.text-muted {
-  color: $gray-light;
-}
-
-.text-first {
-  color: $first-text;
-}
-
-.text-second {
-  color: $second-text;
-}
-
-.text-third {
-  color: $third-text;
-}
-
-.text-important {
-  color: $important-text;
-}
-
-
-// Grid
-// ----------------------------
-
-.container {
-  @include make-container();
-
-  @each $breakpoint, $container-max-width in $container-max-widths {
-    @include media-breakpoint-up($breakpoint) {
-      max-width: $container-max-width;
+    @include media-breakpoint-up(md) {
+      border-bottom: 0 none;
     }
-  }
-}
 
-.container-fluid {
-  @include make-container();
-}
-
-.row {
-  @include make-row();
-}
-
-@include make-grid-columns();
-
-
-// レイアウトモジュール、HTML直書きなどでbootstrapのcontainerが二重になった場合の対策
-// ----------------------------
-
-@include media-breakpoint-up(sm) {
-
-.container {
-
-  .container {
-    padding-left: 0;
-    padding-right: 0;
   }
 
+  th,
+  td {
+    display: block;
+    padding: .5rem 1rem;
+    line-height: $line-height-md;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    border-color: $gray-lighter;
+    vertical-align: top;
+
+    @include media-breakpoint-up(md) {
+      display: table-cell;
+    }
+
+  }
+
+  th {
+    text-align: left;
+  }
+
+  thead {
+
+    th {
+      vertical-align: bottom;
+    }
+
+  }
+
 }
+
+.table {
+  @extend .tables-reset;
+
+  &.table-3-9 {
+
+    th {
+
+      @include media-breakpoint-up(md) {
+        width: 25%;
+      }
+
+    }
+
+    td {
+
+      @include media-breakpoint-up(md) {
+        width: 75%;
+      }
+
+    }
+
+  }
+
+  &.table-1-1-1 {
+
+    th,
+    td {
+
+      @include media-breakpoint-up(md) {
+        width: 33.33333333%;
+        text-align: center;
+      }
+
+    }
+
+  }
 
 }
 
@@ -1253,6 +1366,16 @@ input[type="checkbox"] {
 }
 
 
+// Font Size
+// ----------------------------
+
+.font-size-xs { font-size: .75rem !important; }
+.font-size-sm { font-size: .875rem !important; }
+.font-size-md, .font-size-base { font-size: 1rem !important; }
+.font-size-lg { font-size: 1.25rem !important; }
+.font-size-xl { font-size: 1.5rem !important; }
+
+
 // Spacing
 // ----------------------------
 
@@ -1346,10 +1469,12 @@ input[type="checkbox"] {
 // ----------------------------
 
 .box {
+  margin-bottom: ($spacer * 2);
   padding: $spacer ($spacer * 2);
   background-color: $faded;
 
   @include media-breakpoint-up(lg) {
+    margin-bottom: ($spacer * 4);
     padding: ($spacer * 2) ($spacer * 4);
   }
 
@@ -2697,7 +2822,18 @@ input[type="checkbox"] {
 
 .entry-column {
 
-  // ユニットグループによる段組がないよきは左右余白を確保する
+  // 直前の要素がfloatしたときに背景色やリストマークが巻き込まれないようにする
+  h1, h2, h3, h4, h5, h6, ul, ol {
+    overflow: hidden;
+  }
+
+  // 本文の先頭に見出し等があるときに上余白を取る
+  *:first-child {
+    margin-top: 0 !important;
+  }
+
+  // ユニットグループによる段組がないときは左右余白を確保する
+  .entry-container,
   h1:not([class]),
   h2:not([class]),
   h3:not([class]),
@@ -2705,27 +2841,28 @@ input[type="checkbox"] {
   h5:not([class]),
   h6:not([class]),
   p:not([class]){
-    padding-left: $grid-gutter-width;
-    padding-right: $grid-gutter-width;
+    padding-left: ($grid-gutter-width / 2);
+    padding-right: ($grid-gutter-width / 2);
   }
 
   // paddingが使用できない要素では透明ボーダーかmarginで確保する
   ul:not([class]),
   ol:not([class]),
-  dl:not([class]),
-  .box {
-    border-left: $grid-gutter-width solid transparent;
-    border-right: $grid-gutter-width solid transparent;
+  dl:not([class]) {
+    border-left: ($grid-gutter-width / 2) solid transparent;
+    border-right: ($grid-gutter-width / 2) solid transparent;
   }
 
+  .box,
   hr:not([class]) {
-    margin-left: $grid-gutter-width;
-    margin-right: $grid-gutter-width;
+    margin-left: ($grid-gutter-width / 2);
+    margin-right: ($grid-gutter-width / 2);
   }
 
   // ユニットグループの中では余白をリセットする
   [class*="col-"] {
 
+    .entry-container,
     h1:not([class]),
     h2:not([class]),
     h3:not([class]),
@@ -2737,7 +2874,6 @@ input[type="checkbox"] {
       padding-right: 0;
     }
 
-    .box,
     ul:not([class]),
     ol:not([class]),
     dl:not([class]) {
@@ -2745,6 +2881,7 @@ input[type="checkbox"] {
       border-right-width: 0;
     }
 
+    .box,
     hr:not([class]) {
       margin-left: 0;
       margin-right: 0;
