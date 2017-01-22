@@ -10,18 +10,18 @@
 	</tr>
 
 	<tr>
-		<th>追加属性 <i data-acms-tooltip="このモジュール全体を囲む要素に、classとidを追加できます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+		<th>追加属性 <i data-acms-tooltip="このモジュール全体を囲む要素に、class・idなどの属性を追加できます。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
 		<td>
-			<div class="acms-admin-inline-block">id</div>
+			<div class="acms-admin-inline-block">class名</div>
 			<div class="acms-admin-inline-block" style="margin-right: 30px">
-				<input type="text" name="module_exid" value="{module_exid}" class="acms-admin-form-width-small" />
-				<input type="hidden" name="field[]" value="module_exid" />
-			</div>
-
-			<div class="acms-admin-inline-block">class</div>
-			<div class="acms-admin-inline-block">
 				<input type="text" name="module_exclass" value="{module_exclass}" class="acms-admin-form-width-small" />
 				<input type="hidden" name="field[]" value="module_exclass" />
+			</div>
+
+			<div class="acms-admin-inline-block">その他の属性</div>
+			<div class="acms-admin-inline-block">
+				<input type="text" name="module_exattr" value="{module_exattr}" class="acms-admin-form-width-small" />
+				<input type="hidden" name="field[]" value="module_exattr" />
 			</div>
 		</td>
 	</tr>
