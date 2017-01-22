@@ -49,6 +49,10 @@
 // - acms Styles
 // -- Entry Column
 // -- Column Image
+// -- Column File
+// -- Column Map
+// -- Column Video
+// -- Column Auto
 // -- Column Center
 // -- Column Left
 // -- Column Right
@@ -1473,6 +1477,11 @@ input[type="checkbox"] {
   padding: $spacer ($spacer * 2);
   background-color: $faded;
 
+  // 最後の要素の下マージンを取る
+  & > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
   @include media-breakpoint-up(lg) {
     margin-bottom: ($spacer * 4);
     padding: ($spacer * 2) ($spacer * 4);
@@ -2822,13 +2831,29 @@ input[type="checkbox"] {
 
 .entry-column {
 
+  // URLが長いと右にはみ出す問題を回避
+  word-break: break-all;
+
   // 直前の要素がfloatしたときに背景色やリストマークが巻き込まれないようにする
   h1, h2, h3, h4, h5, h6, ul, ol {
     overflow: hidden;
   }
 
-  // 本文の先頭に見出し等があるときに上余白を取る
-  *:first-child {
+  // 本文の先頭にある要素の上余白を取る
+  // clearHiddenの次に配置された要素の上余白を取る
+  // floatしている画像ユニットの次に配置された要素の上余白を取る
+  *:first-child,
+  hr.clearHidden:first-child + *,
+  .column-image-left + *,
+  .column-image-right + *,
+  .column-media-left + *,
+  .column-media-right + *,
+  .column-map-left + *,
+  .column-map-right + *,
+  .column-yolp-left + *,
+  .column-yolp-right + *,
+  .column-video-left + *,
+  .column-video-right + * {
     margin-top: 0 !important;
   }
 
@@ -2840,7 +2865,10 @@ input[type="checkbox"] {
   h4:not([class]),
   h5:not([class]),
   h6:not([class]),
-  p:not([class]){
+  p:not([class]),
+  [class*="column-map"],
+  [class*="column-yolp"],
+  [class*="column-video"] {
     padding-left: ($grid-gutter-width / 2);
     padding-right: ($grid-gutter-width / 2);
   }
@@ -2860,7 +2888,7 @@ input[type="checkbox"] {
   }
 
   // ユニットグループの中では余白をリセットする
-  [class*="col-"] {
+  [class*="acms-entry-unit"] {
 
     .entry-container,
     h1:not([class]),
@@ -2869,7 +2897,10 @@ input[type="checkbox"] {
     h4:not([class]),
     h5:not([class]),
     h6:not([class]),
-    p:not([class]){
+    p:not([class]),
+    [class*="column-map"],
+    [class*="column-yolp"],
+    [class*="column-video"] {
       padding-left: 0;
       padding-right: 0;
     }
@@ -2990,6 +3021,12 @@ input[type="checkbox"] {
   text-align: center;
   padding: 0 ($grid-gutter-width / 2);
 
+  // ユニットグループの中では余白をリセットする
+  [class*="col-"] & {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .caption {
     margin: 0;
     padding: ($spacer / 2);
@@ -3023,6 +3060,127 @@ input[type="checkbox"] {
 }
 
 
+// Column File
+
+[class*="column-file-"] {
+
+  .columnIcon {
+    vertical-align: middle;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  & + .caption {
+    margin: 0;
+    color: $third-text;
+    font-size: .875rem;
+  }
+
+}
+
+.column-file-auto {
+  display: inline-block;
+  margin-bottom: 1rem;
+
+  & + .caption {
+    display: inline-block;
+    line-height: $line-height-sm;
+  }
+
+}
+
+.column-file-center {
+  max-width: 300px;
+  margin: 0 auto 1.5rem;
+  padding: 0;
+  text-align: center;
+
+  & + .caption {
+    max-width: 300px;
+    margin: 0 auto 1.5rem;
+  }
+
+}
+
+.column-file-left,
+.column-file-right {
+  width: auto !important;
+  padding: 0 0 $spacer;
+  text-align: center;
+
+  & + .caption {
+    max-width: 300px;
+    padding-top: 20px;
+    min-height: 75px;
+    vertical-align: middle;
+  }
+
+}
+
+.column-file-left {
+  float: left;
+  margin-right: $spacer;
+
+  & + .caption {
+    float: left;
+    margin-right: $spacer;
+  }
+
+}
+
+.column-file-right {
+  float: right;
+
+  & + .caption {
+    float: right;
+  }
+
+}
+
+
+// Column Map
+
+[class*="column-map"],
+[class*="column-yolp"] {
+  max-width: 100%;
+  overflow: hidden;
+
+  > div {
+    width: 100% !important;
+  }
+
+  .js-s2d-ready {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+}
+
+
+// Column Auto
+
+.column-map-auto,
+.column-yolp-auto,
+.column-video-auto {
+  margin-bottom: ($spacer * 2) !important;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: ($spacer * 3) !important;
+  }
+
+}
+
+
 // Column Center
 
 .column-image-center,
@@ -3037,15 +3195,28 @@ input[type="checkbox"] {
 
 }
 
+.column-map-center,
+.column-yolp-center,
+.column-video-center {
+  margin-bottom: ($spacer * 2) !important;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: ($spacer * 3) !important;
+  }
+
+}
+
 .column-image-center[class*="column-responsive-"],
 .column-media-center[class*="column-responsive-"] {
   @include media-breakpoint-up(lg) {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .column-image-center[class*="column-responsive-"],
 .column-media-center[class*="column-responsive-"] {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -3057,9 +3228,19 @@ input[type="checkbox"] {
   display: block !important;
   margin: 0 auto;
   padding-right: $grid-gutter-width;
+}
 
-  @include media-breakpoint-up(xl) {
-    padding-right: ($grid-gutter-width * 2);
+.column-map-left,
+.column-yolp-left,
+.column-video-left {
+  float: none !important;
+  margin-bottom: ($spacer * 2) !important;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(lg) {
+    float: left !important;
+    margin-bottom: ($spacer * 3) !important;
+    margin-right: $grid-gutter-width;
   }
 
 }
@@ -3084,9 +3265,19 @@ input[type="checkbox"] {
   display: block !important;
   margin: 0 auto;
   padding-left: $grid-gutter-width;
+}
 
-  @include media-breakpoint-up(xl) {
-    padding-left: ($grid-gutter-width * 2);
+.column-map-right,
+.column-yolp-right,
+.column-video-right {
+  float: none !important;
+  margin-bottom: ($spacer * 2) !important;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(lg) {
+    float: right !important;
+    margin-bottom: ($spacer * 3) !important;
+    margin-left: $grid-gutter-width;
   }
 
 }
