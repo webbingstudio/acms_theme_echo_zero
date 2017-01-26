@@ -3,7 +3,7 @@
 <!-- END notFound -->
 
 <!-- BEGIN entry:loop -->
-<article class="post<!-- BEGIN_IF [{entry:loop.class}/nem] --> {entry:loop.class}<!-- END_IF -->">
+<article class="post post-01<!-- BEGIN_IF [{entry:loop.class}/nem] --> {entry:loop.class}<!-- END_IF -->" id="post-id-{entry:loop.eid}">
 
 	<!--#include file="/admin/entry/revision-info.html"-->
 
@@ -11,7 +11,7 @@
 	<!-- BEGIN_IF [{entry_header_hidden}/neq/true] -->
 	<div class="post-header">
 		<!-- BEGIN title:veil -->
-		<h2 class="post-header-title"><a href="{titleUrl}">{title}</a></h2>
+		<h2 class="post-title">{title}</h2>
 		<!-- END title:veil -->
 	</div><!-- /.post-header -->
 	<!-- END_IF -->
@@ -28,9 +28,11 @@
 
 	</div><!-- /.post-contents -->
 
-	<!-- BEGIN_IF [{entry_sns_hidden}/neq/true] -->
-	<!--#include file="/include/parts/share.html"-->
-	<!-- END_IF -->
+	<div class="post-footer">
+		<!-- BEGIN_IF [{entry_sns_hidden}/neq/true] -->
+		<!--#include file="/include/parts/share.html"-->
+		<!-- END_IF -->
+	</div><!-- /.post-footer -->
 
 	<!-- END_MODULE Touch_NotEdit -->
 

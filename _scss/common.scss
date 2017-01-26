@@ -182,14 +182,15 @@ blockquote:not([class]) {
   }
 }
 
-// 包括コンテナの幅を無視して幅いっぱいに広げる
+// コンテナの幅を無視して幅いっぱいに広げる
+// 必ず包括要素にoverflow:hiddenとmax-width:100%;を指定すること
 
 .container-full {
-  min-height: 1px;
-  margin-left: -5000px;
-  margin-right: -5000px;
-  padding-left: 5000px;
-  padding-right: 5000px;
+  min-height: 1px !important;
+  margin-left: -5000px !important;
+  margin-right: -5000px !important;
+  padding-left: 5000px !important;
+  padding-right: 5000px !important;
 
   .container {
     padding-left: 0;
@@ -1747,6 +1748,7 @@ input[type="checkbox"] {
 
 .topicpath {
   padding: $spacer 0;
+  font-size: .75rem;
 
   nav {
 
@@ -1760,7 +1762,6 @@ input[type="checkbox"] {
         display: inline-block;
         margin: 0;
         padding: 0;
-        font-size: .875rem;
 
         a {
           letter-spacing: normal;
@@ -1808,9 +1809,6 @@ input[type="checkbox"] {
 // ----------------------------
 
 .share {
-  margin: 0;
-  padding: ($spacer * 3) 0;
-  @include clearfix();
 
   ul {
     margin: 0;
@@ -2124,7 +2122,7 @@ input[type="checkbox"] {
 
 // Page Header
 .page-header {
-  padding: ($spacer * 4) 0 $spacer;
+  padding: ($spacer * 4) 0 ($spacer * 2);
   background: transparent none no-repeat center center;
   background-size: cover;
   border-top: 1px solid $gray-dark;
@@ -2208,11 +2206,53 @@ input[type="checkbox"] {
 
 }
 
+
 // Post
 .post {
-  display: block;
-  margin-bottom: ($spacer * 3);
+
+  .post-header {
+    padding: ($spacer * 2) 0;
+
+    .post-title {
+      margin: 0;
+      padding: 0;
+      background: transparent none;
+      border: 0 none;
+      font-size: $font-size-xxl;
+      font-family: $font-family-01;
+      font-weight: $font-weight-bold-01;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+
+    }
+
+  }
+
+  .post-contents {
+    padding: ($spacer * 2) 0;
+  }
+
+  .post-footer {
+    padding: ($spacer * 2) 0;
+  }
+
+  &.post-01 {
+
+    .post-header {
+
+      .post-title {
+        text-align: center;
+      }
+
+    }
+
+  }
+
 }
+
 
 // Summary
 .summary {
@@ -3236,7 +3276,12 @@ input[type="checkbox"] {
   float: left;
   display: block !important;
   margin: 0 auto;
-  padding-right: $grid-gutter-width;
+  padding-right: ($grid-gutter-width / 2);
+
+  @include media-breakpoint-up(sm) {
+    padding-right: $grid-gutter-width;
+  }
+
 }
 
 .column-map-left,
@@ -3273,7 +3318,11 @@ input[type="checkbox"] {
   float: right;
   display: block !important;
   margin: 0 auto;
-  padding-left: $grid-gutter-width;
+  padding-left: ($grid-gutter-width / 2);
+
+  @include media-breakpoint-up(sm) {
+    padding-left: $grid-gutter-width;
+  }
 }
 
 .column-map-right,
