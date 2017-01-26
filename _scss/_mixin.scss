@@ -247,39 +247,35 @@
   }
 }
 
-@mixin button-variant($color, $background, $border, $hover-background, $hover-border, $active-background, $active-border) {
+@mixin button-variant($color, $background, $border, $hover-color, $hover-background, $hover-border) {
   color: $color;
   background-color: $background;
   border-color: $border;
 
-  &:focus,
-  &.focus,
-  &:active,
-  &.active,
-  .open > &.dropdown-toggle {
-    color: $color;
-    background-color: $active-background;
-        border-color: $active-border;
-  }
   &:hover,
-  &.hover {
-    color: $color;
+  &:focus,
+  &:active,
+  &.active {
+    color: $hover-color;
     background-color: $hover-background;
-        border-color: $hover-border;
+    border-color: $hover-border;
   }
+
   &.disabled,
   &:disabled,
   fieldset[disabled] & {
+    opacity: .8;
+
+    &:hover,
+    &.hover,
     &:focus,
     &.focus {
+      color: $color;
       background-color: $background;
-          border-color: $border;
+      border-color: $border;
     }
-    &:hover,
-    &.hover {
-      background-color: $background;
-          border-color: $border;
-    }
+
   }
+
 }
 

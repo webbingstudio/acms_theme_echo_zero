@@ -19,6 +19,7 @@
 // - Button
 // - Nav Vertical
 // - Nav Horizontal
+// - Alert
 // - Label
 // - Badge
 // - Form
@@ -449,6 +450,11 @@ h6:not([class*="title"]) {
   border-radius: $border-radius;
   vertical-align: middle;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .35);
+  transition: .3s all;
+
+  a#{&} {
+    text-decoration: none;
+  }
 
   span#{&} {
 
@@ -497,21 +503,10 @@ fieldset[disabled] a.btn {
     $btn-first-color,
     $btn-first-bg,
     $btn-first-border,
-    lighten($btn-first-bg, 10%),
-    lighten($btn-first-border, 10%),
+    $btn-first-color,
     lighten($btn-first-bg, 10%),
     lighten($btn-first-border, 10%)
   );
-
-  span#{&} {
-
-    &:hover,
-    &:focus {
-      background-color: $btn-first-bg;
-    }
-
-  }
-
 }
 
 .btn-first-outline {
@@ -519,21 +514,10 @@ fieldset[disabled] a.btn {
     $btn-first-outline-color,
     $btn-first-outline-bg,
     $btn-first-outline-border,
-    $faded-first,
-    $btn-first-outline-border,
-    $faded-first,
-    $btn-first-outline-border
+    $btn-first-outline-hover-color,
+    $btn-first-outline-hover-bg,
+    $btn-first-outline-hover-border
   );
-
-  span#{&} {
-
-    &:hover,
-    &:focus {
-      background-color: $btn-first-outline-bg;
-    }
-
-  }
-
 }
 
 .btn-second {
@@ -541,21 +525,10 @@ fieldset[disabled] a.btn {
     $btn-second-color,
     $btn-second-bg,
     $btn-second-border,
-    lighten($btn-second-bg, 10%),
-    lighten($btn-second-border, 10%),
+    $btn-second-color,
     lighten($btn-second-bg, 10%),
     lighten($btn-second-border, 10%)
   );
-
-  span#{&} {
-
-    &:hover,
-    &:focus {
-      background-color: $btn-second-bg;
-    }
-
-  }
-
 }
 
 .btn-second-outline {
@@ -563,21 +536,10 @@ fieldset[disabled] a.btn {
     $btn-second-outline-color,
     $btn-second-outline-bg,
     $btn-second-outline-border,
-    $faded,
-    $btn-second-outline-border,
-    $faded,
-    $btn-second-outline-border
+    $btn-second-outline-hover-color,
+    $btn-second-outline-hover-bg,
+    $btn-second-outline-hover-border
   );
-
-  span#{&} {
-
-    &:hover,
-    &:focus {
-      background-color: $btn-second-outline-bg;
-    }
-
-  }
-
 }
 
 .btn-third {
@@ -585,21 +547,10 @@ fieldset[disabled] a.btn {
     $btn-third-color,
     $btn-third-bg,
     $btn-third-border,
-    lighten($btn-third-bg, 10%),
-    lighten($btn-third-border, 10%),
+    $btn-third-color,
     lighten($btn-third-bg, 10%),
     lighten($btn-third-border, 10%)
   );
-
-  span#{&} {
-
-    &:hover,
-    &:focus {
-      background-color: $btn-third-bg;
-    }
-
-  }
-
 }
 
 .btn-third-outline {
@@ -607,21 +558,10 @@ fieldset[disabled] a.btn {
     $btn-third-outline-color,
     $btn-third-outline-bg,
     $btn-third-outline-border,
-    lighten($btn-third-outline-color, 40%),
-    $btn-third-outline-border,
-    lighten($btn-third-outline-color, 40%),
-    $btn-third-outline-border
+    $btn-third-outline-hover-color,
+    $btn-third-outline-hover-bg,
+    $btn-third-outline-hover-border
   );
-
-  span#{&} {
-
-    &:hover,
-    &:focus {
-      background-color: $btn-third-outline-bg;
-    }
-
-  }
-
 }
 
 .btn-important {
@@ -629,21 +569,10 @@ fieldset[disabled] a.btn {
     $btn-important-color,
     $btn-important-bg,
     $btn-important-border,
-    lighten($btn-important-bg, 10%),
-    lighten($btn-important-border, 10%),
+    $btn-important-color,
     lighten($btn-important-bg, 10%),
     lighten($btn-important-border, 10%)
   );
-
-  span#{&} {
-
-    &:hover,
-    &:focus {
-      background-color: $btn-important-bg;
-    }
-
-  }
-
 }
 
 .btn-important-outline {
@@ -651,21 +580,10 @@ fieldset[disabled] a.btn {
     $btn-important-outline-color,
     $btn-important-outline-bg,
     $btn-important-outline-border,
-    $faded-important,
-    $btn-important-outline-border,
-    $faded-important,
-    $btn-important-outline-border
+    $btn-important-outline-hover-color,
+    $btn-important-outline-hover-bg,
+    $btn-important-outline-hover-border
   );
-
-  span#{&} {
-
-    &:hover,
-    &:focus {
-      background-color: $btn-important-outline-bg;
-    }
-
-  }
-
 }
 
 
@@ -674,22 +592,10 @@ fieldset[disabled] a.btn {
     #fff,
     transparent,
     #fff,
-    rgba(255,255,255,.5),
     #fff,
     rgba(255,255,255,.5),
     #fff
   );
-
-
-  span#{&} {
-
-    &:hover,
-    &:focus {
-      background-color: rgba(255,255,255,.5);
-    }
-
-  }
-
 }
 
 
@@ -763,6 +669,7 @@ fieldset[disabled] a.btn {
           padding: .75rem 0;
           color: $gray-dark;
           text-decoration: none;
+          transition: .3s all;
 
           @at-root {
 
@@ -888,6 +795,7 @@ fieldset[disabled] a.btn {
           padding: .5rem 1rem;
           color: $gray-dark;
           text-decoration: none;
+          transition: .3s all;
 
           &:hover,
           &:focus {
@@ -970,6 +878,32 @@ fieldset[disabled] a.btn {
   100% {
     height: auto;
     opacity: 1;
+  }
+
+}
+
+
+// Alert
+// ----------------------------
+
+.alert {
+  margin: ($spacer * 2) 0;
+  padding: $spacer;
+  text-align: center;
+  line-height: $line-height-sm;
+
+  &.alert-info {
+    color: $gray-light;
+  }
+
+  &.alert-success {
+    color: $first-text;
+    background-color: $faded-first;
+  }
+
+  &.alert-danger {
+    color: $important;
+    background-color: $faded-important;
   }
 
 }
@@ -2546,7 +2480,14 @@ input[type="checkbox"] {
 
   }
 
+  .card-title {
+    font-size: $font-size-root;
+    margin: 0;
+    line-height: $line-height-md;
+  }
+
   .card-category {
+    display: inline-block;
 
     .label {
       font-size: .625rem;
@@ -2554,15 +2495,8 @@ input[type="checkbox"] {
 
   }
 
-  .card-title {
-    font-size: $font-size-root;
-    margin: 0 0 .5rem;
-    line-height: $line-height-md;
-    word-break: break-all;
-  }
-
   .card-body {
-    margin: 0 0 .5rem;
+    margin: .5rem 0;
     color: $gray-light;
     line-height: $line-height-md;
     word-break: break-all;

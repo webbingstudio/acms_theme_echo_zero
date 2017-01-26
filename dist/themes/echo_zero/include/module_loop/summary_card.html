@@ -1,12 +1,12 @@
 <!-- BEGIN notFound -->
-<p><em>このコンテンツは準備中です。</em></p>
+<p class="alert alert-info">このコンテンツは準備中です。</p>
 <!-- END notFound -->
 
 <!-- BEGIN unit:loop -->
 <div class="row">
 
 <!-- BEGIN entry:loop --><!-- BEGIN_IF [{iNum}/nem] -->
-<div class="<!-- BEGIN_IF [{entry:loop.class}/nem] -->{entry:loop.class}<!-- ELSE -->col-sm-6 col-md-3 col-xl-4<!-- END_IF -->">
+<div class="<!-- BEGIN_IF [{entry:loop.class}/nem] -->{entry:loop.class}<!-- ELSE -->col-sm-6 col-md-6 col-xl-4<!-- END_IF -->">
 	<article class="card">
 		<a href="{url}" class="card-inner">
 			<!-- BEGIN new -->
@@ -26,6 +26,9 @@
 
 			<div class="card-contents">
 				<h3 class="card-title">{title}</h3>
+				<!-- BEGIN blog:veil -->
+				<p class="card-category"><span class="label">{blogName}</span></p>
+				<!-- END blog:veil -->
 				<!-- BEGIN category:veil -->
 				<p class="card-category"><span class="label">{categoryName}</span></p>
 				<!-- END category:veil -->

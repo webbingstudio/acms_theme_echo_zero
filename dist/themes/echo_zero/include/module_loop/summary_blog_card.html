@@ -1,5 +1,5 @@
 <!-- BEGIN notFound -->
-<p><em>このコンテンツは準備中です。</em></p>
+<p class="alert alert-info">このコンテンツは準備中です。</p>
 <!-- END notFound -->
 
 <!-- BEGIN unit:loop -->
@@ -26,6 +26,9 @@
 
 			<div class="card-contents">
 				<time class="card-date" datetime="{date#Y}-{date#m}-{date#d}">{date#Y}.{date#m}.{date#d}</time>
+				<!-- BEGIN blog:veil -->
+				<p class="card-category"><span class="label">{blogName}</span></p>
+				<!-- END blog:veil -->
 				<!-- BEGIN category:veil -->
 				<p class="card-category"><span class="label">{categoryName}</span></p>
 				<!-- END category:veil -->

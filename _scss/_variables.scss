@@ -14,7 +14,7 @@ $gray-light:                #999999 !default;
 $gray-lighter:              #cccccc !default;
 $gray-lightest:             #eeeeee !default;
 
-$first:                     #4499ee !default;
+$first:                     #4499dd !default;
 $first-text:                #2288bb !default;
 $second:                    $gray-dark !default;
 $second-text:               $gray-dark !default;
@@ -37,37 +37,53 @@ $body-color:                $gray-dark !default;
 // Buttons
 // -----------------------------------------
 
-$btn-first-color:           white !default;
-$btn-first-bg:              $first !default;
-$btn-first-border:          $first !default;
+$btn-first-color:                 white !default;
+$btn-first-bg:                    $first !default;
+$btn-first-border:                $first !default;
 
-$btn-first-outline-color:   $first !default;
-$btn-first-outline-bg:      white !default;
-$btn-first-outline-border:  lighten($first, 15%) !default;
+$btn-first-outline-color:         $gray-dark !default;
+$btn-first-outline-bg:            white !default;
+$btn-first-outline-border:        $gray-lightest !default;
 
-$btn-second-color:          white !default;
-$btn-second-bg:             $second !default;
-$btn-second-border:         $second !default;
+$btn-first-outline-hover-color:   white !default;
+$btn-first-outline-hover-bg:      $first !default;
+$btn-first-outline-hover-border:  $first !default;
 
-$btn-second-outline-color:      $second !default;
-$btn-second-outline-bg:         white !default;
-$btn-second-outline-border:     $gray-lightest !default;
+$btn-second-color:                white !default;
+$btn-second-bg:                   $second !default;
+$btn-second-border:               $second !default;
 
-$btn-third-color:               white !default;
-$btn-third-bg:                  $third !default;
-$btn-third-border:              $third !default;
+$btn-second-outline-color:        $gray-dark !default;
+$btn-second-outline-bg:           white !default;
+$btn-second-outline-border:       $gray-lightest !default;
 
-$btn-third-outline-color:       $third !default;
-$btn-third-outline-bg:          white !default;
-$btn-third-outline-border:      lighten($third, 15%) !default;
+$btn-second-outline-hover-color:  white !default;
+$btn-second-outline-hover-bg:     $second !default;
+$btn-second-outline-hover-border: $second !default;
 
-$btn-important-color:           white !default;
-$btn-important-bg:              $important !default;
-$btn-important-border:          $important !default;
+$btn-third-color:                 white !default;
+$btn-third-bg:                    $third !default;
+$btn-third-border:                $third !default;
 
-$btn-important-outline-color:   $important !default;
-$btn-important-outline-bg:      white !default;
-$btn-important-outline-border:  lighten($important, 15%) !default;
+$btn-third-outline-color:         $gray-dark !default;
+$btn-third-outline-bg:            white !default;
+$btn-third-outline-border:        $gray-lightest !default;
+
+$btn-third-outline-hover-color:   white !default;
+$btn-third-outline-hover-bg:      $third !default;
+$btn-third-outline-hover-border:  $third !default;
+
+$btn-important-color:                 white !default;
+$btn-important-bg:                    $important !default;
+$btn-important-border:                $important !default;
+
+$btn-important-outline-color:         $gray-dark !default;
+$btn-important-outline-bg:            white !default;
+$btn-important-outline-border:        $gray-lightest !default;
+
+$btn-important-outline-hover-color:   white !default;
+$btn-important-outline-hover-bg:      $important !default;
+$btn-important-outline-hover-border:  $important !default;
 
 $btn-padding-x-sm:          .5rem !default;
 $btn-padding-y-sm:          .25rem !default;
