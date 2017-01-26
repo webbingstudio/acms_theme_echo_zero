@@ -1,21 +1,23 @@
 <!-- BEGIN unit#custom_imgtext -->
-<div class="column-echo-imgtext">
-	<div class="imgtext {imgtext_type}<!-- BEGIN_IF [{imgtext_size}/eq/1] --> imgtext-sm<!-- END_IF -->">
-		<!-- BEGIN_IF [{imgtext_url}/nem] --><a href="{imgtext_url}" class="imgtext-inner"><!-- ELSE --><div class="imgtext-inner"><!-- END_IF -->
-			<!-- BEGIN_IF [{imgtext_img@path}/nem] -->
-			<div class="imgtext-img"><img src="%{ARCHIVES_DIR}{imgtext_img@path}" alt="イメージ画像:{imgtext_heading}" /></div>
-			<!-- END_IF -->
-			<div class="imgtext-contents">
-				<!-- BEGIN_IF [{imgtext_heading_tag}/nem] -->
-				<{imgtext_heading_tag} class="imgtext-title">{imgtext_heading}</{imgtext_heading_tag}>
-				<!-- ELSE -->
-				<p class="imgtext-title">{imgtext_heading}</p>
+<div class="entry-container">
+	<div class="column-echo-imgtext">
+		<div class="imgtext {imgtext_type}<!-- BEGIN_IF [{imgtext_size}/eq/1] --> imgtext-sm<!-- END_IF -->">
+			<!-- BEGIN_IF [{imgtext_url}/nem] --><a href="{imgtext_url}" class="imgtext-inner"><!-- ELSE --><div class="imgtext-inner"><!-- END_IF -->
+				<!-- BEGIN_IF [{imgtext_img@path}/nem] -->
+				<div class="imgtext-img"><img src="%{ARCHIVES_DIR}{imgtext_img@path}" alt="イメージ画像:{imgtext_heading}" /></div>
 				<!-- END_IF -->
-				<!-- BEGIN_IF [{imgtext_body}/nem] -->
-				<p class="imgtext-body">{imgtext_body}</p>
-				<!-- END_IF -->
-			<!-- /.imgtext-contents --></div>
-		<!-- BEGIN_IF [{imgtext_url}/nem] --></a><!-- ELSE --></div><!-- END_IF -->
-	<!-- /.imgtext --></div>
-</div>
+				<div class="imgtext-contents">
+					<!-- BEGIN_IF [{imgtext_heading_tag}/nem] -->
+					<{imgtext_heading_tag} class="imgtext-title">{imgtext_heading}</{imgtext_heading_tag}>
+					<!-- ELSE -->
+					<p class="imgtext-title">{imgtext_heading}</p>
+					<!-- END_IF -->
+					<!-- BEGIN_IF [{imgtext_body}/nem] -->
+					<p class="imgtext-body">{imgtext_body}</p>
+					<!-- END_IF -->
+				</div><!-- /.imgtext-contents -->
+			<!-- BEGIN_IF [{imgtext_url}/nem] --></a><!-- ELSE --></div><!-- END_IF -->
+		</div><!-- /.imgtext -->
+	</div><!-- /.column-echo-imgtext -->
+</div><!-- /.entry-container -->
 <!-- END unit#custom_imgtext -->
