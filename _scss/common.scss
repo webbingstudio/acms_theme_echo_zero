@@ -2392,7 +2392,9 @@ input[type="checkbox"] {
 
 }
 
+
 // Card
+
 .card {
   position: relative;
   margin-bottom: $grid-gutter-width;
@@ -2534,10 +2536,14 @@ input[type="checkbox"] {
 
 }
 
+
 // Image and Text
+
 .imgtext {
   position: relative;
   width: 100%;
+  padding-bottom: ($spacer * 3);
+  @include clearfix();
 
   > a {
     display: block;
@@ -2575,33 +2581,29 @@ input[type="checkbox"] {
 
   .imgtext-contents {
     position: relative;
-    font-size: $font-size-sm;
-    line-height: 1.5;
     z-index: 12;
   }
 
   .imgtext-title {
-    font-size: 1.75rem;
+    font-size: $font-size-xl;
     font-family: $font-family-01;
     font-weight: $font-weight;
+    line-height: $line-height-sm;
     letter-spacing: .1em;
-    @include clearfix();
   }
 
   .imgtext-body {
-    margin: 0;
-    font-size: $font-size-root;
+    font-size: $font-size-sm;
     line-height: $line-height-md;
   }
 
   &.imgtext-sm {
 
     .imgtext-title {
-      font-size: $font-size-lg;
+      font-size: $font-size-root;
     }
 
     .imgtext-body {
-      margin: 0;
       font-size: $font-size-xs;
     }
 
@@ -2613,21 +2615,45 @@ input[type="checkbox"] {
       width: 100%;
     }
 
+    .imgtext-contents {
+      position: relative;
+    }
+
+    .imgtext-title {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: $spacer;
+      -webkit-transform:translate(0, -100%);
+      -ms-transform:translate(0, -100%);
+      transform:translate(0, -100%);
+      background-color: rgba(255,255,255,.5);
+    }
+
+    .imgtext-body {
+      margin: 0;
+      padding: $spacer $spacer 0;
+    }
+
     > a {
 
       &:link,
       &:visited {
 
         .imgtext-title {
+          padding-right: 2em;
 
           &:after {
-            display: inline-block;
             content: ">";
-            float: right;
-            height: 2.25em;
-            line-height: 2.25em;
+            position: absolute;
+            top: 50%;
+            right: $spacer;
+            -webkit-transform:translate(0, -50%);
+            -ms-transform:translate(0, -50%);
+            transform:translate(0, -50%);
             font-family: $font-family-sans;
-            vertical-align: middle;
           }
 
         }
@@ -2639,63 +2665,11 @@ input[type="checkbox"] {
         color: $link-hover-color;
       }
 
-    }
-
-    .imgtext-title {
-      margin: -2.25em 0 0;
-      padding: 0 ($spacer * 2);
-      height: 2.25em;
-      line-height: 2.5em;
-      background-color: rgba(255,255,255,.5);
-      vertical-align: middle;
-    }
-
-    .imgtext-body {
-      padding: $spacer ($spacer * 2) ($spacer * 2);
-    }
-
-  }
-
-  &.imgtext-01.imgtext-sm {
-
-    .imgtext-title {
-      padding: 0 $spacer;
-    }
-
-    .imgtext-body {
-      padding: ($spacer / 2) $spacer $spacer;
     }
 
   }
 
   &.imgtext-02 {
-
-    > a {
-
-      &:link,
-      &:visited {
-
-        .imgtext-title {
-
-          &:before {
-            display: inline-block;
-            position: relative;
-            top: -.1em;
-            content: ">";
-            font-family: $font-family-sans;
-            margin-right: .25em;
-          }
-
-        }
-
-      }
-
-      &:hover,
-      &:focus {
-        color: $link-hover-color;
-      }
-
-    }
 
     .imgtext-img {
       float: left;
@@ -2704,35 +2678,34 @@ input[type="checkbox"] {
 
     .imgtext-contents {
       overflow: hidden;
+      padding: 0 0 0 ($spacer * 2);
     }
 
     .imgtext-title {
       margin: 0;
-      padding: $spacer 0 .25em ($spacer * 2);
-      line-height: $line-height-md;
+      padding: 0;
     }
 
     .imgtext-body {
-      padding: 0 0 0 ($spacer * 2);
+      margin: 0;
+      padding: $spacer 0 0 0;
     }
 
-  }
-
-  &.imgtext-03 {
     > a {
 
       &:link,
       &:visited {
 
         .imgtext-title {
+          position: relative;
+          padding-left: 1em;
 
           &:before {
-            display: inline-block;
-            position: relative;
-            top: -.1em;
             content: ">";
+            position: absolute;
+            top: 0;
+            left: 0;
             font-family: $font-family-sans;
-            margin-right: .25em;
           }
 
         }
@@ -2746,6 +2719,10 @@ input[type="checkbox"] {
 
     }
 
+  }
+
+  &.imgtext-03 {
+
     .imgtext-img {
       float: right;
       max-width: 50%;
@@ -2753,23 +2730,55 @@ input[type="checkbox"] {
 
     .imgtext-contents {
       overflow: hidden;
+      padding: 0 ($spacer * 2) 0 0;
     }
 
     .imgtext-title {
       margin: 0;
-      padding: $spacer ($spacer * 2) .25em 0;
-      line-height: $line-height-md;
+      padding: 0
     }
 
     .imgtext-body {
-      padding: 0 ($spacer * 2) 0 0;
+      margin: 0;
+      padding: $spacer 0 0 0;
+    }
+
+    > a {
+
+      &:link,
+      &:visited {
+
+        .imgtext-title {
+          position: relative;
+          padding-left: 1em;
+
+          &:before {
+            content: ">";
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: $font-family-sans;
+          }
+
+        }
+
+      }
+
+      &:hover,
+      &:focus {
+        color: $link-hover-color;
+      }
+
     }
 
   }
 
 }
 
+
 // Banner
+// ----------------------------
+
 .banner {
 
   ul {
