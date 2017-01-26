@@ -1284,12 +1284,14 @@ fieldset[disabled] a.btn {
     .nav-vertical nav ul li.stay a {
       font-weight: 700; }
     #sub .nav-vertical nav ul li {
-      font-size: 0.875rem; }
+      font-size: 0.75rem; }
     .nav-vertical nav ul li a {
       display: block;
       padding: .75rem 0;
       color: #333333;
       text-decoration: none; }
+      #sub .nav-vertical nav ul li a {
+        padding: .5rem 0; }
       .sp-nav.nav-vertical nav ul li a {
         padding-left: 1em;
         padding-right: 1em;
@@ -1435,7 +1437,7 @@ fieldset[disabled] a.btn {
   min-width: 2em;
   margin-left: .5em;
   padding: .25em;
-  font-size: 0.875rem;
+  font-size: .875em;
   line-height: 1;
   color: #fff;
   background-color: #999999;
@@ -2239,8 +2241,7 @@ fieldset[disabled]
       width: auto;
       padding: 0 2.5rem 2.8125rem 0; }
     .flex-col-2 #sub {
-      width: 300px;
-      padding-top: 2.8125rem; } }
+      width: 300px; } }
 
 #footer {
   padding: 2rem 2rem 4rem;

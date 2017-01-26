@@ -753,7 +753,7 @@ fieldset[disabled] a.btn {
         @at-root {
 
           #sub & {
-            font-size: $font-size-sm;
+            font-size: $font-size-xs;
           }
 
         }
@@ -765,6 +765,10 @@ fieldset[disabled] a.btn {
           text-decoration: none;
 
           @at-root {
+
+            #sub & {
+              padding: .5rem 0;
+            }
 
             .sp-nav#{&} {
               padding-left: 1em;
@@ -997,7 +1001,7 @@ fieldset[disabled] a.btn {
   min-width: 2em;
   margin-left: .5em;
   padding: .25em;
-  font-size: $font-size-sm;
+  font-size: .875em;
   line-height: $line-height-xs;
   color: #fff;
   background-color: $gray-light;
@@ -2104,7 +2108,6 @@ input[type="checkbox"] {
 
   #sub {
     width: 300px;
-    padding-top: ($spacer * 4.5);
   }
 
 }
