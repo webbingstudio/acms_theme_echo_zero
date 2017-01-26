@@ -1,0 +1,37 @@
+<!-- BEGIN notFound -->
+<p><em>このコンテンツは準備中です。</em></p>
+<!-- END notFound -->
+
+<!-- BEGIN unit:loop -->
+<div class="row">
+
+<!-- BEGIN entry:loop --><!-- BEGIN_IF [{iNum}/nem] -->
+<div class="<!-- BEGIN_IF [{entry:loop.class}/nem] -->{entry:loop.class}<!-- ELSE -->col-sm-6 col-md-3 col-xl-4<!-- END_IF -->">
+	<article class="card">
+		<a href="{url}" class="card-inner">
+			<!-- BEGIN new -->
+			<p class="card-new"><span class="badge">New</span></p>
+			<!-- END new -->
+
+			<!-- BEGIN_IF [{entry_eyecatch@path}/nem] -->
+			<div class="card-cover" style="background-image: url(%{ARCHIVES_DIR}{entry_eyecatch@path})"></div>
+			<!-- ELSE -->
+				<!-- BEGIN image:veil -->
+				<div class="card-cover" style="background-image: url(%{ROOT_DIR}{path})"></div>
+				<!-- END image:veil -->
+				<!-- BEGIN noimage -->
+				<div class="card-cover" style="background-image: url(%{CURRENT_THEMES_DIR}images/common/noimg_1_1.jpg)"></div>
+				<!-- END noimage -->
+			<!-- END_IF -->
+
+			<div class="card-contents">
+				<h3 class="card-title">{title}</h3>
+			</div><!-- /.card-contents -->
+
+		</a><!-- /.card-inner -->
+	</article><!-- /.card -->
+</div><!-- /.col -->
+<!-- END_IF --><!-- END entry:loop -->
+
+</div><!-- /.row -->
+<!-- END unit:loop -->

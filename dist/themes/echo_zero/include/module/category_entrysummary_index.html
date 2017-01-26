@@ -1,0 +1,28 @@
+<!-- BEGIN_MODULE Category_EntrySummary id="category_entrysummary_index" -->
+<!--#include file="/include/module/section_first.html"-->
+	<!--#include file="/admin/module/setting.html"-->
+
+	<!-- BEGIN categoryEntryList:loop -->
+	<!-- BEGIN categoryUl#front --><!-- END categoryUl#front -->
+		<!-- BEGIN category:loop -->
+		<div class="section-item {category:loop.class}" id="category-{categoryCode}">
+			<div class="section-header">
+				<h2 class="section-title"><a href="{categoryUrl}">{categoryName}</a></h2>
+				<!-- BEGIN_IF [{page_description}/nem] -->
+				<p class="section-subtitle">{page_description}</p>
+				<!-- END_IF -->
+			</div><!-- /.section-header -->
+
+			<!--#include file="/include/module_loop/summary_card_simple.html"-->
+			<div class="section-footer">
+				<p class="section-link"><a href="{categoryUrl}" class="btn btn-block btn-lg btn-second-outline">一覧を見る</a></p>
+			</div><!-- /.section-footer -->
+		</div><!-- /.section-item -->
+		<!-- END category:loop -->
+
+	<!-- BEGIN categoryLi#rear --><!-- END categoryLi#rear -->
+	<!-- BEGIN categoryUl#rear --><!-- END categoryUl#rear -->
+	<!-- END categoryEntryList:loop -->
+
+<!--#include file="/include/module/section_last.html"-->
+<!-- END_MODULE Category_EntrySummary -->
