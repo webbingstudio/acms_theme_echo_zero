@@ -3051,16 +3051,16 @@ input[type="checkbox"] {
   max-width: 960px !important;
   margin: 0 auto;
 }
-.column-responsive-md-6 {
-  @include media-breakpoint-up(md) {
+.column-responsive-sm-6 {
+  @include media-breakpoint-up(sm) {
     width: 50%;
   }
 }
 .column-responsive-xs-6 {
   width: 50%;
 }
-.column-responsive-md-4 {
-  @include media-breakpoint-up(md) {
+.column-responsive-sm-4 {
+  @include media-breakpoint-up(sm) {
     width: 33.33333333%;
   }
 }

@@ -23,7 +23,7 @@ html {
   @media (max-width: 374.9px) {
     html {
       font-size: 0.75rem; } }
-  @media (max-width: 599.9px) {
+  @media (max-width: 767.9px) {
     html {
       font-size: 0.875rem; } }
   @media (min-width: 1280px) {
@@ -122,7 +122,7 @@ blockquote:not([class]) {
     display: table; }
   .container:after {
     clear: both; }
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     .container {
       max-width: 680px; } }
   @media (min-width: 1024px) {
@@ -526,7 +526,7 @@ blockquote:not([class]) {
   .col-sm-offset-12 {
     margin-left: 100%; } }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
   .col-md-1 {
@@ -943,7 +943,7 @@ h6:not([class*="title"]) {
   border-width: 0 0 1px 1px;
   border-style: solid;
   border-color: #cccccc; }
-  @media (min-width: 600px) {
+  @media (min-width: 768px) {
     .tables-reset, .table {
       display: table; } }
   @media (min-width: 1024px) {
@@ -951,7 +951,7 @@ h6:not([class*="title"]) {
       margin-bottom: 2.5rem; } }
   .tables-reset tr, .table tr {
     border-bottom: 1px solid #cccccc; }
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
       .tables-reset tr, .table tr {
         border-bottom: 0 none; } }
   .tables-reset th, .table th,
@@ -963,7 +963,7 @@ h6:not([class*="title"]) {
     border-style: solid;
     border-color: #cccccc;
     vertical-align: top; }
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
       .tables-reset th, .table th,
       .tables-reset td, .table td {
         display: table-cell; } }
@@ -972,15 +972,15 @@ h6:not([class*="title"]) {
   .tables-reset thead th, .table thead th {
     vertical-align: bottom; }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .table.table-3-9 th {
     width: 25%; } }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .table.table-3-9 td {
     width: 75%; } }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .table.table-1-1-1 th,
   .table.table-1-1-1 td {
     width: 33.33333333%;
@@ -2665,7 +2665,7 @@ fieldset[disabled]
     margin: 0 0 0.625rem;
     padding: 0 0.625rem; }
 
-@media (min-width: 600px) and (max-width: 1023.9px) {
+@media (min-width: 768px) and (max-width: 1023.9px) {
   .banner ul li {
     width: 33.33333333%; } }
     @media (min-width: 1024px) {
@@ -2827,15 +2827,15 @@ fieldset[disabled]
   max-width: 960px !important;
   margin: 0 auto; }
 
-@media (min-width: 600px) {
-  .column-responsive-md-6 {
+@media (min-width: 425px) {
+  .column-responsive-sm-6 {
     width: 50%; } }
 
 .column-responsive-xs-6 {
   width: 50%; }
 
-@media (min-width: 600px) {
-  .column-responsive-md-4 {
+@media (min-width: 425px) {
+  .column-responsive-sm-4 {
     width: 33.33333333%; } }
 
 .column-responsive-xs-4 {
@@ -2973,7 +2973,7 @@ fieldset[disabled]
       margin-bottom: 1.875rem !important;
       margin-right: 1.25rem; } }
 
-@media (max-width: 599.9px) {
+@media (max-width: 767.9px) {
   .column-image-left[class*="column-responsive-md"],
   .column-media-left[class*="column-responsive-md"] {
     float: none;
@@ -3000,7 +3000,7 @@ fieldset[disabled]
       margin-bottom: 1.875rem !important;
       margin-left: 1.25rem; } }
 
-@media (max-width: 599.9px) {
+@media (max-width: 767.9px) {
   .column-image-right[class*="column-responsive-md"],
   .column-media-right[class*="column-responsive-md"] {
     float: none;
