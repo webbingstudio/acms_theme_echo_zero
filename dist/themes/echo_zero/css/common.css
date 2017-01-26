@@ -1635,6 +1635,8 @@ fieldset[disabled]
       font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
       font-weight: 300;
       text-transform: capitalize; }
+    .section .section-title a {
+      color: #333333; }
   .section .section-subtitle {
     margin: .5rem 0 0;
     font-size: 0.75rem;
@@ -1654,6 +1656,10 @@ fieldset[disabled]
   .section .section-link {
     margin: 0;
     text-align: center; }
+  .section .section-item {
+    padding: 0 0 3.75rem; }
+    .section .section-item .section-title {
+      font-size: 1.5rem; }
   #sub .section {
     padding: 0 0 1.875rem; }
     #sub .section .section-header {
