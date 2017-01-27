@@ -196,8 +196,10 @@ $border-radius-xl:           .375rem;
 // -----------------------------------------
 
 $grid-breakpoints: (
+  // All
+  xsss: 0px,
   // More Extra small screen / iPhone 6SE
-  xss: 0,
+  xss: 320px,
   // Extra Small screen / iPhone 7
   xs: 375px,
   // Small screen / iPhone 7 Plus, Nexus 7
