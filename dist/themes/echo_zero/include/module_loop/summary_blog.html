@@ -22,17 +22,17 @@
 					<div class="summary-cover" style="background-image: url(%{ROOT_DIR}{path})"></div>
 					<!-- END image:veil -->
 					<!-- BEGIN noimage -->
-					<div class="summary-cover" style="background-image: url(%{CURRENT_THEMES_DIR}images/common/noimg_1_1.jpg)"></div>
+					<div class="summary-cover" style="background-image: url(%{ROOT_DIR}themes/echo_zero/images/common/noimg_16_9.jpg)"></div>
 					<!-- END noimage -->
 				<!-- END_IF -->
 
 				<div class="summary-contents">
 
 					<time class="summary-date" datetime="{date#Y}-{date#m}-{date#d}">{date#Y}.{date#m}.{date#d}</time>
+					<h3 class="summary-title">{title}</h3>
 					<!-- BEGIN category:veil -->
 					<p class="summary-category"><span class="label">{categoryName}</span></p>
 					<!-- END category:veil -->
-					<h3 class="summary-title">{title}</h3>
 					<!-- BEGIN_IF [{summary}/nem] -->
 					<p class="summary-body">{summary}[trim(151, '...')]</p>
 					<!-- END_IF -->
