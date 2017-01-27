@@ -7,7 +7,12 @@
 <!--#include file="/include/body_first.html"-->
 <!--#include file="/include/header.html"-->
 
-<!--#include file="/include/parts/page_header.html"-->
+<div class="page-header">
+    <div class="page-header-contents">
+        <h1 class="page-title">%{BLOG_NAME}</h1>
+    </div><!-- /.page-header-contents -->
+</div><!-- /.page-header -->
+<!--#include file="/include/parts/topicpath.html"-->
 
 <div class="container">
 
@@ -15,16 +20,18 @@
 
 			<main id="main">
 				<!--#include file="/include/module/template/Entry_Body/body_blog.html"-->
-				<!--#include file="/include/check-seo.html"-->
 			</main><!-- /#main -->
 
-			<aside id="sub">
-					<!--#include file="/include/parts/search_form.html"-->
-					<!--#include file="/include/module/template/Entry_ArchiveList/entry_archive_list_default.html"-->
-					<!--#include file="/include/module/template/Category_List/category_list_default.html"-->
-			</aside><!-- /#sub -->
+			<div id="sub">
+	            <!--#include file="/include/module/category_list.html"-->
+	            <!--#include file="/include/module/entry_archivelist.html"-->
+	            <!--#include file="/include/parts/search_form.html"-->
+	            <!--#include file="/include/parts/social_plugins_col2.html"-->
+			</div><!-- /#sub -->
 
 	</div><!-- /.flex-col-2 -->
+
+	<!--#include file="/include/check-seo.html"-->
 
 </div><!-- /.container-fluid -->
 
