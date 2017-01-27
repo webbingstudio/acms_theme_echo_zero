@@ -73,6 +73,8 @@
 html {
   font-family: $font-family-01;
   font-size: $font-size-root;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 
   @include media-breakpoint-down(xss) {
     font-size: $font-size-xs;
@@ -289,7 +291,7 @@ blockquote:not([class]) {
 .title-01,
 h1:not([class*="title"]) {
   @extend .headings-reset;
-  margin-bottom: 1em;
+  margin-bottom: 1.75rem;
   font-size: 1.75rem;
   text-align: center;
 }
@@ -298,8 +300,8 @@ h1:not([class*="title"]) {
 h2:not([class*="title"]) {
   @extend .headings-reset;
   margin-top: ($spacer * 6);
-  margin-bottom: 1em;
-  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
   text-align: center;
 }
 
@@ -307,8 +309,8 @@ h2:not([class*="title"]) {
 h3:not([class*="title"]) {
   @extend .headings-reset;
   margin-top: ($spacer * 6);
-  margin-bottom: 1em;
-  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1875rem;
   text-align: center;
 }
 
@@ -586,7 +588,6 @@ fieldset[disabled] a.btn {
   );
 }
 
-
 .btn-inverse {
   @include button-variant(
     #fff,
@@ -598,6 +599,9 @@ fieldset[disabled] a.btn {
   );
 }
 
+.btn-flat {
+  box-shadow: none;
+}
 
 .btn-block {
   display: block;
@@ -924,6 +928,23 @@ fieldset[disabled] a.btn {
   border-radius: 1em;
   vertical-align: middle;
   text-align: center;
+
+  @at-root {
+
+    a#{&} {
+      color: #fff;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+        text-decoration: none;
+      }
+
+    }
+
+  }
+
 }
 
 
@@ -941,6 +962,22 @@ fieldset[disabled] a.btn {
   background-color: $gray-light;
   text-align: center;
   vertical-align: middle;
+
+  @at-root {
+
+    a#{&} {
+      color: #fff;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+        text-decoration: none;
+      }
+
+    }
+
+  }
   
   .nav-horizontal ul li & {
     float: right;
@@ -993,6 +1030,16 @@ fieldset[disabled] a.btn {
   fieldset[disabled] & {
     cursor: not-allowed;
   }
+}
+
+select.form-control {
+  font-size: .875rem;
+  border-color: $gray-lighter;
+
+  option {
+    color: $gray;
+  }
+
 }
 
 textarea.form-control {
@@ -1207,7 +1254,9 @@ input[type="checkbox"] {
 .section {
   padding: ($spacer * 4.5) 0;
 
-  body:not(.view-top) &:first-child {
+  body:not(.view-top) &:first-child,
+  body.view-children-top &:first-child,
+  .archive-header + & {
     padding-top: 0;
   }
 
@@ -1419,6 +1468,36 @@ input[type="checkbox"] {
 .p-l-xl { padding-left:   ($spacer * 4.5) !important; }
 .p-x-xl { padding-right:  ($spacer * 4.5) !important; padding-left:   ($spacer * 4.5) !important; }
 .p-y-xl { padding-top:    ($spacer * 4.5) !important; padding-bottom: ($spacer * 4.5) !important; }
+
+
+// Responsive Padding
+
+@include media-breakpoint-down(md) {
+
+// スマートフォンで段組解除の際の下余白を確保する
+.m-b-lg-sm {
+  margin-bottom: ($spacer * 3) !important;
+}
+
+// スマートフォンでスクロール余白を確保する
+.p-x-md-sm {
+  padding-left: ($spacer * 1.5) !important;
+  padding-right: ($spacer * 1.5) !important;
+}
+
+}
+
+@include media-breakpoint-up(lg) {
+
+// タブレット横以上で余白を広げる
+.p-y-lg-lg {
+  padding-top:   ($spacer * 3) !important;
+  padding-bottom: ($spacer * 3) !important;
+}
+
+}
+
+
 
 
 // Box
@@ -1761,6 +1840,10 @@ input[type="checkbox"] {
 
 .share {
 
+  .view-top:not(.view-children-top) & {
+    margin-bottom: ($spacer * 3);
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -1786,6 +1869,52 @@ input[type="checkbox"] {
 }
 
 
+// Search
+// ----------------------------
+
+.search {
+
+  #main & {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: ($spacer * 2) 0 ($spacer * 6);
+  }
+
+  #sub & {
+    padding: $spacer 0 ($spacer * 3);
+  }
+
+  .search-contents {
+    width: 100%;
+    display: table;
+
+    .search-input {
+      width: 99%;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .search-submit {
+      display: table-cell;
+      width: 1%;
+      min-width: 3rem;
+      padding-left: ($spacer / 2);
+      vertical-align: middle;
+
+      @at-root {
+
+        #main & {
+          min-width: 5rem;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
 
 
 // Theme Styles
@@ -1797,23 +1926,33 @@ input[type="checkbox"] {
   background-color: rgba(255,255,255,.75);
 
   .header-logo {
-    float: left;
-    margin: 0;
-    text-align: center;
-    font-size: 24px;
-    line-height: 1;
+    margin: 0 auto;
+    display: table;
+    font-size: 1.5rem;
+    font-family: $font-family-02;
+    font-weight: $font-weight-bold-02;
+    line-height: $line-height-xs;
+
+    @include media-breakpoint-up(lg) {
+      float: left;
+    }
+
+    .header-logo-inner {
+      display: table-cell;
+      height: 2rem;
+      vertical-align: middle;
+    }
 
      img {
-      position: relative;
-      top: 3px;
-      vertical-align: middle;
+      width: auto;
+      height: 2rem;
      }
 
   }
 
   .header-menu-btn {
     width: auto;
-    padding: 10px;
+    padding: ($spacer * .75) $spacer 0;
     left: auto;
     right: 0;
     z-index: 2001;
@@ -1846,7 +1985,7 @@ input[type="checkbox"] {
   display: none;
   float: right;
   margin-right: -1rem;
-  
+
   @include media-breakpoint-up(lg) {
     display: block;
   }
@@ -1855,10 +1994,11 @@ input[type="checkbox"] {
     font-size: $font-size-sm;
 
     > a {
-      padding-left: 1rem;
-      padding-right: 1rem;
-        
+      padding-left: ($spacer * 2);
+      padding-right: ($spacer * 2);
+
       &:hover {
+        background-color: $faded;
 
         @at-root {
 
@@ -1874,15 +2014,22 @@ input[type="checkbox"] {
 
     &.stay {
 
+      > a {
+        position: relative;
+        background-color: transparent;
+      }
+
       > a,
       &:visited {
 
-        @at-root {
-
-          .view-top & {
-            background-color: rgba(255,255,255,.5);
-          }
-
+        &:after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 2px;
+          left: 0;
+          bottom: 0;
+          background-color: $first;
         }
 
       }
@@ -2050,7 +2197,7 @@ input[type="checkbox"] {
   #main {
     flex: 1;
     width: auto;
-    padding: 0 ($grid-gutter-width * 2) ($spacer * 4.5) 0;
+    padding: 0 ($grid-gutter-width * 2) 0 0;
   }
 
   #sub {
@@ -2145,13 +2292,19 @@ input[type="checkbox"] {
 
 // Archive Header
 .archive-header {
-  margin: -2rem 0 2rem;
-  padding: 1rem;
-  border-bottom: 1px solid $gray-dark;
-  text-align: center;
+  padding-bottom: ($spacer * 3);
 
-  .archive-title {
-    margin: 0;
+  .archive-header-contents {
+    padding: ($spacer / 2) $spacer;
+    background-color: $faded;
+
+    .archive-title {
+      margin: 0;
+      font-size: $font-size-lg;
+      font-family: $font-family-01;
+      font-weight: $font-weight-bold-01;
+    }
+
   }
 
 }
@@ -2161,6 +2314,7 @@ input[type="checkbox"] {
 .post {
 
   .post-header {
+    position: relative;
     padding: ($spacer * 2) 0;
 
     .post-title {
@@ -2171,6 +2325,8 @@ input[type="checkbox"] {
       font-size: $font-size-xxl;
       font-family: $font-family-01;
       font-weight: $font-weight-bold-01;
+      line-height: $line-height-md;
+      text-align: center;
 
       &:before,
       &:after {
@@ -2182,7 +2338,7 @@ input[type="checkbox"] {
   }
 
   .post-contents {
-    padding: ($spacer * 2) 0;
+    padding: ($spacer * 3) 0;
   }
 
   .post-footer {
@@ -2191,10 +2347,88 @@ input[type="checkbox"] {
 
   &.post-01 {
 
+  }
+
+  &.post-02 {
+
     .post-header {
+      position: relative;
+      padding: ($spacer * 2) 0;
+
+      &.post-header-inverse {
+        padding-top: ($spacer * 12);
+        padding-left: ($spacer * 2);
+        padding-right: ($spacer * 2);
+        background-color: #000;
+        color: #fff;
+
+        .post-category .label {
+          color: $gray-dark;
+          background-color: #fff;
+        }
+
+      }
+
+      .post-header-cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent none no-repeat center center;
+        background-size: cover;
+        z-index: 1;
+        opacity: .5;
+      }
+
+      .post-header-contents {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+
+        @at-root {
+
+          .flex-col-2 & {
+            text-align: left;
+          }
+
+        }
+
+      }
 
       .post-title {
-        text-align: center;
+        font-size: $font-size-xl;
+
+        @at-root {
+
+          .flex-col-2 & {
+            text-align: left;
+          }
+
+        }
+
+      }
+
+      .post-date {
+        display: inline-block;
+        margin-bottom: .5rem;
+        font-family: $font-family-03;
+        font-weight: $font-weight-03;
+        line-height: $line-height-xs;
+        vertical-align: middle;
+      }
+
+      .post-category {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 .5rem 1rem;
+
+        .label {
+          position: relative;
+          top: -.1rem;
+          font-size: .625rem;
+        }
+
       }
 
     }
@@ -2215,6 +2449,7 @@ input[type="checkbox"] {
     position: relative;
     color: $gray-dark;
     text-decoration: none;
+    transition: .3s all;
 
     .summary-title {
       color: $first-text;
@@ -2248,46 +2483,104 @@ input[type="checkbox"] {
   .summary-inner {
     overflow: hidden;
     width: 100%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    @include clearfix();
+  }
+
+  // 画像の縦横比は1:1 -> 16:9固定
+  // a-blog cmsの画像縦横比指定はレスポンシブ対応が困難であるため無視する
+  .summary-img .summary-img-inner,
+  .summary-cover {
+    width: 90px;
+    height: 90px;
+
+    @include media-breakpoint-up(sm) {
+      width: 160px;
+      height: 90px;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 240px;
+      height: 135px;
+    }
+
+//    .flex-col-2 & {
+//
+//      @include media-breakpoint-up(xl) {
+//        width: 240px;
+//        height: 135px;
+//      }
+//
+//    }
+
   }
 
   .summary-img {
-    width: 33.33333333%;
-    background-color: $gray-lightest;
+    float: left;
+
+    .summary-img-inner {
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      border: 1px solid $gray-lightest;
+    }
 
     img {
       display: block;
       width: 100%;
       height: auto;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform:translate(0, -50%);
+      -ms-transform:translate(0, -50%);
+      transform:translate(0, -50%);
+    }
+
+    &.summary-img-ygtx {
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform:translate(0, -50%);
+        -ms-transform:translate(0, -50%);
+        transform:translate(0, -50%);
+
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+          height: auto;
+          top: 50%;
+          left: 0;
+          -webkit-transform:translate(0, -50%);
+          -ms-transform:translate(0, -50%);
+          transform:translate(0, -50%);
+        }
+
+      }
+
     }
 
   }
 
   .summary-cover {
-    width: 33.33333333%;
-    background: $gray-lightest none no-repeat center center;
+    float: left;
+    background: transparent none no-repeat center center;
     background-size: cover;
     border: 1px solid $gray-lightest;
   }
 
   .summary-contents {
-    position: relative;
-    flex: 1;
+    overflow: hidden;
     font-size: $font-size-xs;
     line-height: $line-height-sm;
-    padding: $spacer $spacer ($spacer * 2);
+    padding: ($spacer / 2) 0 ($spacer / 2) $spacer;
 
-    time {
-      display: inline-block;
-      margin: 0 .0 .5rem 0;
-      font-family: $font-family-03;
-      font-weight: $font-weight-03;
-      line-height: $line-height-xs;
-      vertical-align: middle;
+    @include media-breakpoint-up(lg) {
+      padding-left: ($spacer * 2);
     }
 
     p {
@@ -2304,7 +2597,7 @@ input[type="checkbox"] {
   .summary-new {
     position: absolute;
     margin: 0;
-    top: 8px;
+    top: 5px;
     left: -2px;
     font-family: $font-family-03;
     font-weight: $font-weight-bold-03;
@@ -2323,16 +2616,20 @@ input[type="checkbox"] {
 
   }
 
-  .summary-category {
+  .summary-date {
     display: inline-block;
-    position: relative;
-    top: -.1em;
+    margin: 0 .0 .5rem 0;
+    font-family: $font-family-03;
+    font-weight: $font-weight-03;
     line-height: $line-height-xs;
     vertical-align: middle;
+  }
+
+  .summary-category {
+    display: inline-block;
 
     .label {
-      margin-left: 1em;
-      font-size: .9em;
+      font-size: .625rem;
     }
 
   }
@@ -2340,8 +2637,13 @@ input[type="checkbox"] {
   .summary-title {
     margin: 0 0 .5rem;
     font-size: $font-size-sm;
-    line-height: $line-height-md;
+    line-height: $line-height-sm;
     word-break: break-all;
+
+    @include media-breakpoint-up(lg) {
+      font-size: $font-size-root;
+    }
+
   }
 
   .summary-body {
@@ -2392,10 +2694,36 @@ input[type="checkbox"] {
   color: $gray-dark;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .35);
 
+  // 画像の縦横比は正方形に近い -> 16:9に近い固定
+  // a-blog cmsの画像縦横比指定はレスポンシブ対応が困難であるため無視する
+  .card-cover {
+    height: 120px;
+
+    @include media-breakpoint-up(xs) {
+      height: 150px;
+    }
+
+    @include media-breakpoint-up(sm) {
+      height: 150px;
+    }
+
+    @include media-breakpoint-up(md) {
+      height: 150px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 200px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      height: 175px;
+    }
+
+  }
+
   .card-cover {
     position: relative;
     width: 100%;
-    height: 200px;
     background: $gray-dark none no-repeat center center;
     background-size: cover;
     border-bottom: 1px solid $gray-lightest;
@@ -2438,10 +2766,15 @@ input[type="checkbox"] {
 
   .card-contents {
     position: relative;
-    padding: $spacer ($spacer * 2);
+    padding: $spacer;
     font-size: $font-size-xs;
     line-height: $line-height;
     z-index: 12;
+
+    @include media-breakpoint-up(md) {
+      padding-left: ($spacer * 2);
+      padding-right: ($spacer * 2);
+    }
 
     time {
       display: inline-block;
@@ -2481,13 +2814,19 @@ input[type="checkbox"] {
   }
 
   .card-title {
-    font-size: $font-size-root;
     margin: 0;
-    line-height: $line-height-md;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+
+    @include media-breakpoint-up(lg) {
+      font-size: $font-size-root;
+    }
+
   }
 
   .card-category {
     display: inline-block;
+    padding-top: .25rem;
 
     .label {
       font-size: .625rem;
@@ -2496,7 +2835,8 @@ input[type="checkbox"] {
   }
 
   .card-body {
-    margin: .5rem 0;
+    margin: 0;
+    padding: .5rem 0;
     color: $gray-light;
     line-height: $line-height-md;
     word-break: break-all;
@@ -3021,7 +3361,7 @@ input[type="checkbox"] {
   padding: 0 ($grid-gutter-width / 2);
 
   // ユニットグループの中では余白をリセットする
-  [class*="col-"] & {
+  .post-contents [class*="col-"] & {
     padding-left: 0;
     padding-right: 0;
   }
