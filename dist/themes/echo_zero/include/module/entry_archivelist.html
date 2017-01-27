@@ -3,11 +3,12 @@
 	<!--#include file="/admin/module/setting.html"-->
     <!--#include file="/include/module/section_header.html"-->
 	<form method="get" class="form-archives-dropdown">
-		<select name="archives" class="js-dropdown-select">
+		<select name="archives" class="form-control js-select-location">
+			<option value="" selected="selected">選択してください</option>
 			<!-- BEGIN archive:loop -->
 			<option value="{url}">{date#Y}年{date#n}月 ({amount})</option>
 			<!-- END archive:loop -->
-		</ul>
+		</select>
 	</form>
     <!--#include file="/include/module/section_footer.html"-->
 <!--#include file="/include/module/section_last.html"-->

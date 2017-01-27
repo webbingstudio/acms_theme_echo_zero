@@ -1,9 +1,15 @@
-<div class="widget widget-search">
-	<form action="/search.html" method="post" name="searchForm" class="form-inline" role="search">
-		<input class="form-control form-control-sm" type="search" id="searchForm" name="keyword" value="%{KEYWORD}" size="15">
-		<input type="hidden" name="query" value="keyword">
-		<button type="submit" name="ACMS_POST_2GET" class="btn btn-sm btn-second">検索</button>
+<div class="section search">
+	<form action="/search.html" method="post" name="searchForm" role="search">
+		<div class="search-contents">
+			<div class="search-input">
+				<input class="form-control" type="search" id="searchForm" name="keyword" value="%{KEYWORD}" size="15">
+				<input type="hidden" name="query" value="keyword">
+			</div><!-- /.search-input -->
+			<div class="search-submit">
+				<input type="submit" name="ACMS_POST_2GET" value="検索" class="btn btn-block btn-flat btn-second">
+			</div><!-- /.search-submit -->
+		</div><!-- /.search-contents -->
 		<input type="hidden" name="tpl" value="/search.html">
 		<input type="hidden" name="bid" value="%{BID}">
 	</form>
-<!-- /.widget --></div>
+</div><!-- /.section -->

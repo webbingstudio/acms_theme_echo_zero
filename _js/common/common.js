@@ -4,7 +4,7 @@ $(function(){
 
   // プルダウンでページ移動
   // a-blog cmsのエントリー作成・アーカイブリスト
-  $('select.js-select-href').on('change', function(e) {
+  $('select.js-select-location').on('change', function(e) {
     var href = $(this).val();
     if( href != "" ){
       window.location.href = href;
