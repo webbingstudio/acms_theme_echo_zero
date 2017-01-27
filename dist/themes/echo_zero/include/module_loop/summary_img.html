@@ -6,26 +6,38 @@
 <div class="row">
 
   <!-- BEGIN entry:loop --><!-- BEGIN_IF [{iNum}/nem] -->
-  <div class="<!-- BEGIN_IF [{entry:loop.class}/nem] -->{entry:loop.class}<!-- ELSE -->col-sm-12 col-lg-6<!-- END_IF -->">
+  <div class="<!-- BEGIN_IF [{entry:loop.class}/nem] -->{entry:loop.class}<!-- ELSE -->col-sm-12<!-- END_IF -->">
 		<article class="summary">
 			<a href="{url}">
 				<div class="summary-inner">
+					<!-- BEGIN new -->
+					<p class="summary-new"><span class="badge">New</span></p>
+					<!-- END new -->
 
 					<!-- BEGIN_IF [{entry_eyecatch@path}/nem] -->
-					<figure class="summary-img"><img src="%{ARCHIVES_DIR}{entry_eyecatch@path}" alt=""></figure>
+					<div class="summary-img">
+						<figure class="summary-img-inner">
+							<img src="%{ARCHIVES_DIR}{entry_eyecatch@path}" alt="">
+						</figure>
+					</div>
 					<!-- ELSE -->
 						<!-- BEGIN image:veil -->
-						<figure class="summary-img"><img src="%{ROOT_DIR}{path}" alt=""></figure>
+						<div class="summary-img<!-- BEGIN_IF [{imgY}/gt/{imgX}] --> summary-img-ygtx<!-- END_IF -->">
+							<figure class="summary-img-inner">
+								<img src="%{ROOT_DIR}{path}" alt="">
+							</figure>
+						</div>
 						<!-- END image:veil -->
 						<!-- BEGIN noimage -->
-						<div class="summary-img"><img src="/images/common/noimg_1_1.jpg" alt=""></div>
+						<div class="summary-img">
+							<figure class="summary-img-inner">
+								<img src="/images/common/noimg_16_9.jpg" alt="">
+							</figure>
+						</div>
 						<!-- END noimage -->
 					<!-- END_IF -->
 
 					<div class="summary-contents">
-						<!-- BEGIN new -->
-						<p class="summary-new"><span class="badge">New</span></p>
-						<!-- END new -->
 						<time class="summary-date" datetime="{date#Y}-{date#m}-{date#d}">{date#Y}.{date#m}.{date#d}</time>
 						<h3 class="summary-title">{title}</h3>
 						<!-- BEGIN blog:veil -->
