@@ -6,6 +6,7 @@
 # var_meta_robots
 # var_meta_pubdate
 # var_meta_title_text
+# var_archive_title
 # var_meta_description
 # var_meta_image
 #
@@ -26,6 +27,18 @@
 <!-- END_SetRendered -->
 <!-- BEGIN_MODULE Sample:veil -->
 ## title要素ここまで ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+
+<!-- BEGIN_MODULE Sample:veil -->
+## アーカイブタイトルここから ----------------------------------------
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_SetRendered id="var_archive_title" -->
+<!-- BEGIN_MODULE Touch_Tag -->タグ: <!-- BEGIN_MODULE Tag_Filter --><!-- BEGIN selected:loop -->{name}<!-- BEGIN glue -->・<!-- END glue --><!-- END selected:loop --><!-- END_MODULE Tag_Filter --><!-- END_MODULE Touch_Tag -->
+<!-- BEGIN_IF [%{KEYWORD}/nem/] -->検索結果: %{KEYWORD}<!-- END_IF -->
+<!-- BEGIN_IF [%{DATE}/nem/] -->アーカイブ: %{DATE}<!-- END_IF -->
+<!-- END_SetRendered -->
+<!-- BEGIN_MODULE Sample:veil -->
+## アーカイブタイトルここまで ----------------------------------------
 <!-- END_MODULE Sample:veil -->
 
 <!-- BEGIN_MODULE Sample:veil -->
