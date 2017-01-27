@@ -9,15 +9,12 @@
 
 	<!-- BEGIN_MODULE Touch_NotEdit -->
 	<!-- BEGIN_IF [{entry_header_hidden}/neq/true] -->
-	<div class="post-header">
-		<!-- BEGIN title:veil -->
-		<h2 class="post-title">{title}</h2>
-		<!-- END title:veil -->
+	<div class="post-header<!-- BEGIN_IF [{entry_eyecatch@path}/nem] --> post-header-inverse<!-- END_IF -->">
+		<!-- BEGIN_IF [{entry_eyecatch@path}/nem] -->
+		<div class="post-header-cover" style="background-image: url(%{ARCHIVES_DIR}{entry_eyecatch@path})"></div>
+		<!-- END_IF -->
+		<div class="post-header-contents">
 
-		<div class="post-meta">
-			<!-- BEGIN new -->
-			<p class="post-new"><span class="badge">New</span></p>
-			<!-- END new -->
 			<!-- BEGIN date:veil -->
 			<time class="post-date" datetime="{date#Y}-{date#m}-{date#d}">{date#Y}.{date#m}.{date#d}</time>
 			<!-- END date:veil -->
@@ -25,15 +22,15 @@
 			<!-- BEGIN category:veil -->
 			<p class="post-category">
 				<!-- BEGIN category:loop -->
-				<span class="post-category-item">
-					<a href="{url}" class="label">{name}</a>
-					<!-- BEGIN glue --><span class="post-category-glue">&lt;</span><!-- END glue -->
-				</span>
+				<a href="{url}" class="label">{name}</a>
 				<!-- END category:loop -->
 			</p>
 			<!-- END category:veil -->
-		</div><!-- /.post-header-meta -->
 
+			<!-- BEGIN title:veil -->
+			<h2 class="post-title">{title}</h2>
+			<!-- END title:veil -->
+		</div><!-- /.post-contents -->
 	</div><!-- /.post-header -->
 	<!-- END_IF -->
 
