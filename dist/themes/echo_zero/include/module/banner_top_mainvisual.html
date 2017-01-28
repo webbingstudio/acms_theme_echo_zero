@@ -1,5 +1,6 @@
 <!-- BEGIN_MODULE Banner id="banner_top_mainvisual" -->
 <div class="mainvisual<!-- BEGIN moduleField --><!-- BEGIN module_exclass:veil --> {module_exclass}<!-- END module_exclass:veil --><!-- END moduleField -->"<!-- BEGIN moduleField --><!-- BEGIN module_exid:veil --> id="{module_exid}"<!-- END module_exid:veil --><!-- END moduleField -->>
+	<!--#include file="/admin/module/setting.html"-->
 	<div class="mainvisual-contents js-slick">
 		<!-- BEGIN banner:loop -->
 		<div class="mainvisual-slide">
@@ -8,18 +9,20 @@
 			<!-- END banner#src -->
 			<!-- BEGIN banner#img -->
 			<!-- BEGIN_IF [{url}/nem] --><a href="{url}" target="{target}"><!-- END_IF -->
-			<img src="%{ARCHIVES_DIR}{img}" width="{x}" height="{y}" alt="{alt}" class="mainvisual-img">
-			<!-- BEGIN_IF [{attr1}/nem] -->
-			<div class="mainvisual-box">
-				<div class="mainvisual-box-inner">
-					<h2 class="mainvisual-title">{attr1}[raw]</h2>
-					<p class="mainvisual-body">{attr2}[raw]</p>
-				</div><!-- /.mainvisual-box-inner -->
-			</div><!-- /.mainvisual-box -->
+			<!-- BEGIN_IF [{attr1}/nem/_or_/{attr2}/nem] -->
+			<div class="mainvisual-slide-box">
+				<div class="container">
+					<div class="mainvisual-slide-contents">
+						<h2 class="mainvisual-slide-title">{attr1}[raw]</h2>
+						<p class="mainvisual-slide-body">{attr2}[raw]</p>
+					</div><!-- /.mainvisual-slide-contents -->
+				</div><!-- /.container -->
+			</div><!-- /.mainvisual-slide-box -->
 			<!-- END_IF -->
+			<div class="mainvisual-slide-cover" style="background-image: url(%{ARCHIVES_DIR}{img});"></div><!-- /.mainvisual-cover -->
 			<!-- BEGIN_IF [{url}/nem] --></a><!-- END_IF -->
 			<!-- END banner#img -->
-		</div>
+		</div><!-- /.mainvisual-slide -->
 		<!-- END banner:loop -->
 	</div><!-- /.mainvisual-contents -->
 </div><!-- /.mainvisual -->

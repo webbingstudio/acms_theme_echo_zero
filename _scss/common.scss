@@ -663,7 +663,7 @@ fieldset[disabled] a.btn {
         @at-root {
 
           #sub & {
-            font-size: $font-size-xs;
+            font-size: $font-size-sm;
           }
 
         }
@@ -678,7 +678,9 @@ fieldset[disabled] a.btn {
           @at-root {
 
             #sub & {
-              padding: .5rem 0;
+              @include media-breakpoint-up(lg) {
+                padding: .5rem 0;
+              }
             }
 
             .sp-nav#{&} {
@@ -1252,13 +1254,7 @@ input[type="checkbox"] {
 // ----------------------------
 
 .section {
-  padding: ($spacer * 4.5) 0;
-
-  body:not(.view-top) &:first-child,
-  body.view-children-top &:first-child,
-  .archive-header + & {
-    padding-top: 0;
-  }
+  padding: ($spacer * 4) 0;
 
   .section-header {
     padding: 0 0 ($spacer * 3);
@@ -1309,7 +1305,11 @@ input[type="checkbox"] {
   }
 
   .section-item {
-    padding: 0 0 ($spacer * 6);
+    padding: 0 0 ($spacer * 4.5);
+
+    &:last-child {
+      padding-bottom: 0;
+    }
 
     .section-title {
       font-size: 1.5rem;
@@ -1317,8 +1317,13 @@ input[type="checkbox"] {
 
   }
 
+  // サイドメニューに含まれているとき
   #sub & {
-    padding: 0 0 ($spacer * 3);
+    padding: ($spacer * 2) 0;
+
+    &:first-child {
+      padding-top: ($spacer * 4);
+    }
 
     .section-header {
       margin-bottom: ($spacer * 1.5);
@@ -2040,148 +2045,218 @@ input[type="checkbox"] {
 
 }
 
-// Mainvisual
-.mainvisual {
-
-  .slick-dotted.slick-slider {
-    margin-bottom: 0;
-
-    .slick-dots {
-      bottom: $spacer;
-
-      li button:before {
-        font-size: 10px;
-        color: #fff;
-        opacity: .5;
-      }
-
-      li.slick-active button:before {
-        color: #fff;
-        opacity: 1;
-      }
-
-      li button:hover:before,
-      li button:focus:before {
-        font-size: 20px;
-        color: #fff;
-        opacity: 1;
-      }
-
-    }
-
-  }
-
-  .mainvisual-contents {
-
-    .mainvisual-slide {
-      position: relative;
-      background-color: #000;
-      max-height: 760px;
-
-      img.mainvisual-img {
-        position: relative;
-        z-index: 201;
-      }
-
-      a {
-        display: block;
-        color: $gray-dark;
-        text-decoration: none;
-      }
-
-    }
-
-  }
-
-}
-
-.mainvisual-box {
-  position: absolute;
-  left: 0;
-  top: 66.66666666%;
-  -webkit-transform:translate(0, -50%);
-  -ms-transform:translate(0, -50%);
-  transform:translate(0, -50%);
-  width: 100%;
-  z-index: 211;
-
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 45%;
-    height: 100%;
-    background-color: rgba(0,0,0,.8);
-    z-index: 212;
-  }
-
-  &:after {
-//    content: "";
-//    display: block;
-//    position: absolute;
-//    left: 0;
-//    top: 0;
-//    width: 0;
-//    height: 0;
-//    z-index: 213;
-  }
-
-  .mainvisual-box-inner {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    padding: ($spacer * 2) 0;
-    color: #fff;
-    vertical-align: top;
-    z-index: 214;
-  }
-
-}
-
-.mainvisual-title {
-  margin: 0;
-  padding: 0 60% 0 ($spacer * 2);
-  font-size: 2rem;
-  font-family: $font-family-01;
-  font-weight: $font-weight-bold-01;
-  letter-spacing: .1rem;
-  text-shadow:
-    0 0 5px #000,
-    0 0 10px #000;
-}
-
-.mainvisual-body {
-  margin: 0;
-  padding: ($spacer * 2) 60% 0 ($spacer * 2);
-  font-size: $font-size-sm;
-  font-weight: $font-weight-bold-01;
-  line-height: 1.5;
-  text-shadow:
-    0 0 5px #000,
-    0 0 10px #000;
-}
-
-
 // Header Wrap
 .header-wrap {
   position: relative;
 
   #header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-  }
 
-  .mainvisual {
-    position: relative;
-    z-index: 99;
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 20;
+    }
+
   }
 
 }
+
+// Mainvisual
+.mainvisual {
+
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    z-index: 10;
+  }
+
+  .mainvisual-contents {
+    // slick
+    padding-bottom: ($spacer * 4);
+
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 0;
+    }
+
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+
+    .slick-dots {
+      bottom: ($spacer / 3);
+
+      li button:before {
+        content: "";
+        font-family: sans-serif;
+        width: 8px;
+        height: 8px;
+        background-color: rgba(255,255,255,.5);
+        border: 1px solid $gray-dark;
+        border-radius: 50%;
+        transition: .3s all;
+        opacity: 1;
+      }
+
+      li.slick-active button:before {
+        -webkit-transform:translate(-1px, -1px);
+        -ms-transform:translate(-1px, -1px);
+        transform:translate(-1px, -1px);
+        border-width: 2px;
+      }
+
+      li button:hover:before,
+      li button:focus:before {
+        -webkit-transform:translate(-6px, -6px);
+        -ms-transform:translate(-6px, -6px);
+        transform:translate(-6px, -6px);
+        width: 16px;
+        height: 16px;
+        border-width: 2px;
+        background-color: rgba(0,0,0,1);
+        border-color: #fff;
+      }
+
+    }
+
+  }
+
+  // ディスプレイサイズによって高さを変更する
+  // 画像のトリミングを行いたくない場合は高さ指定を削除すること
+  .mainvisual-slide {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+
+    @include media-breakpoint-up(sm) {
+      height: 20rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 25rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      height: 30rem;
+    }
+
+    a {
+      display: block;
+      color: $gray-dark;
+      text-decoration: none;
+    }
+
+    // .mainvisual-slideのサイズに従って伸縮する
+    // 画像のトリミングを行いたくない場合はimg要素に置き換えること
+    .mainvisual-slide-cover {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent center center no-repeat;
+      background-size: cover;
+      z-index: 210;
+    }
+
+    .mainvisual-slide-box {
+      position: absolute;
+      left: 0;
+      top: 70%;
+      width: 100%;
+      -webkit-transform:translate(0, -50%);
+      -ms-transform:translate(0, -50%);
+      transform:translate(0, -50%);
+      z-index: 220;
+
+      // 画面全体に広げるデザインに対応できるようボックス背景は別レイヤーとしている
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(0,0,0,.75);
+        z-index: 230;
+      }
+
+    }
+
+    .mainvisual-slide-contents {
+      position: relative;
+      margin: 0;
+      padding: $spacer 50% $spacer 0;
+      color: #fff;
+      z-index: 240;
+
+      @include media-breakpoint-up(lg) {
+        padding-top: ($spacer * 2);
+        padding-bottom: ($spacer * 2);
+      }
+
+    }
+
+    .mainvisual-slide-title {
+      margin: 0;
+      padding-right: $spacer;
+      font-size: 1.125rem;
+      font-family: $font-family-02;
+      font-weight: $font-weight-bold-02;
+      line-height: $line-height-xs;
+      letter-spacing: .1rem;
+      text-shadow:
+        0 0 5px #000,
+        0 0 10px #000;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 1.25rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        font-size: 1.5rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding-right: ($spacer * 2);
+        font-size: 1.75rem;
+      }
+
+      @include media-breakpoint-up(xl) {
+        font-size: 2.25rem;
+      }
+
+    }
+
+    .mainvisual-slide-body {
+      margin: 0;
+      padding: $spacer $spacer 0 0;
+      font-size: .625rem;
+      font-family: $font-family-01;
+      font-weight: $font-weight-01;
+      line-height: $line-height-md;
+      text-shadow:
+        0 0 2px #000,
+        0 0 4px #000;
+
+      @include media-breakpoint-up(lg) {
+        padding-top: ($spacer * 1.5);
+        padding-right: ($spacer * 2);
+        font-size: .75rem;
+      }
+
+      @include media-breakpoint-up(xl) {
+        font-size: 1rem;
+      }
+
+    }
+
+  }
+
+}
+
 
 // Main, Sub
 @include media-breakpoint-up(lg) {
@@ -2439,6 +2514,7 @@ input[type="checkbox"] {
 
 
 // Summary
+
 .summary {
   position: relative;
   margin-bottom: ($spacer * 3);
@@ -2636,14 +2712,8 @@ input[type="checkbox"] {
 
   .summary-title {
     margin: 0 0 .5rem;
-    font-size: $font-size-sm;
+    font-size: $font-size-root;
     line-height: $line-height-sm;
-    word-break: break-all;
-
-    @include media-breakpoint-up(lg) {
-      font-size: $font-size-root;
-    }
-
   }
 
   .summary-body {
@@ -3165,6 +3235,43 @@ input[type="checkbox"] {
 
 // acms Styles
 // ----------------------------
+
+// Module Edit
+
+// メインビジュアルの編集ボタンが他の要素と重なってしまうため位置をずらす
+.mainvisual.acms-admin-module-edit-wrapper:hover:before {
+
+  @include media-breakpoint-up(lg) {
+    width: 98%;
+    top: 4rem;
+    left: 1%;
+    right: 1%;
+    bottom: 50px;
+    z-index: 9999;
+  }
+
+}
+
+.mainvisual.acms-admin-module-edit-wrapper .acms-admin-module-edit {
+
+  @include media-breakpoint-up(lg) {
+    top: 4rem;
+    right: 2%;
+    border-bottom-right-radius: 4px;
+    opacity: 1;
+  }
+
+}
+
+
+// グローバルナビの編集ボタンが最後のボタンと重なってしまうため位置をずらす
+.global-nav.acms-admin-module-edit-wrapper .acms-admin-module-edit {
+  top: auto;
+  bottom: 100%;
+  bottom: calc( 100% + 2px );
+  border-radius: 4px 4px 0 0;
+}
+
 
 // Entry Column
 
