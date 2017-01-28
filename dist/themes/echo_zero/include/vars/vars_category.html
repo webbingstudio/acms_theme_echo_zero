@@ -33,7 +33,10 @@
 <!-- BEGIN_MODULE Sample:veil -->
 ## アーカイブタイトルここから ----------------------------------------
 <!-- END_MODULE Sample:veil -->
-<!-- BEGIN_SetRendered id="var_archive_title" -->%{CATEGORY_NAME}<!-- END_SetRendered -->
+<!-- BEGIN_SetRendered id="var_archive_title" -->
+%{CATEGORY_NAME}
+<!-- BEGIN_IF [%{PAGE}/neq/1] --> %{PAGE}ページ<!-- END_IF -->
+<!-- END_SetRendered -->
 <!-- BEGIN_MODULE Sample:veil -->
 ## アーカイブタイトルここまで ----------------------------------------
 <!-- END_MODULE Sample:veil -->

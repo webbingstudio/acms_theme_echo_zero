@@ -36,6 +36,7 @@
 <!-- BEGIN_MODULE Touch_Tag -->タグ: <!-- BEGIN_MODULE Tag_Filter --><!-- BEGIN selected:loop -->{name}<!-- BEGIN glue -->・<!-- END glue --><!-- END selected:loop --><!-- END_MODULE Tag_Filter --><!-- END_MODULE Touch_Tag -->
 <!-- BEGIN_IF [%{KEYWORD}/nem/] -->検索結果: %{KEYWORD}<!-- END_IF -->
 <!-- BEGIN_IF [%{DATE}/nem/] -->アーカイブ: %{DATE}<!-- END_IF -->
+<!-- BEGIN_IF [%{PAGE}/neq/1] --> %{PAGE}ページ<!-- END_IF -->
 <!-- END_SetRendered -->
 <!-- BEGIN_MODULE Sample:veil -->
 ## アーカイブタイトルここまで ----------------------------------------
