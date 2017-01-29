@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!--#include file="/include/head.html"-->
+</head>
+<body class="<!-- GET_Rendered id="var_body_class" trim="1" -->">
+<!--#include file="/include/body_first.html"-->
+<!--#include file="/include/header.html"-->
+
+<div class="page-header">
+	<div class="page-header-contents">
+		<h1 class="page-title">%{BLOG_NAME}</h1>
+	</div><!-- /.page-header-contents -->
+</div><!-- /.page-header -->
+<!--#include file="/include/parts/topicpath.html"-->
+
+<div class="container">
+
+	<main id="main">
+
+		<!--#include file="/include/module/template/Entry_Summary/summary_blog.html"-->
+
+	</main><!-- /#main -->
+
+    <div id="sub">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <!--#include file="/include/module/category_list.html"-->
+            </div><!-- /.col-sm-12 col-md-6 -->
+            <div class="col-sm-12 col-md-6">
+                <!--#include file="/include/module/entry_archivelist.html"-->
+                <!--#include file="/include/parts/search_form.html"-->
+            </div><!-- /.col-sm-12 col-md-6 -->
+        </div><!-- /.row -->
+    </div><!-- /#sub -->
+
+	<!--#include file="/include/module/banner.html"-->
+	<!--#include file="/include/parts/social_plugins.html"-->
+	<!--#include file="/include/check-seo.html"-->
+
+</div><!-- /.container -->
+
+<!--#include file="/include/footer.html"-->
+<!--#include file="/include/body_last.html"-->
+</body>
+</html>
