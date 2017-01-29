@@ -24,12 +24,17 @@
 <!-- BEGIN_MODULE Sample:veil -->
 ## var_body_class ----------------------------------------
 ## body要素に付与するクラス名
-## 改行を入れて読みやすくするため変数としています
+## 改行を入れて読みやすくするため変数としている
+## マルチサイトが有効になっていれば、子ブログにクラスを付与する
 <!-- END_MODULE Sample:veil -->
 <!-- BEGIN_SetRendered id="var_body_class" -->
 view-%{VIEW}
-<!-- BEGIN_IF [%{BID}/neq/1] --> %{BCD}<!-- END_IF -->
+<!-- BEGIN_MODULE Blog_Field id="global" -->
+<!-- BEGIN_IF [{name}/neq/%{BLOG_NAME}] --> view-children<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->
+<!-- BEGIN_IF [%{BID}/neq/1] --> blog-%{BID}<!-- END_IF -->
 <!-- BEGIN_MODULE Touch_Category --> %{CCD}<!-- BEGIN_IF [%{CCD}/neq/%{RCCD}] --> %{RCCD}<!-- END_IF --><!-- END_MODULE Touch_Category -->
+<!-- BEGIN_IF [%{KEYWORD}/nem] --> view-search<!-- END_IF -->
 <!-- BEGIN_MODULE Touch_Login --> view-login<!-- END_MODULE Touch_Login -->
 <!-- BEGIN_MODULE Touch_Edit --> view-edit<!-- END_MODULE Touch_Edit -->
 <!-- BEGIN_MODULE Touch_SessionWithContribution --> view-contribution<!-- END_MODULE Touch_SessionWithContribution -->
