@@ -30,6 +30,13 @@ $faded-second:              $faded !default;
 $faded-third:               #ecf9f0 !default;
 $faded-important:           #ffe9ee !default;
 
+$alert-info-text:           $gray-light !default;
+$alert-info-bg:             transparent !default;
+$alert-success-text:        $third !default;
+$alert-success-bg:          $faded-third !default;
+$alert-danger-text:         $important !default;
+$alert-danger-bg:           $faded-important !default;
+
 $body-bg:                   white !default;
 $body-color:                $gray-dark !default;
 
