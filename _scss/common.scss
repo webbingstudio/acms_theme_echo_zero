@@ -26,6 +26,7 @@
 // - Section
 // - Font Size
 // - Spacing
+// - Align
 // - Box
 // - Pager
 // - Serial Nav
@@ -246,23 +247,23 @@ blockquote:not([class]) {
 // ----------------------------
 
 .text-muted {
-  color: $gray-light;
+  color: $gray-light !important;
 }
 
 .text-first {
-  color: $first-text;
+  color: $first-text !important;
 }
 
 .text-second {
-  color: $second-text;
+  color: $second-text !important;
 }
 
 .text-third {
-  color: $third-text;
+  color: $third-text !important;
 }
 
 .text-important {
-  color: $important-text;
+  color: $important-text !important;
 }
 
 
@@ -506,8 +507,8 @@ fieldset[disabled] a.btn {
     $btn-first-bg,
     $btn-first-border,
     $btn-first-color,
-    lighten($btn-first-bg, 10%),
-    lighten($btn-first-border, 10%)
+    darken($btn-first-bg, 5%),
+    darken($btn-first-border, 5%)
   );
 }
 
@@ -528,8 +529,8 @@ fieldset[disabled] a.btn {
     $btn-second-bg,
     $btn-second-border,
     $btn-second-color,
-    lighten($btn-second-bg, 10%),
-    lighten($btn-second-border, 10%)
+    darken($btn-second-bg, 5%),
+    darken($btn-second-border, 5%)
   );
 }
 
@@ -550,8 +551,8 @@ fieldset[disabled] a.btn {
     $btn-third-bg,
     $btn-third-border,
     $btn-third-color,
-    lighten($btn-third-bg, 10%),
-    lighten($btn-third-border, 10%)
+    darken($btn-third-bg, 5%),
+    darken($btn-third-border, 5%)
   );
 }
 
@@ -572,8 +573,8 @@ fieldset[disabled] a.btn {
     $btn-important-bg,
     $btn-important-border,
     $btn-important-color,
-    lighten($btn-important-bg, 10%),
-    lighten($btn-important-border, 10%)
+    darken($btn-important-bg, 5%),
+    darken($btn-important-border, 5%)
   );
 }
 
@@ -893,23 +894,24 @@ fieldset[disabled] a.btn {
 // ----------------------------
 
 .alert {
-  margin: ($spacer * 2) 0;
+  margin: ($spacer * 3) 0;
   padding: $spacer;
   text-align: center;
   line-height: $line-height-sm;
 
   &.alert-info {
     color: $gray-light;
+    background-color: $alert-info-bg;
   }
 
   &.alert-success {
-    color: $first-text;
-    background-color: $faded-first;
+    color: $alert-success-text;
+    background-color: $alert-success-bg;
   }
 
   &.alert-danger {
-    color: $important;
-    background-color: $faded-important;
+    color: $alert-danger-text;
+    background-color: $alert-danger-bg;
   }
 
 }
@@ -919,10 +921,12 @@ fieldset[disabled] a.btn {
 // ----------------------------
 
 .label {
+  position: relative;
+  top: -.1rem;
   display: inline-block;
   min-width: 3em;
   margin-right: .5em;
-  padding: .375em .75em;
+  padding: .25em .75em;
   background-color: $gray;
   font-size: $font-size-xs;
   line-height: $line-height-xs;
@@ -930,6 +934,22 @@ fieldset[disabled] a.btn {
   border-radius: 1em;
   vertical-align: middle;
   text-align: center;
+
+  &.label-first {
+    background-color: $first;
+  }
+
+  &.label-second {
+    background-color: $second;
+  }
+
+  &.label-third {
+    background-color: $third;
+  }
+
+  &.label-important {
+    background-color: $important;
+  }
 
   @at-root {
 
@@ -991,10 +1011,15 @@ fieldset[disabled] a.btn {
 // Form
 // ----------------------------
 
+.form {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
 .form-control {
   display: block;
   width: 100%;
-  padding: .25rem .1rem;
+  padding: .375rem .5rem;
   font-size: $font-size-root;
   font-family: $font-family-base;
   line-height: $line-height-xs;
@@ -1002,6 +1027,7 @@ fieldset[disabled] a.btn {
   background-color: #fff;
   background-image: none;
   border: 1px solid $gray-dark;
+  border-radius: 3px;
 
   &[type="search"],
   &[type="text"],
@@ -1038,6 +1064,10 @@ select.form-control {
   font-size: .875rem;
   border-color: $gray-lighter;
 
+  &.form-control-lg {
+    font-size: $font-size-root;
+  }
+
   option {
     color: $gray;
   }
@@ -1055,8 +1085,8 @@ textarea.form-control {
 }
 
 .form-control-label {
-  padding: .25rem;
-  margin-bottom: 0;
+  padding-top: .25rem;
+  margin-bottom: .5rem;
 }
 
 .form-control-static {
@@ -1072,6 +1102,12 @@ textarea.form-control {
   }
 }
 
+.form-control-inline {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+
 .form-control-sm {
   padding: .1rem;
   font-size: $font-size-sm;
@@ -1084,7 +1120,9 @@ textarea.form-control {
 }
 
 .form-group {
-  margin-bottom: 2rem;
+  margin-bottom: ($spacer * 2);
+  padding-bottom: ($spacer * 2);
+  border-bottom: 1px solid $gray-lighter;
 }
 
 .radio,
@@ -1112,8 +1150,9 @@ textarea.form-control {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
-  margin-top: .25rem;
+  margin-top: .5rem;
   margin-left: -1.25rem;
+  font-size: 2rem;
 }
 
 .radio + .radio,
@@ -1182,6 +1221,13 @@ input[type="checkbox"] {
 
 }
 
+.form-error {
+  margin: .5rem 0 0;
+  font-size: .875rem;
+  color: $important-text;
+  line-height: $line-height-sm;
+}
+
 .form-inline {
 
   @include media-breakpoint-up(sm) {
@@ -1248,6 +1294,23 @@ input[type="checkbox"] {
   }
 
 }
+
+.form-submit {
+  margin: ($spacer * 4.5) 0;
+  text-align: center;
+
+  form {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .btn-xl {
+    margin: 0 $spacer $spacer;
+    width: 15rem;
+  }
+
+}
+
 
 
 // Section
@@ -1503,6 +1566,20 @@ input[type="checkbox"] {
 }
 
 
+// Align
+// ----------------------------
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
 
 
 // Box

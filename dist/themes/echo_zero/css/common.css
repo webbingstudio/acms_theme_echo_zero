@@ -958,19 +958,19 @@ blockquote:not([class]) {
     padding-right: 0; } }
 
 .text-muted {
-  color: #999999; }
+  color: #999999 !important; }
 
 .text-first {
-  color: #2288bb; }
+  color: #2288bb !important; }
 
 .text-second {
-  color: #333333; }
+  color: #333333 !important; }
 
 .text-third {
-  color: #229644; }
+  color: #229644 !important; }
 
 .text-important {
-  color: #dd0022; }
+  color: #dd0022 !important; }
 
 .headings-reset, .title-01,
 h1:not([class*="title"]), .title-02,
@@ -1130,8 +1130,8 @@ fieldset[disabled] a.btn {
   border-color: #4499dd; }
   .btn-first:hover, .btn-first:focus, .btn-first:active, .btn-first.active {
     color: white;
-    background-color: #6fb1e5;
-    border-color: #6fb1e5; }
+    background-color: #2e8dd9;
+    border-color: #2e8dd9; }
   .btn-first.disabled, .btn-first:disabled,
   fieldset[disabled] .btn-first {
     opacity: .8; }
@@ -1170,8 +1170,8 @@ fieldset[disabled] a.btn {
   border-color: #333333; }
   .btn-second:hover, .btn-second:focus, .btn-second:active, .btn-second.active {
     color: white;
-    background-color: #4d4d4d;
-    border-color: #4d4d4d; }
+    background-color: #262626;
+    border-color: #262626; }
   .btn-second.disabled, .btn-second:disabled,
   fieldset[disabled] .btn-second {
     opacity: .8; }
@@ -1210,8 +1210,8 @@ fieldset[disabled] a.btn {
   border-color: #55B677; }
   .btn-third:hover, .btn-third:focus, .btn-third:active, .btn-third.active {
     color: white;
-    background-color: #79c594;
-    border-color: #79c594; }
+    background-color: #49a96a;
+    border-color: #49a96a; }
   .btn-third.disabled, .btn-third:disabled,
   fieldset[disabled] .btn-third {
     opacity: .8; }
@@ -1250,8 +1250,8 @@ fieldset[disabled] a.btn {
   border-color: #dd4455; }
   .btn-important:hover, .btn-important:focus, .btn-important:active, .btn-important.active {
     color: white;
-    background-color: #e56f7c;
-    border-color: #e56f7c; }
+    background-color: #d92e41;
+    border-color: #d92e41; }
   .btn-important.disabled, .btn-important:disabled,
   fieldset[disabled] .btn-important {
     opacity: .8; }
@@ -1483,24 +1483,27 @@ fieldset[disabled] a.btn {
     opacity: 1; } }
 
 .alert {
-  margin: 1.25rem 0;
+  margin: 1.875rem 0;
   padding: 0.625rem;
   text-align: center;
   line-height: 1.25; }
   .alert.alert-info {
-    color: #999999; }
+    color: #999999;
+    background-color: transparent; }
   .alert.alert-success {
-    color: #2288bb;
-    background-color: #e9f9ff; }
+    color: #55B677;
+    background-color: #ecf9f0; }
   .alert.alert-danger {
     color: #dd4455;
     background-color: #ffe9ee; }
 
 .label {
+  position: relative;
+  top: -.1rem;
   display: inline-block;
   min-width: 3em;
   margin-right: .5em;
-  padding: .375em .75em;
+  padding: .25em .75em;
   background-color: #666666;
   font-size: 0.75rem;
   line-height: 1;
@@ -1508,6 +1511,14 @@ fieldset[disabled] a.btn {
   border-radius: 1em;
   vertical-align: middle;
   text-align: center; }
+  .label.label-first {
+    background-color: #4499dd; }
+  .label.label-second {
+    background-color: #333333; }
+  .label.label-third {
+    background-color: #55B677; }
+  .label.label-important {
+    background-color: #dd4455; }
   a.label {
     color: #fff; }
     a.label:hover, a.label:focus, a.label:active {
@@ -1533,17 +1544,22 @@ fieldset[disabled] a.btn {
   .nav-horizontal ul li .badge {
     float: right; }
 
+.form {
+  max-width: 48rem;
+  margin: 0 auto; }
+
 .form-control {
   display: block;
   width: 100%;
-  padding: .25rem .1rem;
+  padding: .375rem .5rem;
   font-size: 1rem;
   font-family: "-apple-system", "BlinkMacSystemFont", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
   line-height: 1;
   color: #333333;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #333333; }
+  border: 1px solid #333333;
+  border-radius: 3px; }
   .form-control[type="search"], .form-control[type="text"], .form-control[type="password"], .form-control[type="date"], .form-control[type="tel"] {
     -webkit-appearance: textfield; }
   .form-control::-ms-expand {
@@ -1563,6 +1579,8 @@ fieldset[disabled] a.btn {
 select.form-control {
   font-size: .875rem;
   border-color: #cccccc; }
+  select.form-control.form-control-lg {
+    font-size: 1rem; }
   select.form-control option {
     color: #666666; }
 
@@ -1575,8 +1593,8 @@ textarea.form-control {
   display: block; }
 
 .form-control-label {
-  padding: .25rem;
-  margin-bottom: 0; }
+  padding-top: .25rem;
+  margin-bottom: .5rem; }
 
 .form-control-static {
   min-height: 2rem;
@@ -1586,6 +1604,11 @@ textarea.form-control {
   .form-control-static.form-control-sm, .form-control-static.form-control-lg {
     padding-right: 0;
     padding-left: 0; }
+
+.form-control-inline {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle; }
 
 .form-control-sm {
   padding: .1rem;
@@ -1597,7 +1620,9 @@ textarea.form-control {
   line-height: 1.25; }
 
 .form-group {
-  margin-bottom: 2rem; }
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #cccccc; }
 
 .radio,
 .checkbox {
@@ -1619,8 +1644,9 @@ textarea.form-control {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
-  margin-top: .25rem;
-  margin-left: -1.25rem; }
+  margin-top: .5rem;
+  margin-left: -1.25rem;
+  font-size: 2rem; }
 
 .radio + .radio,
 .checkbox + .checkbox {
@@ -1667,6 +1693,12 @@ fieldset[disabled]
   color: #dd0022;
   background-color: #ffe9ee; }
 
+.form-error {
+  margin: .5rem 0 0;
+  font-size: .875rem;
+  color: #dd0022;
+  line-height: 1.25; }
+
 @media (min-width: 425px) {
   .form-inline .form-group {
     display: inline-block;
@@ -1705,6 +1737,16 @@ fieldset[disabled]
     margin-left: 0; }
   .form-inline .has-feedback .form-control-feedback {
     top: 0; } }
+
+.form-submit {
+  margin: 2.8125rem 0;
+  text-align: center; }
+  .form-submit form {
+    display: inline-block;
+    vertical-align: middle; }
+  .form-submit .btn-xl {
+    margin: 0 0.625rem 0.625rem;
+    width: 15rem; }
 
 .section {
   padding: 2.5rem 0; }
@@ -2046,6 +2088,15 @@ fieldset[disabled]
   .p-y-lg-lg {
     padding-top: 1.875rem !important;
     padding-bottom: 1.875rem !important; } }
+
+.text-left {
+  text-align: left !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-right {
+  text-align: right !important; }
 
 .box {
   margin-bottom: 1.25rem;
