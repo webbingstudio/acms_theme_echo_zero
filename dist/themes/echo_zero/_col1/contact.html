@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!--#include file="/include/head.html"-->
+</head>
+<body class="<!-- GET_Rendered id="var_body_class" trim="1" -->">
+<!--#include file="/include/body_first.html"-->
+<!--#include file="/include/header.html"-->
+
+<!--#include file="/include/parts/page_header.html"-->
+<!--#include file="/include/parts/topicpath.html"-->
+
+<div class="container">
+
+	<main id="main">
+
+		<!-- BEGIN_MODULE Form -->
+
+		<!-- BEGIN step -->
+		<!-- フォームステップ：初期 -->
+
+		<!-- BEGIN_MODULE Blog_Field -->
+		<!-- BEGIN_IF [{form_input_before}/nem] -->
+		{form_input_before}[buildTpl]
+		<!-- END_IF -->
+		<!-- END_MODULE Blog_Field -->
+
+		<div class="form">
+			<form action="" method="post" class="acms-form" enctype="multipart/form-data">
+
+				<!--#include file="/contact/form/input.html"-->
+
+				<div class="form-submit">
+					<input type="hidden" name="id" value="contact_form">
+					<input type="hidden" name="step" value="confirm">
+					<input type="hidden" name="error" value="reapply">
+					<input type="submit" name="ACMS_POST_Form_Confirm" value="入力内容の確認" id="btnConfirm" class="btn btn-xl btn-first">
+				</div>
+
+			</form>
+		</div><!-- /.form -->
+		<!-- END step -->
+
+		<!-- BEGIN step#apply -->
+		<!-- フォームステップ：再入力 -->
+		<div class="form">
+		<form action="" method="post" class="acms-form" enctype="multipart/form-data">
+
+			<!--#include file="/contact/form/input.html"-->
+
+			<div class="form-submit">
+				<input type="hidden" name="id" value="contact_form">
+				<input type="hidden" name="step" value="confirm">
+				<input type="hidden" name="error" value="reapply">
+				<input type="submit" name="ACMS_POST_Form_Confirm" value="入力内容の確認"  id="btnConfirm" class="btn btn-xl btn-first">
+			</div>
+		</form>
+		</div><!-- /.form -->
+		<!-- END step#apply -->
+
+		<!-- BEGIN step#reapply -->
+		<!-- フォームステップ：修正・エラー -->
+		<div class="form">
+			<p class="alert alert-danger">入力内容に不明な箇所があります。修正のうえ、再度「送信の確認」ボタンを押してください。</p>
+
+			<form action="" method="post" class="acms-form" enctype="multipart/form-data">
+
+				<!--#include file="/contact/form/input.html"-->
+
+				<div class="form-submit">
+					<input type="hidden" name="id" value="contact_form">
+					<input type="hidden" name="step" value="confirm">
+					<input type="hidden" name="error" value="reapply">
+					<input type="submit" name="ACMS_POST_Form_Confirm" value="入力内容の確認"  id="btnConfirm" class="btn btn-xl btn-first">
+				</div>
+			</form>
+		</div><!-- /.form -->
+		<!-- END step#reapply -->
+
+		<!-- BEGIN step#confirm -->
+		<!-- フォームステップ：確認画面 -->
+		<p class="alert alert-success">以下の内容で送信いたします。内容をご確認のうえ「送信する」ボタンを押してください。</p>
+
+		<div class="form">
+
+			<!--#include file="/contact/form/confirm.html"-->
+
+			<div class="form-submit">
+				<form action="" method="post" class="formBtn formBtnReturn">
+					<input type="hidden" name="step" value="apply">
+					<input type="hidden" name="takeover" value="{takeover}">
+					<input type="submit" name="ACMS_POST_Form_Chain" id="btnToInput" value="入力画面に戻る" class="btn btn-xl btn-block btn-first-outline">
+				</form>
+
+				<form action="" method="post" class="formBtn formBtnSend" enctype="multipart/form-data">
+					<input type="hidden" name="id" value="contact_form">
+					<input type="hidden" name="To[]" value="{name}様 <{email}>">
+					<input type="hidden" name="AdminReply-To[]" value="{name}様 <{email}>">
+					<input type="hidden" name="AdminFrom[]" value="{name}様 <{email}>">
+					<input type="hidden" name="step" value="result">
+					<input type="hidden" name="takeover" value="{takeover}">
+					<input type="submit" name="ACMS_POST_Form_Submit" value="送信する" id="btnSubmit" class="btn btn-xl btn-block btn-first">
+				</form>
+
+			</div><!-- /.form-submit -->
+		</div><!-- /.form -->
+		<!-- END step#confirm -->
+
+		<!-- BEGIN step#result -->
+		<!-- フォームステップ：完了画面 -->
+		<!--#include file="/contact/form/result.html"-->
+		<!-- END step#result -->
+
+		<!-- BEGIN step#forbidden -->
+		<!--#include file="/contact/form/forbidden.html"-->
+		<!-- END step#forbidden -->
+
+		<!-- BEGIN step#repeated -->
+		<!--#include file="/contact/form/repeated.html"-->
+		<!-- END step#repeated -->
+
+		<!-- BEGIN error -->
+		<!--#include file="/contact/form/error.html"-->
+		<!-- END error -->
+
+		<!-- END_MODULE Form -->
+
+	</main><!-- /#main -->
+
+	<!--#include file="/include/module/banner.html"-->
+	<!--#include file="/include/parts/social_plugins.html"-->
+
+</div><!-- /.container -->
+
+<!--#include file="/include/footer.html"-->
+<!--#include file="/include/body_last.html"-->
+</body>
+</html>
