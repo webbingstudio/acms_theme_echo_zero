@@ -1,0 +1,38 @@
+<h3 class="acms-admin-admin-title2"><a href="#fade-form" class="js-fader">フォームの設定</a></h3>
+<div id="fade-form">
+
+	<!-- BEGIN_MODULE Touch_Debug -->
+	<p class="echo-info">
+		<strong>デバッグモードのみ表示</strong><br>
+		この項目では、a-blog cmsの<a href="https://developer.a-blogcms.jp/reference/latest/global_variable.html" target="_blank">グローバル変数</a>を使用できます。取り扱いにご注意ください。
+	</p>
+	<!-- END_MODULE Touch_Debug -->
+
+	<table class="adminTable acms-admin-table-admin-edit">
+
+		<tr>
+			<th>入力画面の文章<i data-acms-tooltip="入力画面の、フォームの直前に表示される文章を入力します。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+			<td>
+				<textarea name="form_input_before" cols="60" rows="3" class="acms-admin-form-width-full">{form_input_before}[raw]</textarea>
+				<input type="hidden" name="field[]" value="form_input_before" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>メールのヘッダ<i data-acms-tooltip="送信者に自動返信されるメールの冒頭の文章を入力します。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+			<td>
+				<textarea name="form_mail_header" cols="60" rows="3" class="acms-admin-form-width-full">{form_mail_header}[raw]</textarea>
+				<input type="hidden" name="field[]" value="form_mail_header" />
+			</td>
+		</tr>
+
+		<tr>
+			<th>メールフッタ<i data-acms-tooltip="送信者・管理者に自動返信されるメールの署名等を入力します。" class="acms-admin-icon-tooltip js-acms-tooltip"></i></th>
+			<td>
+				<textarea name="form_mail_footer" cols="60" rows="3" class="acms-admin-form-width-full">{form_mail_footer}[raw]</textarea>
+				<input type="hidden" name="field[]" value="form_mail_footer" />
+			</td>
+		</tr>
+
+	</table>
+</div>
