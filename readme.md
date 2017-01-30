@@ -21,7 +21,7 @@ Copyright 2017 WebbingStudio
 echoシリーズ ポータルサイト  
 [http://cms-skill.com/echo/](http://cms-skill.com/echo/)
 
-デモサイト  
+デモサイト（準備中）  
 [http://cms-skill.com/echo_zero_demo/](http://cms-skill.com/echo_zero_demo/)
 
 ## ライセンス
