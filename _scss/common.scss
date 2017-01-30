@@ -24,6 +24,7 @@
 // - Badge
 // - Form
 // - Section
+// - Font Family
 // - Font Size
 // - Spacing
 // - Align
@@ -1342,8 +1343,8 @@ input[type="checkbox"] {
   .section-title {
     margin: 0;
     font-size: 2rem;
-    font-family: $font-family-02;
-    font-weight: $font-weight-02;
+    font-family: $font-family-01;
+    font-weight: $font-weight-01;
     text-align: center;
     letter-spacing: .1em;
 
@@ -1454,14 +1455,30 @@ input[type="checkbox"] {
 }
 
 
+// Font Family
+// ----------------------------
+
+.font-family-base { font-family: $font-family-base !important; }
+.font-family-mono { font-family: $font-family-mono !important; }
+
+// 01.body
+.font-family-01 { font-family: $font-family-01 !important; }
+
+// 02.heading
+.font-family-02 { font-family: $font-family-02 !important; }
+
+// 03.date, number, new-icon
+.font-family-03 { font-family: $font-family-03 !important; }
+
+
 // Font Size
 // ----------------------------
 
-.font-size-xs { font-size: .75rem !important; }
-.font-size-sm { font-size: .875rem !important; }
-.font-size-md, .font-size-base { font-size: 1rem !important; }
-.font-size-lg { font-size: 1.25rem !important; }
-.font-size-xl { font-size: 1.5rem !important; }
+.font-size-xs { font-size: .75em !important; }
+.font-size-sm { font-size: .875em !important; }
+.font-size-md, .font-size-base { font-size: 1em !important; }
+.font-size-lg { font-size: 1.25em !important; }
+.font-size-xl { font-size: 1.5em !important; }
 
 
 // Spacing

@@ -1773,8 +1773,8 @@ fieldset[disabled]
   .section .section-title {
     margin: 0;
     font-size: 2rem;
-    font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
-    font-weight: 300;
+    font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-weight: 400;
     text-align: center;
     letter-spacing: .1em; }
     .section .section-title.section-title-en {
@@ -1841,20 +1841,35 @@ fieldset[disabled]
         width: auto;
         display: inline-block; }
 
+.font-family-base {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif !important; }
+
+.font-family-mono {
+  font-family: "Consolas", "Liberation Mono", "Menlo", "Courier", monospace !important; }
+
+.font-family-01 {
+  font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif !important; }
+
+.font-family-02 {
+  font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif !important; }
+
+.font-family-03 {
+  font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif !important; }
+
 .font-size-xs {
-  font-size: .75rem !important; }
+  font-size: .75em !important; }
 
 .font-size-sm {
-  font-size: .875rem !important; }
+  font-size: .875em !important; }
 
 .font-size-md, .font-size-base {
-  font-size: 1rem !important; }
+  font-size: 1em !important; }
 
 .font-size-lg {
-  font-size: 1.25rem !important; }
+  font-size: 1.25em !important; }
 
 .font-size-xl {
-  font-size: 1.5rem !important; }
+  font-size: 1.5em !important; }
 
 .m-a-0 {
   margin: 0 !important; }
