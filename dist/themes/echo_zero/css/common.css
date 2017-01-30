@@ -1057,14 +1057,26 @@ h6:not([class*="title"]) {
   @media (min-width: 1024px) {
     .tables-reset, .table {
       margin-bottom: 2.5rem; } }
+  .tables-reset thead, .table thead,
+  .tables-reset tbody, .table tbody,
+  .tables-reset tfoot, .table tfoot {
+    display: block; }
+    @media (min-width: 768px) {
+      .tables-reset thead, .table thead,
+      .tables-reset tbody, .table tbody,
+      .tables-reset tfoot, .table tfoot {
+        display: table-row-group; } }
   .tables-reset tr, .table tr {
+    display: block;
     border-bottom: 1px solid #cccccc; }
     @media (min-width: 768px) {
       .tables-reset tr, .table tr {
+        display: table-row;
         border-bottom: 0 none; } }
   .tables-reset th, .table th,
   .tables-reset td, .table td {
     display: block;
+    width: 100%;
     padding: .5rem 1rem;
     line-height: 1.5;
     border-width: 1px 1px 0 0;
@@ -1074,7 +1086,8 @@ h6:not([class*="title"]) {
     @media (min-width: 768px) {
       .tables-reset th, .table th,
       .tables-reset td, .table td {
-        display: table-cell; } }
+        display: table-cell;
+        width: auto; } }
   .tables-reset th, .table th {
     text-align: left; }
   .tables-reset thead th, .table thead th {

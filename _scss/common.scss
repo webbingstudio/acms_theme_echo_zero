@@ -361,10 +361,23 @@ h6:not([class*="title"]) {
     margin-bottom: ($spacer * 4);
   }
 
+  thead,
+  tbody,
+  tfoot {
+    display: block;
+
+    @include media-breakpoint-up(md) {
+      display: table-row-group;
+    }
+
+  }
+
   tr {
+    display: block;
     border-bottom: 1px solid $gray-lighter;
 
     @include media-breakpoint-up(md) {
+      display: table-row;
       border-bottom: 0 none;
     }
 
@@ -373,6 +386,7 @@ h6:not([class*="title"]) {
   th,
   td {
     display: block;
+    width: 100%;
     padding: .5rem 1rem;
     line-height: $line-height-md;
     border-width: 1px 1px 0 0;
@@ -382,6 +396,7 @@ h6:not([class*="title"]) {
 
     @include media-breakpoint-up(md) {
       display: table-cell;
+      width: auto;
     }
 
   }
