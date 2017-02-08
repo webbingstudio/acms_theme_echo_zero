@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!--#include file="/include/head.html"-->
+</head>
+<body class="<!-- GET_Rendered id="var_body_class" trim="1" -->">
+<!--#include file="/include/body_first.html"-->
+<!--#include file="/include/header.html"-->
+
+<div class="page-header">
+	<div class="page-header-contents">
+		<h1 class="page-title page-title-en">404 Not Found</h1>
+	</div><!-- /.page-header-contents -->
+</div><!-- /.page-header -->
+
+<!-- BEGIN_MODULE Topicpath id="topicpath" -->
+<div class="topicpath">
+	<div class="container">
+		<nav>
+			<ol itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+				<!-- BEGIN blog:loop -->
+				<li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem">
+					<a href="{url}" class="js-viewing-indelible" itemprop="item"><span itemprop="name">{name}</span></a>
+					<meta itemprop="position" content="{sNum}">
+				</li>
+				<!-- END blog:loop -->
+				<li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem">
+					<a href="{url}" class="js-viewing-indelible" itemprop="item"><span itemprop="name">ページが見つかりませんでした</span></a>
+				</li>
+			</ol>
+		</nav>
+	</div><!-- /.container -->
+</div><!-- /.topicpath -->
+<!-- END_MODULE Topicpath -->
+
+<div class="container">
+
+	<div class="flex-col-2">
+
+		<main id="main">
+
+			<div class="section">
+				<p><strong>ページが見つかりませんでした</strong></p>
+				<p>お探しのアドレスには、コンテンツがありません。<br>
+				移動、もしくは削除された可能性があります。</p>
+				<p>お手数ですが、トップページから目的のコンテンツをお探しください。</p>
+				<div class="text-center p-t-lg">
+					<a href="%{HOME_URL}" class="btn btn-xl btn-first-outline">トップページへ戻る</a>
+				</div>
+			</div><!-- /.section -->
+
+		</main><!-- /#main -->
+
+		<div id="sub">
+			<!-- BEGIN_MODULE Touch_NotEdit -->
+			<!--#include file="/include/parts/social_plugins_col2.html"-->
+			<!-- END_MODULE Touch_NotEdit -->
+		</div><!-- /#sub -->
+
+	</div><!-- /.flex-col-2 -->
+
+	<!-- BEGIN_MODULE Touch_NotEdit -->
+	<!--#include file="/include/module/banner.html"-->
+	<!--#include file="/include/check-seo.html"-->
+	<!-- END_MODULE Touch_NotEdit -->
+</div><!-- /.container -->
+
+<!--#include file="/include/footer.html"-->
+<!--#include file="/include/body_last.html"-->
+</body>
+</html>
