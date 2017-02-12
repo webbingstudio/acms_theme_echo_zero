@@ -1,4 +1,13 @@
+<!-- BEGIN_MODULE Sample:veil -->
+## マルチサイトが有効になっていれば、子ブログはtypeをarticleにする
+<!-- END_MODULE Sample:veil -->
+<!-- BEGIN_MODULE Blog_Field id="global" -->
+<!-- BEGIN_IF [{name}/eq/%{BLOG_NAME}] -->
 <meta property="og:type" content="website">
+<!-- ELSE -->
+<meta property="og:type" content="article">
+<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->
 
 <title><!-- GET_Rendered id="var_meta_title_text" trim="1" --><!-- GET_Rendered id="var_meta_title_suffix" trim="1" --></title>
 <meta property="og:title" content="<!-- GET_Rendered id="var_meta_title_text" trim="1" --><!-- GET_Rendered id="var_meta_title_suffix" trim="1" -->">
