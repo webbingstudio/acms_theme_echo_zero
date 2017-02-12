@@ -2927,6 +2927,11 @@ fieldset[disabled]
     @media (min-width: 1280px) {
       .card .card-cover {
         height: 175px; } }
+    .flex-col-2 #sub .card .card-cover {
+      height: 90px; }
+      @media (min-width: 375px) {
+        .flex-col-2 #sub .card .card-cover {
+          height: 120px; } }
   .card .card-cover {
     position: relative;
     width: 100%;
@@ -2997,6 +3002,11 @@ fieldset[disabled]
     @media (min-width: 1024px) {
       .card .card-title {
         font-size: 1rem; } }
+    .flex-col-2 #sub .card .card-title {
+      font-size: 0.75rem; }
+      @media (min-width: 1024px) {
+        .flex-col-2 #sub .card .card-title {
+          font-size: 0.75rem; } }
   .card .card-category {
     display: inline-block;
     padding-top: .25rem; }

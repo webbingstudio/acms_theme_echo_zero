@@ -3019,6 +3019,20 @@ input[type="checkbox"] {
       height: 175px;
     }
 
+    @at-root {
+
+      // 2カラム
+      .flex-col-2 #sub & {
+        height: 90px;
+
+        @include media-breakpoint-up(xs) {
+          height: 120px;
+        }
+
+      }
+
+    }
+
   }
 
   .card-cover {
@@ -3120,6 +3134,20 @@ input[type="checkbox"] {
 
     @include media-breakpoint-up(lg) {
       font-size: $font-size-root;
+    }
+
+    @at-root {
+
+      // 2カラム
+      .flex-col-2 #sub & {
+        font-size: $font-size-xs;
+
+        @include media-breakpoint-up(lg) {
+          font-size: $font-size-xs;
+        }
+
+      }
+
     }
 
   }
