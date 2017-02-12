@@ -460,11 +460,13 @@ h6:not([class*="title"]) {
 // ----------------------------
 
 .btn {
+  display: inline-block;
   font-size: $font-size-root;
   font-family: $font-family-01;
   font-weight: $font-weight-01;
   border: $border-width solid transparent;
   padding: $btn-padding-y $btn-padding-x;
+  text-align: center;
   line-height: $line-height-xs;
   border-radius: $border-radius;
   vertical-align: middle;
