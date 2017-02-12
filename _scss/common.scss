@@ -341,6 +341,122 @@ h6:not([class*="title"]) {
 }
 
 
+// Lists
+// ----------------------------
+
+.list {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      position: relative;
+      margin: 0;
+      padding: 0 0 1rem 1.5rem;
+      line-height: 1.5;
+
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+        width: .25rem;
+        height: .25rem;
+        background-color: $gray-dark;
+      }
+
+    }
+
+  }
+
+}
+
+.datelist {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      margin: 0;
+      padding: 0 0 1rem;
+      line-height: 1.5;
+
+      @include media-breakpoint-up(md) {
+        display: table;
+        width: 100%;
+      }
+
+      a {
+
+        .datelist-date {
+          color: $gray-dark;
+        }
+
+        &:hover,
+        &:focus {
+
+          .datelist-date {
+            color: $gray-dark;
+            text-decoration: none;
+          }
+
+          .datelist-contents {
+            text-decoration: underline;
+          }
+
+          .label {
+            text-decoration: none;
+          }
+
+        }
+
+      }
+
+    }
+
+    .datelist-header {
+      display: block;
+      padding-bottom: .25rem;
+
+      @include media-breakpoint-up(md) {
+        float: left;
+        padding-bottom: 0;
+        padding-right: 1rem;
+      }
+
+      .datelist-date {
+        display: inline-block;
+        white-space: nowrap;
+        font-family: $font-family-03;
+        font-weight: $font-weight-03;
+      }
+
+      .datelist-category {
+        white-space: nowrap;
+      }
+
+    }
+
+    .datelist-contents {
+      display: block;
+
+      @include media-breakpoint-up(md) {
+        overflow: hidden;
+      }
+
+    }
+
+  }
+
+}
+
+
+
 // Tables
 // ----------------------------
 

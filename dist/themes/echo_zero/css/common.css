@@ -1042,6 +1042,67 @@ h6:not([class*="title"]) {
   margin-bottom: .5em;
   font-size: .875rem; }
 
+.list ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .list ul li {
+    position: relative;
+    margin: 0;
+    padding: 0 0 1rem 1.5rem;
+    line-height: 1.5; }
+    .list ul li:before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: .5rem;
+      left: .5rem;
+      width: .25rem;
+      height: .25rem;
+      background-color: #333333; }
+
+.datelist ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .datelist ul li {
+    margin: 0;
+    padding: 0 0 1rem;
+    line-height: 1.5; }
+    @media (min-width: 768px) {
+      .datelist ul li {
+        display: table;
+        width: 100%; } }
+    .datelist ul li a .datelist-date {
+      color: #333333; }
+    .datelist ul li a:hover .datelist-date, .datelist ul li a:focus .datelist-date {
+      color: #333333;
+      text-decoration: none; }
+    .datelist ul li a:hover .datelist-contents, .datelist ul li a:focus .datelist-contents {
+      text-decoration: underline; }
+    .datelist ul li a:hover .label, .datelist ul li a:focus .label {
+      text-decoration: none; }
+  .datelist ul .datelist-header {
+    display: block;
+    padding-bottom: .25rem; }
+    @media (min-width: 768px) {
+      .datelist ul .datelist-header {
+        float: left;
+        padding-bottom: 0;
+        padding-right: 1rem; } }
+    .datelist ul .datelist-header .datelist-date {
+      display: inline-block;
+      white-space: nowrap;
+      font-family: "Oxygen", "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
+      font-weight: 300; }
+    .datelist ul .datelist-header .datelist-category {
+      white-space: nowrap; }
+  .datelist ul .datelist-contents {
+    display: block; }
+    @media (min-width: 768px) {
+      .datelist ul .datelist-contents {
+        overflow: hidden; } }
+
 .tables-reset, .table {
   display: block;
   width: 100%;
