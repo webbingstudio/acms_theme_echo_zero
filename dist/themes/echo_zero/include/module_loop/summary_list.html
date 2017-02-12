@@ -3,15 +3,15 @@
 <!-- END notFound -->
 
 <!-- BEGIN unit:loop -->
-<nav>
+<div class="list">
 	<ul>
 		<!-- BEGIN entry:loop --><!-- BEGIN_IF [{iNum}/nem] -->
 		<li<!-- BEGIN_IF [{entry:loop.class}/nem] --> class="{entry:loop.class}"<!-- END_IF -->><a href="{url}" class="js-link_match_location">
-			<!-- BEGIN blog:veil --><span class="nav-category"><span class="label">{blogName}</span></span><br><!-- END blog:veil -->
-			<!-- BEGIN category:veil --><span class="nav-category"><span class="label">{categoryName}</span></span><br><!-- END category:veil -->
-			<span class="nav-title">{title}<!-- BEGIN new --><span class="badge">New</span><!-- END new --></span>
+			<!-- BEGIN blog:veil --><span class="list-category"><span class="label">{blogName}</span></span><!-- END blog:veil -->
+			<!-- BEGIN category:veil --><span class="list-category"><span class="label">{categoryName}</span></span><!-- END category:veil -->
+			<span class="list-title">{title}<!-- BEGIN new --><span class="badge">New</span><!-- END new --></span>
 		</a></li>
 		<!-- END_IF --><!-- END entry:loop -->
 	</ul>
-</nav>
+</div>
 <!-- END unit:loop -->
