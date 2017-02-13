@@ -3,7 +3,7 @@ a-blog cms theme "echo_zero"
 
 - - - - - - - - - - - - - - - - - - -
 
-version 1.0.1
+version 1.1.0
 
 Author: Seiko Kuchida  
 http://webbingstudio.com/
@@ -108,3 +108,7 @@ echoシリーズ ポータルサイト
 - イベント情報
 - ギャラリー
 - スケジュールカレンダー
+
+## 補足資料
+
+- [モジュール関連のテンプレートについて](./blob/master/readme_include.md)
