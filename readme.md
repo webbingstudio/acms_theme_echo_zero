@@ -111,4 +111,4 @@ echoシリーズ ポータルサイト
 
 ## 補足資料
 
-- [モジュール関連のテンプレートについて](./blob/master/readme_include.md)
+- [モジュール関連のテンプレートについて](https://github.com/webbingstudio/acms_theme_echo_zero/blob/master/readme_include.md)
