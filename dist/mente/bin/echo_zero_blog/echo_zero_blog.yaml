@@ -5840,7 +5840,7 @@ form: ''
 fulltext: ''
   - 
     fulltext_value: |
-      ブログ blog cms-skill.com
+      ブログ blog example.com
       
       noindex
     fulltext_ngram: ''
