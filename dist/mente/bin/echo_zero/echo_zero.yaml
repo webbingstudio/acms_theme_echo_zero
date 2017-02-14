@@ -8741,7 +8741,7 @@ config: ''
     config_blog_id: 1
   - 
     config_key: 'navigation_uri'
-    config_value: '%{HOME_URL}docs/customize/entry-70.html'
+    config_value: '%{HOME_URL}docs/customize/import_full.html'
     config_sort: 9
     config_rule_id: ''
     config_module_id: 65
@@ -9203,14 +9203,14 @@ config: ''
     config_blog_id: 1
   - 
     config_key: 'navigation_uri'
-    config_value: '%{HOME_URL}docs/customize/entry-70.html'
+    config_value: '%{HOME_URL}docs/customize/import_full.html'
     config_sort: 12
     config_rule_id: ''
     config_module_id: 47
     config_blog_id: 1
   - 
     config_key: 'navigation_uri'
-    config_value: '%{HOME_URL}docs/customize/entry-70.html'
+    config_value: '%{HOME_URL}docs/customize/import_full.html'
     config_sort: 12
     config_rule_id: ''
     config_module_id: 50
@@ -20511,7 +20511,7 @@ fulltext: ''
     fulltext_blog_id: 1
   - 
     fulltext_value: |
-      echo_zero echo_zero example.com
+      echo_zero  example.com
       
       noindex https://www.facebook.com/ablogcms/ ablogcms ablogcms 当サイトへのお問い合わせは、こちらのメールフォームからお願いいたします。 ドメイン指定受信を有効にしている場合、事前に当方のドメイン（%{ALIAS_DOMAIN}）を許可してください。 この度は「%{BLOG_NAME}」へお問い合わせいただき、ありがとうございました。 以下の内容で承りました。ご確認ください。 ご不明な点、送信内容の不備などございましたら、本メールに返信ください。 本メールについて心あたりがない場合は、大変お手数ですが 本メールを返送いただきますようお願いいたします。 :::::::::::::::::::::::::::::::::::::::::::::::::: %{BLOG_NAME} %{BLOG_URL}
     fulltext_ngram: ''
