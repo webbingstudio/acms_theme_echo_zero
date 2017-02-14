@@ -74,35 +74,15 @@ category: ''
     category_blog_id: 1
 column: ''
   - 
-    column_id: 292
-    column_sort: 1
-    column_align: 'auto'
-    column_type: 'text'
-    column_attr: ''
-    column_group: ''
-    column_size: ''
-    column_field_1: |
-      <h2 class="font-size-xl">ここはフリーエリアです</h2>
-      
-    column_field_2: 'none'
-    column_field_3: ''
-    column_field_4: ''
-    column_field_5: ''
-    column_field_6: ''
-    column_field_7: ''
-    column_field_8: ''
-    column_entry_id: 35
-    column_blog_id: 1
-  - 
     column_id: 295
-    column_sort: 2
+    column_sort: 1
     column_align: 'hidden'
     column_type: 'text'
     column_attr: ''
     column_group: ''
     column_size: ''
     column_field_1: |
-      これは、トップページの本文を編集するためのエントリーです。「詳細設定」の「一覧に表示する（インデキシング）」のチェックが外れているため、エントリーリスト、サマリーなどの一覧には表示されません。
+      これは、トップページの本文を編集するためのエントリーです。「詳細設定」の「インデキシング（一覧に表示する）」のチェックが外れているため、エントリーリスト、サマリーなどの一覧には表示されません。
       
     column_field_2: 'p'
     column_field_3: ''
@@ -2695,7 +2675,7 @@ column: ''
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
-    column_group: 'col-md-12 col-lg-6'
+    column_group: 'col-sm-12 col-lg-4'
     column_size: ''
     column_field_1: |
       ボタン小
@@ -2753,7 +2733,7 @@ column: ''
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
-    column_group: 'col-md-12 col-lg-6'
+    column_group: 'col-sm-12 col-lg-4'
     column_size: ''
     column_field_1: |
       ボタン中
@@ -2773,7 +2753,7 @@ column: ''
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
-    column_group: 'col-md-12 col-lg-6'
+    column_group: 'col-sm-12 col-lg-4'
     column_size: ''
     column_field_1: |
       ボタン大
@@ -2793,7 +2773,7 @@ column: ''
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
-    column_group: 'col-md-12'
+    column_group: 'col-sm-12'
     column_size: ''
     column_field_1: |
       余白
@@ -3244,7 +3224,7 @@ column: ''
     column_field_4: ''
     column_field_5: ''
     column_field_6: >
-      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6Njp7czoxMDoiYnV0dG9uX3VybCI7YToxOntpOjA7czo0NToiamF2YXNjcmlwdDphbGVydCgi5oq844GX44G+44GX44Gf44Gt77y+77y+Iik7Ijt9czoxMjoiYnV0dG9uX2xhYmVsIjthOjE6e2k6MDtzOjI4OiLjgrXjg5bjgqvjg6njg7wx5bmF5bqD44GS44KLIjt9czoxMToiYnV0dG9uX3NpemUiO2E6MDp7fXM6MTI6ImJ1dHRvbl9ibG9jayI7YToxOntpOjA7czoxOiIxIjt9czoxMjoiYnV0dG9uX2NvbG9yIjthOjE6e2k6MDtzOjEwOiJidG4tc2Vjb25kIjt9czoxMzoiYnV0dG9uX3RhcmdldCI7YTowOnt9fXM6OToiX2FyeUNoaWxkIjthOjA6e31zOjg6Il9hcnlNZXRhIjthOjA6e319
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6Njp7czoxMDoiYnV0dG9uX3VybCI7YToxOntpOjA7czo0NToiamF2YXNjcmlwdDphbGVydCgi5oq844GX44G+44GX44Gf44Gt77y+77y+Iik7Ijt9czoxMjoiYnV0dG9uX2xhYmVsIjthOjE6e2k6MDtzOjMwOiLjg6HjgqTjg7Pjgqvjg6njg7zluYXluoPjgZLjgosiO31zOjExOiJidXR0b25fc2l6ZSI7YTowOnt9czoxMjoiYnV0dG9uX2Jsb2NrIjthOjE6e2k6MDtzOjE6IjEiO31zOjEyOiJidXR0b25fY29sb3IiO2E6MTp7aTowO3M6OToiYnRuLWZpcnN0Ijt9czoxMzoiYnV0dG9uX3RhcmdldCI7YTowOnt9fXM6OToiX2FyeUNoaWxkIjthOjA6e31zOjg6Il9hcnlNZXRhIjthOjA6e319
     column_field_7: ''
     column_field_8: ''
     column_entry_id: 45
@@ -3263,7 +3243,7 @@ column: ''
     column_field_4: ''
     column_field_5: ''
     column_field_6: >
-      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6Njp7czoxMDoiYnV0dG9uX3VybCI7YToxOntpOjA7czo0NToiamF2YXNjcmlwdDphbGVydCgi5oq844GX44G+44GX44Gf44Gt77y+77y+Iik7Ijt9czoxMjoiYnV0dG9uX2xhYmVsIjthOjE6e2k6MDtzOjI4OiLjgrXjg5bjgqvjg6njg7wy5bmF5bqD44GS44KLIjt9czoxMToiYnV0dG9uX3NpemUiO2E6MTp7aTowO3M6NjoiYnRuLWxnIjt9czoxMjoiYnV0dG9uX2Jsb2NrIjthOjE6e2k6MDtzOjE6IjEiO31zOjEyOiJidXR0b25fY29sb3IiO2E6MTp7aTowO3M6OToiYnRuLXRoaXJkIjt9czoxMzoiYnV0dG9uX3RhcmdldCI7YTowOnt9fXM6OToiX2FyeUNoaWxkIjthOjA6e31zOjg6Il9hcnlNZXRhIjthOjA6e319
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6Njp7czoxMDoiYnV0dG9uX3VybCI7YToxOntpOjA7czo0NToiamF2YXNjcmlwdDphbGVydCgi5oq844GX44G+44GX44Gf44Gt77y+77y+Iik7Ijt9czoxMjoiYnV0dG9uX2xhYmVsIjthOjE6e2k6MDtzOjMwOiLjg6HjgqTjg7Pjgqvjg6njg7zluYXluoPjgZLjgosiO31zOjExOiJidXR0b25fc2l6ZSI7YToxOntpOjA7czo2OiJidG4tbGciO31zOjEyOiJidXR0b25fYmxvY2siO2E6MTp7aTowO3M6MToiMSI7fXM6MTI6ImJ1dHRvbl9jb2xvciI7YToxOntpOjA7czo5OiJidG4tZmlyc3QiO31zOjEzOiJidXR0b25fdGFyZ2V0IjthOjA6e319czo5OiJfYXJ5Q2hpbGQiO2E6MDp7fXM6ODoiX2FyeU1ldGEiO2E6MDp7fX0=
     column_field_7: ''
     column_field_8: ''
     column_entry_id: 45
@@ -4428,14 +4408,14 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 750
-    column_sort: 2
+    column_sort: 1
     column_align: 'hidden'
     column_type: 'text'
     column_attr: ''
     column_group: ''
     column_size: ''
     column_field_1: |
-      これは、トップページの本文を編集するためのエントリーです。「詳細設定」の「一覧に表示する（インデキシング）」のチェックが外れているため、エントリーリスト、サマリーなどの一覧には表示されません。
+      これは、トップページの本文を編集するためのエントリーです。「詳細設定」の「インデキシング（一覧に表示する）」のチェックが外れているため、エントリーリスト、サマリーなどの一覧には表示されません。
       
     column_field_2: 'p'
     column_field_3: ''
@@ -4445,64 +4425,19 @@ column: ''
     column_field_7: ''
     column_field_8: ''
     column_entry_id: 35
-    column_blog_id: 1
-  - 
-    column_id: 751
-    column_sort: 3
-    column_align: 'auto'
-    column_type: 'text'
-    column_attr: ''
-    column_group: ''
-    column_size: ''
-    column_field_1: |
-      吾輩は猫である。名前はまだ無い。
-      どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
-      
-      吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。
-      この書生というのは時々我々を捕えて煮て食うという話である。
-      しかしその当時は何という考もなかったから別段恐しいとも思わなかった。
-      ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。
-    column_field_2: 'p'
-    column_field_3: ''
-    column_field_4: ''
-    column_field_5: ''
-    column_field_6: ''
-    column_field_7: ''
-    column_field_8: ''
-    column_entry_id: 35
-    column_blog_id: 1
-  - 
-    column_id: 754
-    column_sort: 1
-    column_align: 'auto'
-    column_type: 'text'
-    column_attr: ''
-    column_group: ''
-    column_size: ''
-    column_field_1: |
-      <h2 class="font-size-xl">ここはフリーエリアです</h2>
-      
-    column_field_2: 'none'
-    column_field_3: ''
-    column_field_4: ''
-    column_field_5: ''
-    column_field_6: ''
-    column_field_7: ''
-    column_field_8: ''
-    column_entry_id: 36
     column_blog_id: 1
   - 
     column_id: 755
-    column_sort: 3
+    column_sort: 6
     column_align: 'center'
     column_type: 'map'
     column_attr: ''
-    column_group: ''
+    column_group: 'col-sm-12 col-lg-8'
     column_size: '960x360'
-    column_field_1: '私たちは時計台の鐘が鳴る札幌の市民です'
+    column_field_1: ''
     column_field_2: 43.062096
     column_field_3: 141.354376
-    column_field_4: 13
+    column_field_4: 14
     column_field_5: ''
     column_field_6: ''
     column_field_7: ''
@@ -4511,7 +4446,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 758
-    column_sort: 30
+    column_sort: 31
     column_align: 'center'
     column_type: 'image'
     column_attr: ''
@@ -4529,7 +4464,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 759
-    column_sort: 25
+    column_sort: 26
     column_align: 'center'
     column_type: 'image'
     column_attr: ''
@@ -4547,7 +4482,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 760
-    column_sort: 36
+    column_sort: 37
     column_align: 'center'
     column_type: 'image'
     column_attr: ''
@@ -4565,7 +4500,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 761
-    column_sort: 34
+    column_sort: 35
     column_align: 'center'
     column_type: 'image'
     column_attr: ''
@@ -4583,7 +4518,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 762
-    column_sort: 45
+    column_sort: 46
     column_align: 'center'
     column_type: 'image'
     column_attr: ''
@@ -4601,7 +4536,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 763
-    column_sort: 20
+    column_sort: 21
     column_align: 'center'
     column_type: 'image'
     column_attr: ''
@@ -4619,7 +4554,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 764
-    column_sort: 15
+    column_sort: 16
     column_align: 'center'
     column_type: 'image'
     column_attr: ''
@@ -4637,7 +4572,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 765
-    column_sort: 13
+    column_sort: 14
     column_align: 'center'
     column_type: 'image'
     column_attr: ''
@@ -4655,7 +4590,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 766
-    column_sort: 10
+    column_sort: 11
     column_align: 'center'
     column_type: 'image'
     column_attr: ''
@@ -4673,7 +4608,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 767
-    column_sort: 8
+    column_sort: 9
     column_align: 'center'
     column_type: 'image'
     column_attr: ''
@@ -4691,7 +4626,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 768
-    column_sort: 3
+    column_sort: 4
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -4711,7 +4646,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 769
-    column_sort: 7
+    column_sort: 8
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -4731,7 +4666,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 770
-    column_sort: 12
+    column_sort: 13
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -4751,11 +4686,11 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 771
-    column_sort: 19
+    column_sort: 20
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
-    column_group: ''
+    column_group: 'col-sm-12'
     column_size: ''
     column_field_1: |
       表示を確認する
@@ -4771,7 +4706,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 772
-    column_sort: 29
+    column_sort: 30
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -4791,7 +4726,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 773
-    column_sort: 24
+    column_sort: 25
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -4811,7 +4746,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 774
-    column_sort: 33
+    column_sort: 34
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -4831,7 +4766,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 792
-    column_sort: 1
+    column_sort: 2
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -4851,7 +4786,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 793
-    column_sort: 2
+    column_sort: 3
     column_align: 'auto'
     column_type: 'text'
     column_attr: ' class="box box-first"'
@@ -4871,7 +4806,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 794
-    column_sort: 4
+    column_sort: 5
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -4892,7 +4827,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 795
-    column_sort: 5
+    column_sort: 6
     column_align: 'auto'
     column_type: 'text'
     column_attr: ' class="table"'
@@ -4914,7 +4849,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 796
-    column_sort: 6
+    column_sort: 7
     column_align: 'auto'
     column_type: 'text'
     column_attr: ' class="box"'
@@ -4934,7 +4869,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 797
-    column_sort: 9
+    column_sort: 10
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -4956,7 +4891,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 798
-    column_sort: 11
+    column_sort: 12
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -4976,7 +4911,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 799
-    column_sort: 14
+    column_sort: 15
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -4997,7 +4932,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 800
-    column_sort: 16
+    column_sort: 17
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5020,7 +4955,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 801
-    column_sort: 18
+    column_sort: 19
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5029,7 +4964,7 @@ column: ''
     column_field_1: |
       新規サイトの場合は、3つすべての項目にチェックを入れることを強く推薦します。
       
-      既に作成したモジュールIDを破棄したくない場合は、2つ目の項目（モジュールID・ルールの破棄）をチェックしないこともできますが、echo_zeroと重複しているモジュールIDがある場合、動作に問題が生じる可能性があります。
+      2つ目の項目（モジュールID・ルールの破棄）をチェックしなかった場合、<strong>重複しているモジュールID・編集設定があると表示に問題が生じます。</strong>インポート後に別途、統合が必要となります。
       
       すでに投稿したカテゴリー・エントリーを消したくない場合は、3つ目の項目（エントリー・カテゴリーの破棄）にチェックを入れなくても構いませんが、ナビゲーションやカテゴリー設定の修正が必要となります。
     column_field_2: 'p'
@@ -5043,7 +4978,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 802
-    column_sort: 21
+    column_sort: 22
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5064,7 +4999,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 803
-    column_sort: 22
+    column_sort: 23
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5084,7 +5019,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 804
-    column_sort: 26
+    column_sort: 27
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5107,7 +5042,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 805
-    column_sort: 27
+    column_sort: 28
     column_align: 'auto'
     column_type: 'text'
     column_attr: ' class="table table-3-9"'
@@ -5127,7 +5062,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 806
-    column_sort: 28
+    column_sort: 29
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5147,14 +5082,14 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 822
-    column_sort: 17
+    column_sort: 18
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
-    column_group: ''
+    column_group: 'box box-first'
     column_size: ''
     column_field_1: |
-      コンフィグ関連のインポート設定に関する補足
+      コンフィグ関連のインポート設定の補足
       
     column_field_2: 'h4'
     column_field_3: ''
@@ -5167,7 +5102,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 823
-    column_sort: 23
+    column_sort: 24
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5187,7 +5122,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 824
-    column_sort: 31
+    column_sort: 32
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5210,7 +5145,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 825
-    column_sort: 32
+    column_sort: 33
     column_align: 'auto'
     column_type: 'text'
     column_attr: ' class="box"'
@@ -5230,7 +5165,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 826
-    column_sort: 35
+    column_sort: 36
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5251,7 +5186,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 827
-    column_sort: 37
+    column_sort: 38
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5271,15 +5206,15 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 828
-    column_sort: 38
+    column_sort: 39
     column_align: 'auto'
     column_type: 'text'
     column_attr: ' class="box"'
     column_group: ''
     column_size: ''
     column_field_1: |
-      「ピックアップ」は、公式テーマ（Site・Simple）との互換目的で設けられているフィールドです。echo_zeroではチェックを入れてもサイト内には反映されません。ピックアップ機能を利用する場合は、別途モジュールIDに条件を追加してください。
-      
+      「ピックアップ」は、公式テーマ（Site・Simple）との互換目的で設けられているフィールドです。echo_zeroではトップページ「echoの特徴」で使用されています。
+      他のモジュールでピックアップ機能を利用する場合は、モジュールIDにフィールド条件「<strong>pickup/true</strong>」を追加してください。
     column_field_2: 'p'
     column_field_3: ''
     column_field_4: ''
@@ -5291,7 +5226,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 829
-    column_sort: 39
+    column_sort: 40
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5311,7 +5246,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 830
-    column_sort: 40
+    column_sort: 41
     column_align: 'center'
     column_type: 'image'
     column_attr: ''
@@ -5329,7 +5264,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 831
-    column_sort: 41
+    column_sort: 42
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5349,7 +5284,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 832
-    column_sort: 42
+    column_sort: 43
     column_align: 'center'
     column_type: 'image'
     column_attr: ''
@@ -5367,7 +5302,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 833
-    column_sort: 43
+    column_sort: 44
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5388,7 +5323,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 834
-    column_sort: 44
+    column_sort: 45
     column_align: 'auto'
     column_type: 'text'
     column_attr: ' class="box"'
@@ -5408,7 +5343,7 @@ column: ''
     column_blog_id: 1
   - 
     column_id: 835
-    column_sort: 46
+    column_sort: 47
     column_align: 'auto'
     column_type: 'text'
     column_attr: ''
@@ -5425,6 +5360,1605 @@ column: ''
     column_field_7: ''
     column_field_8: ''
     column_entry_id: 70
+    column_blog_id: 1
+  - 
+    column_id: 1159
+    column_sort: 2
+    column_align: 'auto'
+    column_type: 'custom_imgtext'
+    column_attr: ''
+    column_group: 'col-sm-12 col-lg-8'
+    column_size: ''
+    column_field_1: ''
+    column_field_2: ''
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: >
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6Mjg6e3M6MTI6ImltZ3RleHRfdHlwZSI7YToxOntpOjA7czoxMDoiaW1ndGV4dC0wMSI7fXM6MTI6ImltZ3RleHRfc2l6ZSI7YTowOnt9czoxMToiaW1ndGV4dF9pbWciO2E6MDp7fXM6MTE6ImltZ3RleHRfdXJsIjthOjE6e2k6MDtzOjMwOiIuL2RvY3MvY3VzdG9taXplL3RvcF9mcmVlLmh0bWwiO31zOjE1OiJpbWd0ZXh0X2hlYWRpbmciO2E6MTp7aTowO3M6Mjc6IuODleODquODvOOCqOODquOCouOBrue3qOmbhiI7fXM6MTk6ImltZ3RleHRfaGVhZGluZ190YWciO2E6MDp7fXM6MTI6ImltZ3RleHRfYm9keSI7YToxOntpOjA7czoyMDI6IuOBk+OBruOCu+OCr+OCt+ODp+ODs+OBr+OCqOODs+ODiOODquODvOOBqOOBl+OBpue3qOmbhuOBmeOCi+OBk+OBqOOBjOOBp+OBjeOBvuOBmeOAguOBleOBguOAgWEtYmxvZyBjbXPjga7lpJrlvanjgarjg6bjg4vjg4Pjg4jjgpLkuKbjgbnjgabjgIHoh6rnlLHjgafnvo7jgZfjgYTjgrPjg7Pjg4bjg7Pjg4TjgpLkvZzmiJDjgZfjgb7jgZfjgofjgYbvvIEiO31zOjE2OiJpbWd0ZXh0X2ltZ0BwYXRoIjthOjE6e2k6MDtzOjQ3OiIwMDIvMjAxNzAyL2VhMTFkNDIxNWE1NTAxZDQ2NDRjY2ZmOGY5NTI1MmVlLmpwZyI7fXM6MTM6ImltZ3RleHRfaW1nQHgiO2E6MTp7aTowO2k6MTIwMDt9czoxMzoiaW1ndGV4dF9pbWdAeSI7YToxOntpOjA7aTo4MDA7fXM6MTU6ImltZ3RleHRfaW1nQGFsdCI7YToxOntpOjA7czowOiIiO31zOjIwOiJpbWd0ZXh0X2ltZ0BmaWxlU2l6ZSI7YToxOntpOjA7aTo0OTExMDc7fXM6MjE6ImltZ3RleHRfaW1nQGxhcmdlUGF0aCI7YToxOntpOjA7czowOiIiO31zOjE4OiJpbWd0ZXh0X2ltZ0BsYXJnZVgiO2E6MTp7aTowO3M6MDoiIjt9czoxODoiaW1ndGV4dF9pbWdAbGFyZ2VZIjthOjE6e2k6MDtzOjA6IiI7fXM6MjA6ImltZ3RleHRfaW1nQGxhcmdlQWx0IjthOjE6e2k6MDtzOjA6IiI7fXM6MjU6ImltZ3RleHRfaW1nQGxhcmdlRmlsZVNpemUiO2E6MTp7aTowO3M6MDoiIjt9czoyMDoiaW1ndGV4dF9pbWdAdGlueVBhdGgiO2E6MTp7aTowO3M6MDoiIjt9czoxNzoiaW1ndGV4dF9pbWdAdGlueVgiO2E6MTp7aTowO3M6MDoiIjt9czoxNzoiaW1ndGV4dF9pbWdAdGlueVkiO2E6MTp7aTowO3M6MDoiIjt9czoxOToiaW1ndGV4dF9pbWdAdGlueUFsdCI7YToxOntpOjA7czowOiIiO31zOjI0OiJpbWd0ZXh0X2ltZ0B0aW55RmlsZVNpemUiO2E6MTp7aTowO3M6MDoiIjt9czoyMjoiaW1ndGV4dF9pbWdAc3F1YXJlUGF0aCI7YToxOntpOjA7czowOiIiO31zOjE5OiJpbWd0ZXh0X2ltZ0BzcXVhcmVYIjthOjE6e2k6MDtzOjA6IiI7fXM6MTk6ImltZ3RleHRfaW1nQHNxdWFyZVkiO2E6MTp7aTowO3M6MDoiIjt9czoyMToiaW1ndGV4dF9pbWdAc3F1YXJlQWx0IjthOjE6e2k6MDtzOjA6IiI7fXM6MjY6ImltZ3RleHRfaW1nQHNxdWFyZUZpbGVTaXplIjthOjE6e2k6MDtzOjA6IiI7fXM6MTg6ImltZ3RleHRfaW1nQHNlY3JldCI7YToxOntpOjA7czowOiIiO319czo5OiJfYXJ5Q2hpbGQiO2E6MDp7fXM6ODoiX2FyeU1ldGEiO2E6MDp7fX0=
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 35
+    column_blog_id: 1
+  - 
+    column_id: 1167
+    column_sort: 3
+    column_align: 'auto'
+    column_type: 'custom_imgtext'
+    column_attr: ''
+    column_group: 'col-sm-12 col-lg-4'
+    column_size: ''
+    column_field_1: ''
+    column_field_2: ''
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: >
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6Mjg6e3M6MTI6ImltZ3RleHRfdHlwZSI7YToxOntpOjA7czoxMDoiaW1ndGV4dC0wMSI7fXM6MTI6ImltZ3RleHRfc2l6ZSI7YToxOntpOjA7czoxOiIxIjt9czoxMToiaW1ndGV4dF9pbWciO2E6MDp7fXM6MTE6ImltZ3RleHRfdXJsIjthOjE6e2k6MDtzOjI0OiIuL2VjaG8vaW50cm9kdWN0aW9uLmh0bWwiO31zOjE1OiJpbWd0ZXh0X2hlYWRpbmciO2E6MTp7aTowO3M6MTM6ImVjaG/jgajjga/vvJ8iO31zOjE5OiJpbWd0ZXh0X2hlYWRpbmdfdGFnIjthOjE6e2k6MDtzOjI6ImgzIjt9czoxMjoiaW1ndGV4dF9ib2R5IjthOjA6e31zOjE2OiJpbWd0ZXh0X2ltZ0BwYXRoIjthOjE6e2k6MDtzOjQ3OiIwMDIvMjAxNzAyLzQxOTVjMzE1YWQzNzgwNWMzMDVhNjUxZTA4MDk5ZGM1LmpwZyI7fXM6MTM6ImltZ3RleHRfaW1nQHgiO2E6MTp7aTowO2k6OTYwO31zOjEzOiJpbWd0ZXh0X2ltZ0B5IjthOjE6e2k6MDtpOjY0MDt9czoxNToiaW1ndGV4dF9pbWdAYWx0IjthOjE6e2k6MDtzOjA6IiI7fXM6MjA6ImltZ3RleHRfaW1nQGZpbGVTaXplIjthOjE6e2k6MDtpOjM3MDc4OTt9czoyMToiaW1ndGV4dF9pbWdAbGFyZ2VQYXRoIjthOjE6e2k6MDtzOjA6IiI7fXM6MTg6ImltZ3RleHRfaW1nQGxhcmdlWCI7YToxOntpOjA7czowOiIiO31zOjE4OiJpbWd0ZXh0X2ltZ0BsYXJnZVkiO2E6MTp7aTowO3M6MDoiIjt9czoyMDoiaW1ndGV4dF9pbWdAbGFyZ2VBbHQiO2E6MTp7aTowO3M6MDoiIjt9czoyNToiaW1ndGV4dF9pbWdAbGFyZ2VGaWxlU2l6ZSI7YToxOntpOjA7czowOiIiO31zOjIwOiJpbWd0ZXh0X2ltZ0B0aW55UGF0aCI7YToxOntpOjA7czowOiIiO31zOjE3OiJpbWd0ZXh0X2ltZ0B0aW55WCI7YToxOntpOjA7czowOiIiO31zOjE3OiJpbWd0ZXh0X2ltZ0B0aW55WSI7YToxOntpOjA7czowOiIiO31zOjE5OiJpbWd0ZXh0X2ltZ0B0aW55QWx0IjthOjE6e2k6MDtzOjA6IiI7fXM6MjQ6ImltZ3RleHRfaW1nQHRpbnlGaWxlU2l6ZSI7YToxOntpOjA7czowOiIiO31zOjIyOiJpbWd0ZXh0X2ltZ0BzcXVhcmVQYXRoIjthOjE6e2k6MDtzOjA6IiI7fXM6MTk6ImltZ3RleHRfaW1nQHNxdWFyZVgiO2E6MTp7aTowO3M6MDoiIjt9czoxOToiaW1ndGV4dF9pbWdAc3F1YXJlWSI7YToxOntpOjA7czowOiIiO31zOjIxOiJpbWd0ZXh0X2ltZ0BzcXVhcmVBbHQiO2E6MTp7aTowO3M6MDoiIjt9czoyNjoiaW1ndGV4dF9pbWdAc3F1YXJlRmlsZVNpemUiO2E6MTp7aTowO3M6MDoiIjt9czoxODoiaW1ndGV4dF9pbWdAc2VjcmV0IjthOjE6e2k6MDtzOjA6IiI7fX1zOjk6Il9hcnlDaGlsZCI7YTowOnt9czo4OiJfYXJ5TWV0YSI7YTowOnt9fQ==
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 35
+    column_blog_id: 1
+  - 
+    column_id: 1168
+    column_sort: 4
+    column_align: 'auto'
+    column_type: 'custom_imgtext'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: ''
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: >
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6Mjg6e3M6MTI6ImltZ3RleHRfdHlwZSI7YToxOntpOjA7czoxMDoiaW1ndGV4dC0wMSI7fXM6MTI6ImltZ3RleHRfc2l6ZSI7YToxOntpOjA7czoxOiIxIjt9czoxMToiaW1ndGV4dF9pbWciO2E6MDp7fXM6MTE6ImltZ3RleHRfdXJsIjthOjE6e2k6MDtzOjMzOiIuL2RvY3MvY3VzdG9taXplL2ltcG9ydF9mdWxsLmh0bWwiO31zOjE1OiJpbWd0ZXh0X2hlYWRpbmciO2E6MTp7aTowO3M6MTQ6IuacgOWIneOBrjE15YiGIjt9czoxOToiaW1ndGV4dF9oZWFkaW5nX3RhZyI7YToxOntpOjA7czoyOiJoMyI7fXM6MTI6ImltZ3RleHRfYm9keSI7YTowOnt9czoxNjoiaW1ndGV4dF9pbWdAcGF0aCI7YToxOntpOjA7czo0NzoiMDAyLzIwMTcwMi85ZTAyZmMzMGE2ZDUyMjE0MjU2ZTIwNzkwNjRkNmYxMi5qcGciO31zOjEzOiJpbWd0ZXh0X2ltZ0B4IjthOjE6e2k6MDtpOjk2MDt9czoxMzoiaW1ndGV4dF9pbWdAeSI7YToxOntpOjA7aTo2NDA7fXM6MTU6ImltZ3RleHRfaW1nQGFsdCI7YToxOntpOjA7czowOiIiO31zOjIwOiJpbWd0ZXh0X2ltZ0BmaWxlU2l6ZSI7YToxOntpOjA7aToyMDUxODU7fXM6MjE6ImltZ3RleHRfaW1nQGxhcmdlUGF0aCI7YToxOntpOjA7czowOiIiO31zOjE4OiJpbWd0ZXh0X2ltZ0BsYXJnZVgiO2E6MTp7aTowO3M6MDoiIjt9czoxODoiaW1ndGV4dF9pbWdAbGFyZ2VZIjthOjE6e2k6MDtzOjA6IiI7fXM6MjA6ImltZ3RleHRfaW1nQGxhcmdlQWx0IjthOjE6e2k6MDtzOjA6IiI7fXM6MjU6ImltZ3RleHRfaW1nQGxhcmdlRmlsZVNpemUiO2E6MTp7aTowO3M6MDoiIjt9czoyMDoiaW1ndGV4dF9pbWdAdGlueVBhdGgiO2E6MTp7aTowO3M6MDoiIjt9czoxNzoiaW1ndGV4dF9pbWdAdGlueVgiO2E6MTp7aTowO3M6MDoiIjt9czoxNzoiaW1ndGV4dF9pbWdAdGlueVkiO2E6MTp7aTowO3M6MDoiIjt9czoxOToiaW1ndGV4dF9pbWdAdGlueUFsdCI7YToxOntpOjA7czowOiIiO31zOjI0OiJpbWd0ZXh0X2ltZ0B0aW55RmlsZVNpemUiO2E6MTp7aTowO3M6MDoiIjt9czoyMjoiaW1ndGV4dF9pbWdAc3F1YXJlUGF0aCI7YToxOntpOjA7czowOiIiO31zOjE5OiJpbWd0ZXh0X2ltZ0BzcXVhcmVYIjthOjE6e2k6MDtzOjA6IiI7fXM6MTk6ImltZ3RleHRfaW1nQHNxdWFyZVkiO2E6MTp7aTowO3M6MDoiIjt9czoyMToiaW1ndGV4dF9pbWdAc3F1YXJlQWx0IjthOjE6e2k6MDtzOjA6IiI7fXM6MjY6ImltZ3RleHRfaW1nQHNxdWFyZUZpbGVTaXplIjthOjE6e2k6MDtzOjA6IiI7fXM6MTg6ImltZ3RleHRfaW1nQHNlY3JldCI7YToxOntpOjA7czowOiIiO319czo5OiJfYXJ5Q2hpbGQiO2E6MDp7fXM6ODoiX2FyeU1ldGEiO2E6MDp7fX0=
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 35
+    column_blog_id: 1
+  - 
+    column_id: 1171
+    column_sort: 1
+    column_align: 'center'
+    column_type: 'image'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: 'echo_zero/201702/5fd55eac492b27fd21357cbfb032165b.jpg'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: 'column-responsive-auto'
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 70
+    column_blog_id: 1
+  - 
+    column_id: 1173
+    column_sort: 2
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ' class="box"'
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      ここから地図までが、2つめのフリーエリアです。a-blog cmsは、地図・動画・表・網掛けなどを、難しい操作を行わずに作成することができます。もちろんタブレット・スマートフォンにも対応しています！
+      
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 36
+    column_blog_id: 1
+  - 
+    column_id: 1174
+    column_sort: 3
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: 'col-sm-12 col-lg-4'
+    column_size: ''
+    column_field_1: |
+      制作者について
+      
+    column_field_2: 'h3'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 36
+    column_blog_id: 1
+  - 
+    column_id: 1175
+    column_sort: 5
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      ウェビングスタジオは、札幌のフリーランスウェブエンジニアです。
+      名古屋発の純国産CMS「<a href="https://www.a-blogcms.jp/">a-blog cms</a>（エーブログ・シーエムエス）」の技術情報の共有を行っています。
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 36
+    column_blog_id: 1
+  - 
+    column_id: 1181
+    column_sort: 4
+    column_align: 'center'
+    column_type: 'image'
+    column_attr: ''
+    column_group: ''
+    column_size: 'width600'
+    column_field_1: ''
+    column_field_2: 'echo_zero/201702/8fecbc7c09fddc11012e302077f6c4ce.png'
+    column_field_3: ''
+    column_field_4: 'うぇびんのアイコン'
+    column_field_5: 'column-responsive-xs-6'
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 36
+    column_blog_id: 1
+  - 
+    column_id: 1185
+    column_sort: 1
+    column_align: 'center'
+    column_type: 'image'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: 'echo_zero/201702/2cf6f2e03529ca34ddebf3a43df6f602.jpg'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: 'column-responsive-auto'
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 107
+    column_blog_id: 1
+  - 
+    column_id: 1186
+    column_sort: 2
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      「echo（エコー）」は、プロの技術者による本格的なウェブサイトへの利用を想定した、CMSテーマプロジェクトです。
+      まずプロトタイプを作成し、デザイン確定後に外観を作り直す…という昨今の制作フローに、特に適しています。
+      
+      今ご覧になっているテーマは、a-blog cms用のテーマ「**echo_zero**」です。
+    column_field_2: 'markdown'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 107
+    column_blog_id: 1
+  - 
+    column_id: 1189
+    column_sort: 4
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      ### なぜ、配布テーマは使いにくいのでしょうか
+      
+    column_field_2: 'markdown'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 107
+    column_blog_id: 1
+  - 
+    column_id: 1197
+    column_sort: 5
+    column_align: 'left'
+    column_type: 'image'
+    column_attr: ''
+    column_group: ''
+    column_size: 'width480'
+    column_field_1: ''
+    column_field_2: 'echo_zero/201702/a43cdb2540928cdf8da8e53566ace10e.jpg'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: 'column-responsive-sm-4'
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 107
+    column_blog_id: 1
+  - 
+    column_id: 1198
+    column_sort: 6
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      プロの現場でも、既存テーマをベースにしたサイト制作が行われることがあります。
+      予算・リソース・運用戦略など様々な理由からです。
+      
+      しかし、実際にはゼロから制作した場合と同じくらい手数がかかってしまったり、デザインや機能を妥協してしまうことも少なくありません。
+      
+      一般に配布されているテーマは、ウェブ制作の知識が少ない一般ユーザーの利用を想定しています。このため、**プロレベルの大胆なデザインや、長い制作期間のうちに変化する要件に柔軟に対応できない**のです。
+    column_field_2: 'markdown'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 107
+    column_blog_id: 1
+  - 
+    column_id: 1203
+    column_sort: 7
+    column_align: 'center'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      ### テーマをゼロから見直しました
+      
+      作者は、プロのデザイナー・コーダーと協力してのCMSサイト構築を専門としています。200件以上のプロジェクトに関わった経験から、以下のポイントを重視して、テーマ構造を見直しました。
+      
+      1. コーポーレートサイトで頻繁に求められる機能の絞り込み
+      2. Sass・Gulpなどの ビルドツールとの（難解すぎない）連携
+      3. デザイナー・コーダー・エンジニアの共同制作への配慮
+      4. 機能の追加よりも、機能を取り除く容易さを考慮
+      
+      また、導入手順・よくあるカスタマイズのドキュメントを公開することで、学習コスト、社内での意思共有コストの軽減を行っています。
+      
+      ### テーマ名の由来
+      
+      よく聞かれますが、実はあまり意味はありません。echoという単語の響きが好きだからです（笑）
+      ただ「エコー＝打てば響く」「echo＝PHPベースのCMSの根幹となるメソッド」という含みも持たせています。
+      
+      echoがあなたの制作・スキルアップの一助となれば幸いです。
+    column_field_2: 'markdown'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 107
+    column_blog_id: 1
+  - 
+    column_id: 1207
+    column_sort: 3
+    column_align: 'auto'
+    column_type: 'custom_spacer'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: ''
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: >
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6MTp7czoxMToic3BhY2VyX3NpemUiO2E6MTp7aTowO3M6NjoicC10LWxnIjt9fXM6OToiX2FyeUNoaWxkIjthOjA6e31zOjg6Il9hcnlNZXRhIjthOjA6e319
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 107
+    column_blog_id: 1
+  - 
+    column_id: 1218
+    column_sort: 1
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      a-blog cms版「**echo_zero**」の最新バージョンはGitHubからダウンロードできます。
+      
+      - [https://github.com/webbingstudio/acms_theme_echo_zero](https://github.com/webbingstudio/acms_theme_echo_zero)
+      
+      非商用・検証目的の場合は無償でご利用いただけます。商用利用はライセンスをご購入ください（1ドメイン3,000円＋日本国消費税）。
+      ドネーションも歓迎いたします。開発・修正のモチベーションにつながります。
+    column_field_2: 'markdown'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 108
+    column_blog_id: 1
+  - 
+    column_id: 1219
+    column_sort: 2
+    column_align: 'auto'
+    column_type: 'custom_spacer'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: ''
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: >
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6MTp7czoxMToic3BhY2VyX3NpemUiO2E6MTp7aTowO3M6NjoicC10LWxnIjt9fXM6OToiX2FyeUNoaWxkIjthOjA6e31zOjg6Il9hcnlNZXRhIjthOjA6e319
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 108
+    column_blog_id: 1
+  - 
+    column_id: 1220
+    column_sort: 3
+    column_align: 'auto'
+    column_type: 'custom_button'
+    column_attr: ''
+    column_group: 'col-sm-12 col-lg-6 col-xl-5 col-xl-push-1'
+    column_size: ''
+    column_field_1: ''
+    column_field_2: ''
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: >
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6Njp7czoxMDoiYnV0dG9uX3VybCI7YToxOntpOjA7czoyNjoiaHR0cDovL2Ntcy1za2lsbC5jb20vZWNoby8iO31zOjEyOiJidXR0b25fbGFiZWwiO2E6MTp7aTowO3M6Mzc6ImVjaG/jg53jg7zjgr/jg6vjgrXjgqTjg4jjga/jgZPjgaHjgokiO31zOjExOiJidXR0b25fc2l6ZSI7YToxOntpOjA7czo2OiJidG4tbGciO31zOjEyOiJidXR0b25fYmxvY2siO2E6MTp7aTowO3M6MToiMSI7fXM6MTI6ImJ1dHRvbl9jb2xvciI7YToxOntpOjA7czo5OiJidG4tZmlyc3QiO31zOjEzOiJidXR0b25fdGFyZ2V0IjthOjE6e2k6MDtzOjY6Il9ibGFuayI7fX1zOjk6Il9hcnlDaGlsZCI7YTowOnt9czo4OiJfYXJ5TWV0YSI7YTowOnt9fQ==
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 108
+    column_blog_id: 1
+  - 
+    column_id: 1221
+    column_sort: 4
+    column_align: 'auto'
+    column_type: 'custom_button'
+    column_attr: ''
+    column_group: 'col-sm-12 col-lg-6 col-xl-5 col-xl-push-1'
+    column_size: ''
+    column_field_1: ''
+    column_field_2: ''
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: >
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6Njp7czoxMDoiYnV0dG9uX3VybCI7YToxOntpOjA7czoyNzoiaHR0cDovL3N0b3JlLmNtcy1za2lsbC5jb20vIjt9czoxMjoiYnV0dG9uX2xhYmVsIjthOjE6e2k6MDtzOjMzOiLjg6njgqTjgrvjg7Pjgrnos7zlhaXjga/jgZPjgaHjgokiO31zOjExOiJidXR0b25fc2l6ZSI7YToxOntpOjA7czo2OiJidG4tbGciO31zOjEyOiJidXR0b25fYmxvY2siO2E6MTp7aTowO3M6MToiMSI7fXM6MTI6ImJ1dHRvbl9jb2xvciI7YToxOntpOjA7czo5OiJidG4tdGhpcmQiO31zOjEzOiJidXR0b25fdGFyZ2V0IjthOjE6e2k6MDtzOjY6Il9ibGFuayI7fX1zOjk6Il9hcnlDaGlsZCI7YTowOnt9czo4OiJfYXJ5TWV0YSI7YTowOnt9fQ==
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 108
+    column_blog_id: 1
+  - 
+    column_id: 1228
+    column_sort: 5
+    column_align: 'auto'
+    column_type: 'custom_spacer'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: ''
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: >
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6MTp7czoxMToic3BhY2VyX3NpemUiO2E6MTp7aTowO3M6NjoicC10LWxnIjt9fXM6OToiX2FyeUNoaWxkIjthOjA6e31zOjg6Il9hcnlNZXRhIjthOjA6e319
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 108
+    column_blog_id: 1
+  - 
+    column_id: 1229
+    column_sort: 6
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: 'col-sm-12'
+    column_size: ''
+    column_field_1: |
+      当リポジトリで公開されているファイルに関しては、MITライセンスを適用します。
+      
+      [The MIT License (MIT) | Open Source Initiative](https://opensource.org/licenses/MIT)
+      
+      下記のJavaScriptライブラリに依存しています。これらもMITライセンスとなります。
+      この場を借りて、すばらしいライブラリを提供してくださった開発者の皆様に感謝申し上げます。
+      
+      - [slick](http://kenwheeler.github.io/slick/)
+      - [hiraku.js](https://appleple.github.io/hiraku/)
+      - [Rem-unit-polyfill by chuckcarpenter](http://chuckcarpenter.github.io/REM-unit-polyfill/)
+    column_field_2: 'markdown'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 108
+    column_blog_id: 1
+  - 
+    column_id: 1232
+    column_sort: 1
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      echo_zeroの外観に関する機能です。解説ページを作成次第、順次リンクを追加していきます。
+      
+      ###  1カラム・2カラムレイアウト
+      
+      このテーマは、a-blog cmsの「[レイアウト機能](https://developer.a-blogcms.jp/document/layout/)」には対応していません。しかし、テンプレート構造を整理することで、1カラムレイアウトと2カラムレイアウトを容易に切り替えることができます。
+    column_field_2: 'markdown'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 109
+    column_blog_id: 1
+  - 
+    column_id: 1234
+    column_sort: 1
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      このテーマの、内部（META・投稿画面・管理ページ）に関する機能です。解説ページを作成次第、順次リンクを追加していきます。
+      
+      ### カスタムユニットの追加
+      
+      a-blog cmsのデフォルトユニットの他に、「ボタン」「余白」「画像＋テキスト」ユニットを利用できます。
+      
+      ### a-blog cmsの管理ボックスを改良
+      
+      a-blog cmsは投稿画面をカテゴリーごとにカスタマイズできますが、一定のルールに従ったURLへ移動しなければ有効となりません。このテーマでは管理ボックスの「エントリーの作成」を改良し、カテゴリー別の投稿画面へ簡単に移動できます。
+      
+      ### a-blog cmsの投稿画面を改良
+      
+      投稿画面の各項目のうち、本来はテーマ側で編集することが困難な「カテゴリー」「タグ」などの表示状態を、管理ページ「ブログ＞カスタム設定」から編集することができます。
+      
+      ### 投稿画面の最適化
+      
+      a-blog cmsは、制作しているサイトのCSSルールによっては、投稿画面が大きく崩れてしまうことがあります。このテーマでは、[衝突を修正するための補正CSS](https://gist.github.com/webbingstudio/ca0561a8881d694715165dd66ff848f3)を追加しています。
+      
+      ### ブログ設定の継承
+      
+      このテーマは、ブログやイベントなどの時系列コンテンツを「子ブログ」とする、**マルチブログ**を前提としており、親ブログの以下のような設定を、子ブログにも引き継ぐことができます。もちろん、子ブログを切り離し、別サイトとして扱うことも簡単にできます。
+      
+      - 親ブログの名称（サイト名）
+      - グローバルナビゲーション
+      - SNS関連の設定
+      - OG:image
+      
+      ### 公式テーマとの互換
+      
+      META情報・ピックアップなどの重要なカスタムフィールドを、公式テーマ（Site・Simple）と同じ名称としています。このため、運用中のテーマを公式からecho_zeroへ変更したり、戻すことができます。
+    column_field_2: 'markdown'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 110
+    column_blog_id: 1
+  - 
+    column_id: 1235
+    column_sort: 1
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      このテーマは、プロの制作者のためのテーマです。作者の実際の経験をもとに、開発者を支える様々な配慮を行っています。とても細かい話ですがご笑覧ください。
+      
+      ### モジュールの詳細設定
+      
+      エントリー一覧などの「モジュール＞カスタム情報＞詳細設定」では、外観以外に以下の設定が可能です。これにより、セクションごとに正確かつ詳細なカスタマイズができます。
+      
+      - 見出しのタグ（デフォルトはh2ですが、h3やpに変更できます）
+      - セクションを包括しているdivの追加クラス
+      - セクションを包括しているdivの追加属性（id・インラインスタイルを追加できます）
+      
+      ### ビルドツール対応
+      
+      Sass・Gulpに対応しています。カスタマイズがカラーリングや使用フォントの変更のみであれば、Sassファイル内の変数を変更し、CSSを書き出し直すだけで変更できます。
+      
+      また、以下のフォントすべてのフォント名とウェイトが別変数となっており、ウェブフォントを個別に指定できます。
+      
+      - 和文の本文
+      - 和文の見出し
+      - 英文の見出し
+      - メインビジュアルのスライドショー
+      - 日付などのフォント
+    column_field_2: 'markdown'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 111
+    column_blog_id: 1
+  - 
+    column_id: 1236
+    column_sort: 2
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      ロゴを管理画面で更新できない理由
+      
+    column_field_2: 'h3'
+    column_field_3: 'logo'
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 111
+    column_blog_id: 1
+  - 
+    column_id: 1237
+    column_sort: 3
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      多くの配布テーマは、ヘッダのロゴマークを管理画面からアップロードできますが、このテーマでは**意図的に対応していません。**これは、本格的なウェブ制作では以下のような状況となっており、結果的にHTML直書きとなるためです。
+      
+      - 公開後に差し替えることがまずない
+      - レスポンシブイメージが採用されるケースがある
+      - ほぼ100%、カスタムフィールドで管理しにくいSVGが採用されている
+      
+      ### 帯状デザインへの配慮
+      
+      ウィンドウ幅全体に背景色が敷かれる「帯状デザイン」は、現在のウェブデザインのトップページのトレンドとなっています。しかし、一般の配布テーマでは初心者のカスタマイズが難しくなるなどの理由から、ページ全体の幅を固定しているケースが多く、これがプロの制作者のカスタマイズを困難にしています。
+      
+      このテーマでは、トップページの各セクションの幅を制限せず、CSSのみで帯状に背景色を変えることができるよう制作しています。トップページ以外では、ページタイトル・トピックパス・本文の3パートに色分けをすることができます。
+      
+      ###  a-blog cms独特の仕様を考慮したテーマ設計
+      
+      a-blog cmsはテーマ内のディレクトリ名・ファイル名がそのままテーマの表示結果に影響します。このテーマでは、子ブログが増えてサイト構造が複雑になっても混乱しないよう、徹底した命名規則を設けています。
+      
+      ### 「モジュール全体」と「エントリーの繰り返し部分」の分離
+      
+      同じブログの新着でも、表示する場所によって体裁を変えたいというケースが、実際の制作現場では頻繁に求められます。このテーマではモジュール内の「エントリーを繰り返している部分」をインクルードで別ファイルとしています。
+      
+      これにより、モジュールテンプレートの構造をわかりやすく、かつ、切り離しやIFブロックによる体裁の変更をしやすくしています。
+      
+      ### コメントでの補足
+      
+      テーマ内のMETAタグの定義と出力に関するテンプレートは、a-blog cmsの「変数」を活用しているため、かなり上級者向けとなっています。編集は基本的にお勧めしませんが、コメントを記載して、役割・処理を解説しています。
+    column_field_2: 'markdown'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 111
+    column_blog_id: 1
+  - 
+    column_id: 1240
+    column_sort: 1
+    column_align: 'center'
+    column_type: 'image'
+    column_attr: ''
+    column_group: ''
+    column_size: 'width640'
+    column_field_1: ''
+    column_field_2: 'echo_zero/201702/4658209a2f2ab74ecae5ed0023936bd3.jpg'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: 'column-responsive-sm-6'
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1241
+    column_sort: 2
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      このテーマは、「ヘッダのロゴ」については、公式テーマのように管理画面で変更することはできません。
+      これは意図的な配慮です。詳しくは下記を参照ください。
+      <a href="../../echo/functions_03.html#logo">ロゴを管理画面で更新できない理由</a>
+      
+      テーマを設置できたら、まずサイトに合わせたロゴに差し替えましょう。
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1242
+    column_sort: 3
+    column_align: 'center'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      SVG画像を使用する場合
+      
+    column_field_2: 'h3'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1243
+    column_sort: 4
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      ロゴ画像はSVG形式で、やや横長の縦横比を前提としています。元の画像はテーマ内の以下の場所にあるので、上書きアップロードしてください。
+      
+      <em>/images/common/logo.svg</em>
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1244
+    column_sort: 5
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      PNG形式を使用する場合
+      
+    column_field_2: 'h3'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1245
+    column_sort: 6
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      テーマ内の以下のテンプレートをエディタで開いてください。
+      
+      <em>/include/header.html</em>
+      
+      8行目に以下の記述があるので、
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1246
+    column_sort: 7
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      <a href="%{BLOG_URL}" target="_self"><img src="/images/common/logo.svg" height="45" alt="{name}"></a>
+      
+    column_field_2: 'pre'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1247
+    column_sort: 8
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      以下のとおりPNGに変更してください。
+      
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1248
+    column_sort: 9
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      <a href="%{BLOG_URL}" target="_self"><img src="/images/common/logo.png" height="45" alt="{name}"></a>
+      
+    column_field_2: 'pre'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1249
+    column_sort: 10
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      テキストにする場合
+      
+    column_field_2: 'h3'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1250
+    column_sort: 11
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      以下のようにするとブログ名をそのまま表示できます。
+      
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1251
+    column_sort: 12
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      <a href="%{BLOG_URL}" target="_self">{name}</a>
+      
+    column_field_2: 'pre'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1252
+    column_sort: 13
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ' class="box box-first"'
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      ロゴの代替テキストは「管理上の親ブログの名前」となっています。
+      更新担当者がブログ名の後ろに「管理画面でわかりやすいように」とメモを書き加えてしまっていた…！という事故が起きることが（ごくまれに）あります。心配な場合は直書きに変更することをお勧めします。
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 112
+    column_blog_id: 1
+  - 
+    column_id: 1268
+    column_sort: 1
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      このテーマは、トップページ・固定ページが1カラム、ブログは2カラムとなっています。
+      
+      すべていずれに統一したい場合は、簡単に変更することができます。
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 113
+    column_blog_id: 1
+  - 
+    column_id: 1269
+    column_sort: 2
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      固定ページを2カラムに変更する
+      
+    column_field_2: 'h3'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 113
+    column_blog_id: 1
+  - 
+    column_id: 1270
+    column_sort: 3
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      「echo_zero」テーマ内の以下のファイルをエディタで開いてください。
+      
+      <em>/404.html</em>
+      <em>/entry.html</em>
+      <em>/index.html</em>
+      <em>/search.html</em>
+      
+      それぞれ、一行だけインクルードが記述されています。
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 113
+    column_blog_id: 1
+  - 
+    column_id: 1271
+    column_sort: 4
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      <!--#include file="/_col1/404.html"-->
+      
+    column_field_2: 'pre'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 113
+    column_blog_id: 1
+  - 
+    column_id: 1272
+    column_sort: 5
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      「_col1」を「_col2」に書き換えると2カラムとなります。
+      
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 113
+    column_blog_id: 1
+  - 
+    column_id: 1273
+    column_sort: 6
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      <!--#include file="/_col2/404.html"-->
+      
+    column_field_2: 'pre'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 113
+    column_blog_id: 1
+  - 
+    column_id: 1274
+    column_sort: 7
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      ブログを1カラムに変更する
+      
+    column_field_2: 'h3'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 113
+    column_blog_id: 1
+  - 
+    column_id: 1275
+    column_sort: 8
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      「blog@echo_zero」テーマ内の以下のファイルをエディタで開いてください。
+      
+      <em>/404.html</em>
+      <em>/entry.html</em>
+      <em>/index.html</em>
+      <em>/search.html</em>
+      <em>/top.html</em>
+      
+      こちらも一行だけインクルードが記述されています。「_col2」を「_col1」に書き換えると1カラムとなります。
+      
+      細かいカスタマイズをしたいときや、「_col1」「_col2」ディレクトリを残したくないときは、インクルードを書き換えるのではなく、インクルード先のテンプレートのソースコードをすべて選択して貼り付けて対応してください。
+      
+      エントリー一覧の段組の修正も必要となります。下記ページを参照ください。
+      
+      <a href="./entry_list_column.html">エントリー一覧の段組を修正する</a>
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 113
+    column_blog_id: 1
+  - 
+    column_id: 1284
+    column_sort: 1
+    column_align: 'center'
+    column_type: 'image'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: 'echo_zero/201702/455c91555c82d80c9ef2a2fbb25ba5c2.jpg'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: 'column-responsive-auto'
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 114
+    column_blog_id: 1
+  - 
+    column_id: 1285
+    column_sort: 2
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      レイアウトに関わるカスタマイズを行うと、エントリーの繰り返し部分の幅が適切ではなくなることがあります。
+      例えばブログを1カラムに変更すると、画像のようにデスクトップ画面では幅が広くなりすぎます。ここは、デスクトップでは2カラム、モバイルでは1カラムとしたいところです。
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 114
+    column_blog_id: 1
+  - 
+    column_id: 1286
+    column_sort: 7
+    column_align: 'center'
+    column_type: 'image'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: 'echo_zero/201702/ef90073146049efc1ecf8870953e0bc8.jpg'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: 'column-responsive-auto'
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 114
+    column_blog_id: 1
+  - 
+    column_id: 1290
+    column_sort: 4
+    column_align: 'left'
+    column_type: 'image'
+    column_attr: ''
+    column_group: ''
+    column_size: 'width480'
+    column_field_1: ''
+    column_field_2: 'echo_zero/201702/207ed51598edf6b43b9c99ecc2fa80fe.jpg'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: 'column-responsive-sm-4'
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 114
+    column_blog_id: 1
+  - 
+    column_id: 1291
+    column_sort: 5
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      エントリー一覧の段組は、管理画面から変更できます。
+      
+      一覧にカーソルを置くと、右上に「モジュール設定」へのリンクが表示されるのでクリックしてください。ポップアップが表示されたら「表示設定」タブを選択してください。
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 114
+    column_blog_id: 1
+  - 
+    column_id: 1292
+    column_sort: 8
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      「ループ内クラス」の項目に、以下のようにクラス名を書くと段組の挙動が変化します。空欄とした場合は「1カラムでの一般的に適切な挙動」となるため、この場合は空欄でも構いません。
+      
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 114
+    column_blog_id: 1
+  - 
+    column_id: 1293
+    column_sort: 9
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ' class="table"'
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      #クラス名,#実際の挙動
+      #col-sm-12,常に1カラム
+      #col-sm-12 col-lg-6,モバイルで1カラム、デスクトップで2カラム
+      #col-xsss-6 col-sm-4 col-xl-3,モバイルで2カラム、タブレットで3カラム、ワイド画面で4カラム
+    column_field_2: 'table'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 114
+    column_blog_id: 1
+  - 
+    column_id: 1294
+    column_sort: 11
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      「sm」「lg」などのブレークポイントの名称は、<a href="http://v4-alpha.getbootstrap.com/layout/grid/">bootstrap4のグリッドレイアウト</a>に準拠していますが、さらに以下のブレークポイントを追加しています。これにより、iPhone SE・IPhone 7・iPhone 7 Plusを切り替えることができます。
+      
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 114
+    column_blog_id: 1
+  - 
+    column_id: 1295
+    column_sort: 12
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ' class="table table-3-9"'
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      #xs,425px〜375px
+      #xss,375px〜320px
+      #xsss,320px以下
+    column_field_2: 'table'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 114
+    column_blog_id: 1
+  - 
+    column_id: 1302
+    column_sort: 3
+    column_align: 'auto'
+    column_type: 'custom_spacer'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: ''
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: >
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6MTp7czoxMToic3BhY2VyX3NpemUiO2E6MTp7aTowO3M6NjoicC10LXhsIjt9fXM6OToiX2FyeUNoaWxkIjthOjA6e31zOjg6Il9hcnlNZXRhIjthOjA6e319
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 114
+    column_blog_id: 1
+  - 
+    column_id: 1304
+    column_sort: 10
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      ブレークポイントに関する補足
+      
+    column_field_2: 'h4'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 114
+    column_blog_id: 1
+  - 
+    column_id: 1308
+    column_sort: 6
+    column_align: 'auto'
+    column_type: 'custom_spacer'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: ''
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: >
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6MTp7czoxMToic3BhY2VyX3NpemUiO2E6MTp7aTowO3M6NjoicC10LWxnIjt9fXM6OToiX2FyeUNoaWxkIjthOjA6e31zOjg6Il9hcnlNZXRhIjthOjA6e319
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 114
+    column_blog_id: 1
+  - 
+    column_id: 1310
+    column_sort: 2
+    column_align: 'auto'
+    column_type: 'custom_button'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: ''
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: >
+      TzoxNjoiRmllbGRfVmFsaWRhdGlvbiI6NTp7czo1OiJfYXJ5ViI7YTowOnt9czoxMDoiX2FyeU1ldGhvZCI7YTowOnt9czo5OiJfYXJ5RmllbGQiO2E6Njp7czoxMDoiYnV0dG9uX3VybCI7YToxOntpOjA7czozNjoiLi4vZG9jcy9jdXN0b21pemUvbGF5b3V0X2NvbHVtbi5odG1sIjt9czoxMjoiYnV0dG9uX2xhYmVsIjthOjE6e2k6MDtzOjMwOiLlhajkvZPjga7mrrXntYTjgpLlpInmm7TjgZnjgosiO31zOjExOiJidXR0b25fc2l6ZSI7YToxOntpOjA7czo2OiJidG4tbGciO31zOjEyOiJidXR0b25fYmxvY2siO2E6MDp7fXM6MTI6ImJ1dHRvbl9jb2xvciI7YToxOntpOjA7czo5OiJidG4tZmlyc3QiO31zOjEzOiJidXR0b25fdGFyZ2V0IjthOjA6e319czo5OiJfYXJ5Q2hpbGQiO2E6MDp7fXM6ODoiX2FyeU1ldGEiO2E6MDp7fX0=
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 109
+    column_blog_id: 1
+  - 
+    column_id: 1312
+    column_sort: 3
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      ### モジュール編集機能
+      
+      ブログ新着など、各モジュール（他CMSでの『ウィジェット』）の外観を「モジュール＞カスタム設定」から編集できます。見出し・キャプション・一覧へのリンクの組み合わせによって、外観を細かく変更可能です。
+      
+      ### カテゴリータイトル編集機能
+      
+      カテゴリータイトルの外観を「カテゴリーの設定＞カスタム設定」から編集可能です。カテゴリータイトルに背景画像をアップロードしたり、見出しを「最上位のカテゴリー」や「カテゴリーのコード名」などにも変更できます。コード名に変更した場合は、見出しのフォントが英文フォントに変更されます。
+      
+      ### お問い合わせフォームの改良
+      
+      公式テーマではテンプレートの直接編集が必要となる、お問い合わせフォームの「自動返信メールの署名」を、管理ページの「ブログ＞カスタム設定」から編集することができます。
+    column_field_2: 'markdown'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 109
+    column_blog_id: 1
+  - 
+    column_id: 1314
+    column_sort: 1
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      このテーマの親ブログのトップページは、以下の2か所が「自由にHTMLを記述できるエリア」となっています。
+      
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
+    column_blog_id: 1
+  - 
+    column_id: 1315
+    column_sort: 2
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      メインビジュアルの直下
+      「echoの特徴」と「ブログ」の間
+    column_field_2: 'ol'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
+    column_blog_id: 1
+  - 
+    column_id: 1316
+    column_sort: 3
+    column_align: 'center'
+    column_type: 'image'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: 'echo_zero/201702/ae3f7c7cc96c9cfa14edb613ae6f4a4e.jpg'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: 'column-responsive-auto'
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
+    column_blog_id: 1
+  - 
+    column_id: 1317
+    column_sort: 4
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      ログインしている状態でトップページを表示すると、各フリーエリアの下にa-blog cmsの管理ボックスが表示されています。「変更」ボタンをクリックすると編集画面となります。
+      
+      操作は、a-blog cmsの通常のエントリー編集とまったく同じです。HTMLコードを直接書くこともできます。
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
+    column_blog_id: 1
+  - 
+    column_id: 1318
+    column_sort: 5
+    column_align: 'center'
+    column_type: 'image'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: ''
+    column_field_2: 'echo_zero/201702/d5817990da51e228ff16c48b2265e375.jpg'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: 'column-responsive-auto'
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
+    column_blog_id: 1
+  - 
+    column_id: 1319
+    column_sort: 6
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      エントリーを保存すると、一旦「フリーエリア管理用のエントリー」のページへ移動します。
+      
+      このページは一般には公開されていないページです。トップページへ戻り、更新が反映されていることを確認してください。
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
+    column_blog_id: 1
+  - 
+    column_id: 1320
+    column_sort: 7
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      フリーエリアを使用したくない場合
+      
+    column_field_2: 'h3'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
+    column_blog_id: 1
+  - 
+    column_id: 1321
+    column_sort: 8
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      以下のいずれかのカスタマイズを行ってください。
+      
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
+    column_blog_id: 1
+  - 
+    column_id: 1322
+    column_sort: 9
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      エントリーを「非公開」にする
+      
+    column_field_2: 'h4'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
+    column_blog_id: 1
+  - 
+    column_id: 1323
+    column_sort: 10
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      ログイン中は表示されていますが、公開画面では非表示となります。
+      
+    column_field_2: 'ul'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
+    column_blog_id: 1
+  - 
+    column_id: 1324
+    column_sort: 11
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      トップページ用のテンプレートを編集する
+      
+    column_field_2: 'h4'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
+    column_blog_id: 1
+  - 
+    column_id: 1325
+    column_sort: 12
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      「echo_zero」テーマ内、 <em>/top.html</em> をエディタで開いてください。
+      
+      ファイル内の以下のインクルードがフリーエリアを呼び出しています。削除するか、HTML直書きに変更してください。
+    column_field_2: 'p'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
+    column_blog_id: 1
+  - 
+    column_id: 1326
+    column_sort: 13
+    column_align: 'auto'
+    column_type: 'text'
+    column_attr: ''
+    column_group: ''
+    column_size: ''
+    column_field_1: |
+      <!--#include file="/include/module/body_top_01.html"-->
+      ・・・
+      <!--#include file="/include/module/body_top_02.html"-->
+    column_field_2: 'pre'
+    column_field_3: ''
+    column_field_4: ''
+    column_field_5: ''
+    column_field_6: ''
+    column_field_7: ''
+    column_field_8: ''
+    column_entry_id: 115
     column_blog_id: 1
 config: ''
   - 
@@ -5758,7 +7292,7 @@ config: ''
     config_blog_id: 1
   - 
     config_key: 'entry_summary_order'
-    config_value: 'datetime-desc'
+    config_value: 'datetime-asc'
     config_sort: 2
     config_rule_id: ''
     config_module_id: 44
@@ -6668,7 +8202,7 @@ config: ''
     config_blog_id: 1
   - 
     config_key: 'google_api_key'
-    config_value: 'AIzaSyBrLQsDPGAzSmf_RrToB3_Ay3y4x-2GfKk'
+    config_value: ''
     config_sort: 7
     config_rule_id: ''
     config_module_id: ''
@@ -10406,7 +11940,7 @@ config: ''
     config_blog_id: 1
   - 
     config_key: 'entry_summary_category_on'
-    config_value: 'on'
+    config_value: 'off'
     config_sort: 29
     config_rule_id: ''
     config_module_id: 44
@@ -11596,7 +13130,7 @@ config: ''
     config_blog_id: 1
   - 
     config_key: 'navigation_publish'
-    config_value: 'off'
+    config_value: 'on'
     config_sort: 38
     config_rule_id: ''
     config_module_id: 65
@@ -12506,14 +14040,14 @@ config: ''
     config_blog_id: 1
   - 
     config_key: 'navigation_publish'
-    config_value: 'off'
+    config_value: 'on'
     config_sort: 56
     config_rule_id: ''
     config_module_id: 47
     config_blog_id: 1
   - 
     config_key: 'navigation_publish'
-    config_value: 'off'
+    config_value: 'on'
     config_sort: 56
     config_rule_id: ''
     config_module_id: 50
@@ -15907,7 +17441,7 @@ entry: ''
     entry_start_datetime: '1000-01-01 00:00:00'
     entry_end_datetime: '9999-12-31 23:59:59'
     entry_posted_datetime: '2016-11-27 02:30:19'
-    entry_updated_datetime: '2017-01-30 18:11:50'
+    entry_updated_datetime: '2017-02-14 03:28:10'
     entry_summary_range: ''
     entry_indexing: 'off'
     entry_primary_image: ''
@@ -15933,10 +17467,10 @@ entry: ''
     entry_start_datetime: '1000-01-01 00:00:00'
     entry_end_datetime: '9999-12-31 23:59:59'
     entry_posted_datetime: '2016-11-27 02:31:04'
-    entry_updated_datetime: '2017-01-30 18:15:19'
+    entry_updated_datetime: '2017-02-14 03:49:59'
     entry_summary_range: ''
     entry_indexing: 'off'
-    entry_primary_image: ''
+    entry_primary_image: 1181
     entry_current_rev_id: 1
     entry_last_update_user_id: 1
     entry_hash: '5d7fb4ef29414f27625b5fdf68b28485'
@@ -16167,7 +17701,7 @@ entry: ''
     entry_start_datetime: '1000-01-01 00:00:00'
     entry_end_datetime: '9999-12-31 23:59:59'
     entry_posted_datetime: '2017-01-22 20:30:38'
-    entry_updated_datetime: '2017-01-22 23:36:57'
+    entry_updated_datetime: '2017-02-14 18:16:59'
     entry_summary_range: ''
     entry_indexing: 'on'
     entry_primary_image: ''
@@ -16284,7 +17818,7 @@ entry: ''
     entry_blog_id: 1
   - 
     entry_id: 70
-    entry_code: 'entry-70.html'
+    entry_code: 'import_full.html'
     entry_status: 'open'
     entry_approval: 'none'
     entry_form_status: ''
@@ -16297,13 +17831,247 @@ entry: ''
     entry_start_datetime: '1000-01-01 00:00:00'
     entry_end_datetime: '9999-12-31 23:59:59'
     entry_posted_datetime: '2017-02-13 17:48:18'
-    entry_updated_datetime: '2017-02-13 19:34:13'
+    entry_updated_datetime: '2017-02-14 05:49:21'
     entry_summary_range: ''
     entry_indexing: 'on'
     entry_primary_image: 763
     entry_current_rev_id: 1
     entry_last_update_user_id: 1
     entry_hash: '83e6264c4147a975646e5f4ed45b9dc0'
+    entry_category_id: 18
+    entry_user_id: 1
+    entry_form_id: 0
+    entry_blog_id: 1
+  - 
+    entry_id: 107
+    entry_code: 'introduction.html'
+    entry_status: 'open'
+    entry_approval: 'none'
+    entry_form_status: ''
+    entry_sort: 17
+    entry_user_sort: 17
+    entry_category_sort: 1
+    entry_title: 'echoとは？'
+    entry_link: ''
+    entry_datetime: '2017-02-14 03:51:55'
+    entry_start_datetime: '1000-01-01 00:00:00'
+    entry_end_datetime: '9999-12-31 23:59:59'
+    entry_posted_datetime: '2017-02-14 04:36:26'
+    entry_updated_datetime: '2017-02-14 05:10:49'
+    entry_summary_range: ''
+    entry_indexing: 'on'
+    entry_primary_image: 1185
+    entry_current_rev_id: 1
+    entry_last_update_user_id: 1
+    entry_hash: '07a141f008fe7ec05c8a8280cb4ede7d'
+    entry_category_id: 13
+    entry_user_id: 1
+    entry_form_id: 0
+    entry_blog_id: 1
+  - 
+    entry_id: 108
+    entry_code: 'license.html'
+    entry_status: 'open'
+    entry_approval: 'none'
+    entry_form_status: ''
+    entry_sort: 18
+    entry_user_sort: 18
+    entry_category_sort: 2
+    entry_title: 'リポジトリとライセンス'
+    entry_link: ''
+    entry_datetime: '2017-02-14 05:04:22'
+    entry_start_datetime: '1000-01-01 00:00:00'
+    entry_end_datetime: '9999-12-31 23:59:59'
+    entry_posted_datetime: '2017-02-14 05:04:22'
+    entry_updated_datetime: '2017-02-14 05:13:11'
+    entry_summary_range: ''
+    entry_indexing: 'on'
+    entry_primary_image: ''
+    entry_current_rev_id: 1
+    entry_last_update_user_id: 1
+    entry_hash: 'e357750a52c4bd3dd9f2775010845a8a'
+    entry_category_id: 13
+    entry_user_id: 1
+    entry_form_id: 0
+    entry_blog_id: 1
+  - 
+    entry_id: 109
+    entry_code: 'functions_01.html'
+    entry_status: 'open'
+    entry_approval: 'none'
+    entry_form_status: ''
+    entry_sort: 19
+    entry_user_sort: 19
+    entry_category_sort: 3
+    entry_title: '主な機能'
+    entry_link: ''
+    entry_datetime: '2017-02-14 05:13:48'
+    entry_start_datetime: '1000-01-01 00:00:00'
+    entry_end_datetime: '9999-12-31 23:59:59'
+    entry_posted_datetime: '2017-02-14 05:29:18'
+    entry_updated_datetime: '2017-02-14 20:43:15'
+    entry_summary_range: ''
+    entry_indexing: 'on'
+    entry_primary_image: ''
+    entry_current_rev_id: 1
+    entry_last_update_user_id: 1
+    entry_hash: '7684f39e86bccd23281270460a96d627'
+    entry_category_id: 13
+    entry_user_id: 1
+    entry_form_id: 0
+    entry_blog_id: 1
+  - 
+    entry_id: 110
+    entry_code: 'functions_02.html'
+    entry_status: 'open'
+    entry_approval: 'none'
+    entry_form_status: ''
+    entry_sort: 20
+    entry_user_sort: 20
+    entry_category_sort: 4
+    entry_title: '内部に関する機能'
+    entry_link: ''
+    entry_datetime: '2017-02-14 17:44:36'
+    entry_start_datetime: '1000-01-01 00:00:00'
+    entry_end_datetime: '9999-12-31 23:59:59'
+    entry_posted_datetime: '2017-02-14 17:44:36'
+    entry_updated_datetime: '2017-02-14 20:43:45'
+    entry_summary_range: ''
+    entry_indexing: 'on'
+    entry_primary_image: ''
+    entry_current_rev_id: 1
+    entry_last_update_user_id: 1
+    entry_hash: '56af1fbe33f8f61e592e286b98a66660'
+    entry_category_id: 13
+    entry_user_id: 1
+    entry_form_id: 0
+    entry_blog_id: 1
+  - 
+    entry_id: 111
+    entry_code: 'functions_03.html'
+    entry_status: 'open'
+    entry_approval: 'none'
+    entry_form_status: ''
+    entry_sort: 21
+    entry_user_sort: 21
+    entry_category_sort: 5
+    entry_title: '制作者を支える機能'
+    entry_link: ''
+    entry_datetime: '2017-02-14 18:24:28'
+    entry_start_datetime: '1000-01-01 00:00:00'
+    entry_end_datetime: '9999-12-31 23:59:59'
+    entry_posted_datetime: '2017-02-14 18:24:28'
+    entry_updated_datetime: '2017-02-14 20:40:39'
+    entry_summary_range: ''
+    entry_indexing: 'on'
+    entry_primary_image: ''
+    entry_current_rev_id: 1
+    entry_last_update_user_id: 1
+    entry_hash: 'b2c0b7ba42e23d940bf18a58a9eafe9e'
+    entry_category_id: 13
+    entry_user_id: 1
+    entry_form_id: 0
+    entry_blog_id: 1
+  - 
+    entry_id: 112
+    entry_code: 'logo.html'
+    entry_status: 'open'
+    entry_approval: 'none'
+    entry_form_status: ''
+    entry_sort: 22
+    entry_user_sort: 22
+    entry_category_sort: 2
+    entry_title: 'ロゴを差し替える'
+    entry_link: ''
+    entry_datetime: '2017-02-14 19:07:29'
+    entry_start_datetime: '1000-01-01 00:00:00'
+    entry_end_datetime: '9999-12-31 23:59:59'
+    entry_posted_datetime: '2017-02-14 19:25:41'
+    entry_updated_datetime: '2017-02-14 19:31:33'
+    entry_summary_range: ''
+    entry_indexing: 'on'
+    entry_primary_image: 1240
+    entry_current_rev_id: 1
+    entry_last_update_user_id: 1
+    entry_hash: 'e11c3f4dd1a95bea59019926daea855a'
+    entry_category_id: 18
+    entry_user_id: 1
+    entry_form_id: 0
+    entry_blog_id: 1
+  - 
+    entry_id: 113
+    entry_code: 'layout_column.html'
+    entry_status: 'open'
+    entry_approval: 'none'
+    entry_form_status: ''
+    entry_sort: 23
+    entry_user_sort: 23
+    entry_category_sort: 3
+    entry_title: '全体の段組を変更する'
+    entry_link: ''
+    entry_datetime: '2017-02-14 19:46:01'
+    entry_start_datetime: '1000-01-01 00:00:00'
+    entry_end_datetime: '9999-12-31 23:59:59'
+    entry_posted_datetime: '2017-02-14 19:57:51'
+    entry_updated_datetime: '2017-02-14 20:35:33'
+    entry_summary_range: ''
+    entry_indexing: 'on'
+    entry_primary_image: ''
+    entry_current_rev_id: 1
+    entry_last_update_user_id: 1
+    entry_hash: '581eaa79cb9b4cbe886cc91ba78b3ed2'
+    entry_category_id: 18
+    entry_user_id: 1
+    entry_form_id: 0
+    entry_blog_id: 1
+  - 
+    entry_id: 114
+    entry_code: 'entry_list_column.html'
+    entry_status: 'open'
+    entry_approval: 'none'
+    entry_form_status: ''
+    entry_sort: 24
+    entry_user_sort: 24
+    entry_category_sort: 4
+    entry_title: 'エントリー一覧の段組を修正する'
+    entry_link: ''
+    entry_datetime: '2017-02-14 20:03:30'
+    entry_start_datetime: '1000-01-01 00:00:00'
+    entry_end_datetime: '9999-12-31 23:59:59'
+    entry_posted_datetime: '2017-02-14 20:07:59'
+    entry_updated_datetime: '2017-02-14 20:25:32'
+    entry_summary_range: ''
+    entry_indexing: 'on'
+    entry_primary_image: 1284
+    entry_current_rev_id: 1
+    entry_last_update_user_id: 1
+    entry_hash: 'cc0c050ae2c3df75a25bc83314979d20'
+    entry_category_id: 18
+    entry_user_id: 1
+    entry_form_id: 0
+    entry_blog_id: 1
+  - 
+    entry_id: 115
+    entry_code: 'top_free.html'
+    entry_status: 'open'
+    entry_approval: 'none'
+    entry_form_status: ''
+    entry_sort: 25
+    entry_user_sort: 25
+    entry_category_sort: 5
+    entry_title: 'トップページのフリーエリアを更新する'
+    entry_link: ''
+    entry_datetime: '2017-02-14 20:46:19'
+    entry_start_datetime: '1000-01-01 00:00:00'
+    entry_end_datetime: '9999-12-31 23:59:59'
+    entry_posted_datetime: '2017-02-14 20:59:49'
+    entry_updated_datetime: '2017-02-14 20:59:49'
+    entry_summary_range: ''
+    entry_indexing: 'on'
+    entry_primary_image: 1316
+    entry_current_rev_id: 1
+    entry_last_update_user_id: 1
+    entry_hash: '1fdfbaa7a07fa3b406093a05f4da0a96'
     entry_category_id: 18
     entry_user_id: 1
     entry_form_id: 0
@@ -16338,28 +18106,6 @@ field: ''
     field_search: 'on'
     field_eid: ''
     field_cid: 12
-    field_uid: ''
-    field_bid: ''
-    field_mid: ''
-    field_blog_id: 1
-  - 
-    field_key: 'page_header_title'
-    field_value: 'current'
-    field_sort: 1
-    field_search: 'on'
-    field_eid: ''
-    field_cid: 18
-    field_uid: ''
-    field_bid: ''
-    field_mid: ''
-    field_blog_id: 1
-  - 
-    field_key: 'page_description'
-    field_value: 'よくあるカスタマイズに関する解説です。'
-    field_sort: 1
-    field_search: 'on'
-    field_eid: ''
-    field_cid: 18
     field_uid: ''
     field_bid: ''
     field_mid: ''
@@ -16419,39 +18165,6 @@ field: ''
     field_uid: ''
     field_bid: ''
     field_mid: 54
-    field_blog_id: 1
-  - 
-    field_key: 'module_heading'
-    field_value: 'ブログ'
-    field_sort: 1
-    field_search: 'on'
-    field_eid: ''
-    field_cid: ''
-    field_uid: ''
-    field_bid: ''
-    field_mid: 45
-    field_blog_id: 1
-  - 
-    field_key: 'module_subtitle'
-    field_value: 'Blog'
-    field_sort: 1
-    field_search: 'on'
-    field_eid: ''
-    field_cid: ''
-    field_uid: ''
-    field_bid: ''
-    field_mid: 45
-    field_blog_id: 1
-  - 
-    field_key: 'module_index_url'
-    field_value: './blog/'
-    field_sort: 1
-    field_search: 'on'
-    field_eid: ''
-    field_cid: ''
-    field_uid: ''
-    field_bid: ''
-    field_mid: 45
     field_blog_id: 1
   - 
     field_key: 'module_heading'
@@ -16535,7 +18248,7 @@ field: ''
     field_blog_id: 1
   - 
     field_key: 'facebook_account'
-    field_value: 'webbingstudio'
+    field_value: 'ablogcms'
     field_sort: 1
     field_search: 'on'
     field_eid: ''
@@ -16637,6 +18350,215 @@ field: ''
     field_mid: ''
     field_blog_id: 1
   - 
+    field_key: 'page_header_title'
+    field_value: 'current'
+    field_sort: 1
+    field_search: 'on'
+    field_eid: ''
+    field_cid: 13
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@path'
+    field_value: 'echo_zero/201702/d520d3acf0e7417816a74195f4ca6cff.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@x'
+    field_value: 480
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@y'
+    field_value: 252
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@fileSize'
+    field_value: 36559
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyPath'
+    field_value: 'echo_zero/201702/tiny-d520d3acf0e7417816a74195f4ca6cff.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyFileSize'
+    field_value: 9544
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@secret'
+    field_value: 'e5026311aef932f6999a8e1ae462ed8b'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@path'
+    field_value: 'echo_zero/201702/178fa3339cc5d0f1166b25805f7222b2.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@x'
+    field_value: 1200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@y'
+    field_value: 628
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@fileSize'
+    field_value: 137469
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyPath'
+    field_value: 'echo_zero/201702/tiny-178fa3339cc5d0f1166b25805f7222b2.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyFileSize'
+    field_value: 9544
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@secret'
+    field_value: '7e4df31ea972ef126471c37a356c13d6'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 108
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
     field_key: 'module_heading'
     field_value: '<span class="font-size-lg font-family-02">echo</span>の特徴'
     field_sort: 1
@@ -16679,28 +18601,6 @@ field: ''
     field_uid: ''
     field_bid: ''
     field_mid: 44
-    field_blog_id: 1
-  - 
-    field_key: 'page_header_title'
-    field_value: 'current'
-    field_sort: 1
-    field_search: 'on'
-    field_eid: ''
-    field_cid: 13
-    field_uid: ''
-    field_bid: ''
-    field_mid: ''
-    field_blog_id: 1
-  - 
-    field_key: 'pickup'
-    field_value: 'true'
-    field_sort: 1
-    field_search: 'on'
-    field_eid: 70
-    field_cid: ''
-    field_uid: ''
-    field_bid: ''
-    field_mid: ''
     field_blog_id: 1
   - 
     field_key: 'entry_eyecatch@path'
@@ -16802,11 +18702,154 @@ field: ''
     field_mid: ''
     field_blog_id: 1
   - 
-    field_key: 'entry_ogp_image@path'
-    field_value: 'echo_zero/201702/51b56b6185392932eb48a2f79b9bcb9e.jpg'
+    field_key: 'module_heading'
+    field_value: 'ブログ'
+    field_sort: 1
+    field_search: 'on'
+    field_eid: ''
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: 45
+    field_blog_id: 1
+  - 
+    field_key: 'module_subtitle'
+    field_value: 'Blog'
+    field_sort: 1
+    field_search: 'on'
+    field_eid: ''
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: 45
+    field_blog_id: 1
+  - 
+    field_key: 'module_caption'
+    field_value: 'ブログは子ブログとして作成する前提となっています'
+    field_sort: 1
+    field_search: 'on'
+    field_eid: ''
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: 45
+    field_blog_id: 1
+  - 
+    field_key: 'module_index_url'
+    field_value: './blog/'
+    field_sort: 1
+    field_search: 'on'
+    field_eid: ''
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: 45
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@path'
+    field_value: 'echo_zero/201702/6df8adf050201f8cb28d641c8663f637.jpg'
     field_sort: 1
     field_search: 'off'
-    field_eid: 70
+    field_eid: 112
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@x'
+    field_value: 480
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 112
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@y'
+    field_value: 252
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 112
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@fileSize'
+    field_value: 26109
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 112
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyPath'
+    field_value: 'echo_zero/201702/tiny-6df8adf050201f8cb28d641c8663f637.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 112
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 112
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 112
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyFileSize'
+    field_value: 8115
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 112
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@secret'
+    field_value: 'c8822c4f8f8d338f929fe0ef2236af25'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 112
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@path'
+    field_value: 'echo_zero/201702/93f93ad392817c95442e031ce3e9ca97.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 112
     field_cid: ''
     field_uid: ''
     field_bid: ''
@@ -16817,7 +18860,7 @@ field: ''
     field_value: 1200
     field_sort: 1
     field_search: 'off'
-    field_eid: 70
+    field_eid: 112
     field_cid: ''
     field_uid: ''
     field_bid: ''
@@ -16825,10 +18868,10 @@ field: ''
     field_blog_id: 1
   - 
     field_key: 'entry_ogp_image@y'
-    field_value: 628
+    field_value: 629
     field_sort: 1
     field_search: 'off'
-    field_eid: 70
+    field_eid: 112
     field_cid: ''
     field_uid: ''
     field_bid: ''
@@ -16836,10 +18879,10 @@ field: ''
     field_blog_id: 1
   - 
     field_key: 'entry_ogp_image@fileSize'
-    field_value: 261092
+    field_value: 129577
     field_sort: 1
     field_search: 'off'
-    field_eid: 70
+    field_eid: 112
     field_cid: ''
     field_uid: ''
     field_bid: ''
@@ -16847,10 +18890,10 @@ field: ''
     field_blog_id: 1
   - 
     field_key: 'entry_ogp_image@tinyPath'
-    field_value: 'echo_zero/201702/tiny-51b56b6185392932eb48a2f79b9bcb9e.jpg'
+    field_value: 'echo_zero/201702/tiny-93f93ad392817c95442e031ce3e9ca97.jpg'
     field_sort: 1
     field_search: 'off'
-    field_eid: 70
+    field_eid: 112
     field_cid: ''
     field_uid: ''
     field_bid: ''
@@ -16861,7 +18904,7 @@ field: ''
     field_value: 200
     field_sort: 1
     field_search: 'off'
-    field_eid: 70
+    field_eid: 112
     field_cid: ''
     field_uid: ''
     field_bid: ''
@@ -16872,7 +18915,7 @@ field: ''
     field_value: 105
     field_sort: 1
     field_search: 'off'
-    field_eid: 70
+    field_eid: 112
     field_cid: ''
     field_uid: ''
     field_bid: ''
@@ -16880,10 +18923,10 @@ field: ''
     field_blog_id: 1
   - 
     field_key: 'entry_ogp_image@tinyFileSize'
-    field_value: 12648
+    field_value: 8115
     field_sort: 1
     field_search: 'off'
-    field_eid: 70
+    field_eid: 112
     field_cid: ''
     field_uid: ''
     field_bid: ''
@@ -16891,10 +18934,1301 @@ field: ''
     field_blog_id: 1
   - 
     field_key: 'entry_ogp_image@secret'
-    field_value: '9a4adb4b445fe4977852d7ef0115505d'
+    field_value: '80461b6bb11171804b3e15d0d0fe936b'
     field_sort: 1
     field_search: 'off'
-    field_eid: 70
+    field_eid: 112
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'page_header_title'
+    field_value: 'current'
+    field_sort: 1
+    field_search: 'on'
+    field_eid: ''
+    field_cid: 18
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'page_description'
+    field_value: 'テーマの導入とカスタマイズに関する解説です。'
+    field_sort: 1
+    field_search: 'on'
+    field_eid: ''
+    field_cid: 18
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@path'
+    field_value: 'echo_zero/201702/6ddbc640d0c753ed8949a927a0d43adc.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@x'
+    field_value: 480
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@y'
+    field_value: 252
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@fileSize'
+    field_value: 29663
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyPath'
+    field_value: 'echo_zero/201702/tiny-6ddbc640d0c753ed8949a927a0d43adc.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyFileSize'
+    field_value: 7685
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@secret'
+    field_value: '1d2871685cbbfa0dc6b78c6d60e6360a'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@path'
+    field_value: 'echo_zero/201702/4718e28b853e69aee49a4190b94d8f84.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@x'
+    field_value: 1200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@y'
+    field_value: 630
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@fileSize'
+    field_value: 101005
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyPath'
+    field_value: 'echo_zero/201702/tiny-4718e28b853e69aee49a4190b94d8f84.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyFileSize'
+    field_value: 7685
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@secret'
+    field_value: '78aa94c8823656ad16d40b1de71ad20c'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 114
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@path'
+    field_value: 'echo_zero/201702/d81fbeadd815f9dcfec4d75cc5587fba.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@x'
+    field_value: 480
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@y'
+    field_value: 252
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@fileSize'
+    field_value: 17943
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyPath'
+    field_value: 'echo_zero/201702/tiny-d81fbeadd815f9dcfec4d75cc5587fba.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyFileSize'
+    field_value: 6044
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@secret'
+    field_value: 'ca572953e256293e3e2682269a317f36'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@path'
+    field_value: 'echo_zero/201702/4e9ce4a300972a8a5346f46dc5b4942e.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@x'
+    field_value: 1200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@y'
+    field_value: 628
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@fileSize'
+    field_value: 43000
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyPath'
+    field_value: 'echo_zero/201702/tiny-4e9ce4a300972a8a5346f46dc5b4942e.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyFileSize'
+    field_value: 6044
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@secret'
+    field_value: 'e338b2fd950ce04b6d10703ab68a4eec'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 113
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'pickup'
+    field_value: 'true'
+    field_sort: 1
+    field_search: 'on'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_meta_ex'
+    field_value: |
+      <style>
+      .entry-column h3 {
+      text-align: left;
+      }
+      </style>
+    field_sort: 1
+    field_search: 'on'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@path'
+    field_value: 'echo_zero/201702/9a2c8263835db0e326b1b5e805c256ea.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@x'
+    field_value: 480
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@y'
+    field_value: 252
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@fileSize'
+    field_value: 37308
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyPath'
+    field_value: 'echo_zero/201702/tiny-9a2c8263835db0e326b1b5e805c256ea.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyFileSize'
+    field_value: 8024
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@secret'
+    field_value: '79f6ff892653c2dffc6b8fe44a4650ed'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@path'
+    field_value: 'echo_zero/201702/4c2a74dbf71c1401ab4f9a610b259d51.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@x'
+    field_value: 1200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@y'
+    field_value: 628
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@fileSize'
+    field_value: 128827
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyPath'
+    field_value: 'echo_zero/201702/tiny-4c2a74dbf71c1401ab4f9a610b259d51.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyFileSize'
+    field_value: 8024
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@secret'
+    field_value: '8ce5adc0a64481f66891d5a7e3e34a86'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 111
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'pickup'
+    field_value: 'true'
+    field_sort: 1
+    field_search: 'on'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_meta_ex'
+    field_value: |
+      <style>
+      .entry-column h3 {
+      text-align: left;
+      }
+      </style>
+    field_sort: 1
+    field_search: 'on'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@path'
+    field_value: 'echo_zero/201702/9c507d34abec15e8ba4efa58984de7b4.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@x'
+    field_value: 480
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@y'
+    field_value: 252
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@fileSize'
+    field_value: 33072
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyPath'
+    field_value: 'echo_zero/201702/tiny-9c507d34abec15e8ba4efa58984de7b4.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyFileSize'
+    field_value: 9517
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@secret'
+    field_value: '6bf0577cfbce8616e5aa2811b4dcc99b'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@path'
+    field_value: 'echo_zero/201702/9ffd6160c22011bd4c32fc783853efe9.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@x'
+    field_value: 1200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@y'
+    field_value: 628
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@fileSize'
+    field_value: 153068
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyPath'
+    field_value: 'echo_zero/201702/tiny-9ffd6160c22011bd4c32fc783853efe9.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyFileSize'
+    field_value: 9517
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@secret'
+    field_value: '9b94b87628ed8d6b71c18d429f4086d5'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 109
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'pickup'
+    field_value: 'true'
+    field_sort: 1
+    field_search: 'on'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_meta_ex'
+    field_value: |
+      <style>
+      .entry-column h3 {
+      text-align: left;
+      }
+      </style>
+    field_sort: 1
+    field_search: 'on'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@path'
+    field_value: 'echo_zero/201702/c36f2b1239780d180f855eeb39c6b9e8.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@x'
+    field_value: 480
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@y'
+    field_value: 251
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@fileSize'
+    field_value: 36021
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyPath'
+    field_value: 'echo_zero/201702/tiny-c36f2b1239780d180f855eeb39c6b9e8.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyFileSize'
+    field_value: 9084
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@secret'
+    field_value: 'd8d6bdfbd456d5769edc7144bbf3c4b7'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@path'
+    field_value: 'echo_zero/201702/939ed07909ced277db196e635a21ba95.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@x'
+    field_value: 1200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@y'
+    field_value: 627
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@fileSize'
+    field_value: 176736
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyPath'
+    field_value: 'echo_zero/201702/tiny-939ed07909ced277db196e635a21ba95.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyFileSize'
+    field_value: 9084
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@secret'
+    field_value: '24968503ea33d5412182eb1030ed0ef6'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 110
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@path'
+    field_value: 'echo_zero/201702/f5d3c8c60aa59c43ce58bd46b00ab260.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@x'
+    field_value: 480
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@y'
+    field_value: 252
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@fileSize'
+    field_value: 56955
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyPath'
+    field_value: 'echo_zero/201702/tiny-f5d3c8c60aa59c43ce58bd46b00ab260.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@tinyFileSize'
+    field_value: 14164
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_eyecatch@secret'
+    field_value: 'dfd3f7cca4e66902940ef3c5aa64e8a4'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@path'
+    field_value: 'echo_zero/201702/070950401a1243de5b7f2dac50ccb1ce.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@x'
+    field_value: 1024
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@y'
+    field_value: 536
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@fileSize'
+    field_value: 276690
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyPath'
+    field_value: 'echo_zero/201702/tiny-070950401a1243de5b7f2dac50ccb1ce.jpg'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyX'
+    field_value: 200
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyY'
+    field_value: 105
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@tinyFileSize'
+    field_value: 14164
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
+    field_cid: ''
+    field_uid: ''
+    field_bid: ''
+    field_mid: ''
+    field_blog_id: 1
+  - 
+    field_key: 'entry_ogp_image@secret'
+    field_value: '2153423f7bc6a5fea1b06b5ef6db2bd4'
+    field_sort: 1
+    field_search: 'off'
+    field_eid: 115
     field_cid: ''
     field_uid: ''
     field_bid: ''
@@ -16911,17 +20245,6 @@ form: ''
     form_current_serial: 3
     form_blog_id: 1
 fulltext: ''
-  - 
-    fulltext_value: |
-      カスタマイズガイド customize
-      
-      current よくあるカスタマイズに関する解説です。
-    fulltext_ngram: ''
-    fulltext_eid: ''
-    fulltext_cid: 18
-    fulltext_uid: ''
-    fulltext_bid: ''
-    fulltext_blog_id: 1
   - 
     fulltext_value: |
       echoとは？ echo
@@ -16979,33 +20302,22 @@ fulltext: ''
     fulltext_blog_id: 1
   - 
     fulltext_value: |
-      ここはフリーエリアです 吾輩は猫である。名前はまだ無い。 どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。 吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。 この書生というのは時々我々を捕えて煮て食うという話である。 しかしその当時は何という考もなかったから別段恐しいとも思わなかった。 ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。
+      echo_zeroの外観に関する機能です。解説ページを作成次第、順次リンクを追加していきます。 1カラム・2カラムレイアウト このテーマは、a-blog cmsの「レイアウト機能」には対応していません。しかし、テンプレート構造を整理することで、1カラムレイアウトと2カラムレイアウトを容易に切り替えることができます。 モジュール編集機能 ブログ新着など、各モジュール（他CMSでの『ウィジェット』）の外観を「モジュール＞カスタム設定」から編集できます。見出し・キャプション・一覧へのリンクの組み合わせによって、外観を細かく変更可能です。 カテゴリータイトル編集機能 カテゴリータイトルの外観を「カテゴリーの設定＞カスタム設定」から編集可能です。カテゴリータイトルに背景画像をアップロードしたり、見出しを「最上位のカテゴリー」や「カテゴリーのコード名」などにも変更できます。コード名に変更した場合は、見出しのフォントが英文フォントに変更されます。 お問い合わせフォームの改良 公式テーマではテンプレートの直接編集が必要となる、お問い合わせフォームの「自動返信メールの署名」を、管理ページの「ブログ＞カスタム設定」から編集することができます。
       
-      トップページ01
+      主な機能 .entry-column h3 { text-align: left; } true
     fulltext_ngram: ''
-    fulltext_eid: 35
+    fulltext_eid: 109
     fulltext_cid: ''
     fulltext_uid: ''
     fulltext_bid: ''
     fulltext_blog_id: 1
   - 
     fulltext_value: |
-      ここはフリーエリアです
+      ここから地図までが、2つめのフリーエリアです。a-blog cmsは、地図・動画・表・網掛けなどを、難しい操作を行わずに作成することができます。もちろんタブレット・スマートフォンにも対応しています！ 制作者について ウェビングスタジオは、札幌のフリーランスウェブエンジニアです。 名古屋発の純国産CMS「a-blog cms（エーブログ・シーエムエス）」の技術情報の共有を行っています。
       
-      私たちは時計台の鐘が鳴る札幌の市民です トップページ02
+      トップページ02
     fulltext_ngram: ''
     fulltext_eid: 36
-    fulltext_cid: ''
-    fulltext_uid: ''
-    fulltext_bid: ''
-    fulltext_blog_id: 1
-  - 
-    fulltext_value: |
-      echoのご利用の際は、編集設定・モジュールIDの設定・テストエントリーを含めた「完全インポート」をお薦めしています。 ここでは新規に設置したa-blog cmsに完全インポートを行う手順について解説します。 メンテナンスモードを使用できない「ablogcms.io」では、完全インポートは利用できません。検証の際はご注意ください。 （部分インポートの解説は今しばらくお待ちください） インポートデータをアップロードする インストール時に「setup_(ランダムな英数字)」としたディレクトリの名称を「mente」に変更してください。 テーマパッケージを解凍し、以下の通り、必要なディレクトリを指定のパスへアップロードしてください。 #ディレクトリ名,#アップロード先 dist/mente/bin/echo_zero,a-blog cmsを設置したディレクトリ/mente/bin/ 以下 dist/themes/echo_zero,a-blog cmsを設置したディレクトリ/themes/ 以下 dist/themes/blog@echo_zero,a-blog cmsを設置したディレクトリ/themes/ 以下 a-blog cmsの公式テーマのインポートデータにはテーマが含まれていますが、echo_zeroは開発のしやすさを優先しているため別としています。必ず、dist/themes/ 以下のディレクトリもアップロードしてください。 メンテナンスモードを起動する 以下のURLへアクセスしてください（index.phpを含めます）。 a-blog cmsを設置したディレクトリ/mente/index.php 管理者のIDとパスワードを入力し、メンテナンスメニューにログインします。 トップページで「インポート実行画面へ」を選択してください。 ウェブサイトのインポートを行う a-blog cmsを設置したばかりの状態では、「インポート先またはその親になるブログ」はID:1のブログのみとなっています。ID:1のブログを選択してください。 以降の「設置したブログの子ブログとして…」にはチェックを入れないでください。ブログ名・ブログコードもそのままで構いません。 「インポートするブログデータ名」に「echo_zero」と「blog@echo_zero」が追加されているのを確認し、「echo_zero」を選択してください。 「コンフィグ関連のインポート設定」では、1つ目・2つ目の項目に必ずチェックを入れてください。 以上を確認したら、ページ最下部の青いボタンを押し、インポートを実行してください。 コンフィグ関連のインポート設定に関する補足 新規サイトの場合は、3つすべての項目にチェックを入れることを強く推薦します。 既に作成したモジュールIDを破棄したくない場合は、2つ目の項目（モジュールID・ルールの破棄）をチェックしないこともできますが、echo_zeroと重複しているモジュールIDがある場合、動作に問題が生じる可能性があります。 すでに投稿したカテゴリー・エントリーを消したくない場合は、3つ目の項目（エントリー・カテゴリーの破棄）にチェックを入れなくても構いませんが、ナビゲーションやカテゴリー設定の修正が必要となります。 表示を確認する a-blog cmsを設置したURLへ戻り、echo_zeroのテーマが正しく表示されていればインポートに成功しています。 再度ログインして、各ページや画像、ブログの表示にも問題がないか、ご確認ください。 画像が表示されていない場合 archivesディレクトリの読み込みに失敗しています。a-blog cmsの「archives」以下に、パッケージ内の「mente/bin/archives/echo_zero」以下のディレクトリをアップロードし直してください。 ブログのインポートを行う ふたたびメンテナンスモードにログインし、「ブログ」のインポートを行います。 手順は親ブログの時と同じですが、「インポート先またはその親になるブログ」でID:1のブログを選択し、さらに以降の「設置したブログの子ブログとして…」にチェックを入れてください。 ブログ名・ブログコードは以下の通りとしてください。 #ブログ名,ブログ #ブログコード,blog 確認したら、インポートを実行し、ふたたびa-blog cmsを設置したURLへアクセスして、ブログが正しく表示されていることを確認してください。 カスタムユニットを使えるようにする echo_zeroでは「ボタン」「余白」「画像＋テキスト」のカスタムユニットが含まれていますが、インポート直後は使用できないので有効にします。 管理メニュー内「コンフィグ＞ユニット設定」へ移動してください。ユニットの登録画面となります。 「ボタン」「余白」「画像＋テキスト」の項目が空となっているので、同じ名前のボタンを押してユニットを登録し、画面上部の青いボタンを押して更新してください。 追加されたユニットの枠内には入力項目が表示されませんが、不具合ではありません。投稿画面では正しく表示されます。 テスト投稿をしてみる サイトの準備ができました。正しくページを追加できるかテストしてみてください。 echo_zeroでは、「エントリーの新規作成」がプルダウンリストになっています。選択すると、各カテゴリーのエントリー作成画面へ直接移動することができます。 サーバーの環境によっては、画像アップロードに失敗することがあります。OGP画像、サムネイル、追加のhead要素などもチェックすることをお勧めします。 「ピックアップ」は、公式テーマ（Site・Simple）との互換目的で設けられているフィールドです。echo_zeroではチェックを入れてもサイト内には反映されません。ピックアップ機能を利用する場合は、別途モジュールIDに条件を追加してください。 サイト全体の設定を行う 管理ページ内「ブログ」へ移動してください。 画面中央やや左上のタブ「カスタム情報」をクリックすると、echo_zero独自の設定画面となります。検索エンジン関係、SNS関係の設定を行ってください。 「エントリー入力項目の設定」では、ブログごとに「そのブログでは必要のない入力項目」を隠すことができます。 例えば、ウェブサイトではカテゴリーの変更を禁止しピックアップを使用しない、ブログではMETAタグやSNSボタンの設定を隠して入力項目を最低限にする…といったカスタマイズが可能です。 これは、echo_zero独自の機能です。テーマを変更した場合、表示の設定は引き継がれません。 非表示にした項目はエントリーの更新後も削除されず、データとして残っています。ふたたび表示状態にすると編集できるようになります。 初期の導入手順は以上となります。echo_zeroのカスタマイズについては、今後もデモサイト内で情報を追加していきます。
-      
-      導入手順（完全インポート） true
-    fulltext_ngram: ''
-    fulltext_eid: 70
     fulltext_cid: ''
     fulltext_uid: ''
     fulltext_bid: ''
@@ -17018,6 +20330,17 @@ fulltext: ''
     fulltext_ngram: ''
     fulltext_eid: ''
     fulltext_cid: 20
+    fulltext_uid: ''
+    fulltext_bid: ''
+    fulltext_blog_id: 1
+  - 
+    fulltext_value: |
+      カスタマイズガイド customize
+      
+      current テーマの導入とカスタマイズに関する解説です。
+    fulltext_ngram: ''
+    fulltext_eid: ''
+    fulltext_cid: 18
     fulltext_uid: ''
     fulltext_bid: ''
     fulltext_blog_id: 1
@@ -17188,7 +20511,7 @@ fulltext: ''
     fulltext_blog_id: 1
   - 
     fulltext_value: |
-      echo_zero  cms-skill.com
+      echo_zero echo_zero example.com
       
       noindex https://www.facebook.com/ablogcms/ ablogcms ablogcms 当サイトへのお問い合わせは、こちらのメールフォームからお願いいたします。 ドメイン指定受信を有効にしている場合、事前に当方のドメイン（%{ALIAS_DOMAIN}）を許可してください。 この度は「%{BLOG_NAME}」へお問い合わせいただき、ありがとうございました。 以下の内容で承りました。ご確認ください。 ご不明な点、送信内容の不備などございましたら、本メールに返信ください。 本メールについて心あたりがない場合は、大変お手数ですが 本メールを返送いただきますようお願いいたします。 :::::::::::::::::::::::::::::::::::::::::::::::::: %{BLOG_NAME} %{BLOG_URL}
     fulltext_ngram: ''
@@ -17196,6 +20519,116 @@ fulltext: ''
     fulltext_cid: ''
     fulltext_uid: ''
     fulltext_bid: 2
+    fulltext_blog_id: 1
+  - 
+    fulltext_value: |
+      
+      
+      トップページ01
+    fulltext_ngram: ''
+    fulltext_eid: 35
+    fulltext_cid: ''
+    fulltext_uid: ''
+    fulltext_bid: ''
+    fulltext_blog_id: 1
+  - 
+    fulltext_value: |
+      echoのご利用の際は、編集設定・モジュールIDの設定・テストエントリーを含めた「完全インポート」をお薦めしています。 ここでは新規に設置したa-blog cmsに完全インポートを行う手順について解説します。 メンテナンスモードを使用できない「ablogcms.io」では、完全インポートは利用できません。検証の際はご注意ください。 （部分インポートの解説は今しばらくお待ちください） インポートデータをアップロードする インストール時に「setup_(ランダムな英数字)」としたディレクトリの名称を「mente」に変更してください。 テーマパッケージを解凍し、以下の通り、必要なディレクトリを指定のパスへアップロードしてください。 #ディレクトリ名,#アップロード先 dist/mente/bin/echo_zero,a-blog cmsを設置したディレクトリ/mente/bin/ 以下 dist/themes/echo_zero,a-blog cmsを設置したディレクトリ/themes/ 以下 dist/themes/blog@echo_zero,a-blog cmsを設置したディレクトリ/themes/ 以下 a-blog cmsの公式テーマのインポートデータにはテーマが含まれていますが、echo_zeroは開発のしやすさを優先しているため別としています。必ず、dist/themes/ 以下のディレクトリもアップロードしてください。 メンテナンスモードを起動する 以下のURLへアクセスしてください（index.phpを含めます）。 a-blog cmsを設置したディレクトリ/mente/index.php 管理者のIDとパスワードを入力し、メンテナンスメニューにログインします。 トップページで「インポート実行画面へ」を選択してください。 ウェブサイトのインポートを行う a-blog cmsを設置したばかりの状態では、「インポート先またはその親になるブログ」はID:1のブログのみとなっています。ID:1のブログを選択してください。 以降の「設置したブログの子ブログとして…」にはチェックを入れないでください。ブログ名・ブログコードもそのままで構いません。 「インポートするブログデータ名」に「echo_zero」と「blog@echo_zero」が追加されているのを確認し、「echo_zero」を選択してください。 「コンフィグ関連のインポート設定」では、1つ目・2つ目の項目に必ずチェックを入れてください。 以上を確認したら、ページ最下部の青いボタンを押し、インポートを実行してください。 コンフィグ関連のインポート設定の補足 新規サイトの場合は、3つすべての項目にチェックを入れることを強く推薦します。 2つ目の項目（モジュールID・ルールの破棄）をチェックしなかった場合、重複しているモジュールID・編集設定があると表示に問題が生じます。インポート後に別途、統合が必要となります。 すでに投稿したカテゴリー・エントリーを消したくない場合は、3つ目の項目（エントリー・カテゴリーの破棄）にチェックを入れなくても構いませんが、ナビゲーションやカテゴリー設定の修正が必要となります。 表示を確認する a-blog cmsを設置したURLへ戻り、echo_zeroのテーマが正しく表示されていればインポートに成功しています。 再度ログインして、各ページや画像、ブログの表示にも問題がないか、ご確認ください。 画像が表示されていない場合 archivesディレクトリの読み込みに失敗しています。a-blog cmsの「archives」以下に、パッケージ内の「mente/bin/archives/echo_zero」以下のディレクトリをアップロードし直してください。 ブログのインポートを行う ふたたびメンテナンスモードにログインし、「ブログ」のインポートを行います。 手順は親ブログの時と同じですが、「インポート先またはその親になるブログ」でID:1のブログを選択し、さらに以降の「設置したブログの子ブログとして…」にチェックを入れてください。 ブログ名・ブログコードは以下の通りとしてください。 #ブログ名,ブログ #ブログコード,blog 確認したら、インポートを実行し、ふたたびa-blog cmsを設置したURLへアクセスして、ブログが正しく表示されていることを確認してください。 カスタムユニットを使えるようにする echo_zeroでは「ボタン」「余白」「画像＋テキスト」のカスタムユニットが含まれていますが、インポート直後は使用できないので有効にします。 管理メニュー内「コンフィグ＞ユニット設定」へ移動してください。ユニットの登録画面となります。 「ボタン」「余白」「画像＋テキスト」の項目が空となっているので、同じ名前のボタンを押してユニットを登録し、画面上部の青いボタンを押して更新してください。 追加されたユニットの枠内には入力項目が表示されませんが、不具合ではありません。投稿画面では正しく表示されます。 テスト投稿をしてみる サイトの準備ができました。正しくページを追加できるかテストしてみてください。 echo_zeroでは、「エントリーの新規作成」がプルダウンリストになっています。選択すると、各カテゴリーのエントリー作成画面へ直接移動することができます。 サーバーの環境によっては、画像アップロードに失敗することがあります。OGP画像、サムネイル、追加のhead要素などもチェックすることをお勧めします。 「ピックアップ」は、公式テーマ（Site・Simple）との互換目的で設けられているフィールドです。echo_zeroではトップページ「echoの特徴」で使用されています。 他のモジュールでピックアップ機能を利用する場合は、モジュールIDにフィールド条件「pickup/true」を追加してください。 サイト全体の設定を行う 管理ページ内「ブログ」へ移動してください。 画面中央やや左上のタブ「カスタム情報」をクリックすると、echo_zero独自の設定画面となります。検索エンジン関係、SNS関係の設定を行ってください。 「エントリー入力項目の設定」では、ブログごとに「そのブログでは必要のない入力項目」を隠すことができます。 例えば、ウェブサイトではカテゴリーの変更を禁止しピックアップを使用しない、ブログではMETAタグやSNSボタンの設定を隠して入力項目を最低限にする…といったカスタマイズが可能です。 これは、echo_zero独自の機能です。テーマを変更した場合、表示の設定は引き継がれません。 非表示にした項目はエントリーの更新後も削除されず、データとして残っています。ふたたび表示状態にすると編集できるようになります。 初期の導入手順は以上となります。echo_zeroのカスタマイズについては、今後もデモサイト内で情報を追加していきます。
+      
+      導入手順（完全インポート）
+    fulltext_ngram: ''
+    fulltext_eid: 70
+    fulltext_cid: ''
+    fulltext_uid: ''
+    fulltext_bid: ''
+    fulltext_blog_id: 1
+  - 
+    fulltext_value: |
+      「echo（エコー）」は、プロの技術者による本格的なウェブサイトへの利用を想定した、CMSテーマプロジェクトです。 まずプロトタイプを作成し、デザイン確定後に外観を作り直す…という昨今の制作フローに、特に適しています。 今ご覧になっているテーマは、a-blog cms用のテーマ「echo_zero」です。 なぜ、配布テーマは使いにくいのでしょうか プロの現場でも、既存テーマをベースにしたサイト制作が行われることがあります。 予算・リソース・運用戦略など様々な理由からです。 しかし、実際にはゼロから制作した場合と同じくらい手数がかかってしまったり、デザインや機能を妥協してしまうことも少なくありません。 一般に配布されているテーマは、ウェブ制作の知識が少ない一般ユーザーの利用を想定しています。このため、プロレベルの大胆なデザインや、長い制作期間のうちに変化する要件に柔軟に対応できないのです。 テーマをゼロから見直しました 作者は、プロのデザイナー・コーダーと協力してのCMSサイト構築を専門としています。200件以上のプロジェクトに関わった経験から、以下のポイントを重視して、テーマ構造を見直しました。 コーポーレートサイトで頻繁に求められる機能の絞り込み Sass・Gulpなどの ビルドツールとの（難解すぎない）連携 デザイナー・コーダー・エンジニアの共同制作への配慮 機能の追加よりも、機能を取り除く容易さを考慮 また、導入手順・よくあるカスタマイズのドキュメントを公開することで、学習コスト、社内での意思共有コストの軽減を行っています。 テーマ名の由来 よく聞かれますが、実はあまり意味はありません。echoという単語の響きが好きだからです（笑） ただ「エコー＝打てば響く」「echo＝PHPベースのCMSの根幹となるメソッド」という含みも持たせています。 echoがあなたの制作・スキルアップの一助となれば幸いです。
+      
+      echoとは？
+    fulltext_ngram: ''
+    fulltext_eid: 107
+    fulltext_cid: ''
+    fulltext_uid: ''
+    fulltext_bid: ''
+    fulltext_blog_id: 1
+  - 
+    fulltext_value: |
+      a-blog cms版「echo_zero」の最新バージョンはGitHubからダウンロードできます。 https://github.com/webbingstudio/acms_theme_echo_zero 非商用・検証目的の場合は無償でご利用いただけます。商用利用はライセンスをご購入ください（1ドメイン3,000円＋日本国消費税）。 ドネーションも歓迎いたします。開発・修正のモチベーションにつながります。 当リポジトリで公開されているファイルに関しては、MITライセンスを適用します。 The MIT License (MIT) | Open Source Initiative 下記のJavaScriptライブラリに依存しています。これらもMITライセンスとなります。 この場を借りて、すばらしいライブラリを提供してくださった開発者の皆様に感謝申し上げます。 slick hiraku.js Rem-unit-polyfill by chuckcarpenter
+      
+      リポジトリとライセンス
+    fulltext_ngram: ''
+    fulltext_eid: 108
+    fulltext_cid: ''
+    fulltext_uid: ''
+    fulltext_bid: ''
+    fulltext_blog_id: 1
+  - 
+    fulltext_value: |
+      このテーマの、内部（META・投稿画面・管理ページ）に関する機能です。解説ページを作成次第、順次リンクを追加していきます。 カスタムユニットの追加 a-blog cmsのデフォルトユニットの他に、「ボタン」「余白」「画像＋テキスト」ユニットを利用できます。 a-blog cmsの管理ボックスを改良 a-blog cmsは投稿画面をカテゴリーごとにカスタマイズできますが、一定のルールに従ったURLへ移動しなければ有効となりません。このテーマでは管理ボックスの「エントリーの作成」を改良し、カテゴリー別の投稿画面へ簡単に移動できます。 a-blog cmsの投稿画面を改良 投稿画面の各項目のうち、本来はテーマ側で編集することが困難な「カテゴリー」「タグ」などの表示状態を、管理ページ「ブログ＞カスタム設定」から編集することができます。 投稿画面の最適化 a-blog cmsは、制作しているサイトのCSSルールによっては、投稿画面が大きく崩れてしまうことがあります。このテーマでは、衝突を修正するための補正CSSを追加しています。 ブログ設定の継承 このテーマは、ブログやイベントなどの時系列コンテンツを「子ブログ」とする、マルチブログを前提としており、親ブログの以下のような設定を、子ブログにも引き継ぐことができます。もちろん、子ブログを切り離し、別サイトとして扱うことも簡単にできます。 親ブログの名称（サイト名） グローバルナビゲーション SNS関連の設定 OG:image 公式テーマとの互換 META情報・ピックアップなどの重要なカスタムフィールドを、公式テーマ（Site・Simple）と同じ名称としています。このため、運用中のテーマを公式からecho_zeroへ変更したり、戻すことができます。
+      
+      内部に関する機能 .entry-column h3 { text-align: left; } true
+    fulltext_ngram: ''
+    fulltext_eid: 110
+    fulltext_cid: ''
+    fulltext_uid: ''
+    fulltext_bid: ''
+    fulltext_blog_id: 1
+  - 
+    fulltext_value: |
+      このテーマの親ブログのトップページは、以下の2か所が「自由にHTMLを記述できるエリア」となっています。 メインビジュアルの直下 「echoの特徴」と「ブログ」の間 ログインしている状態でトップページを表示すると、各フリーエリアの下にa-blog cmsの管理ボックスが表示されています。「変更」ボタンをクリックすると編集画面となります。 操作は、a-blog cmsの通常のエントリー編集とまったく同じです。HTMLコードを直接書くこともできます。 エントリーを保存すると、一旦「フリーエリア管理用のエントリー」のページへ移動します。 このページは一般には公開されていないページです。トップページへ戻り、更新が反映されていることを確認してください。 フリーエリアを使用したくない場合 以下のいずれかのカスタマイズを行ってください。 エントリーを「非公開」にする ログイン中は表示されていますが、公開画面では非表示となります。 トップページ用のテンプレートを編集する 「echo_zero」テーマ内、 /top.html をエディタで開いてください。 ファイル内の以下のインクルードがフリーエリアを呼び出しています。削除するか、HTML直書きに変更してください。 ・・・
+      
+      トップページのフリーエリアを更新する
+    fulltext_ngram: ''
+    fulltext_eid: 115
+    fulltext_cid: ''
+    fulltext_uid: ''
+    fulltext_bid: ''
+    fulltext_blog_id: 1
+  - 
+    fulltext_value: |
+      このテーマは、プロの制作者のためのテーマです。作者の実際の経験をもとに、開発者を支える様々な配慮を行っています。とても細かい話ですがご笑覧ください。 モジュールの詳細設定 エントリー一覧などの「モジュール＞カスタム情報＞詳細設定」では、外観以外に以下の設定が可能です。これにより、セクションごとに正確かつ詳細なカスタマイズができます。 見出しのタグ（デフォルトはh2ですが、h3やpに変更できます） セクションを包括しているdivの追加クラス セクションを包括しているdivの追加属性（id・インラインスタイルを追加できます） ビルドツール対応 Sass・Gulpに対応しています。カスタマイズがカラーリングや使用フォントの変更のみであれば、Sassファイル内の変数を変更し、CSSを書き出し直すだけで変更できます。 また、以下のフォントすべてのフォント名とウェイトが別変数となっており、ウェブフォントを個別に指定できます。 和文の本文 和文の見出し 英文の見出し メインビジュアルのスライドショー 日付などのフォント ロゴを管理画面で更新できない理由 多くの配布テーマは、ヘッダのロゴマークを管理画面からアップロードできますが、このテーマでは意図的に対応していません。これは、本格的なウェブ制作では以下のような状況となっており、結果的にHTML直書きとなるためです。 公開後に差し替えることがまずない レスポンシブイメージが採用されるケースがある ほぼ100%、カスタムフィールドで管理しにくいSVGが採用されている 帯状デザインへの配慮 ウィンドウ幅全体に背景色が敷かれる「帯状デザイン」は、現在のウェブデザインのトップページのトレンドとなっています。しかし、一般の配布テーマでは初心者のカスタマイズが難しくなるなどの理由から、ページ全体の幅を固定しているケースが多く、これがプロの制作者のカスタマイズを困難にしています。 このテーマでは、トップページの各セクションの幅を制限せず、CSSのみで帯状に背景色を変えることができるよう制作しています。トップページ以外では、ページタイトル・トピックパス・本文の3パートに色分けをすることができます。 a-blog cms独特の仕様を考慮したテーマ設計 a-blog cmsはテーマ内のディレクトリ名・ファイル名がそのままテーマの表示結果に影響します。このテーマでは、子ブログが増えてサイト構造が複雑になっても混乱しないよう、徹底した命名規則を設けています。 「モジュール全体」と「エントリーの繰り返し部分」の分離 同じブログの新着でも、表示する場所によって体裁を変えたいというケースが、実際の制作現場では頻繁に求められます。このテーマではモジュール内の「エントリーを繰り返している部分」をインクルードで別ファイルとしています。 これにより、モジュールテンプレートの構造をわかりやすく、かつ、切り離しやIFブロックによる体裁の変更をしやすくしています。 コメントでの補足 テーマ内のMETAタグの定義と出力に関するテンプレートは、a-blog cmsの「変数」を活用しているため、かなり上級者向けとなっています。編集は基本的にお勧めしませんが、コメントを記載して、役割・処理を解説しています。
+      
+      制作者を支える機能 .entry-column h3 { text-align: left; } true
+    fulltext_ngram: ''
+    fulltext_eid: 111
+    fulltext_cid: ''
+    fulltext_uid: ''
+    fulltext_bid: ''
+    fulltext_blog_id: 1
+  - 
+    fulltext_value: |
+      このテーマは、「ヘッダのロゴ」については、公式テーマのように管理画面で変更することはできません。 これは意図的な配慮です。詳しくは下記を参照ください。 ロゴを管理画面で更新できない理由 テーマを設置できたら、まずサイトに合わせたロゴに差し替えましょう。 SVG画像を使用する場合 ロゴ画像はSVG形式で、やや横長の縦横比を前提としています。元の画像はテーマ内の以下の場所にあるので、上書きアップロードしてください。 /images/common/logo.svg PNG形式を使用する場合 テーマ内の以下のテンプレートをエディタで開いてください。 /include/header.html 8行目に以下の記述があるので、 以下のとおりPNGに変更してください。 テキストにする場合 以下のようにするとブログ名をそのまま表示できます。 {name} ロゴの代替テキストは「管理上の親ブログの名前」となっています。 更新担当者がブログ名の後ろに「管理画面でわかりやすいように」とメモを書き加えてしまっていた…！という事故が起きることが（ごくまれに）あります。心配な場合は直書きに変更することをお勧めします。
+      
+      ロゴを差し替える
+    fulltext_ngram: ''
+    fulltext_eid: 112
+    fulltext_cid: ''
+    fulltext_uid: ''
+    fulltext_bid: ''
+    fulltext_blog_id: 1
+  - 
+    fulltext_value: |
+      このテーマは、トップページ・固定ページが1カラム、ブログは2カラムとなっています。 すべていずれに統一したい場合は、簡単に変更することができます。 固定ページを2カラムに変更する 「echo_zero」テーマ内の以下のファイルをエディタで開いてください。 /404.html /entry.html /index.html /search.html それぞれ、一行だけインクルードが記述されています。 「_col1」を「_col2」に書き換えると2カラムとなります。 ブログを1カラムに変更する 「blog@echo_zero」テーマ内の以下のファイルをエディタで開いてください。 /404.html /entry.html /index.html /search.html /top.html こちらも一行だけインクルードが記述されています。「_col2」を「_col1」に書き換えると1カラムとなります。 細かいカスタマイズをしたいときや、「_col1」「_col2」ディレクトリを残したくないときは、インクルードを書き換えるのではなく、インクルード先のテンプレートのソースコードをすべて選択して貼り付けて対応してください。 エントリー一覧の段組の修正も必要となります。下記ページを参照ください。 エントリー一覧の段組を修正する
+      
+      全体の段組を変更する
+    fulltext_ngram: ''
+    fulltext_eid: 113
+    fulltext_cid: ''
+    fulltext_uid: ''
+    fulltext_bid: ''
+    fulltext_blog_id: 1
+  - 
+    fulltext_value: |
+      レイアウトに関わるカスタマイズを行うと、エントリーの繰り返し部分の幅が適切ではなくなることがあります。 例えばブログを1カラムに変更すると、画像のようにデスクトップ画面では幅が広くなりすぎます。ここは、デスクトップでは2カラム、モバイルでは1カラムとしたいところです。 エントリー一覧の段組は、管理画面から変更できます。 一覧にカーソルを置くと、右上に「モジュール設定」へのリンクが表示されるのでクリックしてください。ポップアップが表示されたら「表示設定」タブを選択してください。 「ループ内クラス」の項目に、以下のようにクラス名を書くと段組の挙動が変化します。空欄とした場合は「1カラムでの一般的に適切な挙動」となるため、この場合は空欄でも構いません。 #クラス名,#実際の挙動 #col-sm-12,常に1カラム #col-sm-12 col-lg-6,モバイルで1カラム、デスクトップで2カラム #col-xsss-6 col-sm-4 col-xl-3,モバイルで2カラム、タブレットで3カラム、ワイド画面で4カラム ブレークポイントに関する補足 「sm」「lg」などのブレークポイントの名称は、bootstrap4のグリッドレイアウトに準拠していますが、さらに以下のブレークポイントを追加しています。これにより、iPhone SE・IPhone 7・iPhone 7 Plusを切り替えることができます。 #xs,425px〜375px #xss,375px〜320px #xsss,320px以下
+      
+      エントリー一覧の段組を修正する
+    fulltext_ngram: ''
+    fulltext_eid: 114
+    fulltext_cid: ''
+    fulltext_uid: ''
+    fulltext_bid: ''
     fulltext_blog_id: 1
 moblog: ''
 module: ''
@@ -17979,7 +21412,7 @@ module: ''
     module_keyword_scope: 'local'
     module_tag: ''
     module_tag_scope: 'local'
-    module_field: ''
+    module_field: 'pickup/true'
     module_field_scope: 'local'
     module_start: ''
     module_start_scope: 'local'
