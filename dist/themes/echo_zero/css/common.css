@@ -2882,7 +2882,7 @@ fieldset[disabled]
     margin: 0 0 .5rem;
     color: #999999;
     line-height: 1.25;
-    word-break: break-all; }
+    word-break: break-word; }
   .summary .summary-btn {
     position: absolute;
     bottom: 0;
@@ -3017,7 +3017,7 @@ fieldset[disabled]
     padding: .5rem 0;
     color: #999999;
     line-height: 1.5;
-    word-break: break-all; }
+    word-break: break-word; }
   .card .card-tag {
     margin: 0;
     line-height: 1.75; }
@@ -3211,7 +3211,7 @@ fieldset[disabled]
   border-radius: 4px 4px 0 0; }
 
 .entry-column {
-  word-break: break-all; }
+  word-break: break-word; }
   .entry-column h1, .entry-column h2, .entry-column h3, .entry-column h4, .entry-column h5, .entry-column h6, .entry-column ul, .entry-column ol {
     overflow: hidden; }
   .entry-column *:first-child,

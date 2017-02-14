@@ -2950,7 +2950,7 @@ input[type="checkbox"] {
     margin: 0 0 .5rem;
     color: $gray-light;
     line-height: $line-height-sm;
-    word-break: break-all;
+    word-break: break-word;
   }
 
   .summary-btn {
@@ -3167,7 +3167,7 @@ input[type="checkbox"] {
     padding: .5rem 0;
     color: $gray-light;
     line-height: $line-height-md;
-    word-break: break-all;
+    word-break: break-word;
   }
 
   .card-tag {
@@ -3533,7 +3533,7 @@ input[type="checkbox"] {
 .entry-column {
 
   // URLが長いと右にはみ出す問題を回避
-  word-break: break-all;
+  word-break: break-word;
 
   // 直前の要素がfloatしたときに背景色やリストマークが巻き込まれないようにする
   h1, h2, h3, h4, h5, h6, ul, ol {
