@@ -3227,6 +3227,7 @@ input[type="checkbox"] {
 
   .imgtext-img {
     position: relative;
+    transition: .3s opacity;
     z-index: 11;
 
     > img {
@@ -3288,6 +3289,7 @@ input[type="checkbox"] {
       -ms-transform:translate(0, -100%);
       transform:translate(0, -100%);
       background-color: rgba(255,255,255,.5);
+      transition: .3s background-color;
     }
 
     .imgtext-body {
@@ -3320,7 +3322,15 @@ input[type="checkbox"] {
 
       &:hover,
       &:focus {
-        color: $link-hover-color;
+
+        .imgtext-img {
+          opacity: .9;
+        }
+
+        .imgtext-title {
+          background-color: rgba(255,255,255,.75);
+        }
+
       }
 
     }
@@ -3372,7 +3382,11 @@ input[type="checkbox"] {
 
       &:hover,
       &:focus {
-        color: $link-hover-color;
+
+        .imgtext-img {
+          opacity: .9;
+        }
+
       }
 
     }
@@ -3424,7 +3438,11 @@ input[type="checkbox"] {
 
       &:hover,
       &:focus {
-        color: $link-hover-color;
+
+        .imgtext-img {
+          opacity: .9;
+        }
+
       }
 
     }

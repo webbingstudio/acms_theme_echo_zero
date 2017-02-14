@@ -3059,6 +3059,7 @@ fieldset[disabled]
         text-decoration: underline; }
   .imgtext .imgtext-img {
     position: relative;
+    transition: .3s opacity;
     z-index: 11; }
     .imgtext .imgtext-img > img {
       width: 100%;
@@ -3094,7 +3095,8 @@ fieldset[disabled]
     -webkit-transform: translate(0, -100%);
     -ms-transform: translate(0, -100%);
     transform: translate(0, -100%);
-    background-color: rgba(255, 255, 255, 0.5); }
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: .3s background-color; }
   .imgtext.imgtext-01 .imgtext-body {
     margin: 0;
     padding: 0.625rem 0.625rem 0; }
@@ -3109,8 +3111,10 @@ fieldset[disabled]
       -ms-transform: translate(0, -50%);
       transform: translate(0, -50%);
       font-family: "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif; }
-  .imgtext.imgtext-01 > a:hover, .imgtext.imgtext-01 > a:focus {
-    color: #4499dd; }
+  .imgtext.imgtext-01 > a:hover .imgtext-img, .imgtext.imgtext-01 > a:focus .imgtext-img {
+    opacity: .9; }
+  .imgtext.imgtext-01 > a:hover .imgtext-title, .imgtext.imgtext-01 > a:focus .imgtext-title {
+    background-color: rgba(255, 255, 255, 0.75); }
   .imgtext.imgtext-02 .imgtext-img {
     float: left;
     max-width: 50%; }
@@ -3132,8 +3136,8 @@ fieldset[disabled]
       top: 0;
       left: 0;
       font-family: "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif; }
-  .imgtext.imgtext-02 > a:hover, .imgtext.imgtext-02 > a:focus {
-    color: #4499dd; }
+  .imgtext.imgtext-02 > a:hover .imgtext-img, .imgtext.imgtext-02 > a:focus .imgtext-img {
+    opacity: .9; }
   .imgtext.imgtext-03 .imgtext-img {
     float: right;
     max-width: 50%; }
@@ -3155,8 +3159,8 @@ fieldset[disabled]
       top: 0;
       left: 0;
       font-family: "-apple-system", "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif; }
-  .imgtext.imgtext-03 > a:hover, .imgtext.imgtext-03 > a:focus {
-    color: #4499dd; }
+  .imgtext.imgtext-03 > a:hover .imgtext-img, .imgtext.imgtext-03 > a:focus .imgtext-img {
+    opacity: .9; }
 
 .banner ul {
   overflow: hidden;
