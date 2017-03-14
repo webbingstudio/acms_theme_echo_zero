@@ -1021,8 +1021,7 @@ h2:not([class*="title"]) {
 h3:not([class*="title"]) {
   margin-top: 3.75rem;
   margin-bottom: 1.5rem;
-  font-size: 1.1875rem;
-  text-align: center; }
+  font-size: 1.1875rem; }
 
 .title-04,
 h4:not([class*="title"]) {
@@ -3350,10 +3349,6 @@ fieldset[disabled]
 [class*="column-media-"] {
   text-align: center;
   padding: 0 0.625rem; }
-  .post-contents [class*="col-"] [class*="column-image-"], .post-contents [class*="col-"]
-  [class*="column-media-"] {
-    padding-left: 0;
-    padding-right: 0; }
   [class*="column-image-"] .caption,
   [class*="column-media-"] .caption {
     margin: 0;
@@ -3465,6 +3460,10 @@ fieldset[disabled]
   display: block;
   float: left;
   margin: 0 0 1.25rem; }
+  .post-contents [class*="col-"] .column-image-center, .post-contents [class*="col-"]
+  .column-media-center {
+    padding-left: 0;
+    padding-right: 0; }
   @media (min-width: 1024px) {
     .column-image-center,
     .column-media-center {
@@ -3497,6 +3496,9 @@ fieldset[disabled]
   display: block !important;
   margin: 0 auto;
   padding-right: 0.625rem; }
+  .post-contents [class*="col-"] .column-image-left, .post-contents [class*="col-"]
+  .column-media-left {
+    padding-left: 0; }
   @media (min-width: 425px) {
     .column-image-left,
     .column-media-left {
@@ -3528,6 +3530,9 @@ fieldset[disabled]
   display: block !important;
   margin: 0 auto;
   padding-left: 0.625rem; }
+  .post-contents [class*="col-"] .column-image-right, .post-contents [class*="col-"]
+  .column-media-right {
+    padding-right: 0; }
   @media (min-width: 425px) {
     .column-image-right,
     .column-media-right {

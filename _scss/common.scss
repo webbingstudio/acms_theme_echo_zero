@@ -313,7 +313,6 @@ h3:not([class*="title"]) {
   margin-top: ($spacer * 6);
   margin-bottom: 1.5rem;
   font-size: 1.1875rem;
-  text-align: center;
 }
 
 .title-04,
@@ -3746,12 +3745,6 @@ input[type="checkbox"] {
   text-align: center;
   padding: 0 ($grid-gutter-width / 2);
 
-  // ユニットグループの中では余白をリセットする
-  .post-contents [class*="col-"] & {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .caption {
     margin: 0;
     padding: ($spacer / 2);
@@ -3914,6 +3907,12 @@ input[type="checkbox"] {
   float: left;
   margin: 0 0 ($spacer * 2);
 
+  // ユニットグループの中では余白をリセットする
+  .post-contents [class*="col-"] & {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @include media-breakpoint-up(lg) {
     margin-bottom: ($spacer * 3);
   }
@@ -3953,6 +3952,11 @@ input[type="checkbox"] {
   display: block !important;
   margin: 0 auto;
   padding-right: ($grid-gutter-width / 2);
+
+  // ユニットグループの中では余白をリセットする
+  .post-contents [class*="col-"] & {
+    padding-left: 0;
+  }
 
   @include media-breakpoint-up(sm) {
     padding-right: $grid-gutter-width;
@@ -3995,6 +3999,11 @@ input[type="checkbox"] {
   display: block !important;
   margin: 0 auto;
   padding-left: ($grid-gutter-width / 2);
+
+  // ユニットグループの中では余白をリセットする
+  .post-contents [class*="col-"] & {
+    padding-right: 0;
+  }
 
   @include media-breakpoint-up(sm) {
     padding-left: $grid-gutter-width;
