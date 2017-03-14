@@ -2373,8 +2373,14 @@ input[type="checkbox"] {
 
     a {
       display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       color: $gray-dark;
       text-decoration: none;
+      z-index: 250;
     }
 
     // .mainvisual-slideのサイズに従って伸縮する
