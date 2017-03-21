@@ -3,7 +3,7 @@ a-blog cms theme "echo_zero"
 
 - - - - - - - - - - - - - - - - - - -
 
-version 1.1.3
+version 1.1.4
 
 Author: Seiko Kuchida  
 http://webbingstudio.com/
