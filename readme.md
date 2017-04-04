@@ -12,6 +12,12 @@ Copyright 2017 WebbingStudio
 
 - - - - - - - - - - - - - - - - - - -
 
+## a-blog cms バージョン2.7.0での不具合について
+
+下記記事を参照ください。
+
+[http://webbingstudio.com/weblog/cms/entry-832.html](http://webbingstudio.com/weblog/cms/entry-832.html)
+
 ## echo_zeroとは
 
 「echo_zero」は、a-blog cms専用のテーマです。a-blog cmsの多彩な機能のうち、業務で特に採用される機能のみを選んで実装しています。
