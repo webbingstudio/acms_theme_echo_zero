@@ -40,6 +40,7 @@
 // -- Mainvisual
 // -- Header Wrap
 // -- Main, Sub
+// -- Back to Top
 // -- Footer
 // -- Page Header
 // -- Archive Header
@@ -2525,6 +2526,96 @@ input[type="checkbox"] {
   }
 
 }
+
+}
+
+// Back to Top
+.backtotop {
+  position: fixed;
+  width: 3rem;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 18;
+
+  @media (min-width: 90rem) {
+    right: 50%;
+    margin-right: -40rem;
+  }
+
+  a {
+    display: block;
+    border: 1px solid transparent;
+    width: 3rem;
+    height: 3rem;
+    line-height: 2.75rem;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+
+    &,
+    &:visited {
+      color: #333;
+      background-color: #fff;
+    }
+
+    .backtotop-line {
+      display: inline-block;
+      position: relative;
+      width: 2px;
+      height: 16px;
+      background-color: #333333;
+      border-radius: 1px;
+      vertical-align: middle;
+
+      @include media-breakpoint-up(md) {
+        height: 20px;
+      }
+
+      &:before,
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: #333333;
+        width: 2px;
+        height: 12px;
+        border-radius: 1px;
+
+        @include media-breakpoint-up(md) {
+          height: 16px;
+        }
+
+      }
+
+      &:before {
+        top: -2px;
+        left: -4px;
+        transform: rotate(45deg);
+
+        @include media-breakpoint-up(md) {
+          top: -3px;
+          left: -5px;
+        }
+
+      }
+
+      &:after {
+        top: -2px;
+        left: 4px;
+        transform: rotate(-45deg);
+
+        @include media-breakpoint-up(md) {
+          top: -3px;
+          left: 5px;
+        }
+
+      }
+
+    }
+
+  }
 
 }
 
