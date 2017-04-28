@@ -153,6 +153,17 @@ blockquote:not([class]) {
 // Utilities
 // ----------------------------
 
+.all-wrap {
+  // コンテナを無視して幅を画面いっぱいに広げるために使用する
+  // この要素には必ず「overflow:hidden」と「max-width:100%」を指定すること
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.outer-wrap {
+  // offcanvasに使用する
+}
+
 .clearfix {
   &:after {
     clear: both;
@@ -188,14 +199,13 @@ blockquote:not([class]) {
 }
 
 // コンテナの幅を無視して幅いっぱいに広げる
-// 必ず包括要素にoverflow:hiddenとmax-width:100%;を指定すること
 
 .container-full {
   min-height: 1px !important;
-  margin-left: -5000px !important;
-  margin-right: -5000px !important;
-  padding-left: 5000px !important;
-  padding-right: 5000px !important;
+  margin-left: $grid-gutter-width * -500 !important;
+  margin-right: $grid-gutter-width * -500 !important;
+  padding-left: $grid-gutter-width * 500.5 !important;
+  padding-right: $grid-gutter-width * 500.5 !important;
 
   .container {
     padding-left: 0;
@@ -4035,3 +4045,49 @@ input[type="checkbox"] {
   }
 
 }
+
+// 「コンテナの幅を無視して幅いっぱいに広げる」演出のユニットグループでの調整
+
+.container-full {
+
+  .entry-column & {
+
+    @include media-breakpoint-up(lg) {
+      padding-left: $grid-gutter-width * 500;
+      padding-right: $grid-gutter-width * 500;
+    }
+
+    [class*="column-image-left"],
+    [class*="column-media-left"] {
+      padding-left: 0;
+    }
+
+    [class*="column-image-right"],
+    [class*="column-media-right"] {
+      padding-right: 0;
+    }
+
+    [class*="column-image-center"],
+    [class*="column-media-center"] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+  }
+
+  @include media-breakpoint-down(xs) {
+
+    [class*="column-image-left"][class*="column-responsive-sm"],
+    [class*="column-media-left"][class*="column-responsive-sm"] {
+      padding-right: 0;
+    }
+
+    [class*="column-image-right"][class*="column-responsive-sm"],
+    [class*="column-media-right"][class*="column-responsive-sm"] {
+      padding-left: 0;
+    }
+
+  }
+
+}
+
