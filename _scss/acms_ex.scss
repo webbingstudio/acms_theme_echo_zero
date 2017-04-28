@@ -267,18 +267,20 @@ div.column-file-center {
 
 }
 
-.js-tag_insertion .emoji-trigger-tag[rel="a"] {
+.js-tag_insertion .emoji-trigger-tag[rel="a"],
+.js-tag_insertion .emoji-trigger-tag[data-rel="a"] {
   text-decoration: underline;
 }
 
-.js-tag_insertion .emoji-trigger-tag[rel="em"] {
+.js-tag_insertion .emoji-trigger-tag[rel="em"],
+.js-tag_insertion .emoji-trigger-tag[data-rel="em"] {
   font-style: italic;
 }
 
-.js-tag_insertion .emoji-trigger-tag[rel="strong"] {
+.js-tag_insertion .emoji-trigger-tag[rel="strong"],
+.js-tag_insertion .emoji-trigger-tag[data-rel="strong"] {
   font-weight: bold;
 }
-
 
 
 
