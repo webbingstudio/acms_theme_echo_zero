@@ -168,6 +168,20 @@ body .ui-widget,
 }
 
 
+// ダイレクト編集のユニットのモーダルポップアップが狭すぎる問題を回避
+// ----------------------------
+
+#js-edit_inplace-box {
+  max-width: 960px;
+
+  .entryFormColumnBody .entryFormColumnTable th,
+  .entryFormColumnBody .entryFormColumnTable td {
+     min-width: 120px;
+  }
+
+}
+
+
 // 管理ボックスのボタンサイズを固定
 // ----------------------------
 

@@ -122,6 +122,12 @@ body .ui-widget,
     max-width: 1200px;
     min-width: 800px; } }
 
+#js-edit_inplace-box {
+  max-width: 960px; }
+  #js-edit_inplace-box .entryFormColumnBody .entryFormColumnTable th,
+  #js-edit_inplace-box .entryFormColumnBody .entryFormColumnTable td {
+    min-width: 120px; }
+
 #adminBox [class*=acms-admin-btn] {
   font-size: 13px; }
 
