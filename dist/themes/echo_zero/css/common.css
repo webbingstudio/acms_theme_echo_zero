@@ -1106,7 +1106,7 @@ h6:not([class*="title"]) {
       .datelist ul .datelist-contents {
         overflow: hidden; } }
 
-.tables-reset, .table {
+.tables-reset, .table, [class*="column-table-"] table {
   display: block;
   width: 100%;
   max-width: 100%;
@@ -1116,29 +1116,29 @@ h6:not([class*="title"]) {
   border-style: solid;
   border-color: #cccccc; }
   @media (min-width: 768px) {
-    .tables-reset, .table {
+    .tables-reset, .table, [class*="column-table-"] table {
       display: table; } }
   @media (min-width: 1024px) {
-    .tables-reset, .table {
+    .tables-reset, .table, [class*="column-table-"] table {
       margin-bottom: 2.5rem; } }
-  .tables-reset thead, .table thead,
-  .tables-reset tbody, .table tbody,
-  .tables-reset tfoot, .table tfoot {
+  .tables-reset thead, .table thead, [class*="column-table-"] table thead,
+  .tables-reset tbody, .table tbody, [class*="column-table-"] table tbody,
+  .tables-reset tfoot, .table tfoot, [class*="column-table-"] table tfoot {
     display: block; }
     @media (min-width: 768px) {
-      .tables-reset thead, .table thead,
-      .tables-reset tbody, .table tbody,
-      .tables-reset tfoot, .table tfoot {
+      .tables-reset thead, .table thead, [class*="column-table-"] table thead,
+      .tables-reset tbody, .table tbody, [class*="column-table-"] table tbody,
+      .tables-reset tfoot, .table tfoot, [class*="column-table-"] table tfoot {
         display: table-row-group; } }
-  .tables-reset tr, .table tr {
+  .tables-reset tr, .table tr, [class*="column-table-"] table tr {
     display: block;
     border-bottom: 1px solid #cccccc; }
     @media (min-width: 768px) {
-      .tables-reset tr, .table tr {
+      .tables-reset tr, .table tr, [class*="column-table-"] table tr {
         display: table-row;
         border-bottom: 0 none; } }
-  .tables-reset th, .table th,
-  .tables-reset td, .table td {
+  .tables-reset th, .table th, [class*="column-table-"] table th,
+  .tables-reset td, .table td, [class*="column-table-"] table td {
     display: block;
     width: 100%;
     padding: .5rem 1rem;
@@ -1148,13 +1148,13 @@ h6:not([class*="title"]) {
     border-color: #cccccc;
     vertical-align: top; }
     @media (min-width: 768px) {
-      .tables-reset th, .table th,
-      .tables-reset td, .table td {
+      .tables-reset th, .table th, [class*="column-table-"] table th,
+      .tables-reset td, .table td, [class*="column-table-"] table td {
         display: table-cell;
         width: auto; } }
-  .tables-reset th, .table th {
+  .tables-reset th, .table th, [class*="column-table-"] table th {
     text-align: left; }
-  .tables-reset thead th, .table thead th {
+  .tables-reset thead th, .table thead th, [class*="column-table-"] table thead th {
     vertical-align: bottom; }
 
 @media (min-width: 768px) {

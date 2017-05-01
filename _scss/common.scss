@@ -4182,3 +4182,9 @@ input[type="checkbox"] {
 
 }
 
+
+// Column Table
+
+[class*="column-table-"] table {
+  @extend .tables-reset;
+}
