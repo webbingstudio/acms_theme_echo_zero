@@ -20524,15 +20524,6 @@ form: ''
       O:5:"Field":3:{s:9:"_aryField";a:1:{s:5:"scope";a:1:{i:0;s:5:"local";}}s:9:"_aryChild";a:2:{s:4:"mail";O:16:"Field_Validation":5:{s:5:"_aryV";a:0:{}s:10:"_aryMethod";a:0:{}s:9:"_aryField";a:9:{s:10:"SubjectTpl";a:1:{i:0;s:25:"/contact/form/subject.txt";}s:7:"BodyTpl";a:1:{i:0;s:22:"/contact/form/body.txt";}s:4:"From";a:1:{i:0;s:16:"mail@example.com";}s:7:"Charset";a:1:{i:0;s:11:"ISO-2022-JP";}s:11:"CharsetHTML";a:1:{i:0;s:5:"UTF-8";}s:15:"AdminSubjectTpl";a:1:{i:0;s:30:"/contact/form/adminsubject.txt";}s:12:"AdminBodyTpl";a:1:{i:0;s:27:"/contact/form/adminbody.txt";}s:7:"AdminTo";a:1:{i:0;s:16:"mail@example.com";}s:15:"AdminAttachment";a:1:{i:0;s:2:"on";}}s:9:"_aryChild";a:0:{}s:8:"_aryMeta";a:0:{}}s:6:"option";O:16:"Field_Validation":5:{s:5:"_aryV";a:0:{}s:10:"_aryMethod";a:0:{}s:9:"_aryField";a:3:{s:5:"field";a:0:{}s:6:"method";a:0:{}s:5:"value";a:0:{}}s:9:"_aryChild";a:0:{}s:8:"_aryMeta";a:0:{}}}s:8:"_aryMeta";a:0:{}}
     form_current_serial: 5
     form_blog_id: 1
-  - 
-    form_id: 5
-    form_code: 'contact_form'
-    form_name: 'お問い合わせフォーム'
-    form_scope: 'local'
-    form_data: >
-      O:5:"Field":3:{s:9:"_aryField";a:1:{s:5:"scope";a:1:{i:0;s:5:"local";}}s:9:"_aryChild";a:2:{s:4:"mail";O:16:"Field_Validation":5:{s:5:"_aryV";a:0:{}s:10:"_aryMethod";a:0:{}s:9:"_aryField";a:9:{s:10:"SubjectTpl";a:1:{i:0;s:25:"/contact/form/subject.txt";}s:7:"BodyTpl";a:1:{i:0;s:22:"/contact/form/body.txt";}s:4:"From";a:1:{i:0;s:16:"mail@example.com";}s:7:"Charset";a:1:{i:0;s:11:"ISO-2022-JP";}s:11:"CharsetHTML";a:1:{i:0;s:5:"UTF-8";}s:15:"AdminSubjectTpl";a:1:{i:0;s:30:"/contact/form/adminsubject.txt";}s:12:"AdminBodyTpl";a:1:{i:0;s:27:"/contact/form/adminbody.txt";}s:7:"AdminTo";a:1:{i:0;s:16:"mail@example.com";}s:15:"AdminAttachment";a:1:{i:0;s:2:"on";}}s:9:"_aryChild";a:0:{}s:8:"_aryMeta";a:0:{}}s:6:"option";O:16:"Field_Validation":5:{s:5:"_aryV";a:0:{}s:10:"_aryMethod";a:0:{}s:9:"_aryField";a:3:{s:5:"field";a:0:{}s:6:"method";a:0:{}s:5:"value";a:0:{}}s:9:"_aryChild";a:0:{}s:8:"_aryMeta";a:0:{}}}s:8:"_aryMeta";a:0:{}}
-    form_current_serial: 3
-    form_blog_id: 1
 fulltext: ''
   - 
     fulltext_value: |
