@@ -77,7 +77,7 @@ blockquote:not([class]) {
   border-color: transparent transparent transparent #cccccc;
   font-style: italic; }
 
-.all-wrap {
+.inner-wrap {
   overflow: hidden;
   max-width: 100%; }
 
@@ -117,6 +117,12 @@ blockquote:not([class]) {
   .container-full .container {
     padding-left: 0;
     padding-right: 0; }
+  .js-hiraku-offcanvas-body-left .container-full,
+  .js-hiraku-offcanvas-body-right .container-full {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
 
 .container {
   margin-right: auto;

@@ -154,7 +154,7 @@ blockquote:not([class]) {
 // Utilities
 // ----------------------------
 
-.all-wrap {
+.inner-wrap {
   // コンテナを無視して幅を画面いっぱいに広げるために使用する
   // この要素には必ず「overflow:hidden」と「max-width:100%」を指定すること
   overflow: hidden;
@@ -211,6 +211,15 @@ blockquote:not([class]) {
   .container {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .js-hiraku-offcanvas-body-left &,
+  .js-hiraku-offcanvas-body-right & {
+    // iOS Safariでオフキャンバスを使用した時の不具合を回避
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
 }
