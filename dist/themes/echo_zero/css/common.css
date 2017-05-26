@@ -2630,6 +2630,9 @@ fieldset[disabled]
     .backtotop {
       right: 50%;
       margin-right: -40rem; } }
+  .js-hiraku-offcanvas-body-left .backtotop,
+  .js-hiraku-offcanvas-body-right .backtotop {
+    display: none; }
   .backtotop a {
     display: block;
     border: 1px solid transparent;

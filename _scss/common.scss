@@ -2551,6 +2551,11 @@ input[type="checkbox"] {
     margin-right: -40rem;
   }
 
+  .js-hiraku-offcanvas-body-left &,
+  .js-hiraku-offcanvas-body-right & {
+    display: none;
+  }
+
   a {
     display: block;
     border: 1px solid transparent;
