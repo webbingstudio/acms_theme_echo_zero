@@ -3,7 +3,7 @@ a-blog cms theme "echo_zero"
 
 - - - - - - - - - - - - - - - - - - -
 
-version 1.2.2
+version 1.2.3
 
 Author: Seiko Kuchida  
 http://webbingstudio.com/
@@ -32,6 +32,9 @@ a-blog cms内部の仕様変更により、バージョンアップ直後に不�
 
 デモサイト  
 [http://cms-skill.com/echo_zero_demo/](http://cms-skill.com/echo_zero_demo/)
+
+リリースノート  
+[http://cms-skill.com/echo_zero_demo/echo/releasenote.html](http://cms-skill.com/echo_zero_demo/echo/releasenote.html)
 
 echoシリーズ ポータルサイト  
 [http://cms-skill.com/echo/](http://cms-skill.com/echo/)

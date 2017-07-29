@@ -6,6 +6,7 @@
 # テーマ専用管理ボックス
 # 
 # 公式からの変更
+# - noindex設定にしているときにアラートを表示
 # - 下マージンを削除（画面最上部に接する場合）
 # - エントリー作成ボタンとその他のボタンをグループ分け
 # - エントリー作成ボタンをプルダウンに変更
@@ -15,6 +16,24 @@
 # =======================
 <!-- END_MODULE Sample:veil -->
 <style>
+.echo-adminBox-alert {
+  margin: 0;
+  padding: 5px;
+  background-color: #d35;
+  color: #fff;
+  font-size: 12px;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+  text-align: center;
+}
+.echo-adminBox-alert a {
+  color: #fff;
+  text-decoration: underline;
+}
+.echo-adminBox-alert .acms-admin-icon {
+  font-size: 14px;
+  position: relative;
+  top: -1px;
+}
 #adminBox {
   margin-bottom: 0;
   font-family: '-apple-system', 'BlinkMacSystemFont', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
@@ -39,6 +58,11 @@
   font-weight: bold;
 }
 </style>
+<!-- BEGIN_MODULE Blog_Field -->
+<!-- BEGIN_IF [{blog_meta_robots}/eq/noindex] -->
+<p class="echo-adminBox-alert"><span class="acms-admin-icon acms-admin-icon-attention"></span>検索エンジン拒否中　公開時は<a href="/bid/%{BID}/admin/blog_edit/#acms_custom">ブログの設定</a>で「このブログを検索エンジンに登録しない」のチェックを外してください</p>
+<!-- END_IF -->
+<!-- END_MODULE Blog_Field -->
 
 <div id="adminMinBox" class="clearfix js-dragAdminBox_disable minBox">
 	<span class="dragBoxHandle"><i class="acms-admin-icon-sort"></i></span>
