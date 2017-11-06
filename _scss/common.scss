@@ -3879,6 +3879,13 @@ input[type="checkbox"] {
   @include media-breakpoint-up(sm) {
     width: 50%;
   }
+  &.column-image-left,
+  &.column-image-right {
+    // floatを強制的に打ち消す
+    @include media-breakpoint-down(sm) {
+      float: none !important;
+    }
+  }
 }
 .column-responsive-xs-6 {
   width: 50%;
@@ -3886,6 +3893,13 @@ input[type="checkbox"] {
 .column-responsive-sm-4 {
   @include media-breakpoint-up(sm) {
     width: 33.33333333%;
+  }
+  &.column-image-left,
+  &.column-image-right {
+    // floatを強制的に打ち消す
+    @include media-breakpoint-down(sm) {
+      float: none !important;
+    }
   }
 }
 .column-responsive-xs-4 {

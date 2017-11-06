@@ -3441,12 +3441,20 @@ fieldset[disabled]
   .column-responsive-sm-6 {
     width: 50%; } }
 
+@media (max-width: 767.9px) {
+  .column-responsive-sm-6.column-image-left, .column-responsive-sm-6.column-image-right {
+    float: none !important; } }
+
 .column-responsive-xs-6 {
   width: 50%; }
 
 @media (min-width: 425px) {
   .column-responsive-sm-4 {
     width: 33.33333333%; } }
+
+@media (max-width: 767.9px) {
+  .column-responsive-sm-4.column-image-left, .column-responsive-sm-4.column-image-right {
+    float: none !important; } }
 
 .column-responsive-xs-4 {
   width: 33.33333333%; }
