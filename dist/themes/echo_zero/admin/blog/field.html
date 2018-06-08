@@ -1,3 +1,15 @@
+<!--#include file="/admin/blog/field_seo.html" -->
+<!--#include file="/admin/blog/field_sns.html" -->
+
+<!-- コード別フィールドの表示 -->
+<!--#include file="/admin/blog/field_blog_%{BCD}.html" -->
+<!--#include file="/admin/blog/field_blog_%{BID}.html" -->
+
+<!--#include file="/admin/blog/field_form.html" -->
+<!--#include file="/admin/blog/field_others.html" -->
+
+<!-- 重要：フィールドの表示切り替え -->
+<!--#include file="/admin/blog/field_control.html" -->
 <style>
 p.echo-alert {
 	margin: 10px 0 !important;
@@ -18,19 +30,22 @@ p.echo-alert {
 }
 
 .acms-admin-admin-title2 {
-	margin-bottom: 10px;
+	margin: 0 0 10px;
 	padding: 0;
+	color: #404040;
+	background-color: #ffffff;
+	border: 1px solid #d2d2d4;
 }
 
 .acms-admin-admin-title2 a.js-fader {
 	display: block;
-	color: #fff !important;
+	color: #404040 !important;
 	padding: 4px 10px;
 	outline: none;
 }
 
 .acms-admin-admin-title2 a.js-fader:hover {
-	background-color: rgba( 0,0,0,.3 );
+	background-color: #f2f2f4;
 }
 
 a.js-fader:after {
@@ -52,15 +67,3 @@ a.js-fader-active:after {
 	content: "\e90e";
 }
 </style>
-<!--#include file="/admin/blog/field_seo.html" -->
-<!--#include file="/admin/blog/field_sns.html" -->
-
-<!-- コード別フィールドの表示 -->
-<!--#include file="/admin/blog/field_blog_%{BCD}.html" -->
-<!--#include file="/admin/blog/field_blog_%{BID}.html" -->
-
-<!--#include file="/admin/blog/field_form.html" -->
-<!--#include file="/admin/blog/field_others.html" -->
-
-<!-- 重要：フィールドの表示切り替え -->
-<!--#include file="/admin/blog/field_control.html" -->
