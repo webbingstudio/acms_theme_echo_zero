@@ -3640,7 +3640,7 @@ input[type="checkbox"] {
     left: 1%;
     right: 1%;
     bottom: 50px;
-    z-index: 9999;
+    z-index: 9999 !important;
   }
 
 }
@@ -3652,6 +3652,7 @@ input[type="checkbox"] {
     right: 2%;
     border-bottom-right-radius: 4px;
     opacity: 1;
+    z-index: 10000 !important;
   }
 
 }
@@ -4213,6 +4214,28 @@ input[type="checkbox"] {
 
 // Column Table
 
-[class*="column-table-"] table {
+[class^=column-table] .entry-container {
+  overflow-x: auto;
+  max-width: map-get($container-max-widths, lg);
+  margin: 0 auto ($spacer * 2);
+  margin-right: ($grid-gutter-width / 2);
+  padding: 0;
+  border-left: ($grid-gutter-width / 2) solid transparent;
+  border-right: ($grid-gutter-width / 2) solid transparent;
+}
+
+[class^="column-table-"] table {
   @extend .tables-reset;
+  margin-bottom: 0;
+}
+
+@include media-breakpoint-down(sm) {
+    [class^=column-table] table.acms-table-scrollable tr {
+      display: table-row;
+    }
+    [class^=column-table] table.acms-table-scrollable td,
+    [class^=column-table] table.acms-table-scrollable th {
+      display: table-cell;
+      white-space: nowrap;
+    }
 }

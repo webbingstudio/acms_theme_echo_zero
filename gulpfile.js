@@ -24,15 +24,15 @@ gulp.task('sass', function () {
 
 // cssmin
 // sassの終了後に処理する
-// gulp.task('cssmin', ['sass'], function () {
-//   return gulp.src([
-//       project_dist+'css/**/*.css',
-//       '!'+project_dist+'css/**/*.min.css'
-//     ])
-//     .pipe(cssmin())
-//     .pipe(rename({suffix: '.min'}))
-//     .pipe(gulp.dest(project_dist+'css'));
-// });
+gulp.task('cssmin', ['sass'], function () {
+  return gulp.src([
+      project_dist+'css/**/*.css',
+      '!'+project_dist+'css/**/*.min.css'
+    ])
+    .pipe(cssmin())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest(project_dist+'css'));
+});
 
 // concat
 gulp.task('concat', function() {
@@ -46,15 +46,15 @@ gulp.task('concat', function() {
 
 // uglify
 // concatの終了後に処理する
-// gulp.task('uglify', ['concat'], function(){
-//   return gulp.src([
-//       project_dist+'js/**/*.js',
-//       '!'+project_dist+'js/**/*.min.js'
-//   ])
-//   .pipe(uglify())
-//   .pipe(rename({suffix: '.min'}))
-//   .pipe(gulp.dest(project_dist+'js'));
-// });
+gulp.task('uglify', ['concat'], function(){
+  return gulp.src([
+      project_dist+'js/**/*.js',
+      '!'+project_dist+'js/**/*.min.js'
+  ])
+  .pipe(uglify())
+  .pipe(rename({suffix: '.min'}))
+  .pipe(gulp.dest(project_dist+'js'));
+});
 
 //watch
 gulp.task('watch', function(){
@@ -62,13 +62,13 @@ gulp.task('watch', function(){
       '_scss/**/*.scss'
     ], function(event) {
     gulp.run('sass');
-//    gulp.run('cssmin');
+    gulp.run('cssmin');
   });
   gulp.watch([
       '_js/**/*.js'
     ], function(event) {
     gulp.run('concat');
-    // gulp.run('uglify');
+    gulp.run('uglify');
   });
 });
 

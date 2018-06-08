@@ -1,305 +1,85 @@
 @charset "UTF-8";
 /*
  * a-blog cms extend css
- * version: 2.6 lator
+ * version: 2.8 lator
  *
  */
+
+@import "_variables";
+@import "_mixin";
 
 /*
  * 本文のスタイルの影響をUIも受けてしまう問題を回避
  * ----------------------------
  */
 
-#adminBox,
-#entryForm,
+.acms-admin-module-title-wrapper .acms-admin-modal-heading {
+  text-align: left;
+}
+
 .acms-admin-form,
-body .ui-widget,
-.acms-admin-revison-admin,
-.acms-admin-edit-info {
-  color: #333;
+.acms-admin-revison-admin {
   font-size: 14px;
-  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
-
-  a {
-    font-weight: 300;
-  }
-
-}
-
-.acms-admin-table {
-  font-size: 14px;
-}
-
-.acmsBenchmarkTable {
-  color: #333;
-  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  font-weight: 300;
   line-height: 1.25;
 }
 
-.acms-admin-module-edit {
-  line-height: 1.5;
-}
-
-.acms-admin-module-edit a {
-  font-size: 13px;
-  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  font-weight: 300;
+a.detail-fade-head,
+a.acms-admin-accordion-title-link {
+  color: $body-color;
   text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $body-color;
+    text-decoration: none;
   }
 
 }
 
-a.js-dialog-btn {
-  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  font-weight: 300;
-  line-height: 1.25;
-}
+.js-acms_tab {
+  text-decoration: none;
 
-a.acms-admin-accordion-title-link,
-a.detail-fade-head {
-  color: #333;
-  text-decoration: none;	
-}
-
-
-// 投稿画面の見出しスタイルを上書き
-// ----------------------------
-
-.titleWrapper h2 {
-  margin: 1em 0;
-  padding: 0;
-  background: transparent none;
-  border: 0 none;
-  color: #333;
-  font-size: 18px;
-  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  font-weight: 700;
-  text-align: left;
-  line-height: 1.25;
-
-  &:before,
-  &:after {
-    display: none;
-  }
-
-}
-
-.titleWrapper p {
-  margin: 1em 0;
-  color: #333;
-  font-size: 14px;
-  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  text-align: left;
-  line-height: 1.5;
-}
-
-
-// SEOチェックの見出しスタイルを上書き
-// ----------------------------
-
-.acms-admin-edit-info .acms-admin-edit-info-heading {
-  margin: 0;
-  padding: 0 10px 10px;
-  background-color: transparent;
-  border: 0 none;
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  text-align: left;
-  line-height: 1.5;
-}
-
-
-
-// モーダルウィンドウ内のモジュール設定の見出しスタイルを上書き
-// ----------------------------
-
-.acms-admin-modal-header h3 {
-  margin: 1em 0;
-  padding: 0;
-  background: transparent none;
-  border: 0 none;
-  color: #333;
-  font-size: 18px;
-  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  font-weight: 700;
-  text-align: left;
-  line-height: 1.25;
-
-  &:before,
-  &:after {
-    display: none;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
   }
 
 }
 
 
-// 全幅レイアウトのサイトに組み込んだときにUIが広がりすぎる問題を回避
-// ----------------------------
+/*
+ * SEO関連の情報枠の調整
+ * ----------------------------
+ */
 
-#entryForm,
-.acms-admin-form,
-body .ui-widget,
-.acms-admin-revison-admin,
-.acms-admin-edit-info {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1200px;
-}
+#js-seo_info {
+  max-width: map-get($container-max-widths, lg);
+  margin: 0 auto;
 
-.acms-admin-modal-dialog.large {
-  max-width: 95%;
-}
-
-@media (min-width: 1280px) {
-
-  .acms-admin-modal-dialog.large {
-    max-width: 1200px;
-    min-width: 800px;
+  .acms-admin-edit-info-heading {
+    margin: 0 0 .5em;
   }
 
 }
 
 
-// ダイレクト編集のユニットのモーダルポップアップが狭すぎる問題を回避
-// ----------------------------
 
-#js-edit_inplace-box {
-  max-width: 960px;
-
-  .entryFormColumnBody .entryFormColumnTable th,
-  .entryFormColumnBody .entryFormColumnTable td {
-     min-width: 120px;
-  }
-
-}
-
-
-// 管理ボックスのボタンサイズを固定
-// ----------------------------
-
-#adminBox [class*=acms-admin-btn] {
-  font-size: 13px;
-}
-
-
-// ユニット内のラベルのクラス名がbootstapと重複している問題を回避
-// ----------------------------
-
-.entryFormColumn .entryFormColumnHead .label {
-  display: inline-block;
-  color: #fff;
-  background: transparent none !important;
-  padding: 0;
-  border: 0 none;
-  font-size: 13px;
-  font-family: 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'Osaka', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  font-weight: 300;
-  line-height: 1.5;
-  text-align: right;
-  border-radius: 0;
-  vertical-align: middle;
-}
-
-
-// acms.css以外のフレームワークを使用すると予期しない箇所で段組が解除されてしまう問題を回避
-// ----------------------------
-
-// .acms-admin-clear {
-//   clear: none !important;
-// }
-
-
-// エントリーカスタムフィールドのラベルを長いタイトルにも対応させる
-// ----------------------------
+/*
+ * カスタムフィールドのセルに長いテキストが入っているとUIが崩れる問題を回避
+ * ----------------------------
+ */
 
 .entryFormTable th {
-	width: 25%;
-	max-width: 200px;
+  width: 12em;
+  white-space: normal;
+  text-align: left;
 }
-
-
-// ファイルユニットになぜかインラインでwidthが入ってしまう問題を回避
-// ----------------------------
-
-div.column-file-auto,
-div.column-file-center {
-  width: auto !important;
-}
-
-
-// 編集ボックスの左右マージンを無効
-// ----------------------------
-
-.acms-admin-btn-action-group {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-
-// ツールチップアイコンをエントリー・モジュールのカスタムフィールドでも使用できるようにする
-// ----------------------------
-
-.acms-admin-icon-tooltip {
-
-  #entryForm &,
-  body .ui-widget & {
-    margin-left: .25em;
-  }
-	
-}
-
-
-// 文字装飾ボタンを目立たせる
-// ----------------------------
-
-.js-tag_insertion .emoji-trigger-btn,
-.js-tag_insertion .emoji-trigger-tag,
-.js-media_insert {
-	display: inline-block;
-	min-width: 5em;
-	padding: .25em .5em;
-	background-color: #fff;
-  color: #333;
-  font-size: 12px;
-  border: 1px solid #999;
-	text-align: center;
-	border-radius: 3px;
-  text-decoration: none;
-  vertical-align: middle;
-
-  &:hover {
-    background-color: #ddd;
-  }
-
-}
-
-.js-tag_insertion .emoji-trigger-tag[rel="a"],
-.js-tag_insertion .emoji-trigger-tag[data-rel="a"] {
-  text-decoration: underline;
-}
-
-.js-tag_insertion .emoji-trigger-tag[rel="em"],
-.js-tag_insertion .emoji-trigger-tag[data-rel="em"] {
-  font-style: italic;
-}
-
-.js-tag_insertion .emoji-trigger-tag[rel="strong"],
-.js-tag_insertion .emoji-trigger-tag[data-rel="strong"] {
-  font-weight: bold;
-}
-
 
 
 // ----------------------------
-// echo zero
+// echo zero専用
 // ----------------------------
 
 // 追加ユニット: 余白
