@@ -8,6 +8,18 @@
  * 本文のスタイルの影響をUIも受けてしまう問題を回避
  * ----------------------------
  */
+.acms-admin-modal {
+  font-size: 14px; }
+
+.acms-admin-modal-heading:not([class*="title"]) {
+  margin: 5px 0;
+  font-size: 14px; }
+
+@media screen and (min-width: 768px) {
+  .acms-admin-modal-heading:not([class*="title"]) {
+    margin: 15px 0;
+    font-size: 18px; } }
+
 .acms-admin-module-title-wrapper .acms-admin-modal-heading {
   text-align: left; }
 

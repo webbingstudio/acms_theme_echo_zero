@@ -1216,6 +1216,7 @@ fieldset[disabled] a.btn {
 select.form-control {
   font-size: .875rem;
   border-color: $gray-lighter;
+  height: 2.2em;
 
   &.form-control-lg {
     font-size: $font-size-root;
@@ -2640,6 +2641,19 @@ input[type="checkbox"] {
   border-width: 1px 0 0;
   border-color: $gray-dark;
   text-align: center;
+}
+
+.footer-nav {
+  font-size: $font-size-sm;
+  padding-bottom: $spacer;
+}
+
+.copyright {
+  font-size: $font-size-xs;
+}
+
+.copyright-text {
+  font-size: 1em;
 }
 
 // Page Header

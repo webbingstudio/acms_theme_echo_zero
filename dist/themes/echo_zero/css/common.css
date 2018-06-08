@@ -1663,7 +1663,8 @@ fieldset[disabled] a.btn {
 
 select.form-control {
   font-size: .875rem;
-  border-color: #cccccc; }
+  border-color: #cccccc;
+  height: 2.2em; }
   select.form-control.form-control-lg {
     font-size: 1rem; }
   select.form-control option {
@@ -2692,6 +2693,16 @@ fieldset[disabled]
   border-width: 1px 0 0;
   border-color: #333333;
   text-align: center; }
+
+.footer-nav {
+  font-size: 0.875rem;
+  padding-bottom: 0.625rem; }
+
+.copyright {
+  font-size: 0.75rem; }
+
+.copyright-text {
+  font-size: 1em; }
 
 .page-header {
   padding: 2.5rem 0 1.25rem;
