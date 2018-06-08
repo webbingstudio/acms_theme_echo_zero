@@ -2766,7 +2766,7 @@ fieldset[disabled]
     padding: 0;
     background: transparent none;
     border: 0 none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: "PGYuGothic", "YuGothic", -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
     font-weight: 700;
     line-height: 1.5;
@@ -2775,10 +2775,13 @@ fieldset[disabled]
       display: none; }
 
 .post .post-contents {
-  padding: 1.875rem 0; }
+  padding: 1.25rem 0; }
 
 .post .post-footer {
   padding: 1.25rem 0; }
+
+.post.post-01 .post-header .post-title {
+  font-size: 2rem; }
 
 .post.post-02 .post-header {
   position: relative;
@@ -2816,10 +2819,8 @@ fieldset[disabled]
     text-align: center; }
     .flex-col-2 .post.post-02 .post-header .post-header-contents {
       text-align: left; }
-  .post.post-02 .post-header .post-title {
-    font-size: 1.25rem; }
-    .flex-col-2 .post.post-02 .post-header .post-title {
-      text-align: left; }
+  .flex-col-2 .post.post-02 .post-header .post-title {
+    text-align: left; }
   .post.post-02 .post-header .post-date {
     display: inline-block;
     margin-bottom: .5rem;

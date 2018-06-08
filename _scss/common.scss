@@ -2761,7 +2761,7 @@ input[type="checkbox"] {
       padding: 0;
       background: transparent none;
       border: 0 none;
-      font-size: $font-size-xxl;
+      font-size: $font-size-xl;
       font-family: $font-family-01;
       font-weight: $font-weight-bold-01;
       line-height: $line-height-md;
@@ -2777,7 +2777,7 @@ input[type="checkbox"] {
   }
 
   .post-contents {
-    padding: ($spacer * 3) 0;
+    padding: ($spacer * 2) 0;
   }
 
   .post-footer {
@@ -2785,6 +2785,14 @@ input[type="checkbox"] {
   }
 
   &.post-01 {
+
+    .post-header {
+
+      .post-title {
+        font-size: 2rem;
+      }
+
+    }
 
   }
 
@@ -2845,7 +2853,6 @@ input[type="checkbox"] {
       }
 
       .post-title {
-        font-size: $font-size-xl;
 
         @at-root {
 
