@@ -47,14 +47,18 @@ ACMS.Ready(function() {
 		display: 'none'
 	});
 
-<!-- ELSE_IF [{blog_edit_meta_title_hidden}/eq/hidden] -->
+<!-- END_IF -->
+
+<!-- BEGIN_IF [{blog_edit_meta_title_hidden}/eq/hidden] -->
 
 	// 「SEOの設定」のタイトルを表示しない
 	$('input[name="entry_meta_title"]', f).closest('tr').css({
 		display: 'none'
 	});
 
-<!-- ELSE_IF [{blog_edit_meta_description_hidden}/eq/hidden] -->
+<!-- END_IF -->
+
+<!-- BEGIN_IF [{blog_edit_meta_description_hidden}/eq/hidden] -->
 
 	// 「SEOの設定」の概要を表示しない
 	$('input[name="entry_meta_description"]', f).closest('tr').css({
