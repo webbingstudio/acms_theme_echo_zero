@@ -3,26 +3,12 @@ a-blog cms theme "echo_zero"
 
 - - - - - - - - - - - - - - - - - - -
 
-version 1.2.4
+version 1.3.0
 
 Author: Seiko Kuchida  
 http://webbingstudio.com/
 
-Copyright 2017 WebbingStudio
-
-- - - - - - - - - - - - - - - - - - -
-
-## a-blog cms 2.7.x系の対応について
-
-a-blog cms内部の仕様変更により、バージョンアップ直後に不具合が発生することがあります。解決方法などを下記URLでまとめています。
-
-[http://cms-skill.com/echo_zero_demo/echo/acms270.html](http://cms-skill.com/echo_zero_demo/echo/acms270.html)
-
-## a-blog cms バージョン2.7.0での不具合について
-
-バージョン2.7.2で修正されました。下記記事を参照ください。
-
-[http://webbingstudio.com/weblog/cms/entry-832.html](http://webbingstudio.com/weblog/cms/entry-832.html)
+Copyright 2018 WebbingStudio
 
 - - - - - - - - - - - - - - - - - - -
 
@@ -38,6 +24,10 @@ a-blog cms内部の仕様変更により、バージョンアップ直後に不�
 
 echoシリーズ ポータルサイト  
 [http://cms-skill.com/echo/](http://cms-skill.com/echo/)
+
+## 対応バージョン
+
+a-blog cms 2.8.0以上
 
 ## ライセンス
 
